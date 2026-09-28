@@ -2,6 +2,7 @@
 
 import fs from 'fs';
 import path from 'path';
+import BlogsData from '../src/components/OtherComponents/Blogs/BlogsData.js';
 
 // Configuration
 const BASE_URL = 'https://sansonfloorings.com';
@@ -76,7 +77,20 @@ const pages = [
     lastmod: CURRENT_DATE,
     changefreq: 'monthly',
     priority: '0.6'
-  }
+  },
+  // Blog pages
+  {
+    url: '/blogs',
+    lastmod: CURRENT_DATE,
+    changefreq: 'weekly',
+    priority: '0.7'
+  },
+  ...BlogsData.map(blog => ({
+    url: `/blogs/${blog.slug}`,
+    lastmod: blog.updatedDate || blog.publishedDate,
+    changefreq: 'monthly',
+    priority: '0.6'
+  }))
 ];
 
 // Generate XML content

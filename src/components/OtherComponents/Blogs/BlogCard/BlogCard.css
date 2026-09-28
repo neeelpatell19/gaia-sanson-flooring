@@ -1,0 +1,287 @@
+/* ===========================================
+   BLOG CARD
+   Shares its visual language with the product
+   cards on the home page (HomeProducts.css)
+   =========================================== */
+
+.blog-card {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  background-color: #ffffff;
+  overflow: hidden;
+  position: relative;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  transition: all 0.6s cubic-bezier(0.4, 0, 0.2, 1);
+  cursor: pointer;
+  color: inherit;
+}
+
+.blog-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.15);
+}
+
+/* ===========================================
+   IMAGE SECTION
+   =========================================== */
+
+.blog-card .blog-card-image-section {
+  position: relative;
+  overflow: hidden;
+  aspect-ratio: 16 / 11;
+  background-color: #e8d5c4;
+  flex-shrink: 0;
+}
+
+.blog-card .blog-card-image-wrapper {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  overflow: hidden;
+}
+
+.blog-card .blog-card-image,
+.blog-card .blog-card-image img {
+  width: 100%;
+  height: 100%;
+  max-width: none;
+  object-fit: cover;
+  object-position: center 60%;
+}
+
+.blog-card .blog-card-image img {
+  transition: all 0.8s cubic-bezier(0.4, 0, 0.2, 1);
+  transform: scale(1.05);
+}
+
+.blog-card:hover .blog-card-image img {
+  transform: scale(1);
+}
+
+.blog-card .blog-card-image-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    135deg,
+    rgba(0, 0, 0, 0.1) 0%,
+    rgba(0, 0, 0, 0.05) 100%
+  );
+  transition: all 0.6s cubic-bezier(0.4, 0, 0.2, 1);
+  pointer-events: none;
+}
+
+.blog-card:hover .blog-card-image-overlay {
+  background: linear-gradient(
+    135deg,
+    rgba(0, 0, 0, 0.05) 0%,
+    rgba(0, 0, 0, 0.02) 100%
+  );
+}
+
+.blog-card .blog-card-category {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  z-index: 2;
+  background: linear-gradient(135deg, #a38703 0%, #c4a304 100%);
+  color: #ffffff;
+  padding: 7px 16px;
+  border-radius: 50px;
+  font-size: 12px;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  font-family: "Work Sans", sans-serif;
+  box-shadow: 0 8px 25px rgba(163, 135, 3, 0.25);
+}
+
+/* ===========================================
+   CONTENT SECTION
+   =========================================== */
+
+.blog-card .blog-card-content {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  padding: 25px;
+}
+
+.blog-card .blog-card-meta {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 10px;
+  font-size: 12px;
+  line-height: 1.5;
+  font-weight: 400;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  color: #8b6f47;
+  margin-bottom: 14px;
+}
+
+.blog-card .blog-card-meta-dot {
+  width: 4px;
+  height: 4px;
+  border-radius: 50%;
+  background-color: #a38703;
+}
+
+.blog-card .blog-card-title {
+  font-size: 1.4rem;
+  font-weight: 600;
+  color: #2c3e50;
+  line-height: 1.25;
+  letter-spacing: 0.5px;
+  margin-bottom: 14px;
+  transition: color 0.3s ease;
+}
+
+.blog-card:hover .blog-card-title {
+  color: #a38703;
+}
+
+.blog-card .blog-card-excerpt {
+  font-size: 16px;
+  color: #5a6c7d;
+  line-height: 1.6 !important;
+  margin-bottom: 24px;
+}
+
+.blog-card .blog-card-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: auto;
+  padding-top: 18px;
+  border-top: 1px solid #ecedee;
+}
+
+.blog-card .blog-card-read {
+  font-family: "IBM Plex Sans", sans-serif;
+  font-size: 0.9rem;
+  font-weight: 500;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+  color: #2c3e50;
+}
+
+.blog-card .blog-card-arrow {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: 2px solid #d4a574;
+  color: #2c3e50;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.blog-card .arrow-icon {
+  font-size: 1.2rem;
+  font-weight: 300;
+  transition: transform 0.3s ease;
+}
+
+.blog-card:hover .blog-card-arrow {
+  background: #d4a574;
+  color: #ffffff;
+  transform: scale(1.1);
+}
+
+.blog-card:hover .arrow-icon {
+  transform: translateX(2px);
+}
+
+/* ===========================================
+   FEATURED (LATEST) CARD
+   =========================================== */
+
+.blog-card.blog-card--featured {
+  display: grid;
+  grid-template-columns: 1.1fr 1fr;
+  background-color: #f5f5f0;
+}
+
+.blog-card.blog-card--featured .blog-card-image-section {
+  aspect-ratio: auto;
+  min-height: 460px;
+}
+
+.blog-card.blog-card--featured .blog-card-content {
+  padding: 50px 45px;
+  justify-content: center;
+}
+
+.blog-card.blog-card--featured .blog-card-title {
+  font-size: 2.2rem;
+  line-height: 1.15;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-weight: 500;
+}
+
+.blog-card.blog-card--featured .blog-card-excerpt {
+  font-size: 1.15rem;
+  line-height: 1.7 !important;
+}
+
+.blog-card.blog-card--featured .blog-card-footer {
+  margin-top: 10px;
+  border-top-color: #e4d8c8;
+}
+
+/* ===========================================
+   RESPONSIVE DESIGN
+   =========================================== */
+
+@media (max-width: 1024px) {
+  .blog-card.blog-card--featured {
+    grid-template-columns: 1fr;
+  }
+
+  .blog-card.blog-card--featured .blog-card-image-section {
+    min-height: 0;
+    aspect-ratio: 16 / 11;
+  }
+
+  .blog-card.blog-card--featured .blog-card-content {
+    padding: 35px 30px;
+  }
+
+  .blog-card.blog-card--featured .blog-card-title {
+    font-size: 1.8rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .blog-card:hover {
+    transform: none;
+  }
+
+  .blog-card .blog-card-content,
+  .blog-card.blog-card--featured .blog-card-content {
+    padding: 22px 20px;
+  }
+
+  .blog-card .blog-card-title {
+    font-size: 1.2rem;
+  }
+
+  .blog-card.blog-card--featured .blog-card-title {
+    font-size: 1.5rem;
+  }
+
+  .blog-card .blog-card-excerpt,
+  .blog-card.blog-card--featured .blog-card-excerpt {
+    font-size: 15px;
+  }
+
+  .blog-card .blog-card-category {
+    top: 14px;
+    left: 14px;
+    font-size: 11px;
+  }
+}

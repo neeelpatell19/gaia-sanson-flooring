@@ -6,6 +6,8 @@ import AnimationDemo from '../components/FramerAnimation/AnimationDemo.vue'
 import AboutUs from '../components/OtherComponents/About/About.vue'
 import Tools from '../components/OtherComponents/Tools/Tools.vue'
 import DynamicArtificialPage from '../components/OtherComponents/Categories/Layouts/DynamicArtificialPage/DynamicArtificialPage.vue'
+import Blogs from '../components/OtherComponents/Blogs/Blogs.vue'
+import BlogDetail from '../components/OtherComponents/Blogs/BlogDetail/BlogDetail.vue'
 
 const routes = [
     {
@@ -53,6 +55,17 @@ const routes = [
         path: '/about-us',
         name: 'AboutUs',
         component: AboutUs
+    },
+    {
+        path: '/blogs',
+        name: 'Blogs',
+        component: Blogs
+    },
+    {
+        path: '/blogs/:slug',
+        name: 'BlogDetail',
+        component: BlogDetail,
+        props: true
     },
     //   {
     //     path: '/services',

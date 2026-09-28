@@ -46,6 +46,11 @@ const navigationBarData = [
     path: "/about-us",
     hasDropdown: false,
   },
+  {
+    name: "Blogs",
+    path: "/blogs",
+    hasDropdown: false,
+  },
   // {
   //     name: 'Contact us',
   //     path: '/contact',

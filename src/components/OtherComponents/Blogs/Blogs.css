@@ -1,0 +1,166 @@
+/* ===========================================
+   BLOGS LISTING PAGE
+   =========================================== */
+
+.blogsPage {
+  background-color: #fffaf2;
+  width: 100%;
+}
+
+/* ===========================================
+   HEADER SECTION
+   =========================================== */
+
+.BlogsListingContainer .blogs-header {
+  text-align: center;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.BlogsListingContainer .blogs-subtitle {
+  font-size: 1rem;
+  font-weight: 500;
+  color: #666;
+  margin: 0 0 20px 0;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.BlogsListingContainer .blogs-title {
+  justify-content: center;
+  margin-bottom: 20px !important;
+}
+
+.BlogsListingContainer .blogs-title::before {
+  display: none !important;
+}
+
+.BlogsListingContainer .blogs-intro {
+  font-size: 1.15rem;
+  line-height: 1.8 !important;
+  color: #5a6c7d;
+  font-weight: 400;
+  position: relative;
+  padding-bottom: 25px;
+}
+
+.BlogsListingContainer .blogs-intro::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 60px;
+  height: 3px;
+  background: linear-gradient(135deg, #a38703 0%, #c4a304 100%);
+  border-radius: 2px;
+}
+
+/* ===========================================
+   CATEGORY FILTERS
+   =========================================== */
+
+.BlogsListingContainer .blogs-filters {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+.BlogsListingContainer .blogs-filter-btn {
+  background: transparent;
+  border: 2px solid #d4a574;
+  color: #2c3e50;
+  padding: 10px 22px;
+  font-size: 0.85rem;
+  font-weight: 500;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+  border-radius: 25px;
+  cursor: pointer;
+  font-family: "IBM Plex Sans", sans-serif;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.BlogsListingContainer .blogs-filter-btn:hover,
+.BlogsListingContainer .blogs-filter-btn.active {
+  background: #d4a574;
+  color: #ffffff;
+}
+
+/* ===========================================
+   ARTICLES GRID
+   =========================================== */
+
+.BlogsListingContainer .blogs-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+}
+
+/* ===========================================
+   PAGINATION
+   =========================================== */
+
+.BlogsListingContainer .blogs-pagination {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.BlogsListingContainer .blogs-page-btn {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  border: 2px solid #d4a574;
+  background: transparent;
+  color: #2c3e50;
+  font-family: "IBM Plex Sans", sans-serif;
+  font-size: 0.95rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.BlogsListingContainer .blogs-page-btn:hover:not(:disabled),
+.BlogsListingContainer .blogs-page-btn.active {
+  background: #d4a574;
+  color: #ffffff;
+}
+
+.BlogsListingContainer .blogs-page-btn:disabled {
+  opacity: 0.4;
+  cursor: not-allowed;
+}
+
+.BlogsListingContainer .blogs-empty {
+  text-align: center;
+  color: #5a6c7d;
+}
+
+/* ===========================================
+   RESPONSIVE DESIGN
+   =========================================== */
+
+@media (max-width: 1024px) {
+  .BlogsListingContainer .blogs-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  .BlogsListingContainer .blogs-grid {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  .BlogsListingContainer .blogs-subtitle {
+    font-size: 0.9rem;
+    margin-bottom: 15px;
+  }
+
+  .BlogsListingContainer .blogs-intro {
+    font-size: 1rem;
+  }
+}

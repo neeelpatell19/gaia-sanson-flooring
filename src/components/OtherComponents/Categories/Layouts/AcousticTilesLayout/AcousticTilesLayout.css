@@ -720,14 +720,25 @@
 } */
 .AccounticLogoContainer .FlexContainerEditNew {
   display: grid;
+  grid-template-columns: minmax(0, 1fr);
 }
 
 .AccounticLogoContainer .FlexContainerEditNew .sets-apart-logos-Container {
   display: flex;
-  flex-wrap: nowrap;
+  flex-wrap: wrap;
   gap: 20px;
   justify-content: flex-start;
   align-items: center;
+}
+
+.AccounticLogoContainer
+  .FlexContainerEditNew
+  .sets-apart-logos-Container
+  > .sets-apart-logos-Container-item {
+  flex: 1 1 180px;
+  width: auto;
+  max-width: 300px;
+  min-width: 0;
 }
 @media (max-width: 768px) {
   .EditContainerContent {

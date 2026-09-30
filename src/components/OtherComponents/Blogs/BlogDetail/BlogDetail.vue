@@ -37,6 +37,9 @@
           </div>
           <div class="blog-detail-meta-row">
             <span>{{ formatBlogDate(blog.publishedDate) }}</span>
+            <span v-if="blog.updatedDate">
+              Updated {{ formatBlogDate(blog.updatedDate) }}
+            </span>
             <span>{{ blog.readTime }}</span>
           </div>
         </div>
@@ -72,23 +75,23 @@
             </div>
 
             <div class="blog-share">
-              <p class="blog-sidebar-title">Share</p>
+              <p class="blog-sidebar-title">Connect</p>
               <div class="blog-share-links">
                 <a
-                  :href="`https://www.linkedin.com/sharing/share-offsite/?url=${encodedUrl}`"
+                  href="https://www.linkedin.com/company/gaia-by-sanson-floorings/"
                   target="_blank"
                   rel="noopener noreferrer"
                   class="blog-share-link"
-                  aria-label="Share on LinkedIn"
+                  aria-label="GAIA by Sanson Floorings on LinkedIn"
                 >
                   <i class="fab fa-linkedin-in"></i>
                 </a>
                 <a
-                  :href="`https://wa.me/?text=${encodedShareText}`"
+                  href="https://wa.me/919910921119"
                   target="_blank"
                   rel="noopener noreferrer"
                   class="blog-share-link"
-                  aria-label="Share on WhatsApp"
+                  aria-label="Chat with GAIA on WhatsApp"
                 >
                   <i class="fab fa-whatsapp"></i>
                 </a>
@@ -175,11 +178,13 @@ const relatedBlogs = computed(() =>
   blog
     ? [...BlogsData]
         .filter((item) => item.slug !== blog.slug)
-        // Same topic cluster first, then newest.
+        // Same topic cluster first, then same category, then newest.
         .sort(
           (a, b) =>
             Number(b.cluster === blog.cluster) -
               Number(a.cluster === blog.cluster) ||
+            Number(b.category === blog.category) -
+              Number(a.category === blog.category) ||
             b.publishedDate.localeCompare(a.publishedDate)
         )
         .slice(0, 3)
@@ -187,10 +192,6 @@ const relatedBlogs = computed(() =>
 );
 
 const pageUrl = blog ? `${SITE_URL}/blogs/${blog.slug}` : SITE_URL;
-const encodedUrl = encodeURIComponent(pageUrl);
-const encodedShareText = encodeURIComponent(
-  blog ? `${blog.title} — ${pageUrl}` : pageUrl
-);
 
 const articleRef = ref(null);
 const tableOfContents = ref([]);

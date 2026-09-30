@@ -8,9 +8,10 @@
 //      page, the sitemap, the SEO tags and the static (prerendered)
 //      article pages all read from this file.
 //
-// cluster: the topic cluster the article belongs to. Related articles
-// show the same cluster first. One of:
-//   "carpet-tiles" | "broadloom" | "acoustic" | "artificial-grass"
+// cluster: the topic cluster the article belongs to (short, lowercase,
+// hyphenated, e.g. "room-acoustics"). Clusters are open-ended; the live
+// register is in the GAIA SEO Authority Playbook. Related articles show
+// the same cluster first, then the same category.
 // updatedDate (optional, YYYY-MM-DD): set when an article is materially
 // revised. It feeds dateModified and the sitemap lastmod.
 // ===========================================
@@ -19,18 +20,19 @@ const BlogsData = [
   {
     id: 1,
     slug: "printed-acoustic-panels-feature-wall-lighting",
-    title: "Printed Acoustic Panels: How to Light a Feature Wall",
-    seoTitle: "Printed Acoustic Panels: Lighting a Feature Wall | GAIA",
+    title: "Printed Acoustic Panels: Custom Designs, Sizes and Installation",
+    seoTitle: "Printed Acoustic Panels: Designs, Sizes, Installation | GAIA",
     metaDescription:
-      "How to light and fix GAIA Printed Acoustic Panels as a feature wall: wall washing vs grazing, air gaps and NRC, colour under real lighting and planning artwork around 1220 x 2440 mm sheets.",
+      "Custom printed acoustic panels from GAIA: 9–24 mm PET on 1220 × 2440 mm sheets, NRC up to 0.90 and your own artwork, plus how to fix and light them.",
     excerpt:
-      "A printed panel has to carry an image and absorb sound. Lighting decides the first, fixing the second, and both need planning before the artwork is signed off.",
+      "Printed acoustic panels put artwork on a surface that also absorbs sound. What they are, where they work, and how to plan the artwork, fixing and lighting.",
     category: "Acoustic Panels",
-    cluster: "acoustic",
-    tags: ["Acoustic Panels", "Lighting"],
+    cluster: "acoustic-panels",
+    tags: ["Acoustic Panels", "Printed Panels", "Interior Design"],
     author: "GAIA by Sanson Floorings",
     location: "New Delhi",
     publishedDate: "2026-09-28",
+    updatedDate: "2026-10-01",
     readTime: "7 min read",
     coverImage:
       "/Images/Blogs/printed-acoustic-panels-feature-wall-lighting/hero-printed-acoustic-panels-feature-wall.webp",
@@ -44,19 +46,19 @@ const BlogsData = [
     },
     faqs: [
       {
-        question: "Can printed acoustic panels be lit with a wall washer?",
+        question: "Are printed acoustic panels soundproof?",
         answer:
-          "Yes. Wall washing is usually the better choice for a printed panel because it shows colour and pattern evenly. Fitting positions, clearances and cable routes should be coordinated with the panel layout before installation.",
+          "No. Printed acoustic panels absorb sound inside a room and reduce echo. Stopping sound from passing between rooms depends on the construction of the walls, doors and ceiling.",
       },
       {
-        question: "Do printed acoustic panels still absorb sound?",
+        question: "Can I print my company logo on acoustic panels?",
         answer:
-          "They are acoustic PET panels, so absorption depends largely on thickness and fixing. GAIA publishes NRC 0.3 for its PET panels fixed directly and NRC 0.85–0.90 with an air gap; confirm the figures for your chosen printed panel.",
+          "Yes. GAIA printed acoustic panels can carry your own artwork or logo. Plan where panel joints fall and approve colours on a printed sample before production.",
       },
       {
-        question:
-          "What thicknesses are GAIA Printed Acoustic Panels available in?",
-        answer: "The catalogue lists 9 mm, 12 mm, 18 mm and 24 mm.",
+        question: "What sizes do printed acoustic panels come in?",
+        answer:
+          "GAIA printed acoustic panels come in 9, 12, 18 and 24 mm thicknesses. The standard sheet is 1220 × 2440 mm.",
       },
     ],
   },

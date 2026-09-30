@@ -117,6 +117,7 @@ sorted.forEach((blog) => {
     .sort(
       (a, b) =>
         Number(b.cluster === blog.cluster) - Number(a.cluster === blog.cluster) ||
+        Number(b.category === blog.category) - Number(a.category === blog.category) ||
         b.publishedDate.localeCompare(a.publishedDate)
     )
     .slice(0, 3);
@@ -136,7 +137,7 @@ sorted.forEach((blog) => {
     '<article>',
     `<h1>${esc(blog.title)}</h1>`,
     `<p>${esc(blog.excerpt)}</p>`,
-    `<p>${esc(blog.author)} · ${esc(blog.location)} · <time datetime="${blog.publishedDate}">${formatBlogDate(blog.publishedDate)}</time></p>`,
+    `<p>${esc(blog.author)} · ${esc(blog.location)} · <time datetime="${blog.publishedDate}">${formatBlogDate(blog.publishedDate)}</time>${blog.updatedDate ? ` · Updated <time datetime="${blog.updatedDate}">${formatBlogDate(blog.updatedDate)}</time>` : ''}</p>`,
     `<img src="${blog.coverImage}" alt="${esc(blog.coverImageAlt)}">`,
     articleHtml,
     '</article>',

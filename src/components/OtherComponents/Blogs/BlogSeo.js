@@ -107,6 +107,7 @@ export function buildArticleSchemas(blog) {
     name: "GAIA by Sanson Floorings",
     url: `${SITE_URL}/`,
     logo: { "@type": "ImageObject", url: `${SITE_URL}/Images/GAIA_Logo.png` },
+    sameAs: ["https://www.linkedin.com/company/gaia-by-sanson-floorings/"],
   };
 
   const schemas = [

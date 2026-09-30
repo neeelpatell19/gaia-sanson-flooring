@@ -175,7 +175,13 @@ const relatedBlogs = computed(() =>
   blog
     ? [...BlogsData]
         .filter((item) => item.slug !== blog.slug)
-        .sort((a, b) => b.publishedDate.localeCompare(a.publishedDate))
+        // Same topic cluster first, then newest.
+        .sort(
+          (a, b) =>
+            Number(b.cluster === blog.cluster) -
+              Number(a.cluster === blog.cluster) ||
+            b.publishedDate.localeCompare(a.publishedDate)
+        )
         .slice(0, 3)
     : []
 );

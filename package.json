@@ -8,7 +8,8 @@
     "build": "vite build",
     "preview": "vite preview",
     "generate-sitemap": "node scripts/generate-sitemap.js",
-    "postbuild": "npm run generate-sitemap"
+    "postbuild": "npm run generate-sitemap && npm run prerender-blogs",
+    "prerender-blogs": "node scripts/prerender-blogs.js"
   },
   "dependencies": {
     "ant-design-vue": "^4.2.6",

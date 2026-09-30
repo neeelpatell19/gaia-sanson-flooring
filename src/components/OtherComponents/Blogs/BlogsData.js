@@ -5,7 +5,14 @@
 //   1. Add the article body HTML to ./BlogPosts/<slug>.html
 //   2. Add its images to /public/Images/Blogs/<slug>/
 //   3. Add an entry below (newest first). The listing page, the article
-//      page, the sitemap and the SEO tags all read from this file.
+//      page, the sitemap, the SEO tags and the static (prerendered)
+//      article pages all read from this file.
+//
+// cluster: the topic cluster the article belongs to. Related articles
+// show the same cluster first. One of:
+//   "carpet-tiles" | "broadloom" | "acoustic" | "artificial-grass"
+// updatedDate (optional, YYYY-MM-DD): set when an article is materially
+// revised. It feeds dateModified and the sitemap lastmod.
 // ===========================================
 
 const BlogsData = [
@@ -19,6 +26,7 @@ const BlogsData = [
     excerpt:
       "A printed panel has to carry an image and absorb sound. Lighting decides the first, fixing the second, and both need planning before the artwork is signed off.",
     category: "Acoustic Panels",
+    cluster: "acoustic",
     tags: ["Acoustic Panels", "Lighting"],
     author: "GAIA by Sanson Floorings",
     location: "New Delhi",

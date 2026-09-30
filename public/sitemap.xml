@@ -2,68 +2,55 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://sansonfloorings.com/</loc>
-    <lastmod>2026-03-30</lastmod>
-    <changefreq>weekly</changefreq>
     <priority>1.0</priority>
   </url>
   <url>
-    <loc>https://sansonfloorings.com/about</loc>
-    <lastmod>2026-03-30</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://sansonfloorings.com/products</loc>
-    <lastmod>2026-03-30</lastmod>
-    <changefreq>weekly</changefreq>
+    <loc>https://sansonfloorings.com/categories</loc>
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://sansonfloorings.com/services</loc>
-    <lastmod>2026-03-30</lastmod>
-    <changefreq>monthly</changefreq>
+    <loc>https://sansonfloorings.com/categories/carpet-tiles</loc>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://sansonfloorings.com/categories/broadloom-carpets</loc>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://sansonfloorings.com/categories/acoustic-tiles</loc>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://sansonfloorings.com/categories/artificial-multiturf</loc>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://sansonfloorings.com/artificial-grass/landscape-grass</loc>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://sansonfloorings.com/contact</loc>
-    <lastmod>2026-03-30</lastmod>
-    <changefreq>monthly</changefreq>
+    <loc>https://sansonfloorings.com/artificial-grass/sports-grass</loc>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://sansonfloorings.com/artificial-grass/multisports-grass</loc>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://sansonfloorings.com/artificial-grass/curly-grass</loc>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://sansonfloorings.com/about-us</loc>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://sansonfloorings.com/blogs</loc>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://sansonfloorings.com/blogs/printed-acoustic-panels-feature-wall-lighting</loc>
+    <lastmod>2026-09-28</lastmod>
     <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://sansonfloorings.com/products/acoustic-tiles</loc>
-    <lastmod>2026-03-30</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://sansonfloorings.com/products/broadloom-carpets</loc>
-    <lastmod>2026-03-30</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://sansonfloorings.com/products/carpet-tiles</loc>
-    <lastmod>2026-03-30</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://sansonfloorings.com/products/luxury-vinyl</loc>
-    <lastmod>2026-03-30</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://sansonfloorings.com/products/hardwood-flooring</loc>
-    <lastmod>2026-03-30</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://sansonfloorings.com/products/laminate-flooring</loc>
-    <lastmod>2026-03-30</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
   </url>
 </urlset>

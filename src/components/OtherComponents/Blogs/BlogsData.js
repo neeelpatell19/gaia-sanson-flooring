@@ -152,8 +152,8 @@ const BlogsData = [
   {
     id: 1,
     slug: "printed-acoustic-panels-feature-wall-lighting",
-    title: "Printed Acoustic Panels: Custom Designs, Sizes and Installation",
-    seoTitle: "Printed Acoustic Panels: Designs, Sizes, Installation | GAIA",
+    title: "Printed Acoustic Panels: How to Light a Feature Wall",
+    seoTitle: "Printed Acoustic Panels: How to Light a Feature Wall | GAIA",
     metaDescription:
       "Custom printed acoustic panels from GAIA: 9–24 mm PET on 1220 × 2440 mm sheets, NRC up to 0.90 and your own artwork, plus how to fix and light them.",
     excerpt:

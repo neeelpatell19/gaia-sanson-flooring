@@ -112,7 +112,7 @@ import { computed, ref, onMounted, onBeforeUnmount } from "vue";
 import CommonTopLayout from "../Categories/CommonTopLayout/CommonTopLayout.vue";
 import BlogCard from "./BlogCard/BlogCard.vue";
 import BlogsData from "./BlogsData.js";
-import { applyBlogSeo, SITE_URL } from "./BlogSeo.js";
+import { applyBlogSeo, buildBlogListingSeo } from "./BlogSeo.js";
 import "./Blogs.css";
 
 const sortedBlogs = [...BlogsData].sort((a, b) =>
@@ -160,35 +160,7 @@ const goToPage = (page) => {
 let restoreSeo = null;
 
 onMounted(() => {
-  restoreSeo = applyBlogSeo({
-    title: "Blogs | GAIA by Sanson Floorings — Flooring & Acoustic Insights",
-    description:
-      "Ideas, guides and trends on carpet tiles, broadloom carpets, acoustic PET panels and artificial grass from GAIA by Sanson Floorings, New Delhi.",
-    path: "/blogs",
-    image: "/Images/Blogs/BlogsBannerImage.webp",
-    type: "website",
-    jsonLd: [
-      {
-        "@context": "https://schema.org",
-        "@type": "Blog",
-        name: "GAIA by Sanson Floorings Blog",
-        url: `${SITE_URL}/blogs`,
-        inLanguage: "en-IN",
-        publisher: {
-          "@type": "Organization",
-          name: "GAIA by Sanson Floorings",
-          url: `${SITE_URL}/`,
-        },
-        blogPost: sortedBlogs.map((blog) => ({
-          "@type": "BlogPosting",
-          headline: blog.title,
-          url: `${SITE_URL}/blogs/${blog.slug}`,
-          datePublished: blog.publishedDate,
-          image: `${SITE_URL}${blog.ogImage || blog.coverImage}`,
-        })),
-      },
-    ],
-  });
+  restoreSeo = applyBlogSeo(buildBlogListingSeo(BlogsData));
 });
 
 onBeforeUnmount(() => {

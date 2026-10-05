@@ -1,0 +1,54 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 600" width="640" height="600" role="img" aria-labelledby="t d">
+<title id="t">Wall section with an acoustic panel on an air gap</title>
+<desc id="d">Simplified side section: a solid wall, an air gap, and an acoustic panel in front. A wall light is fixed back to the wall through a cut-out in the panel, a switch sits on an extended back box so its plate meets the panel face, and cable runs in the cavity clipped to the wall.</desc>
+<defs>
+<pattern id="hatch" width="12" height="12" patternUnits="userSpaceOnUse" patternTransform="rotate(45)"><rect width="12" height="12" fill="#d9d2c0"/><line x1="0" y1="0" x2="0" y2="12" stroke="#b3a88c" stroke-width="3"/></pattern>
+<marker id="ar" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0 0L10 5L0 10z" fill="#2c3e50"/></marker>
+<marker id="dm" viewBox="0 0 10 10" refX="5" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse"><path d="M0 0L10 5L0 10z" fill="#7a6400"/></marker>
+<style>
+.lab{font:500 25px Ubuntu,Arial,sans-serif;fill:#2c3e50}
+.sub{font:400 20px Ubuntu,Arial,sans-serif;fill:#5d6d7e}
+.ld{stroke:#2c3e50;stroke-width:1.6;fill:none;marker-end:url(#ar)}
+</style>
+</defs>
+<rect width="640" height="600" fill="#faf8f2"/>
+<!-- wall -->
+<rect x="40" y="30" width="70" height="540" fill="url(#hatch)" stroke="#2c3e50" stroke-width="2"/>
+<!-- air gap bracket -->
+<line x1="110" y1="555" x2="170" y2="555" stroke="#7a6400" stroke-width="2" marker-start="url(#dm)" marker-end="url(#dm)"/>
+<!-- panel (upper and lower parts around the light cut-out) -->
+<rect x="170" y="30" width="26" height="150" fill="#9aa6b2" stroke="#2c3e50" stroke-width="2"/>
+<rect x="170" y="230" width="26" height="340" fill="#9aa6b2" stroke="#2c3e50" stroke-width="2"/>
+<!-- fixings/spacers behind panel -->
+<rect x="110" y="70" width="60" height="14" fill="#c9b37a" stroke="#2c3e50" stroke-width="1.5"/>
+<rect x="110" y="500" width="60" height="14" fill="#c9b37a" stroke="#2c3e50" stroke-width="1.5"/>
+<!-- wall light: mount plate on wall, arm through cut-out -->
+<rect x="110" y="186" width="12" height="38" fill="#2c3e50"/>
+<rect x="122" y="198" width="78" height="14" fill="#2c3e50"/>
+<path d="M200 186 L250 186 L262 224 L200 224 Z" fill="#e8c35a" stroke="#2c3e50" stroke-width="2"/>
+<!-- switch: extended back box -->
+<rect x="110" y="352" width="84" height="44" fill="#ffffff" stroke="#2c3e50" stroke-width="2" stroke-dasharray="5 4"/>
+<rect x="196" y="344" width="10" height="60" fill="#ffffff" stroke="#2c3e50" stroke-width="2"/>
+<!-- cable in cavity, clipped to wall -->
+<path d="M116 30 L116 186" stroke="#a0522d" stroke-width="3" fill="none"/>
+<path d="M116 224 L116 352" stroke="#a0522d" stroke-width="3" fill="none"/>
+<circle cx="116" cy="110" r="4" fill="#2c3e50"/><circle cx="116" cy="290" r="4" fill="#2c3e50"/>
+<!-- labels -->
+<text class="lab" x="40" y="24" >Wall</text>
+<text class="sub" x="100" y="592">Air gap: depth set for your project</text>
+<path class="ld" d="M284 120 L200 110"/>
+<text class="lab" x="292" y="116">Acoustic panel</text>
+<text class="sub" x="292" y="144">sits proud of the wall</text>
+<path class="ld" d="M284 205 L266 205"/>
+<text class="lab" x="292" y="200">Wall light</text>
+<text class="sub" x="292" y="228">fixed back to the wall or a solid</text>
+<text class="sub" x="292" y="254">mount, through a neat cut-out</text>
+<path class="ld" d="M284 375 L210 375"/>
+<text class="lab" x="292" y="370">Switch or socket</text>
+<text class="sub" x="292" y="398">back box brought forward so the</text>
+<text class="sub" x="292" y="424">plate meets the panel face</text>
+<path class="ld" d="M284 470 L122 300"/>
+<text class="lab" x="292" y="474">Cable in the cavity</text>
+<text class="sub" x="292" y="502">clipped to the wall, route agreed</text>
+<text class="sub" x="292" y="528">before panels are fixed</text>
+</svg>

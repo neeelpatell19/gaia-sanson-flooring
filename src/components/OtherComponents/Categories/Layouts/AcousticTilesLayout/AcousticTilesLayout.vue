@@ -599,6 +599,346 @@ const onSwiper = (swiper) => {
 // Color swatches data
 const allColorSwatches = [
   {
+    code: "SF-04-White",
+    name: "SF-04-White",
+    image: "/Images/AcousticTileColors/SF-04.png",
+  },
+  {
+    code: "SF-314-D.K Beige",
+    name: "SF-314-D.K Beige",
+    image: "/Images/AcousticTileColors/SF-314.png",
+  },
+  {
+    code: "SF-302-Beige",
+    name: "SF-302-Beige",
+    image: "/Images/AcousticTileColors/SF-302.png",
+  },
+  {
+    code: "SF-07-Opera",
+    name: "SF-07-Opera",
+    image: "/Images/AcousticTileColors/SF-07.png",
+  },
+  {
+    code: "SF-324-Soft Pink",
+    name: "SF-324-Soft Pink",
+    image: "/Images/AcousticTileColors/SF-324.png",
+  },
+  {
+    code: "SF-05-Light Camel",
+    name: "SF-05-Light Camel",
+    image: "/Images/AcousticTileColors/SF-05.png",
+  },
+  {
+    code: "SF-66-Agarwood",
+    name: "SF-66-Agarwood",
+    image: "/Images/AcousticTileColors/SF-66.png",
+  },
+  {
+    code: "SF-325-Lt Beige",
+    name: "SF-325-Lt Beige",
+    image: "/Images/AcousticTileColors/SF-325.png",
+  },
+  {
+    code: "SF-318-YP",
+    name: "SF-318-YP",
+    image: "/Images/AcousticTileColors/SF-318.png",
+  },
+  {
+    code: "SF-315-E.Beige",
+    name: "SF-315-E.Beige",
+    image: "/Images/AcousticTileColors/SF-315.png",
+  },
+  {
+    code: "SF-342-Canna",
+    name: "SF-342-Canna",
+    image: "/Images/AcousticTileColors/SF-342.png",
+  },
+  {
+    code: "SF-320-Jute",
+    name: "SF-320-Jute",
+    image: "/Images/AcousticTileColors/SF-320.png",
+  },
+  {
+    code: "SF-308-Camel",
+    name: "SF-308-Camel",
+    image: "/Images/AcousticTileColors/SF-308.png",
+  },
+  {
+    code: "SF-06-Dark Camel",
+    name: "SF-06-Dark Camel",
+    image: "/Images/AcousticTileColors/SF-06.png",
+  },
+  {
+    code: "SF-30-Camel",
+    name: "SF-30-Camel",
+    image: "/Images/AcousticTileColors/SF-30.png",
+  },
+  {
+    code: "SF-307-Sandstone",
+    name: "SF-307-Sandstone",
+    image: "/Images/AcousticTileColors/SF-307.png",
+  },
+  {
+    code: "SF-321-Mustard",
+    name: "SF-321-Mustard",
+    image: "/Images/AcousticTileColors/SF-321.png",
+  },
+  {
+    code: "SF-306-Rose Pink",
+    name: "SF-306-Rose Pink",
+    image: "/Images/AcousticTileColors/SF-306.png",
+  },
+  {
+    code: "SF-323-Lt.Pink",
+    name: "SF-323-Lt.Pink",
+    image: "/Images/AcousticTileColors/SF-323.png",
+  },
+  {
+    code: "SF-18-Magenta",
+    name: "SF-18-Magenta",
+    image: "/Images/AcousticTileColors/SF-18.png",
+  },
+  {
+    code: "SF-52-Copper",
+    name: "SF-52-Copper",
+    image: "/Images/AcousticTileColors/SF-52.png",
+  },
+  {
+    code: "SF-64-T Red",
+    name: "SF-64-T Red",
+    image: "/Images/AcousticTileColors/SF-64.png",
+  },
+  {
+    code: "SF-330-Coffee",
+    name: "SF-330-Coffee",
+    image: "/Images/AcousticTileColors/SF-330.png",
+  },
+  {
+    code: "SF-10",
+    name: "SF-10",
+    image: "/Images/AcousticTileColors/SF-10.png",
+  },
+  {
+    code: "SF-27-Black",
+    name: "SF-27-Black",
+    image: "/Images/AcousticTileColors/SF-27.png",
+  },
+  {
+    code: "SF-28-Dark Grey",
+    name: "SF-28-Dark Grey",
+    image: "/Images/AcousticTileColors/SF-28.png",
+  },
+  {
+    code: "SF-26-Raven",
+    name: "SF-26-Raven",
+    image: "/Images/AcousticTileColors/SF-26.png",
+  },
+  {
+    code: "SF-301-Grey",
+    name: "SF-301-Grey",
+    image: "/Images/AcousticTileColors/SF-301.png",
+  },
+  {
+    code: "SF-328-Plutone",
+    name: "SF-328-Plutone",
+    image: "/Images/AcousticTileColors/SF-328.png",
+  },
+  {
+    code: "SF-310-REI",
+    name: "SF-310-REI",
+    image: "/Images/AcousticTileColors/SF-310.png",
+  },
+  {
+    code: "SF-45-Space Grey",
+    name: "SF-45-Space Grey",
+    image: "/Images/AcousticTileColors/SF-45.png",
+  },
+  {
+    code: "SF-327-Lt.Grey",
+    name: "SF-327-Lt.Grey",
+    image: "/Images/AcousticTileColors/SF-327.png",
+  },
+  {
+    code: "SF-303-B.Grey",
+    name: "SF-303-B.Grey",
+    image: "/Images/AcousticTileColors/SF-303.png",
+  },
+  {
+    code: "SF-305-Khaki",
+    name: "SF-305-Khaki",
+    image: "/Images/AcousticTileColors/SF-305.png",
+  },
+  {
+    code: "SF-73-Cloudburst",
+    name: "SF-73-Cloudburst",
+    image: "/Images/AcousticTileColors/SF-73.png",
+  },
+  {
+    code: "Aqua Blue",
+    name: "Aqua Blue",
+    image: "/Images/AcousticTileColors/Aqua-Blue.png",
+  },
+  {
+    code: "SF-309-S.Grey",
+    name: "SF-309-S.Grey",
+    image: "/Images/AcousticTileColors/SF-309.png",
+  },
+  {
+    code: "SF-317-Greenish Grey",
+    name: "SF-317-Greenish Grey",
+    image: "/Images/AcousticTileColors/SF-317.png",
+  },
+  {
+    code: "SF-316-D.Grey",
+    name: "SF-316-D.Grey",
+    image: "/Images/AcousticTileColors/SF-316.png",
+  },
+  {
+    code: "SF-38-Morandi",
+    name: "SF-38-Morandi",
+    image: "/Images/AcousticTileColors/SF-38.png",
+  },
+  {
+    code: "SF-36-Dark Silver",
+    name: "SF-36-Dark Silver",
+    image: "/Images/AcousticTileColors/SF-36.png",
+  },
+  {
+    code: "SF-304-M.Grey",
+    name: "SF-304-M.Grey",
+    image: "/Images/AcousticTileColors/SF-304.png",
+  },
+  {
+    code: "SF-39-Harbour Bust",
+    name: "SF-39-Harbour Bust",
+    image: "/Images/AcousticTileColors/SF-39.png",
+  },
+  {
+    code: "SF-59-Zara Camel",
+    name: "SF-59-Zara Camel",
+    image: "/Images/AcousticTileColors/SF-59.png",
+  },
+  {
+    code: "SF-329-Mapple Grey",
+    name: "SF-329-Mapple Grey",
+    image: "/Images/AcousticTileColors/SF-329.png",
+  },
+  {
+    code: "SF-311-Starling Grey",
+    name: "SF-311-Starling Grey",
+    image: "/Images/AcousticTileColors/SF-311.png",
+  },
+  {
+    code: "SF-67-Perfectly Pale",
+    name: "SF-67-Perfectly Pale",
+    image: "/Images/AcousticTileColors/SF-67.png",
+  },
+  {
+    code: "SF-12-Aqua Blue",
+    name: "SF-12-Aqua Blue",
+    image: "/Images/AcousticTileColors/SF-12.png",
+  },
+  {
+    code: "SF-312-Baby Green",
+    name: "SF-312-Baby Green",
+    image: "/Images/AcousticTileColors/SF-312.png",
+  },
+  {
+    code: "SF-16-Oxford Blue",
+    name: "SF-16-Oxford Blue",
+    image: "/Images/AcousticTileColors/SF-16.png",
+  },
+  {
+    code: "SF-339-Ocean Blue",
+    name: "SF-339-Ocean Blue",
+    image: "/Images/AcousticTileColors/SF-339.png",
+  },
+  {
+    code: "SF-313-Lt.Blue",
+    name: "SF-313-Lt.Blue",
+    image: "/Images/AcousticTileColors/SF-313.png",
+  },
+  {
+    code: "SF-33-Pleasant Blue",
+    name: "SF-33-Pleasant Blue",
+    image: "/Images/AcousticTileColors/SF-33.png",
+  },
+  {
+    code: "SF-338-Saphire Blue",
+    name: "SF-338-Saphire Blue",
+    image: "/Images/AcousticTileColors/SF-338.png",
+  },
+  {
+    code: "SF-325-S R Blue",
+    name: "SF-325-S R Blue",
+    image: "/Images/AcousticTileColors/SF-325-2.png",
+  },
+  {
+    code: "SF-337-Royal Blue",
+    name: "SF-337-Royal Blue",
+    image: "/Images/AcousticTileColors/SF-337.png",
+  },
+  {
+    code: "SF-335-Banana Green",
+    name: "SF-335-Banana Green",
+    image: "/Images/AcousticTileColors/SF-335.png",
+  },
+  {
+    code: "SF-322-Mellion Green",
+    name: "SF-322-Mellion Green",
+    image: "/Images/AcousticTileColors/SF-322.png",
+  },
+  {
+    code: "SF-58-Matcha",
+    name: "SF-58-Matcha",
+    image: "/Images/AcousticTileColors/SF-58.png",
+  },
+  {
+    code: "SF-331-Lemon Yellow",
+    name: "SF-331-Lemon Yellow",
+    image: "/Images/AcousticTileColors/SF-331.png",
+  },
+  {
+    code: "SF-332-Yellow",
+    name: "SF-332-Yellow",
+    image: "/Images/AcousticTileColors/SF-332.png",
+  },
+  {
+    code: "SF-333-M Yellow",
+    name: "SF-333-M Yellow",
+    image: "/Images/AcousticTileColors/SF-333.png",
+  },
+  {
+    code: "SF-343-Banana Orange",
+    name: "SF-343-Banana Orange",
+    image: "/Images/AcousticTileColors/SF-343.png",
+  },
+  {
+    code: "SF-334-Orange Sun",
+    name: "SF-334-Orange Sun",
+    image: "/Images/AcousticTileColors/SF-334.png",
+  },
+  {
+    code: "SF-17-Deep Red",
+    name: "SF-17-Deep Red",
+    image: "/Images/AcousticTileColors/SF-17.png",
+  },
+  {
+    code: "SF-53-Papple Green",
+    name: "SF-53-Papple Green",
+    image: "/Images/AcousticTileColors/SF-53.png",
+  },
+  {
+    code: "SF-19-Purple",
+    name: "SF-19-Purple",
+    image: "/Images/AcousticTileColors/SF-19.png",
+  },
+];
+
+// Previous color swatches (hidden)
+/*
+const allColorSwatches = [
+  {
     code: "Aqua Blue",
     name: "Aqua Blue",
     image: "/Images/TexturePatterImages/Aqua Blue.png",
@@ -774,10 +1114,11 @@ const allColorSwatches = [
     image: "/Images/TexturePatterImages/T. Blue 749.png",
   },
 ];
+*/
 
 // Pagination state
 const currentPage = ref(0);
-const itemsPerPage = 8;
+const itemsPerPage = 12;
 
 // Computed property for current visible swatches
 const colorSwatches = computed(() => {

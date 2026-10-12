@@ -158,10 +158,18 @@ function checkPage(route, { indexable }) {
 
   // ---- structured data
   const ldTypes = [];
+  const ldNodes = [];
   doc.querySelectorAll('script[type="application/ld+json"]').forEach((el, index) => {
     try {
       const data = JSON.parse(el.textContent);
-      (Array.isArray(data) ? data : [data]).forEach((item) => ldTypes.push(...[].concat(item['@type'])));
+      (Array.isArray(data) ? data : [data]).forEach((item) => {
+        ldTypes.push(...[].concat(item['@type']));
+        ldNodes.push(item);
+      });
+      // logos / images named in structured data must exist
+      JSON.stringify(data).match(/https:\/\/sansonfloorings\.com\/[^"]+\.(png|jpe?g|webp|svg)/g)?.forEach((url) => {
+        if (!localFileExists(url)) fail(where, `JSON-LD references a file that is not in dist: ${url}`);
+      });
       if (/"(sameAs|logo|image)"\s*:\s*(""|\[""|\["",)/.test(el.textContent))
         fail(where, `JSON-LD block ${index + 1} has an empty sameAs/logo/image value`);
     } catch {
@@ -170,6 +178,13 @@ function checkPage(route, { indexable }) {
   });
   if (indexable) {
     if (!ldTypes.includes('Organization')) fail(where, 'JSON-LD is missing Organization');
+    if (!ldTypes.includes('WebSite')) fail(where, 'JSON-LD is missing WebSite');
+    if (route === '/' && !ldTypes.includes('LocalBusiness')) fail(where, 'home JSON-LD is missing LocalBusiness');
+    const webPageNode = ldNodes.find((n) => ['WebPage', 'CollectionPage', 'AboutPage'].includes(n['@type']));
+    if (!route.startsWith('/blogs')) {
+      if (!webPageNode) fail(where, 'JSON-LD is missing a WebPage / CollectionPage / AboutPage node');
+      else if (webPageNode.url !== canonicalFor(route)) fail(where, `WebPage url "${webPageNode.url}" differs from the canonical`);
+    }
     if (route !== '/' && !ldTypes.includes('BreadcrumbList')) fail(where, 'JSON-LD is missing BreadcrumbList');
     if (route.startsWith('/blogs/') && !ldTypes.includes('Article')) fail(where, 'JSON-LD is missing Article');
   }
@@ -278,6 +293,15 @@ built.forEach((page) =>
       .filter((url) => !knownRoutes.has(url))
       .forEach((url) => fail('manifest.json', `shortcut points to ${url}, which is not a page`));
   }
+}
+
+// hosting: www must redirect to the host the canonical URLs use
+{
+  const config = JSON.parse(fs.readFileSync('vercel.json', 'utf8'));
+  const wwwRedirect = (config.redirects || []).find(
+    (r) => r.permanent && r.has?.some((h) => h.type === 'host' && h.value === 'www.sansonfloorings.com') && r.destination.startsWith(SITE)
+  );
+  if (!wwwRedirect) fail('vercel.json', 'no permanent redirect from www.sansonfloorings.com to ' + SITE + ' (two live copies of the site)');
 }
 
 // hosting: a catch-all rewrite would turn every unknown URL into a 200 page

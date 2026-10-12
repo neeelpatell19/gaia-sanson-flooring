@@ -180,7 +180,8 @@ There is no catch-all rewrite to `index.html`. An unknown URL gets `404.html` wi
 - **robots.txt**: all pages open to search engines and AI crawlers, plus the sitemap location
 - **sitemap.xml**: written at build time, `lastmod` only for blog posts (from their real dates)
 - **Canonical URLs**: one per page, no trailing slash
-- **Structured data**: Organization (every page), WebSite and LocalBusiness (home), BreadcrumbList (inner pages), Article and FAQPage (blog posts)
+- **Structured data** (JSON-LD, linked by `@id`): Organization with brand and parent group (every page), also typed LocalBusiness with the product catalogue on the home page; WebSite; a WebPage, CollectionPage or AboutPage per page; BreadcrumbList (inner pages); Article and FAQPage (blog posts). There is deliberately no `Product` schema: Google treats a Product without price, reviews or ratings as an error.
+- **One host**: `vercel.json` redirects `www.sansonfloorings.com` to `sansonfloorings.com`, matching the canonical URLs. If the domain settings in Vercel ever redirect the other way, the two will loop, so keep them in step.
 
 ## 🌐 Deployment
 

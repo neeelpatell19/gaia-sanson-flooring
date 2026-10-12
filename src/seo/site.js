@@ -26,60 +26,141 @@ export const canonicalUrl = (path = "/") => {
   return clean ? `${SITE_URL}${clean}` : `${SITE_URL}/`;
 };
 
-const ORGANIZATION_ID = `${SITE_URL}/#organization`;
+export const ORGANIZATION_ID = `${SITE_URL}/#organization`;
+export const WEBSITE_ID = `${SITE_URL}/#website`;
+const LOGO_ID = `${SITE_URL}/#logo`;
+const BRAND_ID = `${SITE_URL}/#brand`;
 
-// Facts below match the footer of the site (address, phone, e-mail, LinkedIn).
-// On the home page the same node is also typed LocalBusiness, so search
-// engines get one business entity rather than two blocks to reconcile.
-export const organizationSchema = ({ local = false } = {}) => ({
+const LOGO_URL = `${SITE_URL}/Images/GAIA_Logo.png`;
+const PHONE = "+91-99109-21119";
+const EMAIL = "contact@sansonfloorings.com";
+const ADDRESS = {
+  "@type": "PostalAddress",
+  streetAddress: "B-5B, Plot No. 70, 1st Floor, Rama Road Industrial Area",
+  addressLocality: "New Delhi",
+  postalCode: "110015",
+  addressCountry: "IN",
+};
+
+// Facts below match the site itself: the footer (address, phone, e-mail,
+// LinkedIn) and the About page (Sanson Group, since 1982; GAIA is its brand).
+//
+// Every page carries a lean node. The home page carries the full one, typed
+// as LocalBusiness too (one business entity, not two blocks to reconcile)
+// and listing the product range. catalog: [{ name, path, description }].
+export const organizationSchema = ({ full = false, catalog = [] } = {}) => ({
   "@context": "https://schema.org",
-  "@type": local ? ["Organization", "LocalBusiness"] : "Organization",
+  "@type": full ? ["Organization", "LocalBusiness"] : "Organization",
   "@id": ORGANIZATION_ID,
   name: SITE_NAME,
+  alternateName: "GAIA",
   url: `${SITE_URL}/`,
-  logo: `${SITE_URL}/Images/GAIA_Logo.png`,
+  logo: {
+    "@type": "ImageObject",
+    "@id": LOGO_ID,
+    url: LOGO_URL,
+    contentUrl: LOGO_URL,
+    width: 820,
+    height: 304,
+    caption: SITE_NAME,
+  },
   description:
     "India's first startup offering integrated solutions in floorings and acoustic panels for high-performance interiors.",
   foundingDate: "2021",
-  address: {
-    "@type": "PostalAddress",
-    streetAddress: "B-5B, Plot No. 70, 1st Floor, Rama Road Industrial Area",
-    addressLocality: "New Delhi",
-    postalCode: "110015",
-    addressCountry: "IN",
-  },
+  address: ADDRESS,
+  telephone: PHONE,
+  email: EMAIL,
   contactPoint: {
     "@type": "ContactPoint",
-    telephone: "+91-99109-21119",
-    email: "contact@sansonfloorings.com",
+    telephone: PHONE,
+    email: EMAIL,
     contactType: "customer service",
-    areaServed: "IN",
     availableLanguage: "en",
   },
   sameAs: [LINKEDIN_URL],
-  ...(local && {
+  brand: { "@type": "Brand", "@id": BRAND_ID, name: "GAIA", logo: LOGO_URL },
+  parentOrganization: {
+    "@type": "Organization",
+    name: "Sanson Group",
+    foundingDate: "1982",
+  },
+  ...(full && {
     image: `${SITE_URL}${DEFAULT_OG_IMAGE}`,
-    telephone: "+91-99109-21119",
-    email: "contact@sansonfloorings.com",
     openingHours: "Mo-Fr 09:00-18:00",
     priceRange: "$$",
+    knowsAbout: catalog.map((item) => item.name),
+    hasOfferCatalog: {
+      "@type": "OfferCatalog",
+      name: `${SITE_NAME} product range`,
+      url: canonicalUrl("/categories"),
+      itemListElement: catalog.map((item) => ({
+        "@type": "OfferCatalog",
+        name: item.name,
+        url: canonicalUrl(item.path),
+        description: item.description,
+      })),
+    },
   }),
 });
 
 export const websiteSchema = () => ({
   "@context": "https://schema.org",
   "@type": "WebSite",
-  "@id": `${SITE_URL}/#website`,
+  "@id": WEBSITE_ID,
   name: SITE_NAME,
   url: `${SITE_URL}/`,
   inLanguage: SITE_LANGUAGE,
   publisher: { "@id": ORGANIZATION_ID },
 });
 
+// The page itself, tied to the site and (when it has one) its breadcrumb by
+// @id. type: WebPage, CollectionPage or AboutPage.
+export const webPageSchema = ({
+  type = "WebPage",
+  path,
+  name,
+  description,
+  image,
+  about,
+  mainEntity,
+  hasBreadcrumb = true,
+}) => {
+  const url = canonicalUrl(path);
+  return {
+    "@context": "https://schema.org",
+    "@type": type,
+    "@id": `${url}#webpage`,
+    url,
+    name,
+    description,
+    inLanguage: SITE_LANGUAGE,
+    isPartOf: { "@id": WEBSITE_ID },
+    ...(image && {
+      primaryImageOfPage: { "@type": "ImageObject", url: absoluteUrl(image) },
+    }),
+    ...(about && { about }),
+    ...(mainEntity && { mainEntity }),
+    ...(hasBreadcrumb && { breadcrumb: { "@id": `${url}#breadcrumb` } }),
+  };
+};
+
+// items: [{ name, path }]
+export const itemListSchema = (items) => ({
+  "@type": "ItemList",
+  numberOfItems: items.length,
+  itemListElement: items.map((item, index) => ({
+    "@type": "ListItem",
+    position: index + 1,
+    name: item.name,
+    url: canonicalUrl(item.path),
+  })),
+});
+
 // items: [{ name, path }] from the home page down to the current page.
 export const breadcrumbSchema = (items) => ({
   "@context": "https://schema.org",
   "@type": "BreadcrumbList",
+  "@id": `${canonicalUrl(items[items.length - 1].path)}#breadcrumb`,
   itemListElement: items.map((item, index) => ({
     "@type": "ListItem",
     position: index + 1,

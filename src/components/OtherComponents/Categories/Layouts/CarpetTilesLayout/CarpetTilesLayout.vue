@@ -248,7 +248,7 @@
                         <img src="https://s3.ap-south-1.amazonaws.com/prepseed/prod/ldoc/media/WorKSpace1.jpg" alt="">
                     </div>
                     <div data-aos="zoom-in" data-aos-duration="600" data-aos-delay="400">
-                        <img src="https://s3.ap-south-1.amazonaws.com/prepseed/prod/ldoc/media/WorKSpace2.jpg  " alt="">
+                        <img src="https://s3.ap-south-1.amazonaws.com/prepseed/prod/ldoc/media/WorKSpace2.jpg" alt="">
                     </div>
                     <div data-aos="zoom-in" data-aos-duration="600" data-aos-delay="500">
                         <img src="https://s3.ap-south-1.amazonaws.com/prepseed/prod/ldoc/media/WorKSpace3.jpg" alt="">

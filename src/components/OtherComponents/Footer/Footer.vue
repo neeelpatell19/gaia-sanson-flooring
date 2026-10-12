@@ -26,8 +26,8 @@ import "./Footer.css"
                             class="contact-text email-link">contact@sansonfloorings.com</a>
                     </div>
                     <div class="contact-item">
-                       <a href="https://www.sansonfloorings.com" target="_blank"><i style="color: white;" class="fas fa-globe"></i></a>
-                        <a href="https://www.sansonfloorings.com" target="_blank"
+                       <a href="https://sansonfloorings.com" target="_blank"><i style="color: white;" class="fas fa-globe"></i></a>
+                        <a href="https://sansonfloorings.com" target="_blank"
                             class="contact-text website-link">www.sansonfloorings.com</a>
                     </div>
                     <div class="contact-item">

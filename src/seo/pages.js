@@ -20,13 +20,24 @@ import {
 } from "../components/OtherComponents/Blogs/BlogSeo.js";
 import {
   DEFAULT_OG_IMAGE,
+  ORGANIZATION_ID,
   breadcrumbSchema,
+  itemListSchema,
   organizationSchema,
+  webPageSchema,
   websiteSchema,
 } from "./site.js";
 
 const HOME = { name: "Home", path: "/" };
 const PRODUCTS = { name: "Products", path: "/categories" };
+const ORGANIZATION_REF = { "@id": ORGANIZATION_ID };
+
+// The product range, as listed on the home and categories pages.
+const CATALOG = CategoriesData.map((category) => ({
+  name: category.name,
+  path: `/categories/${category.slug}`,
+  description: category.metaDescription,
+}));
 
 // ---- which URLs exist -------------------------------------------------
 
@@ -90,7 +101,7 @@ const STATIC_PAGES = {
     description:
       "India's first startup offering integrated solutions in floorings and acoustic panels. Carpet tiles, broadloom carpets, acoustic PET panels and artificial grass.",
     localBusiness: true,
-    jsonLd: () => [websiteSchema()],
+    webPage: { about: ORGANIZATION_REF },
   },
   Categories: {
     path: "/categories",
@@ -98,6 +109,7 @@ const STATIC_PAGES = {
     description:
       "Explore GAIA's product range: modular carpet tiles, broadloom carpets, acoustic PET panels, and artificial grass and multiturf for interiors, sports and landscapes.",
     crumbs: [PRODUCTS],
+    webPage: { type: "CollectionPage", mainEntity: itemListSchema(CATALOG) },
   },
   AboutUs: {
     path: "/about-us",
@@ -105,6 +117,11 @@ const STATIC_PAGES = {
     description:
       "Sanson Group has served clients for over 40 years, since 1982. GAIA is the first Indian MSME to earn the GreenPro label for both acoustic PET panels and carpet tiles.",
     crumbs: [{ name: "About Us", path: "/about-us" }],
+    webPage: {
+      type: "AboutPage",
+      about: ORGANIZATION_REF,
+      mainEntity: ORGANIZATION_REF,
+    },
   },
   Tools: {
     path: "/tools",
@@ -112,6 +129,7 @@ const STATIC_PAGES = {
     description:
       "Use the TilesView web tool to see how GAIA flooring looks in your own room before you decide. Upload a room photo, select a product and visualise the result.",
     crumbs: [{ name: "Tools", path: "/tools" }],
+    webPage: {},
   },
   AnimationDemo: {
     path: "/demo",
@@ -137,6 +155,7 @@ function categoryPage(slug) {
     title: category.seoTitle,
     description: category.metaDescription,
     crumbs: [PRODUCTS, { name: category.name, path }],
+    webPage: { about: { "@type": "Thing", name: category.name } },
   };
 }
 
@@ -152,6 +171,7 @@ function grassPage(slug) {
       { name: multiturf.name, path: `/categories/${multiturf.slug}` },
       { name: grass.heading.trim(), path: `/artificial-grass/${slug}` },
     ],
+    webPage: { about: { "@type": "Thing", name: grass.heading.trim() } },
   };
 }
 
@@ -193,6 +213,21 @@ function lookup(name, params = {}) {
 // A 404 has no canonical URL of its own, so its path is null.
 export function resolvePageSeo(route) {
   const page = lookup(route.name, route.params);
+  const image = page.image || DEFAULT_OG_IMAGE;
+  const indexable = !page.noindex;
+
+  const webPage = page.webPage
+    ? [
+        webPageSchema({
+          path: page.path,
+          name: page.title,
+          description: page.description,
+          image,
+          hasBreadcrumb: Boolean(page.crumbs),
+          ...page.webPage,
+        }),
+      ]
+    : [];
   const breadcrumb = page.crumbs
     ? [breadcrumbSchema([HOME, ...page.crumbs])]
     : [];
@@ -201,13 +236,18 @@ export function resolvePageSeo(route) {
     title: page.title,
     description: page.description,
     path: page.noCanonical ? null : page.path,
-    image: page.image || DEFAULT_OG_IMAGE,
+    image,
     imageAlt: page.imageAlt,
     type: page.type || "website",
-    noindex: Boolean(page.noindex),
+    noindex: !indexable,
     jsonLd: [
-      organizationSchema({ local: Boolean(page.localBusiness) }),
-      ...(page.jsonLd ? page.jsonLd() : []),
+      organizationSchema({
+        full: Boolean(page.localBusiness),
+        catalog: CATALOG,
+      }),
+      // Pages kept out of search get the organization only.
+      ...(indexable ? [websiteSchema()] : []),
+      ...webPage,
       ...breadcrumb,
       ...(page.extraJsonLd || []),
     ],

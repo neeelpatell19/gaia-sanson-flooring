@@ -1,4 +1,3 @@
-import { createRouter, createWebHistory } from 'vue-router'
 import HomeRoutes from '../components/HomeRoutes/HomeRoutes.vue'
 import CategoriesRoutes from '../components/OtherComponents/Categories/CategoriesLayout/Categories.vue'
 import CategoryDetail from '../components/OtherComponents/Categories/CategoriesLayout/CategoryDetail.vue'
@@ -8,8 +7,12 @@ import Tools from '../components/OtherComponents/Tools/Tools.vue'
 import DynamicArtificialPage from '../components/OtherComponents/Categories/Layouts/DynamicArtificialPage/DynamicArtificialPage.vue'
 import Blogs from '../components/OtherComponents/Blogs/Blogs.vue'
 import BlogDetail from '../components/OtherComponents/Blogs/BlogDetail/BlogDetail.vue'
+import NotFound from '../components/OtherComponents/NotFound/NotFound.vue'
+import { isValidBlog, isValidCategory, isValidGrassType } from '../seo/pages.js'
 
-const routes = [
+// vite-ssg creates the router (browser history in the browser, memory
+// history while pre-rendering), so this file exports the options only.
+export const routes = [
     {
         path: '/',
         name: 'Home',
@@ -24,16 +27,7 @@ const routes = [
         path: '/categories/:slug',
         name: 'CategoryDetail',
         component: CategoryDetail,
-        props: true,
-        // Add this to ensure proper component re-rendering
-        beforeEnter: (to, from, next) => {
-            // Force component re-render when slug changes
-            if (from.params.slug !== to.params.slug) {
-                next()
-            } else {
-                next()
-            }
-        }
+        props: true
     },
     {
         path: '/artificial-grass/:grassType',
@@ -46,12 +40,12 @@ const routes = [
         name: 'AnimationDemo',
         component: AnimationDemo
     },
-      {
+    {
         path: '/tools',
         name: 'Tools',
         component: Tools
     },
-      {
+    {
         path: '/about-us',
         name: 'AboutUs',
         component: AboutUs
@@ -67,35 +61,55 @@ const routes = [
         component: BlogDetail,
         props: true
     },
-    //   {
-    //     path: '/services',
-    //     name: 'Services',
-    //     component: () => import('../components/Services/Services.vue')
-    //   },
-    //   {
-    //     path: '/contact',
-    //     name: 'Contact',
-    //     component: () => import('../components/Contact/Contact.vue')
-    //   }
+    {
+        // Any other URL. The page is rendered with a noindex tag, and the
+        // host serves it as 404.html with a 404 status.
+        path: '/:pathMatch(.*)*',
+        name: 'NotFound',
+        component: NotFound
+    },
 ]
 
-const router = createRouter({
-    history: createWebHistory(),
-    routes,
-    scrollBehavior(to, from, savedPosition) {
-        // If there's a saved position (back/forward navigation), restore it
-        if (savedPosition) {
-            return savedPosition
-        }
-        
-        // For new page navigation, scroll to top
-        if (to.path !== from.path) {
-            return { top: 0 }
-        }
-        
-        // Default behavior
-        return { top: 0 }
-    }
-})
+// Routes whose :param must be one of the known pages. Without this check
+// /categories/anything would show an empty page, and any grass type would
+// show the landscape grass page: duplicate content a crawler can index.
+const PARAM_CHECKS = {
+    CategoryDetail: ['slug', isValidCategory],
+    DynamicArtificialPage: ['grassType', isValidGrassType],
+    BlogDetail: ['slug', isValidBlog],
+}
 
-export default router 
+// to.path is already percent-encoded and vue-router encodes params again,
+// so decode first or /caf%C3%A9 would become /caf%25C3%25A9.
+const decodeSegment = (segment) => {
+    try {
+        return decodeURIComponent(segment)
+    } catch {
+        return segment
+    }
+}
+
+// Router-level guard: send an unknown slug to the 404 page, keeping the URL.
+export function guardUnknownContent(to) {
+    const check = PARAM_CHECKS[to.name]
+    if (!check) return true
+    const [param, isValid] = check
+    if (isValid(to.params[param])) return true
+    return {
+        name: 'NotFound',
+        params: { pathMatch: to.path.substring(1).split('/').map(decodeSegment) },
+        query: to.query,
+        hash: to.hash,
+    }
+}
+
+export const scrollBehavior = (to, from, savedPosition) => {
+    // Back / forward restores the position.
+    if (savedPosition) return savedPosition
+    // A link to #section scrolls to it, clear of the fixed navigation bar.
+    if (to.hash && document.getElementById(to.hash.slice(1))) {
+        return { el: to.hash, top: 110, behavior: 'smooth' }
+    }
+    // Every new page starts at the top.
+    return { top: 0 }
+}

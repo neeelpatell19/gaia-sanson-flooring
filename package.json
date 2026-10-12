@@ -5,13 +5,13 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "vite build",
+    "build": "vite-ssg build && node scripts/verify-seo.js",
     "preview": "vite preview",
-    "generate-sitemap": "node scripts/generate-sitemap.js",
-    "postbuild": "npm run generate-sitemap && npm run prerender-blogs",
-    "prerender-blogs": "node scripts/prerender-blogs.js"
+    "verify:seo": "node scripts/verify-seo.js",
+    "build:only": "vite-ssg build"
   },
   "dependencies": {
+    "@unhead/vue": "^2.1.17",
     "ant-design-vue": "^4.2.6",
     "primeicons": "^7.0.0",
     "react-icons": "^5.5.0",
@@ -21,7 +21,9 @@
   },
   "devDependencies": {
     "@vitejs/plugin-vue": "^6.0.0",
+    "jsdom": "^28.1.0",
     "rollup": "^4.50.0",
-    "vite": "^7.1.4"
+    "vite": "^7.1.4",
+    "vite-ssg": "^28.3.0"
   }
 }

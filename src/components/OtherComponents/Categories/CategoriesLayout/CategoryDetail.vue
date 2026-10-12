@@ -87,8 +87,8 @@
 </template>
 
 <script setup>
-import { computed, onMounted, watch } from "vue";
-import { useRoute, useRouter } from "vue-router";
+import { computed } from "vue";
+import { useRoute } from "vue-router";
 import CategoriesData from "./Categories";
 
 // Import all layout components
@@ -98,7 +98,6 @@ import AcousticTilesLayout from "../Layouts/AcousticTilesLayout";
 import ArtificialMultiturfLayout from "../Layouts/ArtificialMultiturfLayout";
 
 const route = useRoute();
-const router = useRouter();
 
 // Find the current category based on the slug parameter
 const category = computed(() => {
@@ -124,25 +123,6 @@ const currentLayout = computed(() => {
   };
 
   return layoutMap[category.value.slug] || null;
-});
-
-// Watch for route changes to ensure proper re-rendering
-watch(
-  () => route.params.slug,
-  (newSlug, oldSlug) => {
-    if (newSlug !== oldSlug) {
-      // Force component re-render when slug changes
-      console.log("Route changed from", oldSlug, "to", newSlug);
-    }
-  },
-  { immediate: true }
-);
-
-// Redirect to 404 if category not found
-onMounted(() => {
-  if (!category.value) {
-    router.push("/categories");
-  }
 });
 </script>
 

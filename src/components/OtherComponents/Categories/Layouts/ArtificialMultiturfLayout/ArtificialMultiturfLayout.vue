@@ -25,7 +25,7 @@
           <div data-aos="fade-up" data-aos-duration="600" data-aos-delay="200">
             <img
               src="https://s3.ap-south-1.amazonaws.com/prepseed/prod/ldoc/media/LandScapeMainImage.jpg"
-              alt=""
+              alt="Landscape artificial grass"
             />
             <div class="ArtificialMultiturfGridItemText">
               <h3>Landscape Grass</h3>
@@ -35,7 +35,7 @@
             </div>
           </div>
           <div data-aos="fade-up" data-aos-duration="600" data-aos-delay="400">
-            <img src="/Images/products/sports-grass1.jpg" alt="" />
+            <img src="/Images/products/sports-grass1.jpg" alt="Sports artificial grass" />
             <div class="ArtificialMultiturfGridItemText">
               <h3>Sports Grass</h3>
               <router-link to="/artificial-grass/sports-grass">
@@ -46,7 +46,7 @@
         </div>
         <div class="ArtificialMultiturfGridItem">
           <div data-aos="fade-up" data-aos-duration="600" data-aos-delay="300">
-            <img src="/Images/products/multiturf2.jpg" alt="" />
+            <img src="/Images/products/multiturf2.jpg" alt="MultiTurf artificial grass" />
             <div class="ArtificialMultiturfGridItemText">
               <h3>MultiTurf</h3>
               <router-link to="/artificial-grass/multisports-grass">
@@ -57,7 +57,7 @@
           <div data-aos="fade-up" data-aos-duration="600" data-aos-delay="500">
             <img
               src="https://s3.ap-south-1.amazonaws.com/prepseed/prod/ldoc/media/curly Grass.jpg"
-              alt=""
+              alt="Curly artificial grass"
             />
             <div class="ArtificialMultiturfGridItemText">
               <h3>Curly Grass</h3>
@@ -232,7 +232,7 @@
               >
                 <div class="DesignedContainer">
                   <div class="DesignedImage">
-                    <img :src="design.image" :alt="design.name" />
+                    <img :src="design.image" :alt="design.alt" />
                   </div>
                   <div class="DesignedText">
                     <h3 class="text-center" v-html="design.title"></h3>
@@ -282,18 +282,21 @@ const DesignedData = [
   {
     image:
       "https://s3.ap-south-1.amazonaws.com/prepseed/prod/ldoc/media/Kids at Play.png",
+    alt: "Child-friendly play lounge with artificial grass",
     title: "Child-Friendly<br>Play Lounge",
     description: "Soft, safe, and always green – perfect turf for endless fun.",
   },
   {
     image:
       "https://s3.ap-south-1.amazonaws.com/prepseed/prod/ldoc/media/Indoor Play Zone.png",
+    alt: "Indoor play zone with artificial grass",
     title: "Indoor<br>Play Zone",
     description: "Bring the playground indoors with vibrant, cushioned grass.",
   },
   {
     image:
       "https://s3.ap-south-1.amazonaws.com/prepseed/prod/ldoc/media/Colorful Outdoor Playground.png",
+    alt: "Colorful outdoor playground with artificial grass",
     title: "Colorful Outdoor<br>Playground",
     description:
       "A splash of color and comfort for big adventures under the sun.",

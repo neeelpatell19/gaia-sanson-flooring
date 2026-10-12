@@ -3,6 +3,9 @@ const CategoriesData = [
         id: 1,
         name: 'Carpet Tiles',
         slug: 'carpet-tiles',
+        seoTitle: "Modular Carpet Tiles | GAIA by Sanson Floorings",
+        metaDescription:
+            "Modular carpet tiles for offices and homes: easy to install and replace, durable, stain-resistant and sound-absorbing. GreenPro labelled, by GAIA Sanson Floorings.",
         image: 'https://images.unsplash.com/photo-1586023492125-27b2c045efd7?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80',
         description: 'Modular carpet tiles offering flexibility, easy installation, and maintenance for commercial and residential spaces.',
         features: [
@@ -24,6 +27,9 @@ const CategoriesData = [
         id: 2,
         name: 'Artificial & Multiturf',
         slug: 'artificial-multiturf',
+        seoTitle: "Artificial Grass & Multiturf | GAIA by Sanson Floorings",
+        metaDescription:
+            "UV-resistant artificial grass and multiturf for gardens, terraces, sports facilities and landscaping. Landscape, sports, multisports and curly grass by GAIA.",
         image: 'https://images.unsplash.com/photo-1560472354-b33ff0c44a43?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80',
         description: 'High-quality artificial grass and multiturf solutions for outdoor spaces, sports facilities, and landscaping.',
         features: [
@@ -45,6 +51,9 @@ const CategoriesData = [
         id: 3,
         name: 'Broadloom Carpets',
         slug: 'broadloom-carpets',
+        seoTitle: "Broadloom Carpets | GAIA by Sanson Floorings",
+        metaDescription:
+            "Seamless broadloom carpets for large areas, with a luxurious feel and excellent sound absorption. Explore the broadloom range from GAIA by Sanson Floorings, New Delhi.",
         image: 'https://images.unsplash.com/photo-1594040226829-7f251ab46d80?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
         description: 'Seamless, luxurious broadloom carpets perfect for large areas, providing comfort and elegance.',
         features: [
@@ -63,9 +72,12 @@ const CategoriesData = [
         ]
     },
     {
-        id: 3,
+        id: 4,
         name: 'Acoustic PET Panels',
         slug: 'acoustic-tiles',
+        seoTitle: "Acoustic PET Panels, GreenPro Certified | GAIA",
+        metaDescription:
+            "Acoustic PET panels made with recycled polyester fibres to reduce noise and improve sound quality in any space. GreenPro certified and made in India by GAIA.",
         image: 'https://images.unsplash.com/photo-1497366216548-37526070297c?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80',
         description: 'Specialized acoustic PET panels designed to reduce noise and improve sound quality in any environment.',
         features: [

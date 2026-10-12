@@ -71,8 +71,8 @@ This website is built with modern web technologies:
 ```
 gaia-sanson-flooring/
 ├── public/
-│   ├── robots.txt          # SEO robots file
-│   ├── sitemap.xml         # SEO sitemap
+│   ├── robots.txt          # Crawler rules
+│   ├── og-default.jpg      # Default 1200x630 social share image
 │   └── vite.svg           # Vite logo
 ├── src/
 │   ├── components/
@@ -140,9 +140,9 @@ gaia-sanson-flooring/
 
 ### Available Scripts
 - `npm run dev` - Start development server
-- `npm run build` - Build for production
+- `npm run build` - Build for production: renders every page to static HTML (SSR at build time), writes `404.html` and `sitemap.xml`
+- `npm run verify:seo` - Check the built `dist/` the way a crawler without JavaScript sees it (run after `npm run build`)
 - `npm run preview` - Preview production build
-- `npm run lint` - Run ESLint
 
 ### Code Style
 - **Vue Components**: Composition API with `<script setup>`
@@ -152,23 +152,35 @@ gaia-sanson-flooring/
 
 ## 📊 SEO Implementation
 
-### Meta Tags
-- **Title**: Optimized for search engines
-- **Description**: Compelling page descriptions
-- **Keywords**: Relevant flooring industry terms
-- **Open Graph**: Social media sharing optimization
-- **Twitter Cards**: Twitter-specific meta tags
+### Server-side rendering
+`npm run build` runs [vite-ssg](https://github.com/antfu-collective/vite-ssg). It renders every page with Vue's server renderer and writes real HTML to `dist/<route>/index.html`, then the browser hydrates it. Crawlers and AI bots that do not run JavaScript get the full page: headings, text, images, links and structured data. All content is static, so build-time rendering gives the same result as rendering on each request, with no server to run.
 
-### Structured Data
-- **Organization Schema**: Company information
-- **Local Business Schema**: Location and contact details
-- **Product Schema**: Flooring products and services
+Rules that keep it working:
+- Browser-only code (`window`, `document`, `new Image()`) goes inside `onMounted`, never in `setup()` or module scope, or the build fails.
+- Do not add `appear` to a `<transition>` that wraps page content. Vue then wraps the server-rendered HTML in a `<template>` tag, which hides it from crawlers.
+- Render images as real `<img src>` in the HTML. Do not insert them only after JavaScript has loaded them.
+- Each page has exactly one `<h1>`.
+
+### Where the SEO data lives
+`src/seo/pages.js` decides the title, description, canonical URL, robots rule, share image and JSON-LD for every URL. `App.vue` applies it with `useHead`, the build uses it to decide which pages to render, and the sitemap is generated from it, so they cannot drift apart.
+- Category, grass-type and blog copy sits next to its data: `seoTitle` and `metaDescription` in `Categories.js`, `grassTypesData.js` and `BlogsData.js`.
+- Other pages: edit `STATIC_PAGES` in `src/seo/pages.js`.
+- Business details used in structured data: `src/seo/site.js`.
+- Titles: 60 characters or fewer. Descriptions: 120 to 160.
+
+### Adding a page
+1. Add the route in `src/router/index.js`.
+2. Add its SEO entry (see above) and, if it is public, its path in `getIndexablePaths()` in `src/seo/pages.js`.
+3. `npm run build && npm run verify:seo`.
+
+### Unknown URLs
+There is no catch-all rewrite to `index.html`. An unknown URL gets `404.html` with a real 404 status, and in the app an unknown category, grass type or blog slug shows the same page. Both are `noindex`.
 
 ### Technical SEO
-- **Robots.txt**: Search engine crawling instructions
-- **Sitemap.xml**: Page discovery and indexing
-- **Canonical URLs**: Duplicate content prevention
-- **Page Speed**: Optimized loading times
+- **robots.txt**: all pages open to search engines and AI crawlers, plus the sitemap location
+- **sitemap.xml**: written at build time, `lastmod` only for blog posts (from their real dates)
+- **Canonical URLs**: one per page, no trailing slash
+- **Structured data**: Organization (every page), WebSite and LocalBusiness (home), BreadcrumbList (inner pages), Article and FAQPage (blog posts)
 
 ## 🌐 Deployment
 

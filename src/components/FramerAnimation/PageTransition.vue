@@ -1,8 +1,10 @@
 <template>
+  <!-- No "appear": on the first load the page is already in the HTML, and
+       Vue would otherwise wrap server-rendered content in a <template> tag,
+       which hides it from crawlers that do not run JavaScript. -->
   <transition
     name="page-transition"
     mode="out-in"
-    appear
     @enter="onEnter"
     @leave="onLeave"
   >

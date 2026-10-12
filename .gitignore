@@ -167,3 +167,6 @@ dist/
 # OS files
 .DS_Store
 Thumbs.db
+
+# vite-ssg temporary server bundle (removed after a successful build)
+.vite-ssg-temp

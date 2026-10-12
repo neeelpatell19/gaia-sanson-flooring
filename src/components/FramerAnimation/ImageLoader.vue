@@ -1,24 +1,20 @@
 <template>
   <div class="image-loader">
-    <transition
-      name="image-fade"
-      mode="out-in"
-      appear
-    >
-      <img
-        v-if="imageLoaded"
-        :src="src"
-        :alt="alt"
-        :class="imageClass"
-        :style="imageStyle"
-        class="loaded-image"
-        v-bind="$attrs"
-      />
-    </transition>
-    
+    <img
+      ref="imageRef"
+      :src="src"
+      :alt="alt"
+      :class="[imageClass, { 'is-loading': loading }]"
+      :style="imageStyle"
+      class="loaded-image"
+      v-bind="$attrs"
+      @load="loading = false"
+      @error="loading = false"
+    />
+
     <transition name="placeholder-fade">
       <div
-        v-if="!imageLoaded"
+        v-if="loading"
         class="image-placeholder"
       >
         <div class="placeholder-content">
@@ -33,9 +29,9 @@
 </template>
 
 <script setup>
-import { ref } from 'vue'
+import { onMounted, ref } from 'vue'
 
-const props = defineProps({
+defineProps({
   src: {
     type: String,
     required: true
@@ -54,27 +50,16 @@ const props = defineProps({
   }
 })
 
-const imageLoaded = ref(false)
-const imageError = ref(false)
+// The <img> is always in the HTML, so search engines and visitors without
+// JavaScript get the picture. The loading placeholder is a browser-only
+// extra: it shows only if the file is still downloading once the page is
+// interactive, and the image fades in when it arrives.
+const imageRef = ref(null)
+const loading = ref(false)
 
-const onImageLoad = () => {
-  imageLoaded.value = true
-}
-
-const onImageError = () => {
-  imageError.value = true
-}
-
-// Preload image when component mounts
-const preloadImage = () => {
-  const img = new Image()
-  img.onload = onImageLoad
-  img.onerror = onImageError
-  img.src = props.src
-}
-
-// Start preloading immediately
-preloadImage()
+onMounted(() => {
+  if (imageRef.value && !imageRef.value.complete) loading.value = true
+})
 </script>
 
 <style scoped>
@@ -91,6 +76,13 @@ preloadImage()
   max-width: 100%;
   height: auto;
   will-change: filter, opacity, transform;
+  transition: all 0.5s cubic-bezier(0.25, 0.1, 0.25, 1);
+}
+
+.loaded-image.is-loading {
+  opacity: 0;
+  filter: blur(15px);
+  transform: scale(1.02);
 }
 
 .image-placeholder {
@@ -141,23 +133,6 @@ preloadImage()
   font-size: 0.875rem;
   font-weight: 500;
   opacity: 1;
-}
-
-/* Image Fade Transition */
-.image-fade-enter-active {
-  transition: all 0.5s cubic-bezier(0.25, 0.1, 0.25, 1);
-}
-
-.image-fade-enter-from {
-  opacity: 0;
-  filter: blur(15px);
-  transform: scale(1.02);
-}
-
-.image-fade-enter-to {
-  opacity: 1;
-  filter: blur(0px);
-  transform: scale(1);
 }
 
 /* Placeholder Fade Transition */

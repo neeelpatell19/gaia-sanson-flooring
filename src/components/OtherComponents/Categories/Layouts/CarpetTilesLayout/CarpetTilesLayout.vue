@@ -56,17 +56,17 @@
                 <div class="sets-apart-logos-Container-item">
                   <img
                     src="https://s3.ap-south-1.amazonaws.com/prepseed/prod/ldoc/media/StartUpIndiaImageUpdate.png"
-                    alt=""
+                    alt="Startup India"
                   />
                 </div>
                 <div class="sets-apart-logos-Container-item">
                   <img
                     src="https://s3.ap-south-1.amazonaws.com/prepseed/prod/ldoc/media/MakeInIndeaLogoImageNew.png"
-                    alt=""
+                    alt="Make in India"
                   />
                 </div>
                 <div class="sets-apart-logos-Container-item">
-                  <img src="/Images/CRI%20Greenlabel.png" alt="" />
+                  <img src="/Images/CRI%20Greenlabel.png" alt="CRI Green Label certification" />
                 </div>
                 <div class="sets-apart-logos-Container-item">
                   <img src="/Images/epd-logo.png" alt="EPD Logo" />

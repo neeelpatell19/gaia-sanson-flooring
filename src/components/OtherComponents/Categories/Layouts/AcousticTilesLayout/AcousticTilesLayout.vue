@@ -38,11 +38,11 @@
                         <div class="sets-apart-logos-Container" style="justify-content: start;">
                             <div class="sets-apart-logos-Container-item">
                                 <img src="https://s3.ap-south-1.amazonaws.com/prepseed/prod/ldoc/media/StartUpIndiaImageUpdate.png"
-                                    alt="">
+                                    alt="Startup India">
                             </div>
                             <div class="sets-apart-logos-Container-item">
                                 <img src="https://s3.ap-south-1.amazonaws.com/prepseed/prod/ldoc/media/MakeInIndeaLogoImageNew.png"
-                                    alt="">
+                                    alt="Make in India">
                             </div>
                         </div>
                     </div>
@@ -96,20 +96,20 @@
                 <div class="sets-apart-logos-Container-item">
                   <img
                     src="https://s3.ap-south-1.amazonaws.com/prepseed/prod/ldoc/media/StartUpIndiaImageUpdate.png"
-                    alt=""
+                    alt="Startup India"
                   />
                 </div>
                 <div class="sets-apart-logos-Container-item">
                   <img
                     src="https://s3.ap-south-1.amazonaws.com/prepseed/prod/ldoc/media/MakeInIndeaLogoImageNew.png"
-                    alt=""
+                    alt="Make in India"
                   />
                 </div>
                 <div class="sets-apart-logos-Container-item">
-                  <img src="/Images/arai%20GAIA%20logo.jpeg" alt="" />
+                  <img src="/Images/arai%20GAIA%20logo.jpeg" alt="ARAI certified" />
                 </div>
                 <div class="sets-apart-logos-Container-item">
-                  <img src="/Images/ASTM_logo.png" alt="" style="width: 40%" />
+                  <img src="/Images/ASTM_logo.png" alt="ASTM International" style="width: 40%" />
                 </div>
                 <div class="sets-apart-logos-Container-item">
                   <img src="/Images/epd-logo.png" alt="EPD Logo" />
@@ -151,11 +151,11 @@
                     <div class="width100 EditContainerContentImage">
                         <div>
                             <img src="https://s3.ap-south-1.amazonaws.com/prepseed/prod/ldoc/media/StartUpIndiaImageUpdate.png"
-                                alt="">
+                                alt="Startup India">
                         </div>
                         <div>
                             <img src="https://s3.ap-south-1.amazonaws.com/prepseed/prod/ldoc/media/MakeInIndiaUpaatedLogoImage.webp"
-                                alt="">
+                                alt="Make in India">
                         </div>
                     </div>
                 </div>

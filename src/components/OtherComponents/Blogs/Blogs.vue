@@ -108,11 +108,10 @@
 </template>
 
 <script setup>
-import { computed, ref, onMounted, onBeforeUnmount } from "vue";
+import { computed, ref } from "vue";
 import CommonTopLayout from "../Categories/CommonTopLayout/CommonTopLayout.vue";
 import BlogCard from "./BlogCard/BlogCard.vue";
 import BlogsData from "./BlogsData.js";
-import { applyBlogSeo, buildBlogListingSeo } from "./BlogSeo.js";
 import "./Blogs.css";
 
 const sortedBlogs = [...BlogsData].sort((a, b) =>
@@ -156,16 +155,6 @@ const goToPage = (page) => {
     });
   }
 };
-
-let restoreSeo = null;
-
-onMounted(() => {
-  restoreSeo = applyBlogSeo(buildBlogListingSeo(BlogsData));
-});
-
-onBeforeUnmount(() => {
-  if (restoreSeo) restoreSeo();
-});
 </script>
 
 <style scoped>

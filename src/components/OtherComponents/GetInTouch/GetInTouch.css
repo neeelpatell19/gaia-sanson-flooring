@@ -35,6 +35,18 @@
   padding-left: 2rem;
 }
 
+/* The section heading is an <h2> (each page has exactly one <h1>, in its
+   banner) but keeps the look it had as an <h1>. */
+.get-in-touch-section .get-in-touch-title {
+  display: block;
+  margin: 0;
+  font-size: 4rem;
+  font-weight: 400;
+  line-height: 1.1;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
 .main-heading {
   font-size: 2.5rem;
   font-weight: 700;
@@ -176,7 +188,8 @@
   }
 
   /* Make h1 behave like h2 on mobile */
-  h1 {
+  h1,
+  .get-in-touch-section .get-in-touch-title {
     font-size: 1.5rem; /* h2 equivalent font size */
     font-weight: 600; /* h2 equivalent font weight */
   }

@@ -26,13 +26,13 @@
             <div class="sets-apart-logos-Container-item">
               <img
                 src="https://s3.ap-south-1.amazonaws.com/prepseed/prod/ldoc/media/StartUpIndiaImageUpdate.png"
-                alt=""
+                alt="Startup India"
               />
             </div>
             <div class="sets-apart-logos-Container-item">
               <img
                 src="https://s3.ap-south-1.amazonaws.com/prepseed/prod/ldoc/media/MakeInIndeaLogoImageNew.png"
-                alt=""
+                alt="Make in India"
               />
             </div>
             <!-- BellinTurf logo removed for broadloom-carpets -->

@@ -7,7 +7,7 @@ import "./Footer.css"
             <!-- Logo and Tagline Section -->
             <div class="footer-section logo-section" data-aos="fade-up" data-aos-delay="100">
                 <div class="logo-container">
-                    <img src="/Images/GAIA_Logo.png" alt="">
+                    <img src="/Images/GAIA_Logo.png" alt="GAIA by Sanson Floorings">
                     <p class="tagline">EXPERTS IN INNOVATIVE FLOOR FASHION</p>
                 </div>
             </div>

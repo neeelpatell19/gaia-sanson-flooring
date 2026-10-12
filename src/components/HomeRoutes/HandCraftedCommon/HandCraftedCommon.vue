@@ -48,13 +48,13 @@ export default {
                 <div>
                   <img
                     src="https://s3.ap-south-1.amazonaws.com/prepseed/prod/ldoc/media/StartUpIndiaImageUpdate.png"
-                    alt=""
+                    alt="Startup India"
                   />
                 </div>
                 <div>
                   <img
                     src="https://s3.ap-south-1.amazonaws.com/prepseed/prod/ldoc/media/MakeInIndeaLogoImageNew.png"
-                    alt=""
+                    alt="Make in India"
                   />
                 </div>
                 <div>
@@ -106,10 +106,10 @@ export default {
                     </p>
                     <div class="sets-apart-logos-Container">
               <div class="sets-apart-logos-Container-item">
-                <img src="https://s3.ap-south-1.amazonaws.com/prepseed/prod/ldoc/media/StartUpIndiaImageUpdate.png" alt="">
+                <img src="https://s3.ap-south-1.amazonaws.com/prepseed/prod/ldoc/media/StartUpIndiaImageUpdate.png" alt="Startup India">
               </div>
               <div class="sets-apart-logos-Container-item">
-                <img src="https://s3.ap-south-1.amazonaws.com/prepseed/prod/ldoc/media/MakeInIndiaUpaatedLogoImage.webp" alt="">
+                <img src="https://s3.ap-south-1.amazonaws.com/prepseed/prod/ldoc/media/MakeInIndiaUpaatedLogoImage.webp" alt="Make in India">
               </div>
             </div>
                 </div>

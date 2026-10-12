@@ -1,35 +1,9 @@
+# GAIA by Sanson Floorings: every page is open to search engines and AI crawlers.
 User-agent: *
 Allow: /
 
-# Sitemap location
-Sitemap: https://sansonfloorings.com/sitemap.xml
-
-# Crawl-delay for respectful crawling
-Crawl-delay: 1
-
-# Disallow admin or private areas (if any)
-Disallow: /admin/
-Disallow: /private/
-Disallow: /api/
-
-# Allow important pages
-Allow: /
-Allow: /about/
-Allow: /products/
-Allow: /contact/
-Allow: /services/
-
-# Specific rules for different bots
-User-agent: Googlebot
-Allow: /
-
-User-agent: Bingbot
-Allow: /
-
-User-agent: Slurp
-Allow: /
-
-# Block bad bots
+# SEO-tool scrapers (not search engines) were already blocked before this
+# file was cleaned up. Remove these three groups to let them in.
 User-agent: AhrefsBot
 Disallow: /
 
@@ -37,4 +11,6 @@ User-agent: SemrushBot
 Disallow: /
 
 User-agent: MJ12bot
-Disallow: / 
+Disallow: /
+
+Sitemap: https://sansonfloorings.com/sitemap.xml

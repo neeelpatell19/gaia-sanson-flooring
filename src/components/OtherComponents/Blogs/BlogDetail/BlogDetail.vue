@@ -50,7 +50,6 @@
     <div class="BlogDetailBodyContainer Container marginBottom80">
       <div class="BlogDetailBodyInner">
         <article
-          ref="articleRef"
           class="BlogArticleBody"
           v-html="blogContent"
           @click="handleArticleClick"
@@ -145,13 +144,14 @@
 </template>
 
 <script setup>
-import { computed, nextTick, onBeforeUnmount, onMounted, ref } from "vue";
-import { useRoute, useRouter } from "vue-router";
+import { computed, onBeforeUnmount, onMounted, ref } from "vue";
+import { useRouter } from "vue-router";
 import CommonTopLayout from "../../Categories/CommonTopLayout/CommonTopLayout.vue";
 import HomeProducts from "../../../HomeRoutes/HomeProducts/HomeProducts.vue";
 import BlogCard from "../BlogCard/BlogCard.vue";
 import BlogsData, { formatBlogDate, getBlogBySlug } from "../BlogsData.js";
-import { applyBlogSeo, buildArticleSchemas, SITE_URL } from "../BlogSeo.js";
+import { SITE_URL } from "../BlogSeo.js";
+import { addHeadingIds } from "../articleHeadings.js";
 import "./BlogDetail.css";
 
 // Article bodies live in ../BlogPosts/<slug>.html
@@ -168,11 +168,13 @@ const props = defineProps({
   },
 });
 
-const route = useRoute();
 const router = useRouter();
 
 const blog = getBlogBySlug(props.slug);
-const blogContent = blog ? blogPosts[`../BlogPosts/${blog.slug}.html`] || "" : "";
+const articleSource = blog ? blogPosts[`../BlogPosts/${blog.slug}.html`] || "" : "";
+// Heading ids and the table of contents are made here rather than in the
+// browser, so they are also present in the static HTML.
+const { html: blogContent, toc: tableOfContents } = addHeadingIds(articleSource);
 
 const relatedBlogs = computed(() =>
   blog
@@ -193,29 +195,13 @@ const relatedBlogs = computed(() =>
 
 const pageUrl = blog ? `${SITE_URL}/blogs/${blog.slug}` : SITE_URL;
 
-const articleRef = ref(null);
-const tableOfContents = ref([]);
-const activeHeading = ref("");
+const activeHeading = ref(tableOfContents[0]?.id ?? "");
 const copied = ref(false);
 
-const slugify = (text) =>
-  text
-    .toLowerCase()
-    .replace(/[^a-z0-9\s-]/g, "")
-    .trim()
-    .replace(/\s+/g, "-");
-
 let headingObserver = null;
-let restoreSeo = null;
 
-const buildTableOfContents = () => {
-  if (!articleRef.value) return;
-  const headings = [...articleRef.value.querySelectorAll("h2")];
-  tableOfContents.value = headings.map((heading) => {
-    if (!heading.id) heading.id = slugify(heading.textContent);
-    return { id: heading.id, text: heading.textContent };
-  });
-
+// Highlights the table-of-contents entry of the section being read.
+const observeHeadings = () => {
   headingObserver = new IntersectionObserver(
     (entries) => {
       entries.forEach((entry) => {
@@ -224,8 +210,10 @@ const buildTableOfContents = () => {
     },
     { rootMargin: "-100px 0px -65% 0px" }
   );
-  headings.forEach((heading) => headingObserver.observe(heading));
-  if (tableOfContents.value.length) activeHeading.value = tableOfContents.value[0].id;
+  tableOfContents.forEach(({ id }) => {
+    const heading = document.getElementById(id);
+    if (heading) headingObserver.observe(heading);
+  });
 };
 
 const scrollToHeading = (id) => {
@@ -257,27 +245,11 @@ const copyLink = async () => {
   }
 };
 
-onMounted(async () => {
-  if (!blog) {
-    router.replace("/blogs");
-    return;
-  }
-
-  restoreSeo = applyBlogSeo({
-    title: blog.seoTitle || `${blog.title} | GAIA`,
-    description: blog.metaDescription,
-    path: route.path,
-    image: blog.ogImage || blog.coverImage,
-    type: "article",
-    jsonLd: buildArticleSchemas(blog),
-  });
-
-  await nextTick();
-  buildTableOfContents();
+onMounted(() => {
+  if (tableOfContents.length) observeHeadings();
 });
 
 onBeforeUnmount(() => {
   if (headingObserver) headingObserver.disconnect();
-  if (restoreSeo) restoreSeo();
 });
 </script>

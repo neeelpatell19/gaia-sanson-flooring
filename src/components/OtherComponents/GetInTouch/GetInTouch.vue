@@ -5,7 +5,7 @@
       <div class="content-wrapper">
         <!-- Left Section - Contact Form -->
         <div class="contact-form-section">
-          <h1 style="color: black">{{ title }}</h1>
+          <h2 class="get-in-touch-title" style="color: black">{{ title }}</h2>
           <p class="subtitle">{{ subtitle }}</p>
           <div
             class="description-section mobile-description"

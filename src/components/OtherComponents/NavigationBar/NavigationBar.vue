@@ -4,7 +4,7 @@
             <div class="logo-section">
                 <router-link to="/" class="logo-link">
                     <div class="logo">
-                        <img src="/Images/GAIA_Logo.png" alt="">
+                        <img src="/Images/GAIA_Logo.png" alt="GAIA by Sanson Floorings">
                     </div>
                 </router-link>
             </div>

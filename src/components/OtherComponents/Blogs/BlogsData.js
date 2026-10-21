@@ -31,7 +31,7 @@ const BlogsData = [
     tags: ["Sustainability", "GreenPro", "Acoustic Panels"],
     author: "GAIA by Sanson Floorings",
     location: "New Delhi",
-    publishedDate: "2026-11-02",
+    publishedDate: "2026-10-21",
     readTime: "4 min read",
     coverImage:
       "/Images/Blogs/what-is-greenpro-certification/hero-gaia-acoustic-panel-wall-meeting-room.webp",
@@ -70,7 +70,7 @@ const BlogsData = [
     tags: ["Carpet Tiles", "Broadloom", "Hotels"],
     author: "GAIA by Sanson Floorings",
     location: "New Delhi",
-    publishedDate: "2026-10-29",
+    publishedDate: "2026-10-21",
     readTime: "4 min read",
     coverImage:
       "/Images/Blogs/carpet-tiles-vs-broadloom/hero-broadloom-and-carpet-tile-office.webp",
@@ -109,7 +109,7 @@ const BlogsData = [
     tags: ["Broadloom Carpets", "Hotel Flooring", "Hospitality"],
     author: "GAIA by Sanson Floorings",
     location: "New Delhi",
-    publishedDate: "2026-10-26",
+    publishedDate: "2026-10-21",
     readTime: "5 min read",
     coverImage:
       "/Images/Blogs/broadloom-carpet-for-hotels/hero-grey-broadloom-carpet-lounge-chair.webp",
@@ -153,7 +153,7 @@ const BlogsData = [
     tags: ["Artificial Grass", "Landscape Grass", "Gardens"],
     author: "GAIA by Sanson Floorings",
     location: "New Delhi",
-    publishedDate: "2026-10-22",
+    publishedDate: "2026-10-21",
     readTime: "6 min read",
     coverImage:
       "/Images/Blogs/artificial-grass-vs-real-grass/hero-artificial-grass-cafe-lawn.webp",
@@ -197,7 +197,7 @@ const BlogsData = [
     tags: ["Carpet Tiles", "Carpet Planks", "Installation"],
     author: "GAIA by Sanson Floorings",
     location: "New Delhi",
-    publishedDate: "2026-10-19",
+    publishedDate: "2026-10-21",
     readTime: "6 min read",
     coverImage:
       "/Images/Blogs/how-many-carpet-tiles-do-i-need/hero-carpet-tiles-restaurant-floor.webp",
@@ -236,7 +236,7 @@ const BlogsData = [
     tags: ["Acoustics", "Acoustic Panels", "Carpet Tiles"],
     author: "GAIA by Sanson Floorings",
     location: "New Delhi",
-    publishedDate: "2026-10-16",
+    publishedDate: "2026-10-21",
     readTime: "9 min read",
     coverImage:
       "/Images/Blogs/how-to-reduce-echo-in-a-room/hero-home-office-geometric-acoustic-wall-panels.webp",
@@ -275,7 +275,7 @@ const BlogsData = [
     tags: ["Workplace", "Acoustics", "Carpet Tiles"],
     author: "GAIA by Sanson Floorings",
     location: "New Delhi",
-    publishedDate: "2026-10-16",
+    publishedDate: "2026-10-21",
     readTime: "5 min read",
     coverImage:
       "/Images/Blogs/noise-reduction-open-plan-office/hero-open-plan-office-ceiling-clouds.webp",
@@ -314,7 +314,7 @@ const BlogsData = [
     tags: ["Acoustic Panels", "PET Panels"],
     author: "GAIA by Sanson Floorings",
     location: "New Delhi",
-    publishedDate: "2026-10-16",
+    publishedDate: "2026-10-21",
     readTime: "5 min read",
     coverImage:
       "/Images/Blogs/acoustic-panels-vs-foam/hero-hexagon-acoustic-wall-panels.webp",
@@ -358,7 +358,7 @@ const BlogsData = [
     tags: ["Carpet Tiles", "Office Flooring"],
     author: "GAIA by Sanson Floorings",
     location: "New Delhi",
-    publishedDate: "2026-10-16",
+    publishedDate: "2026-10-21",
     readTime: "7 min read",
     coverImage:
       "/Images/Blogs/carpet-tiles-vs-vinyl-flooring/hero-office-desk-patterned-carpet-tiles.webp",
@@ -402,7 +402,7 @@ const BlogsData = [
     tags: ["Artificial Grass", "Landscape Grass", "Balcony"],
     author: "GAIA by Sanson Floorings",
     location: "New Delhi",
-    publishedDate: "2026-10-16",
+    publishedDate: "2026-10-21",
     readTime: "6 min read",
     coverImage:
       "/Images/Blogs/balcony-makeover-ideas-artificial-grass/hero-artificial-grass-garden-lounge.webp",

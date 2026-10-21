@@ -18,6 +18,421 @@
 
 const BlogsData = [
   {
+    id: 14,
+    slug: "what-is-greenpro-certification",
+    title: "What Is GreenPro Certification? What It Means for Flooring and Acoustic Panels",
+    seoTitle: "What Is GreenPro Certification? Flooring and Panels | GAIA",
+    metaDescription:
+      "GreenPro certification explained: India's CII ecolabel for building products, what it assesses, how to check a certificate, and which GAIA products carry it.",
+    excerpt:
+      "An independent Indian ecolabel, a named product and plant, and an expiry date. What GreenPro proves, and how to check a certificate.",
+    category: "Sustainability",
+    cluster: "sustainable-interiors",
+    tags: ["Sustainability", "GreenPro", "Acoustic Panels"],
+    author: "GAIA by Sanson Floorings",
+    location: "New Delhi",
+    publishedDate: "2026-10-21",
+    readTime: "4 min read",
+    coverImage:
+      "/Images/Blogs/what-is-greenpro-certification/hero-gaia-acoustic-panel-wall-meeting-room.webp",
+    coverImageAlt:
+      "Meeting room with a vertically grooved sand-coloured acoustic wall and a carved panel showing Krishna playing the flute above the words GAIA ACOUSTICS",
+    ogImage:
+      "/Images/Blogs/what-is-greenpro-certification/og-what-is-greenpro-certification.jpg",
+    relatedProduct: {
+      name: "Acoustic PET Panels",
+      path: "/categories/acoustic-tiles",
+    },
+    faqs: [
+      {
+        question: "Is GreenPro certification mandatory in India?",
+        answer:
+          "No. It is voluntary. Manufacturers apply for it, and buyers or project teams choose whether to require it.",
+      },
+      {
+        question: "How long is a GreenPro certificate valid?",
+        answer:
+          "Each certificate states its own expiry date, so check it against your supply date using the checklist above.",
+      },
+    ],
+  },
+  {
+    id: 13,
+    slug: "carpet-tiles-vs-broadloom",
+    title: "Carpet Tiles vs Broadloom Carpet: Which Is Better for Offices and Hotels?",
+    seoTitle: "Carpet Tiles vs Broadloom: Offices and Hotels | GAIA",
+    metaDescription:
+      "Carpet tiles vs broadloom carpet: how they differ on installation, repairs, looks and cost over time, with a four-question chooser and a room-by-room list.",
+    excerpt:
+      "One is a kit of modular pieces, the other a wide roll laid wall to wall. Four questions settle most rooms.",
+    category: "Carpet Tiles",
+    cluster: "flooring-choices",
+    tags: ["Carpet Tiles", "Broadloom", "Hotels"],
+    author: "GAIA by Sanson Floorings",
+    location: "New Delhi",
+    publishedDate: "2026-10-21",
+    readTime: "4 min read",
+    coverImage:
+      "/Images/Blogs/carpet-tiles-vs-broadloom/hero-broadloom-and-carpet-tile-office.webp",
+    coverImageAlt:
+      "Corner workstation with a grey chair on a charcoal broadloom carpet with a dotted swirl pattern, beside a plant",
+    ogImage:
+      "/Images/Blogs/carpet-tiles-vs-broadloom/og-carpet-tiles-vs-broadloom.jpg",
+    relatedProduct: {
+      name: "Broadloom Carpets",
+      path: "/categories/broadloom-carpets",
+    },
+    faqs: [
+      {
+        question: "Can carpet tiles and broadloom be used in the same building?",
+        answer:
+          "Yes, and it is common. A hotel might use broadloom in corridors and guest rooms with carpet tiles in back-of-house offices; an office might use tiles on the floor plate and broadloom in the boardroom.",
+      },
+      {
+        question: "Can broadloom be laid on a raised access floor?",
+        answer:
+          "It is rarely a good idea, because the carpet would have to be cut or lifted to reach the panels beneath. Carpet tiles are the usual choice there.",
+      },
+    ],
+  },
+  {
+    id: 12,
+    slug: "broadloom-carpet-for-hotels",
+    title: "Broadloom Carpet for Hotels: Corridors, Guest Rooms and Banquet Halls",
+    seoTitle: "Broadloom Carpet for Hotels: Corridors and Rooms | GAIA",
+    metaDescription:
+      "Broadloom carpet for hotels: what works in corridors, guest rooms and banquet halls, how to brief a custom design, and how to keep it looking new.",
+    excerpt:
+      "Corridors, guest rooms and ballrooms each ask something different of a carpet. A brief that settles pattern, colour and cleaning before sampling.",
+    category: "Broadloom Carpets",
+    cluster: "hospitality-spaces",
+    tags: ["Broadloom Carpets", "Hotel Flooring", "Hospitality"],
+    author: "GAIA by Sanson Floorings",
+    location: "New Delhi",
+    publishedDate: "2026-10-21",
+    readTime: "5 min read",
+    coverImage:
+      "/Images/Blogs/broadloom-carpet-for-hotels/hero-grey-broadloom-carpet-lounge-chair.webp",
+    coverImageAlt:
+      "Grey curved armchair and small side table on a gold and olive broadloom carpet with a fine geometric line pattern",
+    ogImage:
+      "/Images/Blogs/broadloom-carpet-for-hotels/og-broadloom-carpet-for-hotels.jpg",
+    relatedProduct: {
+      name: "Broadloom Carpets",
+      path: "/categories/broadloom-carpets",
+    },
+    faqs: [
+      {
+        question: "Can broadloom carpet be used on hotel stairs?",
+        answer:
+          "Yes. Broadloom can be cut and fitted to stair treads and risers, so a staircase can continue the corridor design. Fitting details depend on the stair, and we agree them at survey.",
+      },
+      {
+        question: "Can a hotel carpet be made in our brand colours?",
+        answer:
+          "Yes. GAIA broadloom is made to order, so colour, pattern, texture and fibre can follow the brand palette and be approved on a sample before production.",
+      },
+      {
+        question: "Who should sign off a hotel carpet design?",
+        answer:
+          "The design team, the operator and housekeeping. Design approves pattern and colour, the operator checks it against brand standards, and housekeeping confirms it suits the cleaning routine.",
+      },
+    ],
+  },
+  {
+    id: 11,
+    slug: "artificial-grass-vs-real-grass",
+    title: "Artificial Grass vs Real Grass in India: Water, Upkeep and Where Each Works",
+    seoTitle: "Artificial Grass vs Real Grass in India | GAIA",
+    metaDescription:
+      "Artificial grass vs real grass in India: water, maintenance, heat and cost over time compared, with a zone-by-zone guide to where each works best.",
+    excerpt:
+      "A lawn needs sun, soil, water and weekly care; artificial grass needs none of them but brings its own trade-offs. Decide zone by zone.",
+    category: "Artificial Grass",
+    cluster: "outdoor-living",
+    tags: ["Artificial Grass", "Landscape Grass", "Gardens"],
+    author: "GAIA by Sanson Floorings",
+    location: "New Delhi",
+    publishedDate: "2026-10-21",
+    readTime: "6 min read",
+    coverImage:
+      "/Images/Blogs/artificial-grass-vs-real-grass/hero-artificial-grass-cafe-lawn.webp",
+    coverImageAlt:
+      "Outdoor café tables and chairs on a bright green artificial lawn in a glazed rooftop space",
+    ogImage:
+      "/Images/Blogs/artificial-grass-vs-real-grass/og-artificial-grass-vs-real-grass.jpg",
+    relatedProduct: {
+      name: "Landscape Grass",
+      path: "/artificial-grass/landscape-grass",
+    },
+    faqs: [
+      {
+        question: "Is artificial grass eco-friendly?",
+        answer:
+          "It saves water, fertiliser and mowing, but it is a plastic product that does not cool or absorb rain the way a living lawn does. It is the greener choice where a lawn would need heavy watering or would not survive, and the less green one where real grass grows easily.",
+      },
+      {
+        question: "Can I mix real and artificial grass in one garden?",
+        answer:
+          "Yes. Many gardens keep a real lawn in the sunny open area and use artificial grass under trees, along paths and on the terrace, with an edging strip where the two meet.",
+      },
+      {
+        question: "Can artificial grass be laid on soil?",
+        answer:
+          "Yes, on a properly prepared base. The soil is levelled and compacted, a free-draining sub-base is added and the grass is fixed at the edges. We advise on the base for your site.",
+      },
+    ],
+  },
+  {
+    id: 10,
+    slug: "how-many-carpet-tiles-do-i-need",
+    title: "How Many Carpet Tiles Do I Need? Quantity and Wastage Guide",
+    seoTitle: "How Many Carpet Tiles Do I Need? Quantity Guide | GAIA",
+    metaDescription:
+      "How many carpet tiles do you need? Count tiles across and along the room, add 5% spares, and divide by 20 per box. Worked example and layout allowances.",
+    excerpt:
+      "Count tiles, not square metres, add spare stock, and order everything in one batch. A worked example for a 6.2 × 4.3 m room.",
+    category: "Carpet Tiles",
+    cluster: "flooring-choices",
+    tags: ["Carpet Tiles", "Carpet Planks", "Installation"],
+    author: "GAIA by Sanson Floorings",
+    location: "New Delhi",
+    publishedDate: "2026-10-21",
+    readTime: "6 min read",
+    coverImage:
+      "/Images/Blogs/how-many-carpet-tiles-do-i-need/hero-carpet-tiles-restaurant-floor.webp",
+    coverImageAlt:
+      "Restaurant with pink upholstered chairs, round tables and framed pictures on a light grey carpet tile floor",
+    ogImage:
+      "/Images/Blogs/how-many-carpet-tiles-do-i-need/og-how-many-carpet-tiles-do-i-need.jpg",
+    relatedProduct: {
+      name: "Carpet Tiles",
+      path: "/categories/carpet-tiles",
+    },
+    faqs: [
+      {
+        question: "How many tiles does a long corridor need?",
+        answer:
+          "Count it like any other rectangle. A corridor 1.6 m wide and 20 m long takes 4 tiles across and 40 along, or 160 tiles. With spares, that is nine boxes.",
+      },
+      {
+        question: "How many carpet tiles do I need for a 10 × 10 ft room?",
+        answer:
+          "A 10 × 10 ft room is about 3.05 × 3.05 m, which takes 7 tiles each way, or 49 tiles. With a few spares, that is three boxes.",
+      },
+    ],
+  },
+  {
+    id: 5,
+    slug: "how-to-reduce-echo-in-a-room",
+    title: "How to Reduce Echo in a Room: What Actually Works",
+    seoTitle: "How to Reduce Echo in a Room: What Works | GAIA",
+    metaDescription:
+      "How to reduce echo in a room: treat the facing walls first, then the ceiling and floor. A clap-test checklist, a treatment diagram and what absorbs sound.",
+    excerpt:
+      "Echo comes from hard, parallel surfaces. Which surfaces to treat first, what absorbs sound, and how panels, ceiling absorbers and carpet work together.",
+    category: "Acoustic Panels",
+    cluster: "room-acoustics",
+    tags: ["Acoustics", "Acoustic Panels", "Carpet Tiles"],
+    author: "GAIA by Sanson Floorings",
+    location: "New Delhi",
+    publishedDate: "2026-10-21",
+    readTime: "9 min read",
+    coverImage:
+      "/Images/Blogs/how-to-reduce-echo-in-a-room/hero-home-office-geometric-acoustic-wall-panels.webp",
+    coverImageAlt:
+      "Wall of teal, mustard, orange and grey geometric acoustic panels with a leafy plant in front",
+    ogImage:
+      "/Images/Blogs/how-to-reduce-echo-in-a-room/og-how-to-reduce-echo-in-a-room.jpg",
+    relatedProduct: {
+      name: "Acoustic PET Panels",
+      path: "/categories/acoustic-tiles",
+    },
+    faqs: [
+      {
+        question: "Do plants reduce echo?",
+        answer:
+          "Only slightly. Large, leafy plants scatter some sound and soften a corner, but they absorb far less than panels, carpet or curtains of the same size.",
+      },
+      {
+        question: "Why does my new house echo so much?",
+        answer:
+          "New homes are finished in tile, plaster and glass and have little soft furniture at first. With every surface reflecting, echo is at its worst before rugs, curtains and sofas arrive.",
+      },
+    ],
+  },
+  {
+    id: 8,
+    slug: "noise-reduction-open-plan-office",
+    title: "Noise Reduction in Open-Plan Offices: Seven Fixes That Work",
+    seoTitle: "Noise Reduction in Open-Plan Offices: 7 Fixes | GAIA",
+    metaDescription:
+      "Noise reduction in an open-plan office: absorb speech at the ceiling and walls, soften the floor and zone loud and quiet work. Seven fixes, ranked.",
+    excerpt:
+      "Open-plan noise is reflected speech. Seven fixes, from quick wins to structural changes, to make an open office calmer without putting the walls back up.",
+    category: "Acoustic Panels",
+    cluster: "room-acoustics",
+    tags: ["Workplace", "Acoustics", "Carpet Tiles"],
+    author: "GAIA by Sanson Floorings",
+    location: "New Delhi",
+    publishedDate: "2026-10-21",
+    readTime: "5 min read",
+    coverImage:
+      "/Images/Blogs/noise-reduction-open-plan-office/hero-open-plan-office-ceiling-clouds.webp",
+    coverImageAlt:
+      "Open-plan office with rows of purple ceiling baffles, suspended red and pink ceiling clouds with built-in lights, free-standing red felt screens and cork stools",
+    ogImage:
+      "/Images/Blogs/noise-reduction-open-plan-office/og-noise-reduction-open-plan-office.jpg",
+    relatedProduct: {
+      name: "Acoustic PET Panels",
+      path: "/categories/acoustic-tiles",
+    },
+    faqs: [
+      {
+        question: "Can acoustic panels carry our brand?",
+        answer:
+          "Yes. GAIA printed panels can carry your artwork or logo, so a wall can mark out a team area and absorb sound at the same time. Our article on printed acoustic feature walls covers artwork and lighting.",
+      },
+      {
+        question: "Can acoustic panels go on a glass wall?",
+        answer:
+          "Usually not directly. In glass-walled rooms, treat the solid walls, the ceiling and the floor, or use frame-mounted panels near the glass.",
+      },
+    ],
+  },
+  {
+    id: 9,
+    slug: "acoustic-panels-vs-foam",
+    title: "Acoustic Panels vs Acoustic Foam: Which Should You Use?",
+    seoTitle: "Acoustic Panels vs Foam: Which Should You Use? | GAIA",
+    metaDescription:
+      "Acoustic panels vs foam: both absorb sound, but PET panels suit finished interiors and foam suits studios. Compare absorption, mounting, looks and lifespan.",
+    excerpt:
+      "Both absorb echo. The real difference is where the treatment goes, who sees it, and how long it has to look good.",
+    category: "Acoustic Panels",
+    cluster: "acoustic-panels",
+    tags: ["Acoustic Panels", "PET Panels"],
+    author: "GAIA by Sanson Floorings",
+    location: "New Delhi",
+    publishedDate: "2026-10-21",
+    readTime: "5 min read",
+    coverImage:
+      "/Images/Blogs/acoustic-panels-vs-foam/hero-hexagon-acoustic-wall-panels.webp",
+    coverImageAlt:
+      "Wall of hexagonal acoustic panels shading from white at the top to charcoal at the bottom",
+    ogImage:
+      "/Images/Blogs/acoustic-panels-vs-foam/og-acoustic-panels-vs-foam.jpg",
+    relatedProduct: {
+      name: "Acoustic PET Panels",
+      path: "/categories/acoustic-tiles",
+    },
+    faqs: [
+      {
+        question: "Are PET acoustic panels better than foam?",
+        answer:
+          "For finished interiors, usually yes, because they look like a wall finish, last longer in busy rooms and can stand off the wall. Foam remains a reasonable choice for studios and hidden treatment.",
+      },
+      {
+        question: "Do thicker acoustic panels absorb more?",
+        answer:
+          "Generally yes, especially lower-pitched sound. Standing a panel off the wall has a similar effect, so a slimmer panel on an air gap can outperform a thicker one fixed flat.",
+      },
+      {
+        question: "Can you paint acoustic foam?",
+        answer:
+          "It is best avoided. Paint seals the open cells that let sound in, so painted foam absorbs less. If colour matters, a panel made in that colour is the better route.",
+      },
+    ],
+  },
+  {
+    id: 6,
+    slug: "carpet-tiles-vs-vinyl-flooring",
+    title: "Carpet Tiles vs Vinyl Flooring for Offices: Comfort, Noise, Cost and Upkeep",
+    seoTitle: "Carpet Tiles vs Vinyl Flooring for Offices | GAIA",
+    metaDescription:
+      "Carpet tiles vs vinyl flooring for offices: compare noise, comfort, cleaning and repairs, with a zone-by-zone list of where each floor works best.",
+    excerpt:
+      "Neither floor wins everywhere. Choose by zone: carpet tiles where people sit and talk, a hard floor where spills and rain come in.",
+    category: "Carpet Tiles",
+    cluster: "flooring-choices",
+    tags: ["Carpet Tiles", "Office Flooring"],
+    author: "GAIA by Sanson Floorings",
+    location: "New Delhi",
+    publishedDate: "2026-10-21",
+    readTime: "7 min read",
+    coverImage:
+      "/Images/Blogs/carpet-tiles-vs-vinyl-flooring/hero-office-desk-patterned-carpet-tiles.webp",
+    coverImageAlt:
+      "Office desk corner with a grey chair on a dark carpet tile floor patterned with gold triangles, and a plant beside the desk",
+    ogImage:
+      "/Images/Blogs/carpet-tiles-vs-vinyl-flooring/og-carpet-tiles-vs-vinyl-flooring.jpg",
+    relatedProduct: {
+      name: "Carpet Tiles",
+      path: "/categories/carpet-tiles",
+    },
+    faqs: [
+      {
+        question: "Are carpet tiles good for offices?",
+        answer:
+          "Yes, for desks, meeting rooms, cabins and corridors. They are the quieter, more comfortable choice wherever people sit and talk for long periods.",
+      },
+      {
+        question: "Can carpet tiles be used in a pantry or kitchen area?",
+        answer:
+          "A hard floor is usually the better choice where spills and wet cleaning are daily events. Use carpet tiles in the surrounding work areas and a transition strip where they meet.",
+      },
+      {
+        question: "Can carpet tiles be laid over an existing vinyl floor?",
+        answer:
+          "Often, if the existing floor is flat, clean and firmly bonded. Loose or damaged vinyl should come up first. We check the existing floor and the fixing method before quoting.",
+      },
+    ],
+  },
+  {
+    id: 7,
+    slug: "balcony-makeover-ideas-artificial-grass",
+    title: "Balcony Makeover Ideas with Artificial Grass",
+    seoTitle: "Balcony Makeover Ideas with Artificial Grass | GAIA",
+    metaDescription:
+      "Balcony makeover ideas with artificial grass: six layouts, which pile height suits a balcony, how to lay it over tiles and a measuring checklist.",
+    excerpt:
+      "A soft green floor, a few planters and light for the evenings. Six ideas, the right grass for a small space and a checklist before you order.",
+    category: "Artificial Grass",
+    cluster: "outdoor-living",
+    tags: ["Artificial Grass", "Landscape Grass", "Balcony"],
+    author: "GAIA by Sanson Floorings",
+    location: "New Delhi",
+    publishedDate: "2026-10-21",
+    readTime: "6 min read",
+    coverImage:
+      "/Images/Blogs/balcony-makeover-ideas-artificial-grass/hero-artificial-grass-garden-lounge.webp",
+    coverImageAlt:
+      "Garden lounge with a hanging egg chair, woven basket planters, a grey outdoor sofa and a timber coffee table on a green artificial lawn, with trees behind",
+    ogImage:
+      "/Images/Blogs/balcony-makeover-ideas-artificial-grass/og-balcony-makeover-ideas-artificial-grass.jpg",
+    relatedProduct: {
+      name: "Landscape Grass",
+      path: "/artificial-grass/landscape-grass",
+    },
+    faqs: [
+      {
+        question: "Does artificial grass need watering?",
+        answer:
+          "No. An occasional rinse removes dust.",
+      },
+      {
+        question: "Can I put plant pots on artificial grass?",
+        answer:
+          "Yes. Stand them on saucers or pot feet so water drains away instead of sitting in the grass, and move heavy pots now and then so the blades underneath can recover.",
+      },
+      {
+        question: "Does the same advice apply to a terrace?",
+        answer:
+          "Mostly. A larger terrace can take a taller, lawn-like pile, but drainage, sun and fire safety need the same planning, and the bigger area makes the direction of joins more important.",
+      },
+    ],
+  },
+  {
     id: 4,
     slug: "acoustic-panels-air-gap",
     title: "Should Acoustic Panels Have an Air Gap? NRC, Depth and Wall Lights",

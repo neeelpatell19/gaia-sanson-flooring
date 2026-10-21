@@ -1,0 +1,49 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 620" width="640" height="620" role="img" aria-labelledby="t d">
+<title id="t">Where to treat echo in a room</title>
+<desc id="d">Section through a room. A person speaks; sound bounces between the two side walls, the ceiling and the floor. Treat in this order: 1, acoustic panels on the walls that face each other; 2, a ceiling absorber in tall rooms; 3, a soft floor.</desc>
+<defs>
+<marker id="a" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0 10 5 0 10z" fill="#b5651d"/></marker>
+<style>
+.wall{fill:#e9e4da;stroke:#2c3e50;stroke-width:3}
+.room{fill:#fbf8f1;stroke:#2c3e50;stroke-width:3}
+.pan{fill:#3f5d7a}
+.cloud{fill:#3f5d7a}
+.floor{fill:#9c8a6a}
+.ray{fill:none;stroke:#b5651d;stroke-width:3.5;stroke-dasharray:9 7}
+.n{fill:#c49a2a}
+.nt{fill:#fff;font:700 24px Arial,Helvetica,sans-serif;text-anchor:middle}
+.lb{fill:#2c3e50;font:600 23px Arial,Helvetica,sans-serif}
+.sm{fill:#5a6470;font:400 20px Arial,Helvetica,sans-serif}
+</style>
+</defs>
+<rect x="30" y="40" width="580" height="350" class="room"/>
+<rect x="30" y="40" width="580" height="18" class="wall"/>
+<rect x="30" y="372" width="580" height="18" class="wall"/>
+<rect x="44" y="160" width="16" height="140" class="pan"/>
+<rect x="580" y="160" width="16" height="140" class="pan"/>
+<rect x="210" y="80" width="220" height="16" class="cloud"/>
+<line x1="230" y1="58" x2="230" y2="80" stroke="#2c3e50" stroke-width="2"/>
+<line x1="410" y1="58" x2="410" y2="80" stroke="#2c3e50" stroke-width="2"/>
+<rect x="90" y="358" width="460" height="14" class="floor"/>
+<g fill="#2c3e50">
+<circle cx="250" cy="226" r="17"/>
+<path d="M232 248h36l6 70h-11l-4 40h-18l-4-40h-11z"/>
+</g>
+<path class="ray" d="M272 220 L572 200" marker-end="url(#a)"/>
+<path class="ray" d="M572 230 L72 250" marker-end="url(#a)"/>
+<path class="ray" d="M262 205 L330 104" marker-end="url(#a)"/>
+<path class="ray" d="M270 300 L380 352" marker-end="url(#a)"/>
+<circle cx="52" cy="128" r="19" class="n"/><text x="52" y="137" class="nt">1</text>
+<circle cx="588" cy="128" r="19" class="n"/><text x="588" y="137" class="nt">1</text>
+<circle cx="455" cy="88" r="19" class="n"/><text x="455" y="97" class="nt">2</text>
+<circle cx="575" cy="340" r="19" class="n"/><text x="575" y="349" class="nt">3</text>
+<circle cx="52" cy="440" r="19" class="n"/><text x="52" y="449" class="nt">1</text>
+<text x="84" y="448" class="lb">Panels on the walls that face each other</text>
+<text x="84" y="474" class="sm">At head height, where voices travel</text>
+<circle cx="52" cy="510" r="19" class="n"/><text x="52" y="519" class="nt">2</text>
+<text x="84" y="518" class="lb">A ceiling absorber in tall rooms</text>
+<text x="84" y="544" class="sm">Baffles or clouds catch sound going up</text>
+<circle cx="52" cy="580" r="19" class="n"/><text x="52" y="589" class="nt">3</text>
+<text x="84" y="588" class="lb">A soft floor</text>
+<text x="84" y="612" class="sm">Carpet tiles or broadloom take out footfall</text>
+</svg>

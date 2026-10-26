@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 600" width="640" height="600" font-family="Arial, Helvetica, sans-serif" role="img" aria-labelledby="t d">
+<title id="t">Where to put acoustic panels in a home theatre</title>
+<desc id="d">Plan of a home theatre: screen and three front speakers at the top, a sofa near the back. Sound from the left and right speakers reflects off each side wall to the listener. Panels sit at those points, across the rear wall and on the ceiling between screen and sofa.</desc>
+<defs><marker id="m" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0 0 10 5 0 10z" fill="#a0603d"/></marker></defs>
+<rect width="100%" height="100%" fill="#fbf8f2"/>
+<text x="320" y="38" text-anchor="middle" font-size="27" font-weight="700" fill="#2f394a">Home theatre: where panels go</text>
+<rect x="60" y="62" width="520" height="440" fill="#ffffff" stroke="#2f394a" stroke-width="4"/>
+<!-- screen -->
+<rect x="200" y="70" width="240" height="12" fill="#2f394a"/>
+<text x="320" y="110" text-anchor="middle" font-size="20" fill="#7a7f87">Screen</text>
+<!-- speakers -->
+<rect x="140" y="78" width="34" height="34" rx="4" fill="#4f5b6b"/><rect x="303" y="118" width="34" height="22" rx="4" fill="#4f5b6b"/><rect x="466" y="78" width="34" height="34" rx="4" fill="#4f5b6b"/>
+<!-- ceiling cloud (dashed outline) -->
+<rect x="210" y="210" width="220" height="80" fill="#3f5d7a" opacity=".18" stroke="#3f5d7a" stroke-width="2" stroke-dasharray="8 6"/>
+<text x="320" y="258" text-anchor="middle" font-size="20" fill="#3f5d7a" font-weight="700">Ceiling panel</text>
+<!-- side panels at reflection points -->
+<rect x="62" y="230" width="16" height="96" fill="#3f5d7a"/><rect x="562" y="230" width="16" height="96" fill="#3f5d7a"/>
+<!-- rear wall panels -->
+<rect x="150" y="484" width="340" height="16" fill="#3f5d7a"/>
+<!-- sofa -->
+<rect x="230" y="400" width="180" height="50" rx="10" fill="#c9b79c"/><rect x="230" y="440" width="180" height="18" rx="6" fill="#b3a084"/>
+<circle cx="320" cy="415" r="10" fill="#a0603d"/>
+<!-- rays -->
+<g stroke="#a0603d" stroke-width="3" stroke-dasharray="8 6" fill="none">
+<polyline points="160,112 78,278 308,410" marker-end="url(#m)"/>
+<polyline points="480,112 562,278 332,410" marker-end="url(#m)"/>
+</g>
+<text x="88" y="372" font-size="20" font-weight="700" fill="#2f394a">First</text>
+<text x="88" y="396" font-size="20" font-weight="700" fill="#2f394a">reflection</text>
+<text x="552" y="372" text-anchor="end" font-size="20" font-weight="700" fill="#2f394a">First</text>
+<text x="552" y="396" text-anchor="end" font-size="20" font-weight="700" fill="#2f394a">reflection</text>
+<text x="320" y="478" text-anchor="middle" font-size="20" fill="#3f5d7a" font-weight="700">Rear wall panels</text>
+<rect x="60" y="522" width="22" height="22" fill="#3f5d7a"/><text x="92" y="540" font-size="21" fill="#2f394a">Acoustic panels</text>
+<line x1="330" y1="533" x2="380" y2="533" stroke="#a0603d" stroke-width="3" stroke-dasharray="8 6"/><text x="392" y="540" font-size="21" fill="#2f394a">Reflected sound</text>
+<text x="320" y="584" text-anchor="middle" font-size="20" fill="#7a7f87">Find side-wall points with a mirror from the main seat</text>
+</svg>

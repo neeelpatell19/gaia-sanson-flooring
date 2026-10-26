@@ -18,6 +18,333 @@
 
 const BlogsData = [
   {
+    id: 22,
+    slug: "types-of-artificial-grass",
+    title: "Types of Artificial Grass: Which One Do You Need?",
+    seoTitle: "Types of Artificial Grass: Which Do You Need? | GAIA",
+    metaDescription:
+      "The four types of artificial grass explained: landscape grass, curly grass, sports grass and MultiTurf, with a chooser for homes, terraces, fields and courts.",
+    excerpt:
+      "Landscape, curly, sports and MultiTurf look alike in photographs and behave very differently. Choose by what the surface is for.",
+    category: "Artificial Grass",
+    cluster: "outdoor-living",
+    tags: ["Artificial Grass", "Landscape Grass", "Sports Turf"],
+    author: "GAIA by Sanson Floorings",
+    location: "New Delhi",
+    publishedDate: "2026-11-23",
+    readTime: "10 min read",
+    coverImage:
+      "/Images/Blogs/types-of-artificial-grass/hero-rolls-of-artificial-grass.webp",
+    coverImageAlt:
+      "Rolls of thick green artificial grass laid in a row beside a low timber fence",
+    ogImage:
+      "/Images/Blogs/types-of-artificial-grass/og-types-of-artificial-grass.jpg",
+    relatedProduct: {
+      name: "Artificial Grass",
+      path: "/categories/artificial-multiturf",
+    },
+    faqs: [
+      {
+        question: "What is the difference between artificial grass and artificial turf?",
+        answer:
+          "The terms overlap. \"Artificial grass\" usually means landscaping products for homes and gardens; \"artificial turf\" or \"sports turf\" usually means surfaces built for play.",
+      },
+      {
+        question: "Can landscape grass be used for sports?",
+        answer:
+          "For casual play in a garden, yes. For regular football, tennis or badminton, sports grass or MultiTurf gives a more consistent, harder-wearing surface.",
+      },
+      {
+        question: "What is the best artificial grass for a balcony?",
+        answer:
+          "A short-pile landscape grass, which is easy to sweep and stands up under furniture. Curly grass works where a textured, decorative layer suits the design.",
+      },
+    ],
+  },
+  {
+    id: 21,
+    slug: "best-flooring-for-office",
+    title: "Best Flooring for Offices in India: A Zone-by-Zone Guide",
+    seoTitle: "Best Flooring for Offices in India: Zone Guide | GAIA",
+    metaDescription:
+      "The best flooring for an office in India, zone by zone: carpet tiles, broadloom and hard floors compared, with a zone map, raised floors and life costs.",
+    excerpt:
+      "Carpet tiles for the working floor, a hard floor where water arrives, broadloom where the design is bespoke. The whole office, zone by zone.",
+    category: "Carpet Tiles",
+    cluster: "flooring-choices",
+    tags: ["Office Flooring", "Carpet Tiles", "Broadloom"],
+    author: "GAIA by Sanson Floorings",
+    location: "New Delhi",
+    publishedDate: "2026-11-19",
+    readTime: "10 min read",
+    coverImage:
+      "/Images/Blogs/best-flooring-for-office/hero-open-plan-office-carpet.webp",
+    coverImageAlt:
+      "Open-plan office with two rows of timber workstations and black mesh chairs on light grey patterned carpet, beside tall windows",
+    ogImage:
+      "/Images/Blogs/best-flooring-for-office/og-best-flooring-for-office.jpg",
+    relatedProduct: {
+      name: "Carpet Tiles",
+      path: "/categories/carpet-tiles",
+    },
+    faqs: [
+      {
+        question: "What is the most durable flooring for an office?",
+        answer:
+          "Durability depends on how a floor is used and maintained. In work areas, carpet tiles last well because worn pieces in busy routes can be replaced individually; in wet areas, vinyl and vitrified tile cope best.",
+      },
+      {
+        question: "Is carpet hygienic for an office?",
+        answer:
+          "Yes, when it is vacuumed regularly, spills are dealt with the same day and the floor is deep-cleaned on schedule. A written routine for each zone keeps it that way.",
+      },
+      {
+        question: "What flooring is best for an office reception?",
+        answer:
+          "A hard floor and matting at the door, then carpet in the waiting area. Broadloom suits a reception built around a bespoke design; carpet tiles suit one that may change.",
+      },
+    ],
+  },
+  {
+    id: 20,
+    slug: "home-theatre-acoustics",
+    title: "Home Theatre Acoustics: Where to Put Acoustic Panels",
+    seoTitle: "Home Theatre Acoustics: Where to Put Panels | GAIA",
+    metaDescription:
+      "Home theatre acoustics: finding first reflection points, treating the rear wall and ceiling, handling bass, choosing panel colours and keeping sound in.",
+    excerpt:
+      "Side-wall reflection points, the rear wall and the ceiling. Where acoustic panels do most for a home theatre or media room.",
+    category: "Acoustic Panels",
+    cluster: "room-acoustics",
+    tags: ["Acoustics", "Home Theatre", "Acoustic Panels"],
+    author: "GAIA by Sanson Floorings",
+    location: "New Delhi",
+    publishedDate: "2026-11-16",
+    readTime: "6 min read",
+    coverImage:
+      "/Images/Blogs/home-theatre-acoustics/hero-living-room-geometric-acoustic-wall.webp",
+    coverImageAlt:
+      "Living room with a green sofa and striped rug in front of a wall of geometric acoustic panels in orange, mustard and navy",
+    ogImage:
+      "/Images/Blogs/home-theatre-acoustics/og-home-theatre-acoustics.jpg",
+    relatedProduct: {
+      name: "Acoustic PET Panels",
+      path: "/categories/acoustic-tiles",
+    },
+    faqs: [
+      {
+        question: "How much treatment does a media room need?",
+        answer:
+          "A small media room often starts with a panel at each side-wall reflection point, several across the rear wall and one overhead, then adds corner treatment for bass if the room still booms.",
+      },
+      {
+        question: "Can acoustic panels be used in a living-room home theatre?",
+        answer:
+          "Yes. Printed, grooved and fluted panels look like a designed feature wall, so a living room can be treated without looking like a studio.",
+      },
+    ],
+  },
+  {
+    id: 19,
+    slug: "choosing-carpet-tile-colours-for-office",
+    title: "How to Choose Carpet Tile Colours for an Office",
+    seoTitle: "How to Choose Carpet Tile Colours for an Office | GAIA",
+    metaDescription:
+      "Choosing carpet tile colours for an office: colours that hide dirt, light or dark floors, zoning with colour, brand colours and a three-layer colour plan.",
+    excerpt:
+      "A forgiving base, a zone colour and a small accent. A simple method for choosing office carpet colours that last.",
+    category: "Carpet Tiles",
+    cluster: "flooring-choices",
+    tags: ["Carpet Tiles", "Office Design", "Colour"],
+    author: "GAIA by Sanson Floorings",
+    location: "New Delhi",
+    publishedDate: "2026-11-12",
+    readTime: "6 min read",
+    coverImage:
+      "/Images/Blogs/choosing-carpet-tile-colours-for-office/hero-carpet-tiles-colour-blocks-lounge.webp",
+    coverImageAlt:
+      "Office lounge with a green sofa and two people talking, on carpet tiles in blocks of orange, grey and green beneath pendant lights",
+    ogImage:
+      "/Images/Blogs/choosing-carpet-tile-colours-for-office/og-choosing-carpet-tile-colours-for-office.jpg",
+    relatedProduct: {
+      name: "Carpet Tiles",
+      path: "/categories/carpet-tiles",
+    },
+    faqs: [
+      {
+        question: "Why is grey so common for office carpet?",
+        answer:
+          "Because grey in its many shades sits well with most furniture and hides soil. Blended greys with a warm or blue undertone avoid the flat look of a single plain grey.",
+      },
+      {
+        question: "Can carpet tiles of different colours be mixed in one layout?",
+        answer:
+          "Yes. Tiles of the same collection and size can be mixed freely, from a simple checkerboard to blocks and random scatters.",
+      },
+    ],
+  },
+  {
+    id: 18,
+    slug: "restaurant-acoustics",
+    title: "Restaurant Acoustics: How to Make a Dining Room Less Noisy",
+    seoTitle: "Restaurant Acoustics: Make a Dining Room Less Noisy | GAIA",
+    metaDescription:
+      "Restaurant acoustics: why dining rooms get loud, where to put ceiling and wall treatment, whether to carpet, and a room-by-room acoustic plan.",
+    excerpt:
+      "Guests talk louder to be heard, and the room gets louder still. How to break the cycle without losing the buzz.",
+    category: "Acoustic Panels",
+    cluster: "hospitality-spaces",
+    tags: ["Acoustics", "Restaurants", "Hospitality"],
+    author: "GAIA by Sanson Floorings",
+    location: "New Delhi",
+    publishedDate: "2026-11-09",
+    readTime: "6 min read",
+    coverImage:
+      "/Images/Blogs/restaurant-acoustics/hero-cafe-long-table-wave-acoustic-ceiling.webp",
+    coverImageAlt:
+      "Long timber table with red stools under a ceiling of yellow wave-shaped acoustic baffles, in a bright room with timber floors",
+    ogImage:
+      "/Images/Blogs/restaurant-acoustics/og-restaurant-acoustics.jpg",
+    relatedProduct: {
+      name: "Acoustic PET Panels",
+      path: "/categories/acoustic-tiles",
+    },
+    faqs: [
+      {
+        question: "Can acoustic treatment be added to a restaurant that is already open?",
+        answer:
+          "Yes. Wall panels and suspended ceiling elements can usually be installed outside service hours, without closing the restaurant.",
+      },
+      {
+        question: "Do ceiling baffles get in the way of sprinklers and air-conditioning?",
+        answer:
+          "Not when they are planned together. Baffles and clouds are set out around sprinklers, lights and air outlets on a coordinated ceiling drawing, so every service keeps working.",
+      },
+    ],
+  },
+  {
+    id: 17,
+    slug: "artificial-grass-on-terrace",
+    title: "Artificial Grass on a Terrace or Rooftop: What to Check First",
+    seoTitle: "Artificial Grass on a Terrace or Rooftop | GAIA",
+    metaDescription:
+      "Artificial grass on a terrace or rooftop: protect the waterproofing, keep rainwater outlets clear, secure the edges against wind, and inspect the roof first.",
+    excerpt:
+      "Waterproofing, drainage and wind decide how a rooftop lawn goes down. What to inspect before the grass arrives.",
+    category: "Artificial Grass",
+    cluster: "outdoor-living",
+    tags: ["Artificial Grass", "Terrace", "Landscape Grass"],
+    author: "GAIA by Sanson Floorings",
+    location: "New Delhi",
+    publishedDate: "2026-11-05",
+    readTime: "6 min read",
+    coverImage:
+      "/Images/Blogs/artificial-grass-on-terrace/hero-rooftop-terrace-lawn-illustration.webp",
+    coverImageAlt:
+      "Illustration of a rooftop terrace with an artificial lawn, planters along the parapet and water tanks on a raised platform",
+    ogImage:
+      "/Images/Blogs/artificial-grass-on-terrace/og-artificial-grass-on-terrace.jpg",
+    relatedProduct: {
+      name: "Landscape Grass",
+      path: "/artificial-grass/landscape-grass",
+    },
+    faqs: [
+      {
+        question: "Is artificial grass heavy for a roof?",
+        answer:
+          "No. It weighs far less than a soil lawn, which needs a deep, wet growing bed. Heavy planters, water features and built-in furniture are the items to check with a structural engineer.",
+      },
+      {
+        question: "Can artificial grass be lifted when the roof needs repairs?",
+        answer:
+          "Yes, if it was laid without fixings through the waterproofing. The affected area is rolled back, repaired and relaid.",
+      },
+      {
+        question: "Do I need permission to lay grass on a shared terrace?",
+        answer:
+          "Often, yes. Where the roof is common property, check with the housing society or building management before work starts.",
+      },
+    ],
+  },
+  {
+    id: 16,
+    slug: "how-to-clean-carpet-tiles",
+    title: "How to Clean Carpet Tiles: Daily Care, Stains and Deep Cleaning",
+    seoTitle: "How to Clean Carpet Tiles: Stains and Deep Cleaning | GAIA",
+    metaDescription:
+      "How to clean carpet tiles: vacuuming by traffic, removing stains, hot-water extraction, replacing a damaged tile, and a cleaning schedule for each area.",
+    excerpt:
+      "Vacuum by traffic, blot spills from the edge inwards, deep-clean on a calendar and swap any tile that will not come clean.",
+    category: "Carpet Tiles",
+    cluster: "flooring-choices",
+    tags: ["Carpet Tiles", "Maintenance", "Office Flooring"],
+    author: "GAIA by Sanson Floorings",
+    location: "New Delhi",
+    publishedDate: "2026-11-02",
+    readTime: "7 min read",
+    coverImage:
+      "/Images/Blogs/how-to-clean-carpet-tiles/hero-carpet-tiles-office-cafe.webp",
+    coverImageAlt:
+      "Office café with red and timber chairs around a high table on grey carpet tiles laid in a checked pattern",
+    ogImage:
+      "/Images/Blogs/how-to-clean-carpet-tiles/og-how-to-clean-carpet-tiles.jpg",
+    relatedProduct: {
+      name: "Carpet Tiles",
+      path: "/categories/carpet-tiles",
+    },
+    faqs: [
+      {
+        question: "Can you mop carpet tiles?",
+        answer:
+          "No. Mopping leaves too much water in the pile. Vacuum regularly, spot-clean with a cloth, and leave wet cleaning to hot-water extraction equipment that removes the moisture again.",
+      },
+      {
+        question: "Can carpet tiles be cleaned with a steam cleaner?",
+        answer:
+          "Professional hot-water extraction, often called steam cleaning, is the standard deep-cleaning method. The key is that the floor is dry within 24 hours.",
+      },
+    ],
+  },
+  {
+    id: 15,
+    slug: "classroom-acoustics",
+    title: "Classroom Acoustics: Why Children Struggle to Hear and How to Fix It",
+    seoTitle: "Classroom Acoustics: How to Fix Echo in a Classroom | GAIA",
+    metaDescription:
+      "Classroom acoustics explained: the ANSI S12.60 targets, which surfaces to treat first, carpet in classrooms and a treatment checklist for schools.",
+    excerpt:
+      "Reverberation blurs a teacher's words before they reach the back row. The targets, the surfaces to treat first and a checklist for schools.",
+    category: "Acoustic Panels",
+    cluster: "room-acoustics",
+    tags: ["Acoustics", "Education", "Acoustic Panels"],
+    author: "GAIA by Sanson Floorings",
+    location: "New Delhi",
+    publishedDate: "2026-10-29",
+    readTime: "7 min read",
+    coverImage:
+      "/Images/Blogs/classroom-acoustics/hero-library-acoustic-open-cell-ceiling.webp",
+    coverImageAlt:
+      "Library aisle between white bookshelves, with a green lounge chair, under a grid of wavy green acoustic ceiling panels",
+    ogImage:
+      "/Images/Blogs/classroom-acoustics/og-classroom-acoustics.jpg",
+    relatedProduct: {
+      name: "Acoustic PET Panels",
+      path: "/categories/acoustic-tiles",
+    },
+    faqs: [
+      {
+        question: "How many acoustic panels does a classroom need?",
+        answer:
+          "It depends on the room's volume and finishes. A typical classroom with a hard ceiling usually needs absorption over most of the ceiling plus the rear wall to approach the 0.6-second target.",
+      },
+      {
+        question: "Do acoustic panels stop sound from the next classroom?",
+        answer:
+          "No. Panels only change how sound behaves inside the classroom. Sound passing between classrooms is controlled by the partition wall, the door and any gaps above the ceiling.",
+      },
+    ],
+  },
+  {
     id: 14,
     slug: "what-is-greenpro-certification",
     title: "What Is GreenPro Certification? What It Means for Flooring and Acoustic Panels",

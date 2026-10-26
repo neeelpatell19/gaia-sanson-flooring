@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 520" width="640" height="520" font-family="Arial, Helvetica, sans-serif" role="img" aria-labelledby="t d">
+<title id="t">Artificial grass on a roof terrace: cross-section</title>
+<desc id="d">Concrete slab, waterproofing and sloped screed under artificial grass. Rain runs down the slope to an outlet left uncovered beside the parapet. The edge is held without fixings through the waterproofing.</desc>
+<defs><marker id="ar" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0 0 10 5 0 10z" fill="#3f5d7a"/></marker></defs>
+<rect width="100%" height="100%" fill="#fbf8f2"/>
+<text x="320" y="40" text-anchor="middle" font-size="27" font-weight="700" fill="#2f394a">Grass on a roof: the build-up</text>
+<!-- parapet -->
+<rect x="560" y="120" width="44" height="250" fill="#d9d2c4" stroke="#2f394a" stroke-width="2"/>
+<!-- slab -->
+<polygon points="30,330 560,330 560,370 30,370" fill="#b9b3a8" stroke="#2f394a" stroke-width="2"/>
+<!-- waterproofing -->
+<polygon points="30,318 560,318 560,330 30,330" fill="#2f394a"/>
+<!-- screed sloped: higher on left -->
+<polygon points="30,276 520,302 560,306 560,318 30,318" fill="#e2dccf" stroke="#2f394a" stroke-width="1.5"/>
+<!-- grass on screed, stopping before outlet -->
+<polygon points="30,262 476,286 476,300 30,276" fill="#5f9a4e"/>
+<g stroke="#3f7a35" stroke-width="2">
+<line x1="50" y1="275" x2="48" y2="262"/><line x1="90" y1="277" x2="92" y2="264"/><line x1="130" y1="279" x2="128" y2="266"/><line x1="170" y1="281" x2="172" y2="268"/><line x1="210" y1="284" x2="208" y2="270"/><line x1="250" y1="286" x2="252" y2="272"/><line x1="290" y1="288" x2="288" y2="274"/><line x1="330" y1="290" x2="332" y2="276"/><line x1="370" y1="292" x2="368" y2="279"/><line x1="410" y1="294" x2="412" y2="281"/><line x1="450" y1="297" x2="448" y2="284"/>
+</g>
+<!-- outlet -->
+<rect x="500" y="300" width="40" height="70" fill="#fbf8f2" stroke="#2f394a" stroke-width="2"/>
+<rect x="496" y="296" width="48" height="6" fill="#7a7f87"/>
+<!-- rain arrows -->
+<g stroke="#3f5d7a" stroke-width="3" marker-end="url(#ar)" fill="none">
+<line x1="120" y1="200" x2="120" y2="248"/><line x1="260" y1="205" x2="260" y2="258"/><line x1="400" y1="212" x2="400" y2="270"/>
+<path d="M300 306 Q420 318 506 318"/>
+</g>
+<text x="180" y="190" font-size="21" fill="#3f5d7a" font-weight="700">Rain</text>
+<!-- labels -->
+<text x="40" y="100" font-size="22" font-weight="700" fill="#4f7a6a">Artificial grass</text>
+<line x1="60" y1="108" x2="60" y2="266" stroke="#4f7a6a" stroke-width="2"/>
+<rect x="40" y="394" width="24" height="22" fill="#e2dccf" stroke="#2f394a"/><text x="74" y="412" font-size="21" fill="#2f394a">Sloped screed, falling to the outlet</text>
+<rect x="40" y="424" width="24" height="22" fill="#2f394a"/><text x="74" y="442" font-size="21" fill="#2f394a">Waterproofing: never pierced</text>
+<rect x="40" y="454" width="24" height="22" fill="#b9b3a8" stroke="#2f394a"/><text x="74" y="472" font-size="21" fill="#2f394a">Concrete roof slab</text>
+<text x="436" y="168" font-size="21" font-weight="700" fill="#a0603d">Outlet left</text>
+<text x="436" y="194" font-size="21" font-weight="700" fill="#a0603d">uncovered</text>
+<line x1="520" y1="202" x2="520" y2="292" stroke="#a0603d" stroke-width="2"/>
+<text x="604" y="108" text-anchor="end" font-size="20" fill="#2f394a">Parapet</text>
+<text x="320" y="505" text-anchor="middle" font-size="20" fill="#7a7f87">Edges and joins secured without drilling the roof</text>
+</svg>

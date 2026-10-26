@@ -31,7 +31,7 @@ const BlogsData = [
     tags: ["Artificial Grass", "Landscape Grass", "Sports Turf"],
     author: "GAIA by Sanson Floorings",
     location: "New Delhi",
-    publishedDate: "2026-11-23",
+    publishedDate: "2026-10-26",
     readTime: "10 min read",
     coverImage:
       "/Images/Blogs/types-of-artificial-grass/hero-rolls-of-artificial-grass.webp",
@@ -75,7 +75,7 @@ const BlogsData = [
     tags: ["Office Flooring", "Carpet Tiles", "Broadloom"],
     author: "GAIA by Sanson Floorings",
     location: "New Delhi",
-    publishedDate: "2026-11-19",
+    publishedDate: "2026-10-26",
     readTime: "10 min read",
     coverImage:
       "/Images/Blogs/best-flooring-for-office/hero-open-plan-office-carpet.webp",
@@ -119,7 +119,7 @@ const BlogsData = [
     tags: ["Acoustics", "Home Theatre", "Acoustic Panels"],
     author: "GAIA by Sanson Floorings",
     location: "New Delhi",
-    publishedDate: "2026-11-16",
+    publishedDate: "2026-10-26",
     readTime: "6 min read",
     coverImage:
       "/Images/Blogs/home-theatre-acoustics/hero-living-room-geometric-acoustic-wall.webp",
@@ -158,7 +158,7 @@ const BlogsData = [
     tags: ["Carpet Tiles", "Office Design", "Colour"],
     author: "GAIA by Sanson Floorings",
     location: "New Delhi",
-    publishedDate: "2026-11-12",
+    publishedDate: "2026-10-26",
     readTime: "6 min read",
     coverImage:
       "/Images/Blogs/choosing-carpet-tile-colours-for-office/hero-carpet-tiles-colour-blocks-lounge.webp",
@@ -197,7 +197,7 @@ const BlogsData = [
     tags: ["Acoustics", "Restaurants", "Hospitality"],
     author: "GAIA by Sanson Floorings",
     location: "New Delhi",
-    publishedDate: "2026-11-09",
+    publishedDate: "2026-10-26",
     readTime: "6 min read",
     coverImage:
       "/Images/Blogs/restaurant-acoustics/hero-cafe-long-table-wave-acoustic-ceiling.webp",
@@ -236,7 +236,7 @@ const BlogsData = [
     tags: ["Artificial Grass", "Terrace", "Landscape Grass"],
     author: "GAIA by Sanson Floorings",
     location: "New Delhi",
-    publishedDate: "2026-11-05",
+    publishedDate: "2026-10-26",
     readTime: "6 min read",
     coverImage:
       "/Images/Blogs/artificial-grass-on-terrace/hero-rooftop-terrace-lawn-illustration.webp",
@@ -280,7 +280,7 @@ const BlogsData = [
     tags: ["Carpet Tiles", "Maintenance", "Office Flooring"],
     author: "GAIA by Sanson Floorings",
     location: "New Delhi",
-    publishedDate: "2026-11-02",
+    publishedDate: "2026-10-26",
     readTime: "7 min read",
     coverImage:
       "/Images/Blogs/how-to-clean-carpet-tiles/hero-carpet-tiles-office-cafe.webp",
@@ -319,7 +319,7 @@ const BlogsData = [
     tags: ["Acoustics", "Education", "Acoustic Panels"],
     author: "GAIA by Sanson Floorings",
     location: "New Delhi",
-    publishedDate: "2026-10-29",
+    publishedDate: "2026-10-26",
     readTime: "7 min read",
     coverImage:
       "/Images/Blogs/classroom-acoustics/hero-library-acoustic-open-cell-ceiling.webp",

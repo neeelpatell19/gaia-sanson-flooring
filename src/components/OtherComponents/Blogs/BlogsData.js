@@ -18,6 +18,221 @@
 
 const BlogsData = [
   {
+    id: 27,
+    slug: "auditorium-acoustics",
+    title: "Auditorium Acoustics: How to Design a Hall for Clear Speech",
+    seoTitle: "Auditorium Acoustics: Design a Hall for Clear Speech | GAIA",
+    metaDescription:
+      "Auditorium acoustics: why halls echo, where to place wall and ceiling absorption, reverberation for speech, seats and carpet, and a checklist for halls.",
+    excerpt:
+      "Reflect at the front, absorb at the back. How to make every row of an auditorium or seminar hall hear clearly.",
+    category: "Acoustic Panels",
+    cluster: "room-acoustics",
+    tags: ["Acoustics", "Auditoriums", "Education"],
+    author: "GAIA by Sanson Floorings",
+    location: "New Delhi",
+    publishedDate: "2026-10-27",
+    readTime: "6 min read",
+    coverImage:
+      "/Images/Blogs/auditorium-acoustics/hero-conference-hall-vertical-acoustic-panels.webp",
+    coverImageAlt:
+      "Conference hall with a long white table and black chairs in front of a wall of tall, dark vertical acoustic panels under linear lights",
+    ogImage:
+      "/Images/Blogs/auditorium-acoustics/og-auditorium-acoustics.jpg",
+    relatedProduct: {
+      name: "Acoustic PET Panels",
+      path: "/categories/acoustic-tiles",
+    },
+    faqs: [
+      {
+        question: "Why does the microphone boom in our hall?",
+        answer:
+          "Usually because the hall is too reverberant, so the amplified sound keeps reflecting and builds up. Absorbing the rear and side walls lets the system run at a lower level and sound clearer.",
+      },
+      {
+        question: "Can an existing auditorium be treated without rebuilding it?",
+        answer:
+          "Yes. Panels fix to the existing walls and absorbers hang from the existing ceiling, so most work can be scheduled between events.",
+      },
+    ],
+  },
+  {
+    id: 26,
+    slug: "what-is-nrc-noise-reduction-coefficient",
+    title: "What Is NRC? The Noise Reduction Coefficient Explained",
+    seoTitle: "What Is NRC? Noise Reduction Coefficient Explained | GAIA",
+    metaDescription:
+      "NRC explained: what the noise reduction coefficient measures, how it is calculated, what a good rating is, NRC vs SAA and αw, and what NRC does not tell you.",
+    excerpt:
+      "One number from 0 to 1 for how much sound a surface absorbs. How it is measured, what a good rating is, and how to compare products fairly.",
+    category: "Acoustic Panels",
+    cluster: "acoustic-panels",
+    tags: ["Acoustics", "NRC", "Acoustic Panels"],
+    author: "GAIA by Sanson Floorings",
+    location: "New Delhi",
+    publishedDate: "2026-10-27",
+    readTime: "6 min read",
+    coverImage:
+      "/Images/Blogs/what-is-nrc-noise-reduction-coefficient/hero-green-open-cell-acoustic-ceiling.webp",
+    coverImageAlt:
+      "Open-plan space with a green open cell acoustic ceiling grid above long planters of tropical plants and tall windows",
+    ogImage:
+      "/Images/Blogs/what-is-nrc-noise-reduction-coefficient/og-what-is-nrc-noise-reduction-coefficient.jpg",
+    relatedProduct: {
+      name: "Acoustic PET Panels",
+      path: "/categories/acoustic-tiles",
+    },
+    faqs: [
+      {
+        question: "Is a higher NRC always better?",
+        answer:
+          "For absorbing echo, generally yes, but placement and coverage matter as much. A room can also be over-treated, which leaves it sounding dull and lifeless.",
+      },
+      {
+        question: "What is the NRC of carpet?",
+        answer:
+          "It varies with pile, backing and underlay. Carpet on a hard floor usually falls in the lower part of the scale, which is why it helps a room but rarely fixes an echo on its own.",
+      },
+      {
+        question: "Does NRC measure soundproofing?",
+        answer:
+          "No. NRC measures absorption within a room. Sound passing through walls and doors is rated separately, with measures such as STC or Rw.",
+      },
+    ],
+  },
+  {
+    id: 25,
+    slug: "carpet-tiles-for-home",
+    title: "Carpet Tiles for Home: Which Rooms They Suit and How to Choose",
+    seoTitle: "Carpet Tiles for Home: Rooms, Pros and Choosing | GAIA",
+    metaDescription:
+      "Are carpet tiles good for homes? Which rooms suit them, laying over marble or vitrified tile, carpet tiles vs rugs, children and pets, and how to choose.",
+    excerpt:
+      "Warm, quiet and repairable one piece at a time. Where carpet tiles work in an Indian home, and where a hard floor is still better.",
+    category: "Carpet Tiles",
+    cluster: "flooring-choices",
+    tags: ["Carpet Tiles", "Home Flooring", "Interiors"],
+    author: "GAIA by Sanson Floorings",
+    location: "New Delhi",
+    publishedDate: "2026-10-27",
+    readTime: "6 min read",
+    coverImage:
+      "/Images/Blogs/carpet-tiles-for-home/hero-nevada-carpet-tiles-living-room.webp",
+    coverImageAlt:
+      "Living room with a pink velvet armchair, a navy armchair, a pouffe and a lit fireplace on light grey textured carpet tiles",
+    ogImage:
+      "/Images/Blogs/carpet-tiles-for-home/og-carpet-tiles-for-home.jpg",
+    relatedProduct: {
+      name: "Carpet Tiles",
+      path: "/categories/carpet-tiles",
+    },
+    faqs: [
+      {
+        question: "Are carpet tiles warm in winter?",
+        answer:
+          "Yes. A textile floor feels far warmer underfoot than marble or vitrified tile, which is why bedrooms and lounges in North Indian homes benefit most.",
+      },
+      {
+        question: "Can carpet tiles be taken up when we move?",
+        answer:
+          "Often they can be lifted, though how easily depends on the fixing used. If you are renting, tell us at the start so we can plan the installation with that in mind.",
+      },
+      {
+        question: "Do carpet tiles suit a ground-floor room?",
+        answer:
+          "Yes, provided the floor is dry. Where rising damp or seepage is a risk, deal with it first, or choose a hard floor for that room.",
+      },
+    ],
+  },
+  {
+    id: 24,
+    slug: "types-of-artificial-grass",
+    title: "Types of Artificial Grass: Which One Do You Need?",
+    seoTitle: "Types of Artificial Grass: Which Do You Need? | GAIA",
+    metaDescription:
+      "The four types of artificial grass explained: landscape grass, curly grass, sports grass and MultiTurf, with a chooser for homes, terraces, fields and courts.",
+    excerpt:
+      "Landscape, curly, sports and MultiTurf look alike in photographs and behave very differently. Choose by what the surface is for.",
+    category: "Artificial Grass",
+    cluster: "outdoor-living",
+    tags: ["Artificial Grass", "Landscape Grass", "Sports Turf"],
+    author: "GAIA by Sanson Floorings",
+    location: "New Delhi",
+    publishedDate: "2026-10-27",
+    readTime: "10 min read",
+    coverImage:
+      "/Images/Blogs/types-of-artificial-grass/hero-rolls-of-artificial-grass.webp",
+    coverImageAlt:
+      "Rolls of thick green artificial grass laid in a row beside a low timber fence",
+    ogImage:
+      "/Images/Blogs/types-of-artificial-grass/og-types-of-artificial-grass.jpg",
+    relatedProduct: {
+      name: "Artificial Grass",
+      path: "/categories/artificial-multiturf",
+    },
+    faqs: [
+      {
+        question: "What is the difference between artificial grass and artificial turf?",
+        answer:
+          "The terms overlap. \"Artificial grass\" usually means landscaping products for homes and gardens; \"artificial turf\" or \"sports turf\" usually means surfaces built for play.",
+      },
+      {
+        question: "Can landscape grass be used for sports?",
+        answer:
+          "For casual play in a garden, yes. For regular football, tennis or badminton, sports grass or MultiTurf gives a more consistent, harder-wearing surface.",
+      },
+      {
+        question: "What is the best artificial grass for a balcony?",
+        answer:
+          "A short-pile landscape grass, which is easy to sweep and stands up under furniture. Curly grass works where a textured, decorative layer suits the design.",
+      },
+    ],
+  },
+  {
+    id: 23,
+    slug: "best-flooring-for-office",
+    title: "Best Flooring for Offices in India: A Zone-by-Zone Guide",
+    seoTitle: "Best Flooring for Offices in India: Zone Guide | GAIA",
+    metaDescription:
+      "The best flooring for an office in India, zone by zone: carpet tiles, broadloom and hard floors compared, with a zone map, raised floors and life costs.",
+    excerpt:
+      "Carpet tiles for the working floor, a hard floor where water arrives, broadloom where the design is bespoke. The whole office, zone by zone.",
+    category: "Carpet Tiles",
+    cluster: "flooring-choices",
+    tags: ["Office Flooring", "Carpet Tiles", "Broadloom"],
+    author: "GAIA by Sanson Floorings",
+    location: "New Delhi",
+    publishedDate: "2026-10-27",
+    readTime: "10 min read",
+    coverImage:
+      "/Images/Blogs/best-flooring-for-office/hero-open-plan-office-carpet.webp",
+    coverImageAlt:
+      "Open-plan office with two rows of timber workstations and black mesh chairs on light grey patterned carpet, beside tall windows",
+    ogImage:
+      "/Images/Blogs/best-flooring-for-office/og-best-flooring-for-office.jpg",
+    relatedProduct: {
+      name: "Carpet Tiles",
+      path: "/categories/carpet-tiles",
+    },
+    faqs: [
+      {
+        question: "What is the most durable flooring for an office?",
+        answer:
+          "Durability depends on how a floor is used and maintained. In work areas, carpet tiles last well because worn pieces in busy routes can be replaced individually; in wet areas, vinyl and vitrified tile cope best.",
+      },
+      {
+        question: "Is carpet hygienic for an office?",
+        answer:
+          "Yes, when it is vacuumed regularly, spills are dealt with the same day and the floor is deep-cleaned on schedule. A written routine for each zone keeps it that way.",
+      },
+      {
+        question: "What flooring is best for an office reception?",
+        answer:
+          "A hard floor and matting at the door, then carpet in the waiting area. Broadloom suits a reception built around a bespoke design; carpet tiles suit one that may change.",
+      },
+    ],
+  },
+  {
     id: 20,
     slug: "home-theatre-acoustics",
     title: "Home Theatre Acoustics: Where to Put Acoustic Panels",

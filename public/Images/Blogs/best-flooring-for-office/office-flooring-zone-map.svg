@@ -1,0 +1,34 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 600" width="640" height="600" font-family="Arial, Helvetica, sans-serif" role="img" aria-labelledby="t d">
+<title id="t">Office flooring zone map</title>
+<desc id="d">Office floor plan divided into zones. Workstations, meeting rooms, cabins, corridors and the breakout area are carpet tiles. The boardroom and reception are broadloom. The entrance, pantry and washroom lobby are hard floor, with matting inside the entrance.</desc>
+<rect width="100%" height="100%" fill="#fbf8f2"/>
+<text x="320" y="38" text-anchor="middle" font-size="27" font-weight="700" fill="#2f394a">Office flooring by zone</text>
+<g stroke="#2f394a" stroke-width="2.5">
+<rect x="20" y="60" width="380" height="200" fill="#9fb8a9"/>
+<rect x="400" y="60" width="220" height="110" fill="#c79a74"/>
+<rect x="400" y="170" width="110" height="90" fill="#9fb8a9"/>
+<rect x="510" y="170" width="110" height="90" fill="#9fb8a9"/>
+<rect x="20" y="260" width="600" height="56" fill="#9fb8a9"/>
+<rect x="20" y="316" width="200" height="130" fill="#9fb8a9"/>
+<rect x="220" y="316" width="140" height="130" fill="#d7d3cb"/>
+<rect x="360" y="316" width="130" height="130" fill="#d7d3cb"/>
+<rect x="490" y="316" width="130" height="130" fill="#c79a74"/>
+<rect x="490" y="446" width="130" height="50" fill="#d7d3cb"/>
+</g>
+<rect x="508" y="452" width="96" height="16" fill="#5a5f66"/>
+<g font-size="21" font-weight="700" fill="#2f394a" text-anchor="middle">
+<text x="210" y="166">Workstations</text>
+<text x="510" y="122">Boardroom</text>
+<text x="455" y="210">Meeting</text><text x="565" y="210">Cabin</text>
+<text x="320" y="296">Corridor</text>
+<text x="120" y="388">Breakout</text>
+<text x="290" y="388">Pantry</text>
+<text x="425" y="378">Washroom</text><text x="425" y="402">lobby</text>
+<text x="555" y="388">Reception</text>
+<text x="555" y="490" font-size="20">Entrance</text>
+</g>
+<rect x="20" y="516" width="26" height="26" fill="#9fb8a9" stroke="#2f394a"/><text x="54" y="537" font-size="21" fill="#2f394a">Carpet tiles</text>
+<rect x="200" y="516" width="26" height="26" fill="#c79a74" stroke="#2f394a"/><text x="234" y="537" font-size="21" fill="#2f394a">Broadloom</text>
+<rect x="368" y="516" width="26" height="26" fill="#d7d3cb" stroke="#2f394a"/><text x="402" y="537" font-size="21" fill="#2f394a">Hard floor</text>
+<rect x="20" y="556" width="26" height="14" fill="#5a5f66"/><text x="54" y="570" font-size="21" fill="#2f394a">Entrance matting</text>
+</svg>

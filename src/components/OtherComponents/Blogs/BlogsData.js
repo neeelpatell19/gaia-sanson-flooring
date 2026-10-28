@@ -18,6 +18,211 @@
 
 const BlogsData = [
   {
+    id: 32,
+    slug: "meeting-room-acoustics",
+    title: "Meeting Room Acoustics: How to Sound Clear on Video Calls",
+    seoTitle: "Meeting Room Acoustics for Clear Video Calls | GAIA",
+    metaDescription:
+      "Meeting room acoustics for video calls: where to put ceiling and wall panels, how to treat glass-walled rooms, carpet, privacy, and a checklist.",
+    excerpt:
+      "Microphones hear every reflection. Where to treat a meeting room so remote participants hear voices, not the room.",
+    category: "Acoustic Panels",
+    cluster: "room-acoustics",
+    tags: ["Acoustics", "Workplace", "Acoustic Panels"],
+    author: "GAIA by Sanson Floorings",
+    location: "New Delhi",
+    publishedDate: "2026-10-28",
+    readTime: "5 min read",
+    coverImage:
+      "/Images/Blogs/meeting-room-acoustics/hero-glass-meeting-room-round-table.webp",
+    coverImageAlt:
+      "Glass-walled meeting room with a round white table, a lounge chair, framed prints and a large plant in the foreground",
+    ogImage:
+      "/Images/Blogs/meeting-room-acoustics/og-meeting-room-acoustics.jpg",
+    relatedProduct: {
+      name: "Acoustic PET Panels",
+      path: "/categories/acoustic-tiles",
+    },
+    faqs: [
+      {
+        question: "What does a typical video-call room need?",
+        answer:
+          "That varies with size and the amount of glass. A typical eight-seat room often needs a ceiling element over the table plus panels on two walls to sound clear on calls.",
+      },
+      {
+        question: "Will a better microphone fix an echoey room?",
+        answer:
+          "Partly. A good conferencing microphone and noise suppression help, but they work far better in a treated room, where there is less echo for them to fight.",
+      },
+    ],
+  },
+  {
+    id: 31,
+    slug: "banquet-hall-carpet",
+    title: "Banquet Hall Carpet: Choosing Carpet for Wedding and Event Venues",
+    seoTitle: "Banquet Hall Carpet for Wedding and Event Venues | GAIA",
+    metaDescription:
+      "Choosing banquet hall carpet: broadloom or tiles, patterns and colours that hide stains, where not to carpet, acoustics, and a post-event cleaning routine.",
+    excerpt:
+      "Festive under the chandeliers, presentable the morning after. How to choose carpet for halls that host event after event.",
+    category: "Broadloom Carpets",
+    cluster: "hospitality-spaces",
+    tags: ["Broadloom Carpets", "Banquet Halls", "Hospitality"],
+    author: "GAIA by Sanson Floorings",
+    location: "New Delhi",
+    publishedDate: "2026-10-28",
+    readTime: "5 min read",
+    coverImage:
+      "/Images/Blogs/banquet-hall-carpet/hero-banquet-hall-round-tables-patterned-carpet.webp",
+    coverImageAlt:
+      "Large banquet hall with round tables set with navy cloths and gold chairs on a patterned carpet under a coffered ceiling with chandeliers",
+    ogImage:
+      "/Images/Blogs/banquet-hall-carpet/og-banquet-hall-carpet.jpg",
+    relatedProduct: {
+      name: "Broadloom Carpets",
+      path: "/categories/broadloom-carpets",
+    },
+    faqs: [
+      {
+        question: "How long does banquet hall carpet last?",
+        answer:
+          "It depends on traffic, the construction chosen and the cleaning routine. A well-specified carpet with a disciplined post-event routine keeps its looks far longer than one cleaned only when it looks dirty.",
+      },
+      {
+        question: "Can a banquet hall carpet carry the venue's logo?",
+        answer:
+          "Often, yes. Because each GAIA broadloom design is produced to order, a logo or monogram can be worked into the design, typically at the entrance or in the foyer; we confirm what each design allows at sampling.",
+      },
+    ],
+  },
+  {
+    id: 30,
+    slug: "hospital-acoustics",
+    title: "Hospital Acoustics: How to Make Hospitals and Clinics Quieter",
+    seoTitle: "Hospital Acoustics: Quieter Hospitals and Clinics | GAIA",
+    metaDescription:
+      "Hospital acoustics: WHO noise guidelines for wards, where to absorb sound in corridors and waiting areas, keeping consultations private, and flooring choices.",
+    excerpt:
+      "Rest, privacy and clear communication all suffer in a loud hospital. Where acoustic treatment helps most, outside the sterile zones.",
+    category: "Acoustic Panels",
+    cluster: "room-acoustics",
+    tags: ["Acoustics", "Healthcare", "Acoustic Panels"],
+    author: "GAIA by Sanson Floorings",
+    location: "New Delhi",
+    publishedDate: "2026-10-28",
+    readTime: "5 min read",
+    coverImage:
+      "/Images/Blogs/hospital-acoustics/hero-hospital-corridor-waiting-bench.webp",
+    coverImageAlt:
+      "Bright hospital corridor with white tiled walls and floor, doors along both sides and pale blue waiting benches",
+    ogImage:
+      "/Images/Blogs/hospital-acoustics/og-hospital-acoustics.jpg",
+    relatedProduct: {
+      name: "Acoustic PET Panels",
+      path: "/categories/acoustic-tiles",
+    },
+    faqs: [
+      {
+        question: "How quiet should a hospital ward be?",
+        answer:
+          "Around 30 dB LAeq, following the WHO guideline. Getting there needs quiet building services as well as absorbent surfaces.",
+      },
+      {
+        question: "Do clinics need acoustic treatment too?",
+        answer:
+          "Yes. Small clinics with hard finishes echo just like larger hospitals, and waiting rooms close to consultation rooms make privacy harder. Treating the ceiling and the waiting area wall is a good start.",
+      },
+    ],
+  },
+  {
+    id: 29,
+    slug: "soundproofing-vs-sound-absorption",
+    title: "Soundproofing vs Sound Absorption: What's the Difference?",
+    seoTitle: "Soundproofing vs Sound Absorption Explained | GAIA",
+    metaDescription:
+      "Soundproofing stops sound passing between rooms; absorption controls echo inside one. How to tell which you need, and what acoustic panels can do.",
+    excerpt:
+      "One keeps sound out, the other stops a room echoing. How to tell which problem you have before spending on the wrong fix.",
+    category: "Acoustic Panels",
+    cluster: "acoustic-panels",
+    tags: ["Acoustics", "Soundproofing", "Acoustic Panels"],
+    author: "GAIA by Sanson Floorings",
+    location: "New Delhi",
+    publishedDate: "2026-10-28",
+    readTime: "6 min read",
+    coverImage:
+      "/Images/Blogs/soundproofing-vs-sound-absorption/hero-recording-studio-acoustic-treatment.webp",
+    coverImageAlt:
+      "Recording studio with a mixing desk, studio monitors and textured acoustic treatment on the walls and ceiling",
+    ogImage:
+      "/Images/Blogs/soundproofing-vs-sound-absorption/og-soundproofing-vs-sound-absorption.jpg",
+    relatedProduct: {
+      name: "Acoustic PET Panels",
+      path: "/categories/acoustic-tiles",
+    },
+    faqs: [
+      {
+        question: "Is acoustic foam soundproofing?",
+        answer:
+          "No. Foam is an absorber, like a panel. It reduces echo inside a room but does very little to stop sound passing through a wall.",
+      },
+      {
+        question: "What is a good STC rating?",
+        answer:
+          "Higher is better; a typical single partition rates in the 30s or 40s, while walls between homes or around studios are designed to reach well above that.",
+      },
+      {
+        question: "Can I soundproof a rented flat?",
+        answer:
+          "Partly. Door seals, heavy curtains, rugs and sealing gaps help without building work. Wall linings and new windows need the owner's permission.",
+      },
+    ],
+  },
+  {
+    id: 28,
+    slug: "how-to-install-carpet-tiles",
+    title: "How to Install Carpet Tiles: A Step-by-Step Guide",
+    seoTitle: "How to Install Carpet Tiles: Step-by-Step Guide | GAIA",
+    metaDescription:
+      "How to install carpet tiles: acclimatising, subfloor preparation, setting out chalk lines, laying from the centre, cutting edges and mistakes to avoid.",
+    excerpt:
+      "Acclimatise, prepare, set out, lay from the centre and cut the edges last. The steps that decide whether a tile floor stays square.",
+    category: "Carpet Tiles",
+    cluster: "flooring-choices",
+    tags: ["Carpet Tiles", "Installation", "Office Flooring"],
+    author: "GAIA by Sanson Floorings",
+    location: "New Delhi",
+    publishedDate: "2026-10-28",
+    readTime: "6 min read",
+    coverImage:
+      "/Images/Blogs/how-to-install-carpet-tiles/hero-office-corridor-carpet-tiles.webp",
+    coverImageAlt:
+      "Office corridor carpeted in grey tiles with a yellow and green painted path, glass partitions and a yellow ceiling grid",
+    ogImage:
+      "/Images/Blogs/how-to-install-carpet-tiles/og-how-to-install-carpet-tiles.jpg",
+    relatedProduct: {
+      name: "Carpet Tiles",
+      path: "/categories/carpet-tiles",
+    },
+    faqs: [
+      {
+        question: "Can carpet tiles be installed without glue?",
+        answer:
+          "Some tiles are designed for loose-lay or tape systems, but most commercial installations use a releasable adhesive so tiles stay put yet can be lifted. Use the method specified for the tile.",
+      },
+      {
+        question: "How long does it take to install carpet tiles?",
+        answer:
+          "Laying itself is quick once the subfloor is ready; preparation and adhesive drying usually take longer than the laying. An occupied office can be done in sections, moving furniture as each area is finished.",
+      },
+      {
+        question: "Can you walk on carpet tiles straight after installation?",
+        answer:
+          "Usually yes with a releasable adhesive, but follow the adhesive's own instructions before moving heavy furniture back.",
+      },
+    ],
+  },
+  {
     id: 27,
     slug: "auditorium-acoustics",
     title: "Auditorium Acoustics: How to Design a Hall for Clear Speech",

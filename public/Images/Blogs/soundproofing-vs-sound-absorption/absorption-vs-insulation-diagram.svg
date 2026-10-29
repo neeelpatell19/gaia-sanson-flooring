@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 460" width="640" height="460" font-family="Arial, Helvetica, sans-serif" role="img" aria-labelledby="t d">
+<title id="t">Absorption and insulation</title>
+<desc id="d">Left room: sound from a speaker is soaked up by acoustic panels, labelled absorption controls echo inside the room. A thick double wall blocks sound passing to the right-hand room, labelled insulation stops sound reaching the next room.</desc>
+<defs><marker id="m" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0 0 10 5 0 10z" fill="#a0603d"/></marker></defs>
+<rect width="100%" height="100%" fill="#fbf8f2"/>
+<text x="320" y="38" text-anchor="middle" font-size="27" font-weight="700" fill="#2f394a">Absorb inside, insulate between</text>
+<!-- rooms -->
+<rect x="30" y="70" width="270" height="250" fill="#fff" stroke="#2f394a" stroke-width="3"/>
+<rect x="370" y="70" width="240" height="250" fill="#fff" stroke="#2f394a" stroke-width="3"/>
+<!-- double wall -->
+<rect x="300" y="70" width="20" height="250" fill="#8c867c"/><rect x="350" y="70" width="20" height="250" fill="#8c867c"/><rect x="320" y="70" width="30" height="250" fill="#e2dccf"/>
+<!-- panels on left wall -->
+<rect x="32" y="120" width="14" height="150" fill="#4f7a6a"/>
+<!-- speaker -->
+<circle cx="190" cy="200" r="14" fill="#2f394a"/><rect x="180" y="214" width="20" height="40" fill="#2f394a"/>
+<!-- rays -->
+<g stroke="#a0603d" stroke-width="3" fill="none">
+<line x1="172" y1="196" x2="56" y2="176" marker-end="url(#m)"/>
+<line x1="208" y1="196" x2="292" y2="180" marker-end="url(#m)"/>
+<line x1="296" y1="180" x2="250" y2="150" stroke-dasharray="8 6" marker-end="url(#m)"/>
+</g>
+<text x="490" y="200" font-size="22" fill="#7a7f87" text-anchor="middle" font-weight="700">Quiet</text>
+<!-- labels -->
+<text x="40" y="352" font-size="21" font-weight="700" fill="#4f7a6a">Absorption</text>
+<text x="40" y="378" font-size="20" fill="#2f394a">controls echo inside</text>
+<text x="40" y="402" font-size="20" fill="#2f394a">the room (NRC)</text>
+<text x="380" y="352" font-size="21" font-weight="700" fill="#8c5a3a">Insulation</text>
+<text x="380" y="378" font-size="20" fill="#2f394a">stops sound reaching</text>
+<text x="380" y="402" font-size="20" fill="#2f394a">the next room (STC, Rw)</text>
+<text x="335" y="440" text-anchor="middle" font-size="18" fill="#7a7f87">Heavy, airtight, separated wall</text>
+<line x1="335" y1="425" x2="335" y2="322" stroke="#7a7f87" stroke-width="1.5"/>
+</svg>

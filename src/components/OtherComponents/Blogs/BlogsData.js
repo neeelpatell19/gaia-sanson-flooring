@@ -31,7 +31,7 @@ const BlogsData = [
     tags: ["Acoustics", "Workplace", "Acoustic Panels"],
     author: "GAIA by Sanson Floorings",
     location: "New Delhi",
-    publishedDate: "2026-10-28",
+    publishedDate: "2026-10-29",
     readTime: "5 min read",
     coverImage:
       "/Images/Blogs/meeting-room-acoustics/hero-glass-meeting-room-round-table.webp",
@@ -70,7 +70,7 @@ const BlogsData = [
     tags: ["Broadloom Carpets", "Banquet Halls", "Hospitality"],
     author: "GAIA by Sanson Floorings",
     location: "New Delhi",
-    publishedDate: "2026-10-28",
+    publishedDate: "2026-10-29",
     readTime: "5 min read",
     coverImage:
       "/Images/Blogs/banquet-hall-carpet/hero-banquet-hall-round-tables-patterned-carpet.webp",
@@ -109,7 +109,7 @@ const BlogsData = [
     tags: ["Acoustics", "Healthcare", "Acoustic Panels"],
     author: "GAIA by Sanson Floorings",
     location: "New Delhi",
-    publishedDate: "2026-10-28",
+    publishedDate: "2026-10-29",
     readTime: "5 min read",
     coverImage:
       "/Images/Blogs/hospital-acoustics/hero-hospital-corridor-waiting-bench.webp",
@@ -148,7 +148,7 @@ const BlogsData = [
     tags: ["Acoustics", "Soundproofing", "Acoustic Panels"],
     author: "GAIA by Sanson Floorings",
     location: "New Delhi",
-    publishedDate: "2026-10-28",
+    publishedDate: "2026-10-29",
     readTime: "6 min read",
     coverImage:
       "/Images/Blogs/soundproofing-vs-sound-absorption/hero-recording-studio-acoustic-treatment.webp",
@@ -192,7 +192,7 @@ const BlogsData = [
     tags: ["Carpet Tiles", "Installation", "Office Flooring"],
     author: "GAIA by Sanson Floorings",
     location: "New Delhi",
-    publishedDate: "2026-10-28",
+    publishedDate: "2026-10-29",
     readTime: "6 min read",
     coverImage:
       "/Images/Blogs/how-to-install-carpet-tiles/hero-office-corridor-carpet-tiles.webp",

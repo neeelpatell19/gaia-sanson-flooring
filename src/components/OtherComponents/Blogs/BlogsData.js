@@ -164,7 +164,7 @@ const BlogsData = [
       {
         question: "Is acoustic foam soundproofing?",
         answer:
-          "No. Foam is an absorber, like a panel. It reduces echo inside a room but does very little to stop sound passing through a wall.",
+          "No. Foam is an absorber, like a panel. It reduces echo inside a room but does very little to block sound travelling into the next room.",
       },
       {
         question: "What is a good STC rating?",

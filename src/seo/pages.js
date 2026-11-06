@@ -14,6 +14,7 @@
 import CategoriesData from "../components/OtherComponents/Categories/CategoriesLayout/Categories.js";
 import { grassTypesData } from "../components/OtherComponents/Categories/Layouts/DynamicArtificialPage/grassTypesData.js";
 import BlogsData from "../components/OtherComponents/Blogs/BlogsData.js";
+import { designPdfPaths } from "../components/OtherComponents/Categories/Layouts/CarpetTilesLayout/designSwatches.js";
 import {
   buildArticleSchemas,
   buildBlogListingSeo,
@@ -86,11 +87,19 @@ export function getSitemapEntries() {
   );
   // lastmod only where it is a real date. Static pages carry none: stamping
   // every page with the build date makes search engines distrust lastmod.
-  return getIndexablePaths().map((path) => ({
+  const pages = getIndexablePaths().map((path) => ({
     path,
     lastmod: blogDates.get(path),
   }));
+  return [...pages, ...getSitemapPdfPaths().map((path) => ({ path }))];
 }
+
+// Brochure PDFs, listed in the sitemap after the pages so search engines find
+// them sooner. Paths are URL-encoded, as they must appear in <loc>.
+export const getSitemapPdfPaths = () => [
+  ...designPdfPaths(),
+  "/pdfs/GAIA%20ACOUSTIC%20CATALOGUE.pdf",
+];
 
 // ---- per-page SEO -----------------------------------------------------
 

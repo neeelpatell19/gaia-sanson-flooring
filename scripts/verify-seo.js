@@ -11,6 +11,7 @@ import fs from 'fs';
 import path from 'path';
 import { JSDOM } from 'jsdom';
 import BlogsData from '../src/components/OtherComponents/Blogs/BlogsData.js';
+import { getSitemapPdfPaths } from '../src/seo/pages.js';
 
 const DIST = 'dist';
 const SITE = 'https://sansonfloorings.com';
@@ -256,7 +257,9 @@ built.forEach((page) =>
   else {
     const xml = fs.readFileSync(file, 'utf8');
     const urls = [...xml.matchAll(/<loc>([^<]+)<\/loc>/g)].map((m) => m[1]);
-    const expected = INDEXABLE.map(canonicalFor);
+    // Brochure PDFs are listed too. Their paths come from the app's data, since
+    // checking them by hand here would just repeat the same list of 30 files.
+    const expected = [...INDEXABLE.map(canonicalFor), ...getSitemapPdfPaths().map((p) => SITE + p)];
     expected.filter((url) => !urls.includes(url)).forEach((url) => fail('sitemap.xml', `missing ${url}`));
     urls.filter((url) => !expected.includes(url)).forEach((url) => fail('sitemap.xml', `lists ${url}, which is not an indexable page`));
     if (new Set(urls).size !== urls.length) fail('sitemap.xml', 'contains duplicate URLs');

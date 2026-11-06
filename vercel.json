@@ -9,6 +9,12 @@
       "permanent": true
     }
   ],
+  "rewrites": [
+    {
+      "source": "/pdfs/:file(GAIA_.*\\.pdf)",
+      "destination": "https://prepseed-files.prepseed.com/gaia/pdfs/:file"
+    }
+  ],
   "headers": [
     {
       "source": "/assets/(.*)",

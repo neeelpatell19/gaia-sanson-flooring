@@ -13,6 +13,16 @@ export default defineConfig({
   server: {
     port: 3002,
     host: true, // Allow access from network
+    // Same as the /pdfs rewrite in vercel.json: product brochures are stored in
+    // the file bucket but served from our own domain. Files in public/pdfs are
+    // not matched (their names do not start with GAIA_).
+    proxy: {
+      "^/pdfs/GAIA_.*\\.pdf$": {
+        target: "https://prepseed-files.prepseed.com",
+        changeOrigin: true,
+        rewrite: (path) => path.replace(/^\/pdfs\//, "/gaia/pdfs/"),
+      },
+    },
   },
   // `npm run build` runs vite-ssg, which renders every page to static HTML
   // (server-side rendering at build time) and hydrates it in the browser.

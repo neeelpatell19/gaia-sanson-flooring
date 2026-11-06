@@ -116,18 +116,22 @@
           </div> -->
 
           <div class="DesignGridContainer">
-            <div
+            <!-- A real link (not a click handler) so crawlers can find and index each PDF. -->
+            <component
+              :is="hasPdf(design) ? 'a' : 'div'"
               v-for="design in designSwatches"
               :key="design.code"
               class="DesignSwatch"
-              :class="{
-                clickable: design.pdf && design.pdf.trim() !== '',
-                'non-clickable': !design.pdf || design.pdf.trim() === '',
-              }"
-              @click="
-                design.pdf && design.pdf.trim() !== ''
-                  ? openPDF(design.pdf)
-                  : null
+              :class="hasPdf(design) ? 'clickable' : 'non-clickable'"
+              v-bind="
+                hasPdf(design)
+                  ? {
+                      href: design.pdf,
+                      target: '_blank',
+                      rel: 'noopener',
+                      title: `GAIA ${design.code} carpet tile brochure (PDF)`,
+                    }
+                  : {}
               "
             >
               <img :src="design.image" :alt="design.name" class="SwatchImage" />
@@ -135,7 +139,7 @@
               <p v-if="isNaN(design.code)" class="SwatchCode">
                 {{ design.code }}
               </p>
-            </div>
+            </component>
           </div>
         </div>
       </div>
@@ -393,19 +397,19 @@ const designSwatchesData = [
     image: "/Images/CarpetCircleImages/Aangan.png",
     name: "Heritage Collection",
     code: "Aangan",
-    pdf: "https://prepseed-files.prepseed.com/gaia/pdfs/GAIA_AANGAN.pdf",
+    pdf: "/pdfs/GAIA_AANGAN.pdf",
   },
   {
     image: "/Images/CarpetCircleImages/Gridwork.png",
     name: "Heritage Collection",
     code: "Grid Work",
-    pdf: "https://prepseed-files.prepseed.com/gaia/pdfs/GAIA_GRIDWORK.pdf",
+    pdf: "/pdfs/GAIA_GRIDWORK.pdf",
   },
   {
     image: "/Images/Miami.png",
     name: "Heritage Collection",
     code: "Miami",
-    pdf: "https://prepseed-files.prepseed.com/gaia/pdfs/GAIA_MIAMI.pdf",
+    pdf: "/pdfs/GAIA_MIAMI.pdf",
   },
   {
     image: "/Images/CarpetCircleImages/Nevada.png",
@@ -417,55 +421,55 @@ const designSwatchesData = [
     image: "/Images/CarpetCircleImages/Plateau.png",
     name: "Plateau",
     code: "Plateau",
-    pdf: "https://prepseed-files.prepseed.com/gaia/pdfs/GAIA_PLATEAU.pdf",
+    pdf: "/pdfs/GAIA_PLATEAU.pdf",
   },
   {
     image: "/Images/CarpetCircleImages/Dalaan.png",
     name: "Heritage Collection",
     code: "Dalaan",
-    pdf: "https://prepseed-files.prepseed.com/gaia/pdfs/GAIA_DALAAN.pdf",
+    pdf: "/pdfs/GAIA_DALAAN.pdf",
   },
   {
     image: "/Images/CarpetCircleImages/Alankrit.png",
     name: "Heritage Collection",
     code: "Alankrit",
-    pdf: "https://prepseed-files.prepseed.com/gaia/pdfs/GAIA_ALANKRIT.pdf",
+    pdf: "/pdfs/GAIA_ALANKRIT.pdf",
   },
   {
     image: "/Images/CarpetCircleImages/Drip.png",
     name: "Heritage Collection",
     code: "Drip",
-    pdf: "https://prepseed-files.prepseed.com/gaia/pdfs/GAIA_DRIP.pdf",
+    pdf: "/pdfs/GAIA_DRIP.pdf",
   },
   {
     image: "/Images/CarpetCircleImages/Naqsh.png",
     name: "Heritage Collection",
     code: "Naqsh",
-    pdf: "https://prepseed-files.prepseed.com/gaia/pdfs/GAIA_NAQSH.pdf",
+    pdf: "/pdfs/GAIA_NAQSH.pdf",
   },
   {
     image: "/Images/CarpetCircleImages/Majesty.png",
     name: "Heritage Collection",
     code: "Majesty",
-    pdf: "https://prepseed-files.prepseed.com/gaia/pdfs/GAIA_MAJESTY.pdf",
+    pdf: "/pdfs/GAIA_MAJESTY.pdf",
   },
   {
     image: "/Images/CarpetCircleImages/Paramount.png",
     name: "Heritage Collection",
     code: "Paramount",
-    pdf: "https://prepseed-files.prepseed.com/gaia/pdfs/GAIA_PARAMOUNT.pdf",
+    pdf: "/pdfs/GAIA_PARAMOUNT.pdf",
   },
   {
     image: "/Images/CarpetCircleImages/Pinnacle.png",
     name: "Heritage Collection",
     code: "Pinnacle",
-    pdf: "https://prepseed-files.prepseed.com/gaia/pdfs/GAIA_PINNACLE.pdf",
+    pdf: "/pdfs/GAIA_PINNACLE.pdf",
   },
   {
     image: "/Images/CarpetCircleImages/Signature.png",
     name: "Heritage Collection",
     code: "Signature",
-    pdf: "https://prepseed-files.prepseed.com/gaia/pdfs/GAIA_SIGNATURE.pdf",
+    pdf: "/pdfs/GAIA_SIGNATURE.pdf",
   },
   {
     image: "/Images/Salt.png",
@@ -483,13 +487,13 @@ const designSwatchesData = [
     image: "/Images/CarpetCircleImages/Shining_Glow.png",
     name: "Heritage Collection",
     code: "ShiningGlow",
-    pdf: "https://prepseed-files.prepseed.com/gaia/pdfs/GAIA_SHINING+GLOW.pdf",
+    pdf: "/pdfs/GAIA_SHINING+GLOW.pdf",
   },
   {
     image: "/Images/CarpetCircleImages/Cobble.png",
     name: "GAIA Collection",
     code: "Cobble",
-    pdf: "https://prepseed-files.prepseed.com/gaia/pdfs/GAIA_COBBLE.pdf",
+    pdf: "/pdfs/GAIA_COBBLE.pdf",
   },
   // {
   //   image: "/Images/CarpetCircleImages/Trends.png",
@@ -501,91 +505,91 @@ const designSwatchesData = [
     image: "/Images/CarpetCircleImages/new_added/ascend.png",
     name: "GAIA Collection",
     code: "Ascend",
-    pdf: "https://prepseed-files.prepseed.com/gaia/pdfs/GAIA_ASCEND.pdf",
+    pdf: "/pdfs/GAIA_ASCEND.pdf",
   },
   {
     image: "/Images/CarpetCircleImages/new_added/ellite.png",
     name: "GAIA Collection",
     code: "Elite",
-    pdf: "https://prepseed-files.prepseed.com/gaia/pdfs/GAIA_ELITE.pdf",
+    pdf: "/pdfs/GAIA_ELITE.pdf",
   },
   {
     image: "/Images/CarpetCircleImages/new_added/eminence.png",
     name: "GAIA Collection",
     code: "Eminence",
-    pdf: "https://prepseed-files.prepseed.com/gaia/pdfs/GAIA_EMINENCE.pdf",
+    pdf: "/pdfs/GAIA_EMINENCE.pdf",
   },
   {
     image: "/Images/CarpetCircleImages/new_added/grandeur.png",
     name: "GAIA Collection",
     code: "Grandeur",
-    pdf: "https://prepseed-files.prepseed.com/gaia/pdfs/GAIA_GRANDEUR.pdf",
+    pdf: "/pdfs/GAIA_GRANDEUR.pdf",
   },
   {
     image: "/Images/CarpetCircleImages/new_added/legacy.png",
     name: "GAIA Collection",
     code: "Legacy",
-    pdf: "https://prepseed-files.prepseed.com/gaia/pdfs/GAIA_LEGACY.pdf",
+    pdf: "/pdfs/GAIA_LEGACY.pdf",
   },
   {
     image: "/Images/CarpetCircleImages/new_added/Opulence.png",
     name: "GAIA Collection",
     code: "Opulence",
-    pdf: "https://prepseed-files.prepseed.com/gaia/pdfs/GAIA_OPULENCE.pdf",
+    pdf: "/pdfs/GAIA_OPULENCE.pdf",
   },
   {
     image: "/Images/CarpetCircleImages/new_added/sovereign.png",
     name: "GAIA Collection",
     code: "Sovereign",
-    pdf: "https://prepseed-files.prepseed.com/gaia/pdfs/GAIA_SOVEREIGN.pdf",
+    pdf: "/pdfs/GAIA_SOVEREIGN.pdf",
   },
   {
     image: "/Images/CarpetCircleImages/new_added/sterling.png",
     name: "GAIA Collection",
     code: "Sterling",
-    pdf: "https://prepseed-files.prepseed.com/gaia/pdfs/GAIA_STERLING.pdf",
+    pdf: "/pdfs/GAIA_STERLING.pdf",
   },
   {
     image: "/Images/CarpetCircleImages/new_added/Virtue.png",
     name: "GAIA Collection",
     code: "Virtue",
-    pdf: "https://prepseed-files.prepseed.com/gaia/pdfs/GAIA_VIRTUE.pdf",
+    pdf: "/pdfs/GAIA_VIRTUE.pdf",
   },
   {
     image: "/Images/CarpetCircleImages/new_added/street.png",
     name: "GAIA Collection",
     code: "Street",
-    pdf: "https://prepseed-files.prepseed.com/gaia/pdfs/GAIA_STREET.pdf",
+    pdf: "/pdfs/GAIA_STREET.pdf",
   },
   {
     image: "/Images/CarpetCircleImages/new_added/zenith.png",
     name: "GAIA Collection",
     code: "Zenith",
-    pdf: "https://prepseed-files.prepseed.com/gaia/pdfs/GAIA_ZENITH.pdf",
+    pdf: "/pdfs/GAIA_ZENITH.pdf",
   },
   {
     image: "/Images/CarpetCircleImages/new_added/chromatic.png",
     name: "GAIA Collection",
     code: "Chromatic",
-    pdf: "https://prepseed-files.prepseed.com/gaia/pdfs/GAIA_CHROMATIC.pdf",
+    pdf: "/pdfs/GAIA_CHROMATIC.pdf",
   },
   {
     image: "/Images/CarpetCircleImages/new_added/nova.png",
     name: "GAIA Collection",
     code: "Nova",
-    pdf: "https://prepseed-files.prepseed.com/gaia/pdfs/GAIA_NOVA.pdf",
+    pdf: "/pdfs/GAIA_NOVA.pdf",
   },
   {
     image: "/Images/CarpetCircleImages/new_added/stairway.png",
     name: "GAIA Collection",
     code: "Stairway",
-    pdf: "https://prepseed-files.prepseed.com/gaia/pdfs/GAIA_STAIRWAY.pdf",
+    pdf: "/pdfs/GAIA_STAIRWAY.pdf",
   },
   {
     image: "/Images/CarpetCircleImages/new_added/zara-carpet-tiles.png",
     name: "GAIA Collection",
     code: "Zara",
-    pdf: "https://prepseed-files.prepseed.com/gaia/pdfs/GAIA_ZARA.pdf",
+    pdf: "/pdfs/GAIA_ZARA.pdf",
   },
 
   // {
@@ -822,12 +826,9 @@ const properties = [
   },
 ];
 
-// Function to open PDF in new tab
-const openPDF = (pdfPath) => {
-  if (pdfPath && pdfPath.trim() !== "") {
-    window.open(pdfPath, "_blank");
-  }
-};
+// PDFs live at /pdfs/GAIA_*.pdf on our own domain; vercel.json proxies them
+// from the file bucket so they are crawled and indexed as sansonfloorings.com URLs.
+const hasPdf = (design) => Boolean(design.pdf && design.pdf.trim() !== "");
 </script>
 
 <style scoped>

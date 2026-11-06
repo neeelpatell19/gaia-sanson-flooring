@@ -224,9 +224,12 @@ for (const key of ['title', 'description']) {
 
 // internal links must lead to a built page or file
 const knownRoutes = new Set([...INDEXABLE, ...NOINDEX]);
+// Paths that vercel.json rewrites to another server, so they are not in dist.
+const PROXIED = [/^\/pdfs\/GAIA_.*\.pdf$/];
 built.forEach((page) =>
   page.links.forEach((href) => {
     const clean = href.replace(/\/$/, '') || '/';
+    if (PROXIED.some((re) => re.test(clean))) return;
     if (!knownRoutes.has(clean) && !fs.existsSync(path.join(DIST, decodeURIComponent(clean))))
       fail(page.route, `internal link to "${href}" has no page in dist`);
   })

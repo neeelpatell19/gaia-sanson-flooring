@@ -62,6 +62,14 @@ export function buildArticleSchemas(blog) {
   return schemas;
 }
 
+// The blog index is paged: /blogs shows the latest article plus
+// BLOG_PAGE_SIZE more, and /blogs/page/2, /blogs/page/3 ... show
+// BLOG_PAGE_SIZE each. Every page is pre-rendered and linked.
+export const BLOG_PAGE_SIZE = 9;
+export const blogIndexPageCount = (postCount) =>
+  Math.max(1, Math.ceil((postCount - 1) / BLOG_PAGE_SIZE));
+export const blogIndexPath = (page) => (page <= 1 ? "/blogs" : `/blogs/page/${page}`);
+
 export function buildBlogListingSeo(blogs) {
   const sorted = [...blogs].sort((a, b) =>
     b.publishedDate.localeCompare(a.publishedDate)

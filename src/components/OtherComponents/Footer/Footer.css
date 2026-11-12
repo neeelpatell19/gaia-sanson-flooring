@@ -412,3 +412,13 @@
     color: black !important;
   }
 }
+
+/* These labels were <h3>/<h4> and are now <p> (they are not headings), so
+   they keep the look the global heading rules gave them. */
+.section-title,
+.address-subtitle {
+  font-family: "Ubuntu", sans-serif;
+}
+.section-title {
+  line-height: 1.3;
+}

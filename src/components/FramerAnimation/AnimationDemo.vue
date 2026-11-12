@@ -7,7 +7,7 @@
       <p>Navigate between routes to see smooth page transitions with fade, scale, and position animations.</p>
       <div class="demo-buttons">
         <router-link to="/" class="demo-btn">Home</router-link>
-        <router-link to="/categories" class="demo-btn">Categories</router-link>
+        <router-link to="/products" class="demo-btn">Categories</router-link>
       </div>
     </div>
 

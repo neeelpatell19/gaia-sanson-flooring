@@ -87,8 +87,7 @@ export default {
                             }
                         }">
                         <swiper-slide v-for="product in productsData" :key="product.id">
-                            <div class="product-card" :style="{ backgroundColor: product.bgColor }"
-                                @click="navigateToProduct(product.link)">
+                            <router-link :to="product.link" class="product-card" :style="{ backgroundColor: product.bgColor }">
                                 <!-- Top Section - Description -->
                                 <div class="card-top-section">
                                     <p class="card-description" :style="{ color: product.textColor }">
@@ -115,7 +114,7 @@ export default {
                                         </div>
                                     </div>
                                 </div>
-                            </div>
+                            </router-link>
                         </swiper-slide>
                     </swiper>
 

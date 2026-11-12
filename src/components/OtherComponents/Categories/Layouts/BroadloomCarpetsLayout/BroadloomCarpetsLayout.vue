@@ -3,7 +3,7 @@
     <CommonTopLayout
       heading="Broadloom Carpets"
       imageSrc="/Images/BroadloomCarpetsbannerImage.webp"
-      imageAlt="Artificial grass background image"
+      imageAlt="Grey armchair on gold geometric-pattern GAIA broadloom carpet"
     />
     <div class="paddingTop80">
       <div class="Container EditContainerContent paddingBottom80">
@@ -25,13 +25,13 @@
           >
             <div class="sets-apart-logos-Container-item">
               <img
-                src="https://s3.ap-south-1.amazonaws.com/prepseed/prod/ldoc/media/StartUpIndiaImageUpdate.png"
+                src="/Images/site/startup-india-logo.webp"
                 alt="Startup India"
               />
             </div>
             <div class="sets-apart-logos-Container-item">
               <img
-                src="https://s3.ap-south-1.amazonaws.com/prepseed/prod/ldoc/media/MakeInIndeaLogoImageNew.png"
+                src="/Images/site/make-in-india-logo.webp"
                 alt="Make in India"
               />
             </div>
@@ -67,7 +67,7 @@
                                 <hr>
                                 <br>
                                 <div>
-                                    <img src="https://s3.ap-south-1.amazonaws.com/prepseed/prod/ldoc/media/90020115.png"
+                                    <img src="/Images/site/broadloom-carpet-design-90020115.webp"
                                         alt="">
                                 </div>
                             </div>
@@ -96,7 +96,7 @@
                                             alt="90020115 circle 5">
                                     </div>
                                 </div>
-                                <img src="https://s3.ap-south-1.amazonaws.com/prepseed/prod/ldoc/media/90020115 broadloom2.png"
+                                <img src="/Images/site/broadloom-carpet-design-90020115-room-view.webp"
                                     alt="">
                             </div>
                         </div>
@@ -110,7 +110,7 @@
                                 <hr>
                                 <br>
                                 <div>
-                                    <img src="https://s3.ap-south-1.amazonaws.com/prepseed/prod/ldoc/media/90020099.png"
+                                    <img src="/Images/site/broadloom-carpet-design-90020099.webp"
                                         alt="">
                                 </div>
                             </div>
@@ -139,7 +139,7 @@
                                             alt="90020099 circle 5">
                                     </div>
                                 </div>
-                                <img src="https://s3.ap-south-1.amazonaws.com/prepseed/prod/ldoc/media/NewBroadLoomImage0099.jpeg"
+                                <img src="/Images/site/broadloom-carpet-hero.webp"
                                     alt="">
                             </div>
                         </div>
@@ -155,7 +155,7 @@
               <div class="MainImageWrapper">
                 <a-image
                   :src="item.images[selectedImageIndexById[item.id] ?? 0]"
-                  :alt="item.name"
+                  :alt="`GAIA broadloom carpet, design ${item.sku}`"
                   :preview="{
                     src: item.images[selectedImageIndexById[item.id] ?? 0],
                     mask: 'Click to view full screen',
@@ -177,7 +177,7 @@
                   }"
                   @click="selectImage(item.id, tIndex)"
                 >
-                  <img :src="thumbSrc" :alt="item.name + ' ' + (tIndex + 1)" />
+                  <img :src="thumbSrc" :alt="`GAIA broadloom carpet design ${item.sku}, view ${tIndex + 1}`" />
                 </button>
               </div>
             </div>
@@ -189,8 +189,9 @@
       <div class="gridContainer Container">
         <div>
           <img
-            src="https://s3.ap-south-1.amazonaws.com/prepseed/prod/ldoc/media/NewBroadLoomImage0099.jpeg"
-            alt=""
+            src="/Images/site/broadloom-carpet-hero.webp"
+            alt="Grey armchairs on grey leaf-pattern GAIA broadloom carpet"
+            loading="lazy"
             class="FirstImg"
           />
         </div>
@@ -207,11 +208,12 @@
         </div>
         <div class="DoubleImageContainer">
           <img
-            src="https://s3.ap-south-1.amazonaws.com/prepseed/prod/ldoc/media/broadloom gallery6.png"
-            alt=""
+            src="/Images/site/broadloom-carpet-gallery-8.webp"
+            alt="Office desk and chair on dark patterned GAIA broadloom carpet"
+            loading="lazy"
           />
           <!-- <img
-            src="https://s3.ap-south-1.amazonaws.com/prepseed/prod/ldoc/media/broadloom gallery6.png"
+            src="/Images/site/broadloom-carpet-gallery-8.webp"
             alt=""
           /> -->
         </div>
@@ -306,35 +308,35 @@ const onSwiper = (swiper) => {
 // Broadloom images data
 const broadloomImages = [
   {
-    src: "https://s3.ap-south-1.amazonaws.com/prepseed/prod/ldoc/media/BroadLoomGallery2.png",
+    src: "/Images/site/broadloom-carpet-gallery-2.webp",
     alt: "Hospitality Broadloom Solution",
   },
   {
-    src: "https://s3.ap-south-1.amazonaws.com/prepseed/prod/ldoc/media/BroadLoomGallery1.png",
+    src: "/Images/site/broadloom-carpet-gallery-1.webp",
     alt: "Premium Broadloom Carpet - Residential",
   },
   // {
-  //     src: 'https://s3.ap-south-1.amazonaws.com/prepseed/prod/ldoc/media/broadloom gallery3.png',
+  //     src: '/Images/site/broadloom-carpet-gallery-6.webp',
   //     alt: 'Commercial Broadloom Installation'
   // },
   {
-    src: "https://s3.ap-south-1.amazonaws.com/prepseed/prod/ldoc/media/BroadLoomGallery3.png",
+    src: "/Images/site/broadloom-carpet-gallery-3.webp",
     alt: "Luxury Broadloom Design",
   },
   {
-    src: "https://s3.ap-south-1.amazonaws.com/prepseed/prod/ldoc/media/90020115 broadloom2 (1).png",
+    src: "/Images/site/broadloom-carpet-design-90020115-room-view-2.webp",
     alt: "Modern Broadloom Pattern",
   },
   {
-    src: "https://s3.ap-south-1.amazonaws.com/prepseed/prod/ldoc/media/BroadLoomgalleryImage3.png",
+    src: "/Images/site/broadloom-carpet-gallery-4.webp",
     alt: "Luxury Broadloom Design",
   },
   {
-    src: "https://s3.ap-south-1.amazonaws.com/prepseed/prod/ldoc/media/BroadLoomgalleryImage4.png",
+    src: "/Images/site/broadloom-carpet-gallery-5.webp",
     alt: "Luxury Broadloom Design",
   },
   // {
-  //     src: 'https://s3.ap-south-1.amazonaws.com/prepseed/prod/ldoc/media/broadloom gallery5.png',
+  //     src: '/Images/site/broadloom-carpet-gallery-7.webp',
   //     alt: 'Executive Office Broadloom'
   // },
 ];

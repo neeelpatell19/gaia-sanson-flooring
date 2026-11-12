@@ -41,7 +41,7 @@ const BlogsData = [
       "/Images/Blogs/meeting-room-acoustics/og-meeting-room-acoustics.jpg",
     relatedProduct: {
       name: "Acoustic PET Panels",
-      path: "/categories/acoustic-tiles",
+      path: "/acoustic-pet-panels",
     },
     faqs: [
       {
@@ -80,7 +80,7 @@ const BlogsData = [
       "/Images/Blogs/banquet-hall-carpet/og-banquet-hall-carpet.jpg",
     relatedProduct: {
       name: "Broadloom Carpets",
-      path: "/categories/broadloom-carpets",
+      path: "/broadloom-carpets",
     },
     faqs: [
       {
@@ -119,7 +119,7 @@ const BlogsData = [
       "/Images/Blogs/hospital-acoustics/og-hospital-acoustics.jpg",
     relatedProduct: {
       name: "Acoustic PET Panels",
-      path: "/categories/acoustic-tiles",
+      path: "/acoustic-pet-panels",
     },
     faqs: [
       {
@@ -158,7 +158,7 @@ const BlogsData = [
       "/Images/Blogs/soundproofing-vs-sound-absorption/og-soundproofing-vs-sound-absorption.jpg",
     relatedProduct: {
       name: "Acoustic PET Panels",
-      path: "/categories/acoustic-tiles",
+      path: "/acoustic-pet-panels",
     },
     faqs: [
       {
@@ -202,7 +202,7 @@ const BlogsData = [
       "/Images/Blogs/how-to-install-carpet-tiles/og-how-to-install-carpet-tiles.jpg",
     relatedProduct: {
       name: "Carpet Tiles",
-      path: "/categories/carpet-tiles",
+      path: "/carpet-tiles",
     },
     faqs: [
       {
@@ -246,7 +246,7 @@ const BlogsData = [
       "/Images/Blogs/auditorium-acoustics/og-auditorium-acoustics.jpg",
     relatedProduct: {
       name: "Acoustic PET Panels",
-      path: "/categories/acoustic-tiles",
+      path: "/acoustic-pet-panels",
     },
     faqs: [
       {
@@ -285,7 +285,7 @@ const BlogsData = [
       "/Images/Blogs/what-is-nrc-noise-reduction-coefficient/og-what-is-nrc-noise-reduction-coefficient.jpg",
     relatedProduct: {
       name: "Acoustic PET Panels",
-      path: "/categories/acoustic-tiles",
+      path: "/acoustic-pet-panels",
     },
     faqs: [
       {
@@ -329,7 +329,7 @@ const BlogsData = [
       "/Images/Blogs/carpet-tiles-for-home/og-carpet-tiles-for-home.jpg",
     relatedProduct: {
       name: "Carpet Tiles",
-      path: "/categories/carpet-tiles",
+      path: "/carpet-tiles",
     },
     faqs: [
       {
@@ -373,7 +373,7 @@ const BlogsData = [
       "/Images/Blogs/types-of-artificial-grass/og-types-of-artificial-grass.jpg",
     relatedProduct: {
       name: "Artificial Grass",
-      path: "/categories/artificial-multiturf",
+      path: "/artificial-grass",
     },
     faqs: [
       {
@@ -417,7 +417,7 @@ const BlogsData = [
       "/Images/Blogs/best-flooring-for-office/og-best-flooring-for-office.jpg",
     relatedProduct: {
       name: "Carpet Tiles",
-      path: "/categories/carpet-tiles",
+      path: "/carpet-tiles",
     },
     faqs: [
       {
@@ -461,7 +461,7 @@ const BlogsData = [
       "/Images/Blogs/home-theatre-acoustics/og-home-theatre-acoustics.jpg",
     relatedProduct: {
       name: "Acoustic PET Panels",
-      path: "/categories/acoustic-tiles",
+      path: "/acoustic-pet-panels",
     },
     faqs: [
       {
@@ -500,7 +500,7 @@ const BlogsData = [
       "/Images/Blogs/choosing-carpet-tile-colours-for-office/og-choosing-carpet-tile-colours-for-office.jpg",
     relatedProduct: {
       name: "Carpet Tiles",
-      path: "/categories/carpet-tiles",
+      path: "/carpet-tiles",
     },
     faqs: [
       {
@@ -539,7 +539,7 @@ const BlogsData = [
       "/Images/Blogs/restaurant-acoustics/og-restaurant-acoustics.jpg",
     relatedProduct: {
       name: "Acoustic PET Panels",
-      path: "/categories/acoustic-tiles",
+      path: "/acoustic-pet-panels",
     },
     faqs: [
       {
@@ -622,7 +622,7 @@ const BlogsData = [
       "/Images/Blogs/how-to-clean-carpet-tiles/og-how-to-clean-carpet-tiles.jpg",
     relatedProduct: {
       name: "Carpet Tiles",
-      path: "/categories/carpet-tiles",
+      path: "/carpet-tiles",
     },
     faqs: [
       {
@@ -661,7 +661,7 @@ const BlogsData = [
       "/Images/Blogs/classroom-acoustics/og-classroom-acoustics.jpg",
     relatedProduct: {
       name: "Acoustic PET Panels",
-      path: "/categories/acoustic-tiles",
+      path: "/acoustic-pet-panels",
     },
     faqs: [
       {
@@ -700,7 +700,7 @@ const BlogsData = [
       "/Images/Blogs/what-is-greenpro-certification/og-what-is-greenpro-certification.jpg",
     relatedProduct: {
       name: "Acoustic PET Panels",
-      path: "/categories/acoustic-tiles",
+      path: "/acoustic-pet-panels",
     },
     faqs: [
       {
@@ -739,7 +739,7 @@ const BlogsData = [
       "/Images/Blogs/carpet-tiles-vs-broadloom/og-carpet-tiles-vs-broadloom.jpg",
     relatedProduct: {
       name: "Broadloom Carpets",
-      path: "/categories/broadloom-carpets",
+      path: "/broadloom-carpets",
     },
     faqs: [
       {
@@ -778,7 +778,7 @@ const BlogsData = [
       "/Images/Blogs/broadloom-carpet-for-hotels/og-broadloom-carpet-for-hotels.jpg",
     relatedProduct: {
       name: "Broadloom Carpets",
-      path: "/categories/broadloom-carpets",
+      path: "/broadloom-carpets",
     },
     faqs: [
       {
@@ -866,7 +866,7 @@ const BlogsData = [
       "/Images/Blogs/how-many-carpet-tiles-do-i-need/og-how-many-carpet-tiles-do-i-need.jpg",
     relatedProduct: {
       name: "Carpet Tiles",
-      path: "/categories/carpet-tiles",
+      path: "/carpet-tiles",
     },
     faqs: [
       {
@@ -905,7 +905,7 @@ const BlogsData = [
       "/Images/Blogs/how-to-reduce-echo-in-a-room/og-how-to-reduce-echo-in-a-room.jpg",
     relatedProduct: {
       name: "Acoustic PET Panels",
-      path: "/categories/acoustic-tiles",
+      path: "/acoustic-pet-panels",
     },
     faqs: [
       {
@@ -944,7 +944,7 @@ const BlogsData = [
       "/Images/Blogs/noise-reduction-open-plan-office/og-noise-reduction-open-plan-office.jpg",
     relatedProduct: {
       name: "Acoustic PET Panels",
-      path: "/categories/acoustic-tiles",
+      path: "/acoustic-pet-panels",
     },
     faqs: [
       {
@@ -983,7 +983,7 @@ const BlogsData = [
       "/Images/Blogs/acoustic-panels-vs-foam/og-acoustic-panels-vs-foam.jpg",
     relatedProduct: {
       name: "Acoustic PET Panels",
-      path: "/categories/acoustic-tiles",
+      path: "/acoustic-pet-panels",
     },
     faqs: [
       {
@@ -1027,7 +1027,7 @@ const BlogsData = [
       "/Images/Blogs/carpet-tiles-vs-vinyl-flooring/og-carpet-tiles-vs-vinyl-flooring.jpg",
     relatedProduct: {
       name: "Carpet Tiles",
-      path: "/categories/carpet-tiles",
+      path: "/carpet-tiles",
     },
     faqs: [
       {
@@ -1115,7 +1115,7 @@ const BlogsData = [
       "/Images/Blogs/acoustic-panels-air-gap/og-acoustic-panels-air-gap.jpg",
     relatedProduct: {
       name: "Acoustic PET Panels",
-      path: "/categories/acoustic-tiles",
+      path: "/acoustic-pet-panels",
     },
     faqs: [
       {
@@ -1203,7 +1203,7 @@ const BlogsData = [
       "/Images/Blogs/carpet-tiles-vs-carpet-planks/og-carpet-tiles-vs-carpet-planks.jpg",
     relatedProduct: {
       name: "Carpet Tiles",
-      path: "/categories/carpet-tiles",
+      path: "/carpet-tiles",
     },
     faqs: [
       {
@@ -1248,7 +1248,7 @@ const BlogsData = [
       "/Images/Blogs/printed-acoustic-panels-feature-wall-lighting/og-printed-acoustic-panels-feature-wall.jpg",
     relatedProduct: {
       name: "Acoustic PET Panels",
-      path: "/categories/acoustic-tiles",
+      path: "/acoustic-pet-panels",
     },
     faqs: [
       {

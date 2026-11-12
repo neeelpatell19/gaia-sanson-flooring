@@ -9,14 +9,14 @@ export default {
         description:
           "Our carpets, made from locally sourced materials, reflect India's craftsmanship and commitment to sustainability. By choosing them, you support the Make in India movement, strengthening the local economy and empowering artisans.",
         image:
-          "https://s3.ap-south-1.amazonaws.com/prepseed/prod/ldoc/media/HandcraftedWith Image.png",
+          "/Images/site/handcrafted-carpet-tiles.webp",
       },
       setsApartData: {
         subtitle: "WHAT SETS US APART?",
         title:
           "India's first startup offering integrated solutions in floorings and acoustic panels for high-performance interiors.",
         image:
-          "https://s3.ap-south-1.amazonaws.com/prepseed/prod/ldoc/media/WhatsSeAPart.png",
+          "/Images/site/what-sets-gaia-apart.webp",
       },
     };
   },

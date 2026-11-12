@@ -1,424 +1,86 @@
 // ===========================================
 // CARPET TILE DESIGNS
-// The swatches on /categories/carpet-tiles. Shared with src/seo/pages.js so
-// every brochure PDF is also listed in sitemap.xml.
+// One entry per design. Each design has its own page at /carpet-tiles/<slug>
+// (CarpetTileDesign.vue) and a swatch on /carpet-tiles. src/seo/pages.js
+// reads this list for the pre-render, the sitemap and the structured data.
 //
-// pdf: a /pdfs/GAIA_*.pdf path on our own domain (vercel.json and
-// vite.config.js proxy these from the file bucket), or "" for no brochure.
+// name:       the design's name, shown on the page and used in alt text.
+// collection: "Heritage" (the original range) or "GAIA" (the newer range).
+// pdf:        the brochure, a /pdfs/GAIA_*.pdf path on our own domain
+//             (vercel.json and vite.config.js proxy it from the file bucket),
+//             or "" when there is none yet.
+// specs:      spec table rows, { label: value }. Only filled rows are shown;
+//             the client supplies the values (see SPEC_FIELDS below).
 // ===========================================
 
-const designSwatchesData = [
-  {
-    image: "/Images/CarpetCircleImages/Archibrown.png",
-    name: "Heritage Collection",
-    code: "ArchiBrown",
-    pdf: "",
-  },
-  {
-    image: "/Images/CarpetCircleImages/bloxx.png",
-    name: "Heritage Collection",
-    code: "Bloxx",
-    pdf: "",
-  },
-  {
-    image: "/Images/CarpetCircleImages/Aangan.png",
-    name: "Heritage Collection",
-    code: "Aangan",
-    pdf: "/pdfs/GAIA_AANGAN.pdf",
-  },
-  {
-    image: "/Images/CarpetCircleImages/Gridwork.png",
-    name: "Heritage Collection",
-    code: "Grid Work",
-    pdf: "/pdfs/GAIA_GRIDWORK.pdf",
-  },
-  {
-    image: "/Images/Miami.png",
-    name: "Heritage Collection",
-    code: "Miami",
-    pdf: "/pdfs/GAIA_MIAMI.pdf",
-  },
-  {
-    image: "/Images/CarpetCircleImages/Nevada.png",
-    name: "Heritage Collection",
-    code: "Nevada",
-    pdf: "",
-  },
-  {
-    image: "/Images/CarpetCircleImages/Plateau.png",
-    name: "Plateau",
-    code: "Plateau",
-    pdf: "/pdfs/GAIA_PLATEAU.pdf",
-  },
-  {
-    image: "/Images/CarpetCircleImages/Dalaan.png",
-    name: "Heritage Collection",
-    code: "Dalaan",
-    pdf: "/pdfs/GAIA_DALAAN.pdf",
-  },
-  {
-    image: "/Images/CarpetCircleImages/Alankrit.png",
-    name: "Heritage Collection",
-    code: "Alankrit",
-    pdf: "/pdfs/GAIA_ALANKRIT.pdf",
-  },
-  {
-    image: "/Images/CarpetCircleImages/Drip.png",
-    name: "Heritage Collection",
-    code: "Drip",
-    pdf: "/pdfs/GAIA_DRIP.pdf",
-  },
-  {
-    image: "/Images/CarpetCircleImages/Naqsh.png",
-    name: "Heritage Collection",
-    code: "Naqsh",
-    pdf: "/pdfs/GAIA_NAQSH.pdf",
-  },
-  {
-    image: "/Images/CarpetCircleImages/Majesty.png",
-    name: "Heritage Collection",
-    code: "Majesty",
-    pdf: "/pdfs/GAIA_MAJESTY.pdf",
-  },
-  {
-    image: "/Images/CarpetCircleImages/Paramount.png",
-    name: "Heritage Collection",
-    code: "Paramount",
-    pdf: "/pdfs/GAIA_PARAMOUNT.pdf",
-  },
-  {
-    image: "/Images/CarpetCircleImages/Pinnacle.png",
-    name: "Heritage Collection",
-    code: "Pinnacle",
-    pdf: "/pdfs/GAIA_PINNACLE.pdf",
-  },
-  {
-    image: "/Images/CarpetCircleImages/Signature.png",
-    name: "Heritage Collection",
-    code: "Signature",
-    pdf: "/pdfs/GAIA_SIGNATURE.pdf",
-  },
-  {
-    image: "/Images/Salt.png",
-    name: "Heritage Collection",
-    code: "Salt",
-    pdf: "",
-  },
-  {
-    image: "/Images/SBT.png",
-    name: "Heritage Collection",
-    code: "SBT",
-    pdf: "",
-  },
-  {
-    image: "/Images/CarpetCircleImages/Shining_Glow.png",
-    name: "Heritage Collection",
-    code: "ShiningGlow",
-    pdf: "/pdfs/GAIA_SHINING+GLOW.pdf",
-  },
-  {
-    image: "/Images/CarpetCircleImages/Cobble.png",
-    name: "GAIA Collection",
-    code: "Cobble",
-    pdf: "/pdfs/GAIA_COBBLE.pdf",
-  },
-  // {
-  //   image: "/Images/CarpetCircleImages/Trends.png",
-  //   name: "Heritage Collection",
-  //   code: "Trends",
-  //   pdf: "",
-  // },
-  {
-    image: "/Images/CarpetCircleImages/new_added/ascend.png",
-    name: "GAIA Collection",
-    code: "Ascend",
-    pdf: "/pdfs/GAIA_ASCEND.pdf",
-  },
-  {
-    image: "/Images/CarpetCircleImages/new_added/ellite.png",
-    name: "GAIA Collection",
-    code: "Elite",
-    pdf: "/pdfs/GAIA_ELITE.pdf",
-  },
-  {
-    image: "/Images/CarpetCircleImages/new_added/eminence.png",
-    name: "GAIA Collection",
-    code: "Eminence",
-    pdf: "/pdfs/GAIA_EMINENCE.pdf",
-  },
-  {
-    image: "/Images/CarpetCircleImages/new_added/grandeur.png",
-    name: "GAIA Collection",
-    code: "Grandeur",
-    pdf: "/pdfs/GAIA_GRANDEUR.pdf",
-  },
-  {
-    image: "/Images/CarpetCircleImages/new_added/legacy.png",
-    name: "GAIA Collection",
-    code: "Legacy",
-    pdf: "/pdfs/GAIA_LEGACY.pdf",
-  },
-  {
-    image: "/Images/CarpetCircleImages/new_added/Opulence.png",
-    name: "GAIA Collection",
-    code: "Opulence",
-    pdf: "/pdfs/GAIA_OPULENCE.pdf",
-  },
-  {
-    image: "/Images/CarpetCircleImages/new_added/sovereign.png",
-    name: "GAIA Collection",
-    code: "Sovereign",
-    pdf: "/pdfs/GAIA_SOVEREIGN.pdf",
-  },
-  {
-    image: "/Images/CarpetCircleImages/new_added/sterling.png",
-    name: "GAIA Collection",
-    code: "Sterling",
-    pdf: "/pdfs/GAIA_STERLING.pdf",
-  },
-  {
-    image: "/Images/CarpetCircleImages/new_added/Virtue.png",
-    name: "GAIA Collection",
-    code: "Virtue",
-    pdf: "/pdfs/GAIA_VIRTUE.pdf",
-  },
-  {
-    image: "/Images/CarpetCircleImages/new_added/street.png",
-    name: "GAIA Collection",
-    code: "Street",
-    pdf: "/pdfs/GAIA_STREET.pdf",
-  },
-  {
-    image: "/Images/CarpetCircleImages/new_added/zenith.png",
-    name: "GAIA Collection",
-    code: "Zenith",
-    pdf: "/pdfs/GAIA_ZENITH.pdf",
-  },
-  {
-    image: "/Images/CarpetCircleImages/new_added/chromatic.png",
-    name: "GAIA Collection",
-    code: "Chromatic",
-    pdf: "/pdfs/GAIA_CHROMATIC.pdf",
-  },
-  {
-    image: "/Images/CarpetCircleImages/new_added/nova.png",
-    name: "GAIA Collection",
-    code: "Nova",
-    pdf: "/pdfs/GAIA_NOVA.pdf",
-  },
-  {
-    image: "/Images/CarpetCircleImages/new_added/stairway.png",
-    name: "GAIA Collection",
-    code: "Stairway",
-    pdf: "/pdfs/GAIA_STAIRWAY.pdf",
-  },
-  {
-    image: "/Images/CarpetCircleImages/new_added/zara-carpet-tiles.png",
-    name: "GAIA Collection",
-    code: "Zara",
-    pdf: "/pdfs/GAIA_ZARA.pdf",
-  },
-
-  // {
-  //   image: "/Images/CarpetCircleImages/90020052.png",
-  //   name: "Heritage Collection",
-  //   code: "90020052",
-  //   pdf: "/Images/CarpetCircleImages/Documents/Sanson Floorings_ 90020052.pdf",
-  // },
-  // {
-  //   image: "/Images/CarpetCircleImages/90020055.svg",
-  //   name: "Heritage Collection",
-  //   code: "90020055",
-  //   pdf: "/Images/CarpetCircleImages/Documents/90020055.pdf",
-  // },
-  // {
-  //   image: "/Images/CarpetCircleImages/90020057.png",
-  //   name: "Heritage Collection",
-  //   code: "90020057",
-  //   pdf: "/Images/CarpetCircleImages/Documents/Sanson Floorings_90020057.pdf",
-  // },
-  // {
-  //   image: "/Images/CarpetCircleImages/90020059.png",
-  //   name: "Heritage Collection",
-  //   code: "90020059",
-  //   pdf: "/Images/CarpetCircleImages/Documents/Sanson Floorings_ _2 Colour Design-90020059.pdf",
-  // },
-  // {
-  //   image: "/Images/CarpetCircleImages/90020061.png",
-  //   name: "Heritage Collection",
-  //   code: "90020061",
-  //   pdf: "/Images/CarpetCircleImages/Documents/90020061.pdf",
-  // },
-  // {
-  //   image: "/Images/CarpetCircleImages/90020062.svg",
-  //   name: "Signature Line",
-  //   code: "90020062",
-  //   pdf: "/Images/CarpetCircleImages/Documents/90020062.pdf",
-  // },
-  // { image: '/Images/CarpetCircleImages/90020064.png', name: 'Heritage Collection', code: '90020064', pdf: '' },
-  // {
-  //   image: "/Images/CarpetCircleImages/90020065.png",
-  //   name: "Heritage Collection",
-  //   code: "90020065",
-  //   pdf: "/Images/CarpetCircleImages/Documents/Sanson Floorings_90020065.pdf",
-  // },
-  // {
-  //   image: "/Images/CarpetCircleImages/90020066.svg",
-  //   name: "Artisan Craft",
-  //   code: "90020066",
-  //   pdf: "/Images/CarpetCircleImages/Documents/90020066.pdf",
-  // },
-  // {
-  //   image: "/Images/CarpetCircleImages/90020067.svg",
-  //   name: "Designer Series",
-  //   code: "90020067",
-  //   pdf: "/Images/CarpetCircleImages/Documents/90020067.pdf",
-  // },
-  // {
-  //   image: "/Images/CarpetCircleImages/90020070.png",
-  //   name: "Heritage Collection",
-  //   code: "90020070",
-  //   pdf: "/Images/CarpetCircleImages/Documents/Sanson Floorings_ _2 Colour Design-90020070.pdf",
-  // },
-  // {
-  //   image: "/Images/CarpetCircleImages/90020071.png",
-  //   name: "Heritage Collection",
-  //   code: "90020071",
-  //   pdf: "/Images/CarpetCircleImages/Documents/2 Color- 90020071.pdf",
-  // },
-  // {
-  //   image: "/Images/CarpetCircleImages/90020072.png",
-  //   name: "Heritage Collection",
-  //   code: "90020072",
-  //   pdf: "/Images/CarpetCircleImages/Documents/Sanson Floorings_ _2 Colour Design-90020072.pdf",
-  // },
-  // {
-  //   image: "/Images/CarpetCircleImages/90020074.png",
-  //   name: "Heritage Collection",
-  //   code: "90020074",
-  //   pdf: "/Images/CarpetCircleImages/Documents/2 Color- 90020074.pdf",
-  // },
-  // {
-  //   image: "/Images/CarpetCircleImages/90020080.png",
-  //   name: "Heritage Collection",
-  //   code: "90020080",
-  //   pdf: "/Images/CarpetCircleImages/Documents/Sanson Floorings_  Design-90020080.pdf",
-  // },
-  // {
-  //   image: "/Images/CarpetCircleImages/90020081.png",
-  //   name: "Heritage Collection",
-  //   code: "90020081",
-  //   pdf: "/Images/CarpetCircleImages/Documents/90020081.pdf",
-  // },
-  // {
-  //   image: "/Images/CarpetCircleImages/90020086.png",
-  //   name: "Heritage Collection",
-  //   code: "90020086",
-  //   pdf: "/Images/CarpetCircleImages/Documents/Sanson Floorings_  Design-90020086.pdf",
-  // },
-  // {
-  //   image: "/Images/CarpetCircleImages/90020087.png",
-  //   name: "Heritage Collection",
-  //   code: "90020087",
-  //   pdf: "/Images/CarpetCircleImages/Documents/Sanson Floorings_  Design-90020087.pdf",
-  // },
-  // {
-  //   image: "/Images/CarpetCircleImages/90020088.svg",
-  //   name: "Innovation Series",
-  //   code: "90020088",
-  //   pdf: "/Images/CarpetCircleImages/Documents/90020088.pdf",
-  // },
-  // {
-  //   image: "/Images/CarpetCircleImages/90020089.svg",
-  //   name: "Premium Collection",
-  //   code: "90020089",
-  //   pdf: "/Images/CarpetCircleImages/Documents/90020089.pdf",
-  // },
-  // {
-  //   image: "/Images/CarpetCircleImages/90020090.svg",
-  //   name: "Contemporary Style",
-  //   code: "90020090",
-  //   pdf: "/Images/CarpetCircleImages/Documents/90020090.pdf",
-  // },
-  // {
-  //   name: "Heritage Collection",
-  //   code: "90020092",
-  //   pdf: "/Images/CarpetCircleImages/Documents/Sanson Floorings_90020092.pdf",
-  // },
-  // {
-  //   image: "/Images/CarpetCircleImages/90020094.png",
-  //   name: "Heritage Collection",
-  //   code: "90020094",
-  //   pdf: "/Images/CarpetCircleImages/Documents/Sanson Floorings_ _2 Colour Design-90020094.pdf",
-  // },
-  // {
-  //   image: "/Images/CarpetCircleImages/90020095.png",
-  //   name: "Heritage Collection",
-  //   code: "90020095",
-  //   pdf: "/Images/CarpetCircleImages/Documents/90020095.pdf",
-  // },
-  // {
-  //   image: "/Images/CarpetCircleImages/90020097.png",
-  //   name: "Heritage Collection",
-  //   code: "90020097",
-  //   pdf: "/Images/CarpetCircleImages/Documents/90020097.pdf",
-  // },
-  // {
-  //   image: "/Images/CarpetCircleImages/90020101.png",
-  //   name: "Heritage Collection",
-  //   code: "90020101",
-  //   pdf: "/Images/CarpetCircleImages/Documents/Sanson Floorings_  Design-90020101.pdf",
-  // },
-  // {
-  //   image: "/Images/CarpetCircleImages/90020103.png",
-  //   name: "Heritage Collection",
-  //   code: "90020103",
-  //   pdf: "/Images/CarpetCircleImages/Documents/Sanson Floorings_ _2 Colour Design-90020103.pdf",
-  // },
-  // {
-  //  image: "/Images/CarpetCircleImages/90020106.png",
-  //   name: "Heritage Collection",
-  //   code: "90020106",
-  //   pdf: "/Images/CarpetCircleImages/Documents/2 Color- 90020106.pdf",
-  // },
-  // { image: '/Images/CarpetCircleImages/90020107.svg', name: 'Modern Luxury', code: '90020107', pdf: '/Images/CarpetCircleImages/Documents/90020107.pdf' },
-  // {
-  //   image: "/Images/CarpetCircleImages/90020108.png",
-  //   name: "Heritage Collection",
-  //   code: "90020108",
-  //   pdf: "/Images/CarpetCircleImages/Documents/Sanson Floorings_ _2 Colour Design-90020108.pdf",
-  // },
-  // {
-  //   image: "/Images/CarpetCircleImages/90020112.png",
-  //   name: "Heritage Collection",
-  //   code: "90020112",
-  //   pdf: "/Images/CarpetCircleImages/Documents/Sanson Floorings_  Design-90020112.pdf",
-  // },
-  // {
-  //   image: "/Images/CarpetCircleImages/90020131.png",
-  //   name: "Heritage Collection",
-  //   code: "90020131",
-  //   pdf: "/Images/CarpetCircleImages/Documents/Sanson Floorings_90020131.pdf",
-  // },
-  // {
-  //   image: "/Images/CarpetCircleImages/90020138.png",
-  //   name: "Heritage Collection",
-  //   code: "90020138",
-  //   pdf: "/Images/CarpetCircleImages/Documents/Sanson Floorings_  Design-90020138.pdf",
-  // },
-  //  {
-  //   image: "/Images/CarpetCircleImages/New Design.png",
-  //   name: "New Design",
-  //   code: "90020111",
-  //   pdf: "/Images/CarpetCircleImages/Documents/Sanson Floorings_New Design.pdf",
-  // },
-  // { image: '/Images/CarpetCircleImages/AIR GLOW 2015 PLANK.png', name: 'Heritage Collection', code: 'AIR GLOW 2015 PLANK', pdf: '/Images/CarpetCircleImages/Documents/Sanson Floorings_AIR GLOW 2015.pdf' },
+// The spec table fields for carpet tiles and planks, in display order.
+export const SPEC_FIELDS = [
+  "Size",
+  "Construction",
+  "Yarn type",
+  "Pile height",
+  "Pile weight",
+  "Total thickness",
+  "Backing",
+  "Fire rating",
+  "VOC certification",
+  "Static",
+  "Warranty",
+  "Packing",
+  "MOQ",
 ];
 
-export default designSwatchesData;
+const heritage = (name, slug, image, pdf = "") => ({ name, slug, collection: "Heritage", image, pdf, specs: {} });
+const gaia = (name, slug, image, pdf = "") => ({ name, slug, collection: "GAIA", image, pdf, specs: {} });
 
+const designs = [
+  heritage("Aangan", "aangan", "/Images/CarpetCircleImages/Aangan.png", "/pdfs/GAIA_AANGAN.pdf"),
+  heritage("Alankrit", "alankrit", "/Images/CarpetCircleImages/Alankrit.png", "/pdfs/GAIA_ALANKRIT.pdf"),
+  heritage("ArchiBrown", "archibrown", "/Images/CarpetCircleImages/Archibrown.png"),
+  heritage("Bloxx", "bloxx", "/Images/CarpetCircleImages/bloxx.png"),
+  heritage("Dalaan", "dalaan", "/Images/CarpetCircleImages/Dalaan.png", "/pdfs/GAIA_DALAAN.pdf"),
+  heritage("Drip", "drip", "/Images/CarpetCircleImages/Drip.png", "/pdfs/GAIA_DRIP.pdf"),
+  heritage("Grid Work", "grid-work", "/Images/CarpetCircleImages/Gridwork.png", "/pdfs/GAIA_GRIDWORK.pdf"),
+  heritage("Majesty", "majesty", "/Images/CarpetCircleImages/Majesty.png", "/pdfs/GAIA_MAJESTY.pdf"),
+  heritage("Miami", "miami", "/Images/Miami.png", "/pdfs/GAIA_MIAMI.pdf"),
+  heritage("Naqsh", "naqsh", "/Images/CarpetCircleImages/Naqsh.png", "/pdfs/GAIA_NAQSH.pdf"),
+  heritage("Nevada", "nevada", "/Images/CarpetCircleImages/Nevada.png"),
+  heritage("Paramount", "paramount", "/Images/CarpetCircleImages/Paramount.png", "/pdfs/GAIA_PARAMOUNT.pdf"),
+  heritage("Pinnacle", "pinnacle", "/Images/CarpetCircleImages/Pinnacle.png", "/pdfs/GAIA_PINNACLE.pdf"),
+  heritage("Plateau", "plateau", "/Images/CarpetCircleImages/Plateau.png", "/pdfs/GAIA_PLATEAU.pdf"),
+  heritage("Salt", "salt", "/Images/Salt.png"),
+  heritage("SBT", "sbt", "/Images/SBT.png"),
+  heritage("ShiningGlow", "shining-glow", "/Images/CarpetCircleImages/Shining_Glow.png", "/pdfs/GAIA_SHINING+GLOW.pdf"),
+  heritage("Signature", "signature", "/Images/CarpetCircleImages/Signature.png", "/pdfs/GAIA_SIGNATURE.pdf"),
+  gaia("Ascend", "ascend", "/Images/CarpetCircleImages/new_added/ascend.png", "/pdfs/GAIA_ASCEND.pdf"),
+  gaia("Chromatic", "chromatic", "/Images/CarpetCircleImages/new_added/chromatic.png", "/pdfs/GAIA_CHROMATIC.pdf"),
+  gaia("Cobble", "cobble", "/Images/CarpetCircleImages/Cobble.png", "/pdfs/GAIA_COBBLE.pdf"),
+  gaia("Elite", "elite", "/Images/CarpetCircleImages/new_added/ellite.png", "/pdfs/GAIA_ELITE.pdf"),
+  gaia("Eminence", "eminence", "/Images/CarpetCircleImages/new_added/eminence.png", "/pdfs/GAIA_EMINENCE.pdf"),
+  gaia("Grandeur", "grandeur", "/Images/CarpetCircleImages/new_added/grandeur.png", "/pdfs/GAIA_GRANDEUR.pdf"),
+  gaia("Legacy", "legacy", "/Images/CarpetCircleImages/new_added/legacy.png", "/pdfs/GAIA_LEGACY.pdf"),
+  gaia("Nova", "nova", "/Images/CarpetCircleImages/new_added/nova.png", "/pdfs/GAIA_NOVA.pdf"),
+  gaia("Opulence", "opulence", "/Images/CarpetCircleImages/new_added/Opulence.png", "/pdfs/GAIA_OPULENCE.pdf"),
+  gaia("Sovereign", "sovereign", "/Images/CarpetCircleImages/new_added/sovereign.png", "/pdfs/GAIA_SOVEREIGN.pdf"),
+  gaia("Stairway", "stairway", "/Images/CarpetCircleImages/new_added/stairway.png", "/pdfs/GAIA_STAIRWAY.pdf"),
+  gaia("Sterling", "sterling", "/Images/CarpetCircleImages/new_added/sterling.png", "/pdfs/GAIA_STERLING.pdf"),
+  gaia("Street", "street", "/Images/CarpetCircleImages/new_added/street.png", "/pdfs/GAIA_STREET.pdf"),
+  gaia("Virtue", "virtue", "/Images/CarpetCircleImages/new_added/Virtue.png", "/pdfs/GAIA_VIRTUE.pdf"),
+  gaia("Zara", "zara", "/Images/CarpetCircleImages/new_added/zara-carpet-tiles.png", "/pdfs/GAIA_ZARA.pdf"),
+  gaia("Zenith", "zenith", "/Images/CarpetCircleImages/new_added/zenith.png", "/pdfs/GAIA_ZENITH.pdf"),
+];
+
+export default designs;
+
+export const designPath = (design) => `/carpet-tiles/${design.slug}`;
+export const designBySlug = (slug) => designs.find((d) => d.slug === slug);
 export const hasPdf = (design) => Boolean(design.pdf && design.pdf.trim() !== "");
+export const designAlt = (design) => `${design.name} carpet tile design, ${design.collection} collection by GAIA`;
 
-// Every brochure PDF, for the sitemap.
-export const designPdfPaths = () =>
-  designSwatchesData.filter(hasPdf).map((design) => design.pdf);
+// Spec rows that have a value, in SPEC_FIELDS order. No empty rows are shown.
+export const filledSpecs = (design) =>
+  SPEC_FIELDS.filter((label) => design.specs[label]).map((label) => ({ label, value: design.specs[label] }));
+
+// Other designs from the same collection, for the "related designs" block.
+export const relatedDesigns = (design, count = 6) =>
+  designs.filter((d) => d.collection === design.collection && d.slug !== design.slug).slice(0, count);

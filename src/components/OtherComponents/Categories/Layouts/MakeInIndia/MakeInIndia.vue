@@ -7,21 +7,21 @@
           Manufactured in India
         </h2>
         <br />
-        <h3 data-aos="fade-up" data-aos-duration="600" data-aos-delay="200">
+        <p class="lead-text" data-aos="fade-up" data-aos-duration="600" data-aos-delay="200">
           {{ description }}
-        </h3>
+        </p>
       </div>
       <div class="AccousticContainerLogo" style="margin-top: 20px">
         <div class="sets-apart-logos-Container" style="justify-content: start">
           <div class="sets-apart-logos-Container-item">
             <img
-              src="https://s3.ap-south-1.amazonaws.com/prepseed/prod/ldoc/media/StartUpIndiaImageUpdate.png"
+              src="/Images/site/startup-india-logo.webp"
               alt="Startup India"
             />
           </div>
           <div class="sets-apart-logos-Container-item">
             <img
-              src="https://s3.ap-south-1.amazonaws.com/prepseed/prod/ldoc/media/MakeInIndeaLogoImageNew.png"
+              src="/Images/site/make-in-india-logo.webp"
               alt="Make in India"
             />
           </div>

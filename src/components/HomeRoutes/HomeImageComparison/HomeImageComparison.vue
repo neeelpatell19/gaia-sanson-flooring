@@ -12,7 +12,7 @@ export default {
           label: "CARPET TILES",
         },
         rightImage: {
-          src: "https://s3.ap-south-1.amazonaws.com/prepseed/prod/ldoc/media/SHOWCASINGOURCARPETS2.png",
+          src: "/Images/site/gaia-carpets-showcase.webp",
           label: "ACOUSTIC PET PANEL",
         },
       },
@@ -106,7 +106,7 @@ export default {
       <div class="HomeImageComparisonContainer">
         <!-- Header -->
         <div class="comparison-header" data-aos="fade-up" data-aos-delay="200">
-          <h3 class="comparison-title">{{ comparisonData.title }}</h3>
+          <p class="comparison-title lead-text">{{ comparisonData.title }}</p>
         </div>
 
         <!-- Image Comparison Container -->

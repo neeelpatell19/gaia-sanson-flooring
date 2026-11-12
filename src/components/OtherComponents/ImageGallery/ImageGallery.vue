@@ -39,17 +39,17 @@ import "./ImageGallery.css";
 const firstRowImages = [
     {
         id: 1,
-        src: 'https://s3.ap-south-1.amazonaws.com/prepseed/prod/ldoc/media/Gallery1.png',
+        src: '/Images/site/gaia-carpet-project-gallery-6.webp',
         alt: 'Modern Office Workspace with Carpet Tiles'
     },
     {
         id: 2,
-        src: 'https://s3.ap-south-1.amazonaws.com/prepseed/prod/ldoc/media/Gallery2.png',
+        src: '/Images/site/gaia-carpet-project-gallery-7.webp',
         alt: 'Hexagonal Acoustic Wall Panels'
     },
     {
         id: 3,
-        src: 'https://s3.ap-south-1.amazonaws.com/prepseed/prod/ldoc/media/AboutUsGallery2.jpg',
+        src: '/Images/site/gaia-carpet-project-gallery-2.webp',
         alt: 'Collaborative Desk Area with Privacy Screens'
     }
 ];
@@ -58,22 +58,22 @@ const firstRowImages = [
 const secondRowImages = [
     {
         id: 7,
-        src: 'https://s3.ap-south-1.amazonaws.com/prepseed/prod/ldoc/media/Gallery7.png',
+        src: '/Images/site/gaia-carpet-project-gallery-8.webp',
         alt: 'Modern Interior with Premium Flooring'
     },
     {
         id: 4,
-        src: 'https://s3.ap-south-1.amazonaws.com/prepseed/prod/ldoc/media/AboutGalleryImage4.png',
+        src: '/Images/site/gaia-carpet-project-gallery-4.webp',
         alt: 'Children\'s Playroom with Colorful Design'
     },
     {
         id: 5,
-        src: 'https://s3.ap-south-1.amazonaws.com/prepseed/prod/ldoc/media/AboutUsGallery.png',
+        src: '/Images/site/gaia-carpet-project-gallery-1.webp',
         alt: 'Conference Room and Dining Area'
     },
     {
         id: 6,
-        src: 'https://s3.ap-south-1.amazonaws.com/prepseed/prod/ldoc/media/AboutUsGalllery5.png',
+        src: '/Images/site/gaia-carpet-project-gallery-5.webp',
         alt: 'Music Studio with Acoustic Panels'
     },
 ];

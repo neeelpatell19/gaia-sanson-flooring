@@ -9,7 +9,7 @@ export default {
         title:
           "India's first startup offering integrated solutions in floorings and acoustic panels for high-performance interiors.",
         image:
-          "https://s3.ap-south-1.amazonaws.com/prepseed/prod/ldoc/media/WhatsSeAPart.png",
+          "/Images/site/what-sets-gaia-apart.webp",
       },
       parallaxOffset: 0,
       scrollHandler: null,
@@ -94,7 +94,7 @@ export default {
   <div class="paddingTop60 paddingBottom80 SetsApartContainerParent">
     <div class="BackgoundOverlayImage">
       <img
-        src="https://s3.ap-south-1.amazonaws.com/prepseed/prod/ldoc/media/BackgroundCarpet.png"
+        src="/Images/site/carpet-tile-texture-background.webp"
         alt=""
       />
     </div>
@@ -124,11 +124,11 @@ export default {
       </div>
       <!-- <div class="sets-apart-logos-Container">
                 <div class="sets-apart-logos-Container-item">
-                    <img src="https://s3.ap-south-1.amazonaws.com/prepseed/prod/ldoc/media/StartUpIndiaImageUpdate.png"
+                    <img src="/Images/site/startup-india-logo.webp"
                         alt="Startup India">
                 </div>
                 <div class="sets-apart-logos-Container-item">
-                    <img src="https://s3.ap-south-1.amazonaws.com/prepseed/prod/ldoc/media/MakeInIndeaLogoImageNew.png"
+                    <img src="/Images/site/make-in-india-logo.webp"
                         alt="Make in India">
                 </div>
             </div> -->

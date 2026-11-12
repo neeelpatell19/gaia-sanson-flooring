@@ -7,13 +7,13 @@ export const grassTypesData = {
       "Soft, durable landscape artificial grass for villas, rooftops, hotel lawns and public parks. See specifications and installations from GAIA by Sanson Floorings.",
     heading: "Landscape Grass",
     imageSrc:
-      "https://s3.ap-south-1.amazonaws.com/prepseed/prod/ldoc/media/LandScapeMainImage.jpg",
+      "/Images/site/landscape-artificial-grass.webp",
     imageAlt: "Landscape Grass",
     title: "Landscape Grass",
     mainImage:
-      "https://s3.ap-south-1.amazonaws.com/prepseed/prod/ldoc/media/GrassnewIage.png",
+      "/Images/site/curly-artificial-grass.webp",
     insetImage:
-      "https://s3.ap-south-1.amazonaws.com/prepseed/prod/ldoc/media/LandScapeMainImage.jpg",
+      "/Images/site/landscape-artificial-grass.webp",
     overview:
       "Perfect for lush gardens, terraces, and outdoor aesthetics, our Landscape Grass combines premium softness with lasting durability.",
     idealFor: ["Villas", "Rooftops", "Hotel Lawns", "Public Parks"],
@@ -75,7 +75,7 @@ export const grassTypesData = {
     ],
     images: [
       {
-        src: "https://s3.ap-south-1.amazonaws.com/prepseed/prod/ldoc/media/SportGrassimage.jpg",
+        src: "/Images/site/sports-artificial-grass.webp",
         alt: "Sports Grass Football Field - 50mm",
       },
       {
@@ -103,7 +103,7 @@ export const grassTypesData = {
     landscapeDescription:
       "Explore sports grass installations, engineered for durability, performance, and excellence across various sports fields.",
   },
-  "multisports-grass": {
+  multiturf: {
     seoTitle: "MultiTurf Multi-Sports Grass | GAIA by Sanson Floorings",
     metaDescription:
       "MultiTurf artificial grass for multi-use surfaces such as tennis, badminton, gym floors and skating zones, balancing performance, safety and value. By GAIA.",
@@ -122,11 +122,11 @@ export const grassTypesData = {
     ],
     images: [
       {
-        src: "https://s3.ap-south-1.amazonaws.com/prepseed/prod/ldoc/media/multisportGrassImage2.jpg",
+        src: "/Images/site/multiturf-multisports-grass-2.webp",
         alt: "MultiTurf Tennis Court",
       },
       {
-        src: "https://s3.ap-south-1.amazonaws.com/prepseed/prod/ldoc/media/multisportGrassImage.jpg",
+        src: "/Images/site/multiturf-multisports-grass.webp",
         alt: "MultiTurf Badminton Court",
       },
       {

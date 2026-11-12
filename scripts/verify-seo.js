@@ -11,7 +11,8 @@ import fs from 'fs';
 import path from 'path';
 import { JSDOM } from 'jsdom';
 import BlogsData from '../src/components/OtherComponents/Blogs/BlogsData.js';
-import { getSitemapPdfPaths } from '../src/seo/pages.js';
+import CarpetTileDesigns, { hasPdf } from '../src/components/OtherComponents/Categories/Layouts/CarpetTilesLayout/designSwatches.js';
+import { blogIndexPageCount } from '../src/components/OtherComponents/Blogs/BlogSeo.js';
 
 const DIST = 'dist';
 const SITE = 'https://sansonfloorings.com';
@@ -21,20 +22,34 @@ const SITE = 'https://sansonfloorings.com';
 // the app is caught here.
 const INDEXABLE = [
   '/',
-  '/categories',
-  '/categories/carpet-tiles',
-  '/categories/broadloom-carpets',
-  '/categories/acoustic-tiles',
-  '/categories/artificial-multiturf',
+  '/products',
+  '/carpet-tiles',
+  '/broadloom-carpets',
+  '/acoustic-pet-panels',
+  '/artificial-grass',
+  ...CarpetTileDesigns.map((design) => `/carpet-tiles/${design.slug}`),
   '/artificial-grass/landscape-grass',
   '/artificial-grass/sports-grass',
-  '/artificial-grass/multisports-grass',
+  '/artificial-grass/multiturf',
   '/artificial-grass/curly-grass',
   '/about-us',
   '/tools',
   '/blogs',
+  ...Array.from({ length: blogIndexPageCount(BlogsData.length) - 1 }, (_, i) => `/blogs/page/${i + 2}`),
   ...BlogsData.map((blog) => `/blogs/${blog.slug}`),
+  '/terms',
+  '/privacy-policy',
 ];
+
+// Old URLs that must 301 straight to their new address (no chains).
+const MOVED = {
+  '/categories': '/products',
+  '/categories/carpet-tiles': '/carpet-tiles',
+  '/categories/broadloom-carpets': '/broadloom-carpets',
+  '/categories/acoustic-tiles': '/acoustic-pet-panels',
+  '/categories/artificial-multiturf': '/artificial-grass',
+  '/artificial-grass/multisports-grass': '/artificial-grass/multiturf',
+};
 const NOINDEX = ['/demo'];
 
 const TITLE = { min: 15, max: 70 };
@@ -48,6 +63,9 @@ const warn = (where, message) => warnings.push(`${where}  ${message}`);
 
 const pageFile = (route) =>
   route === '/' ? path.join(DIST, 'index.html') : path.join(DIST, route, 'index.html');
+
+// A blog post, not a numbered page of the blog index.
+const isArticle = (route) => route.startsWith('/blogs/') && !route.startsWith('/blogs/page/');
 
 const canonicalFor = (route) => (route === '/' ? `${SITE}/` : `${SITE}${route}`);
 
@@ -138,6 +156,19 @@ function checkPage(route, { indexable }) {
   const h1 = [...doc.querySelectorAll('h1')].filter((el) => el.textContent.trim());
   if (indexable ? h1.length !== 1 : h1.length > 1)
     fail(where, `expected ${indexable ? 'exactly 1' : 'at most 1'} <h1>, found ${h1.length}`);
+  // Headings outline the page: no repeats, no body sentences as headings.
+  const headings = [...doc.querySelectorAll('#app h2, #app h3, #app h4')].filter((h) => !h.closest('.navigation-bar'))
+    .map((h) => h.textContent.replace(/\s+/g, ' ').trim())
+    .filter(Boolean);
+  headings
+    .filter((h, i) => headings.indexOf(h) !== i)
+    .forEach((h) => warn(where, `heading repeated on the page: "${h.slice(0, 50)}"`));
+  headings
+    .filter((h) => h.split(' ').length > 25)
+    .forEach((h) => warn(where, `body text marked up as a heading: "${h.slice(0, 50)}..."`));
+  // The menu is output once: the mobile menu is rendered only when opened.
+  if (doc.querySelectorAll('#app .mobile-nav').length)
+    fail(where, 'mobile menu is in the static HTML (menu repeated in the source)');
 
   // ---- content is in the HTML, not rendered later by JavaScript
   const text = visibleText(doc);
@@ -149,7 +180,7 @@ function checkPage(route, { indexable }) {
     fail(where, 'uses Ant Design components but the page has no Ant Design styles (layout would jump on hydration)');
 
   // ---- blog articles: section anchors and table of contents are in the HTML
-  if (route.startsWith('/blogs/')) {
+  if (isArticle(route)) {
     const headingIds = new Set([...doc.querySelectorAll('article h2[id]')].map((h) => h.id));
     const tocLinks = [...doc.querySelectorAll('.blog-toc a[href^="#"]')].map((a) => a.getAttribute('href').slice(1));
     if (!headingIds.size) fail(where, 'article <h2> headings have no id in the static HTML');
@@ -181,13 +212,16 @@ function checkPage(route, { indexable }) {
     if (!ldTypes.includes('Organization')) fail(where, 'JSON-LD is missing Organization');
     if (!ldTypes.includes('WebSite')) fail(where, 'JSON-LD is missing WebSite');
     if (route === '/' && !ldTypes.includes('LocalBusiness')) fail(where, 'home JSON-LD is missing LocalBusiness');
-    const webPageNode = ldNodes.find((n) => ['WebPage', 'CollectionPage', 'AboutPage'].includes(n['@type']));
+    const webPageNode = ldNodes.find((n) => ['WebPage', 'CollectionPage', 'AboutPage', 'ItemPage'].includes(n['@type']));
     if (!route.startsWith('/blogs')) {
       if (!webPageNode) fail(where, 'JSON-LD is missing a WebPage / CollectionPage / AboutPage node');
       else if (webPageNode.url !== canonicalFor(route)) fail(where, `WebPage url "${webPageNode.url}" differs from the canonical`);
     }
     if (route !== '/' && !ldTypes.includes('BreadcrumbList')) fail(where, 'JSON-LD is missing BreadcrumbList');
-    if (route.startsWith('/blogs/') && !ldTypes.includes('Article')) fail(where, 'JSON-LD is missing Article');
+    if (isArticle(route) && !ldTypes.includes('Article')) fail(where, 'JSON-LD is missing Article');
+    if (route.startsWith('/carpet-tiles/') && !ldTypes.includes('Product')) fail(where, 'JSON-LD is missing Product');
+    if (['/products', '/carpet-tiles', '/artificial-grass'].includes(route) && !ldNodes.some((n) => n.mainEntity?.['@type'] === 'ItemList'))
+      fail(where, 'JSON-LD is missing the ItemList of products on the page');
   }
 
   // ---- images and links
@@ -257,9 +291,10 @@ built.forEach((page) =>
   else {
     const xml = fs.readFileSync(file, 'utf8');
     const urls = [...xml.matchAll(/<loc>([^<]+)<\/loc>/g)].map((m) => m[1]);
-    // Brochure PDFs are listed too. Their paths come from the app's data, since
-    // checking them by hand here would just repeat the same list of 30 files.
-    const expected = [...INDEXABLE.map(canonicalFor), ...getSitemapPdfPaths().map((p) => SITE + p)];
+    const expected = INDEXABLE.map(canonicalFor);
+    // PDFs stay out: each brochure names its HTML page as canonical instead.
+    if (/\.pdf<\/loc>/i.test(xml)) fail('sitemap.xml', 'lists a PDF');
+    if (!xml.includes('<image:loc>')) fail('sitemap.xml', 'lists no images');
     expected.filter((url) => !urls.includes(url)).forEach((url) => fail('sitemap.xml', `missing ${url}`));
     urls.filter((url) => !expected.includes(url)).forEach((url) => fail('sitemap.xml', `lists ${url}, which is not an indexable page`));
     if (new Set(urls).size !== urls.length) fail('sitemap.xml', 'contains duplicate URLs');
@@ -304,10 +339,49 @@ built.forEach((page) =>
 // hosting: www must redirect to the host the canonical URLs use
 {
   const config = JSON.parse(fs.readFileSync('vercel.json', 'utf8'));
-  const wwwRedirect = (config.redirects || []).find(
-    (r) => r.permanent && r.has?.some((h) => h.type === 'host' && h.value === 'www.sansonfloorings.com') && r.destination.startsWith(SITE)
+  const redirects = config.redirects || [];
+  const isPermanent = (r) => r.statusCode === 301 || r.permanent;
+  const wwwRedirect = redirects.find(
+    (r) => isPermanent(r) && r.has?.some((h) => h.type === 'host' && h.value === 'www.sansonfloorings.com') && r.destination.startsWith(SITE)
   );
   if (!wwwRedirect) fail('vercel.json', 'no permanent redirect from www.sansonfloorings.com to ' + SITE + ' (two live copies of the site)');
+
+  // Moved pages: one 301, listed before the www rule, straight to a live page.
+  const wwwIndex = redirects.indexOf(wwwRedirect);
+  for (const [from, to] of Object.entries(MOVED)) {
+    const index = redirects.findIndex((r) => r.source === from && !r.has);
+    const rule = redirects[index];
+    if (!rule) fail('vercel.json', `no redirect from ${from}`);
+    else if (rule.statusCode !== 301) fail('vercel.json', `${from} redirects with ${rule.statusCode || 308}, want 301`);
+    else if (rule.destination !== SITE + to) fail('vercel.json', `${from} redirects to ${rule.destination}, want ${SITE + to}`);
+    else if (wwwIndex !== -1 && index > wwwIndex)
+      fail('vercel.json', `${from} comes after the www rule (www + old URL would take two hops)`);
+    if (!INDEXABLE.includes(to)) fail('vercel.json', `${from} redirects to ${to}, which is not a page`);
+  }
+
+
+  // Brochure PDFs name their HTML design page as canonical.
+  const headerRules = config.headers || [];
+  CarpetTileDesigns.filter(hasPdf).forEach((design) => {
+    const page = `${SITE}/carpet-tiles/${design.slug}`;
+    const rule = headerRules.find((r) => r.source.replace(/\\/g, '') === design.pdf);
+    if (!rule) fail('vercel.json', `no Link canonical header for ${design.pdf}`);
+    else if (!rule.headers.some((h) => h.key === 'Link' && h.value === `<${page}>; rel="canonical"`))
+      fail('vercel.json', `${design.pdf} canonical header does not point to ${page}`);
+  });
+}
+
+// blog index: every post is linked from /blogs or one of its numbered pages
+{
+  const linked = new Set();
+  INDEXABLE.filter((r) => r === '/blogs' || r.startsWith('/blogs/page/')).forEach((route) => {
+    const file = pageFile(route);
+    if (!fs.existsSync(file)) return;
+    loadDom(file).querySelectorAll('#app a[href^="/blogs/"]').forEach((a) => linked.add(a.getAttribute('href')));
+  });
+  BlogsData.filter((b) => !linked.has(`/blogs/${b.slug}`)).forEach((b) =>
+    fail('/blogs', `post /blogs/${b.slug} is not linked from any page of the blog index`)
+  );
 }
 
 // hosting: a catch-all rewrite would turn every unknown URL into a 200 page

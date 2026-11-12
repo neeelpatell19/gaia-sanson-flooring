@@ -207,7 +207,7 @@ export default {
           },
         },
         {
-          src: "https://s3.ap-south-1.amazonaws.com/prepseed/prod/ldoc/media/GrassImage1.jpg",
+          src: "/Images/site/artificial-grass-lawn.webp",
           alt: "Innovative Flooring Design",
           caption: "Innovation & Quality",
           description:
@@ -223,7 +223,7 @@ export default {
           },
         },
         {
-          src: "https://s3.ap-south-1.amazonaws.com/prepseed/prod/ldoc/media/GalleryImage2.jpeg",
+          src: "/Images/site/gaia-flooring-gallery.webp",
           alt: "Innovative Flooring Design",
           caption: "Innovation & Quality",
           description:

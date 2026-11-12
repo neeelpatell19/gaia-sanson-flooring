@@ -3,7 +3,7 @@
     <CommonTopLayout
       heading="Tools"
       imageSrc="/Images/CARPET_TILES.png"
-      imageAlt="GAIA Tools"
+      imageAlt="Lounge with armchairs on grey GAIA carpet tiles"
     />
 
     <div class="toolsContainer Container paddingTop80">

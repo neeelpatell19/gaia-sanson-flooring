@@ -3,7 +3,7 @@
     <CommonTopLayout
       heading="About Us"
       imageSrc="/Images/AboutUsBannerImage.webp"
-      imageAlt="Acoustic Solutions"
+      imageAlt="Open-plan office with desks on grey GAIA carpet tiles"
     />
 
     <div class="SansonAboutContainer Container paddingTop80">
@@ -23,12 +23,12 @@
                 data-aos-delay="400"
               >
                 <img
-                  src="https://s3.ap-south-1.amazonaws.com/prepseed/prod/ldoc/media/sanson HD logo.png"
+                  src="/Images/site/sanson-group-logo.webp"
                   alt="Sanson Group Logo"
                 />
               </div>
               <img
-                src="https://s3.ap-south-1.amazonaws.com/prepseed/prod/ldoc/media/AboutUsGaiaNewImage.png"
+                src="/Images/site/gaia-sanson-floorings-about.webp"
                 alt="Sanson Group Manufacturing Facility"
                 data-aos="fade-up"
                 data-aos-duration="800"
@@ -114,7 +114,7 @@
                     <div class="brandCard">
                       <div class="brandLogo">
                         <img
-                          src="https://s3.ap-south-1.amazonaws.com/prepseed/prod/ldoc/media/SeedoNewUpdatedLogo.jpg"
+                          src="/Images/site/seedo-logo.webp"
                           alt="Seedo Logo"
                         />
                       </div>
@@ -209,7 +209,7 @@
                     <div class="expertSolutionCard" data-aos="fade-up" data-aos-delay="400">
                         <div class="expertSolutionCardContent">
                             <div class="expertSolutionLogo">
-                                <img src="https://s3.ap-south-1.amazonaws.com/prepseed/prod/ldoc/media/SeedoNewUpdatedLogo.jpg"
+                                <img src="/Images/site/seedo-logo.webp"
                                     alt="Innovation">
                             </div>
                             <h3 class="expertSolutionTitle">SEEDO</h3>
@@ -275,7 +275,7 @@
             data-aos-delay="400"
           >
             <img
-              src="https://s3.ap-south-1.amazonaws.com/prepseed/prod/ldoc/media/AboutUsImageNewOne.png"
+              src="/Images/site/sanson-group-about.webp"
               alt="GAIA Flooring Fashion"
               data-aos="zoom-in"
               data-aos-duration="800"
@@ -350,7 +350,7 @@
     <YearsOfExperience />
     <GreenProCertified 
       image-src="/Images/GreenProCertified/green-pro-certified-about-us.png" 
-      video-src="/videos/AboutUs.mp4" 
+      video-key="about" 
     />
     <Certification />
     <OurVision />
@@ -383,7 +383,7 @@
                     <div class="expertSolutionCard" data-aos="fade-up" data-aos-duration="600" data-aos-delay="400">
                         <div class="expertSolutionCardContent">
                             <div class="expertSolutionLogo">
-                                <img src="https://s3.ap-south-1.amazonaws.com/prepseed/prod/ldoc/media/SeedoNewUpdatedLogo.jpg"
+                                <img src="/Images/site/seedo-logo.webp"
                                     alt="Innovation">
                             </div>
                             <h3 class="expertSolutionTitle">SEEDO</h3>

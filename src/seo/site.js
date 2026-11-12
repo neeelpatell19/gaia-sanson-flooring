@@ -41,6 +41,15 @@ const ADDRESS = {
   postalCode: "110015",
   addressCountry: "IN",
 };
+// The manufacturing plant (footer: "Manufacturing Unit").
+const PLANT_ADDRESS = {
+  "@type": "PostalAddress",
+  streetAddress: "SY No. 7/P and 8/P, Kodicherla Village, Kothur Mandal, Ranga Reddy District",
+  addressLocality: "Hyderabad",
+  addressRegion: "Telangana",
+  postalCode: "509228",
+  addressCountry: "IN",
+};
 
 // Facts below match the site itself: the footer (address, phone, e-mail,
 // LinkedIn) and the About page (Sanson Group, since 1982; GAIA is its brand).
@@ -53,6 +62,7 @@ export const organizationSchema = ({ full = false, catalog = [] } = {}) => ({
   "@type": full ? ["Organization", "LocalBusiness"] : "Organization",
   "@id": ORGANIZATION_ID,
   name: SITE_NAME,
+  legalName: "Sanson Floorings LLP",
   alternateName: "GAIA",
   url: `${SITE_URL}/`,
   logo: {
@@ -68,6 +78,10 @@ export const organizationSchema = ({ full = false, catalog = [] } = {}) => ({
     "India's first startup offering integrated solutions in floorings and acoustic panels for high-performance interiors.",
   foundingDate: "2021",
   address: ADDRESS,
+  location: [
+    { "@type": "Place", name: "Corporate office, New Delhi", address: ADDRESS },
+    { "@type": "Place", name: "Manufacturing plant, Kothur, Telangana", address: PLANT_ADDRESS },
+  ],
   telephone: PHONE,
   email: EMAIL,
   contactPoint: {
@@ -92,7 +106,7 @@ export const organizationSchema = ({ full = false, catalog = [] } = {}) => ({
     hasOfferCatalog: {
       "@type": "OfferCatalog",
       name: `${SITE_NAME} product range`,
-      url: canonicalUrl("/categories"),
+      url: canonicalUrl("/products"),
       itemListElement: catalog.map((item) => ({
         "@type": "OfferCatalog",
         name: item.name,
@@ -167,4 +181,42 @@ export const breadcrumbSchema = (items) => ({
     name: item.name,
     item: canonicalUrl(item.path),
   })),
+});
+
+// A product page. specs: [{ label, value }] shown in the page's spec table.
+// No Offer: the site shows no prices.
+export const productSchema = ({ path, name, description, image, category, collection, specs = [] }) => ({
+  "@context": "https://schema.org",
+  "@type": "Product",
+  "@id": `${canonicalUrl(path)}#product`,
+  name,
+  description,
+  url: canonicalUrl(path),
+  image: absoluteUrl(image),
+  category,
+  brand: { "@id": BRAND_ID },
+  manufacturer: { "@id": ORGANIZATION_ID },
+  ...(collection && { model: collection }),
+  ...(specs.length && {
+    additionalProperty: specs.map(({ label, value }) => ({
+      "@type": "PropertyValue",
+      name: label,
+      value,
+    })),
+  }),
+});
+
+// A video shown on the page. video: an entry of GREENPRO_VIDEOS
+// ({ src, poster, name, description, duration, uploadDate }).
+export const videoSchema = (video) => ({
+  "@context": "https://schema.org",
+  "@type": "VideoObject",
+  name: video.name,
+  description: video.description,
+  thumbnailUrl: absoluteUrl(video.poster),
+  contentUrl: absoluteUrl(video.src),
+  uploadDate: video.uploadDate,
+  duration: video.duration,
+  transcript: video.description,
+  publisher: { "@id": ORGANIZATION_ID },
 });

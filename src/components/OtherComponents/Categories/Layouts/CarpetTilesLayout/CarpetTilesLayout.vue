@@ -2,8 +2,8 @@
   <div class="width100">
     <CommonTopLayout
       heading="Carpet Tiles"
-      imageSrc="/Images/carpet_tiles.webp"
-      imageAlt="Carpet tiles background image"
+      :imageSrc="category.heroImage"
+      :imageAlt="category.heroImageAlt"
     />
     <div class="paddingTop80" style="background-color: white !important">
       <!-- <MakeInIndia /> -->
@@ -26,13 +26,13 @@
                   data-aos-delay="150"
                 >
                   <img
-                    src="https://s3.ap-south-1.amazonaws.com/prepseed/prod/ldoc/media/GreenproLogo.png"
+                    src="/Images/site/greenpro-certified-logo.webp"
                     alt="GreenPro Certified Logo"
                     class="greenpro-logo-inline-img"
                   />
                 </div>
               </h2>
-              <h3
+              <p class="lead-text"
                 data-aos="fade-up"
                 data-aos-duration="600"
                 data-aos-delay="200"
@@ -46,7 +46,7 @@
                 long-lasting durability, enhanced comfort, and a lower
                 environmental footprint while meeting recognized green
                 standards.
-              </h3>
+              </p>
             </div>
             <div class="AccousticContainerLogo">
               <div
@@ -55,13 +55,13 @@
               >
                 <div class="sets-apart-logos-Container-item">
                   <img
-                    src="https://s3.ap-south-1.amazonaws.com/prepseed/prod/ldoc/media/StartUpIndiaImageUpdate.png"
+                    src="/Images/site/startup-india-logo.webp"
                     alt="Startup India"
                   />
                 </div>
                 <div class="sets-apart-logos-Container-item">
                   <img
-                    src="https://s3.ap-south-1.amazonaws.com/prepseed/prod/ldoc/media/MakeInIndeaLogoImageNew.png"
+                    src="/Images/site/make-in-india-logo.webp"
                     alt="Make in India"
                   />
                 </div>
@@ -116,30 +116,19 @@
           </div> -->
 
           <div class="DesignGridContainer">
-            <!-- A real link (not a click handler) so crawlers can find and index each PDF. -->
-            <component
-              :is="hasPdf(design) ? 'a' : 'div'"
+            <!-- Each design links to its own page (T2), as a plain <a href> crawlers
+                 follow; the brochure PDF is a download on that page. -->
+            <router-link
               v-for="design in designSwatches"
-              :key="design.code"
-              class="DesignSwatch"
-              :class="hasPdf(design) ? 'clickable' : 'non-clickable'"
-              v-bind="
-                hasPdf(design)
-                  ? {
-                      href: design.pdf,
-                      target: '_blank',
-                      rel: 'noopener',
-                      title: `GAIA ${design.code} carpet tile brochure (PDF)`,
-                    }
-                  : {}
-              "
+              :key="design.slug"
+              :to="designPath(design)"
+              class="DesignSwatch clickable"
             >
-              <img :src="design.image" :alt="design.name" class="SwatchImage" />
-
-              <p v-if="isNaN(design.code)" class="SwatchCode">
-                {{ design.code }}
+              <img :src="design.image" :alt="designAlt(design)" class="SwatchImage" />
+              <p class="SwatchCode">
+                {{ design.name }}
               </p>
-            </component>
+            </router-link>
           </div>
         </div>
       </div>
@@ -176,7 +165,7 @@
 
     <GreenProCertified
       image-src="/Images/GreenProCertified/green-pro-certified-carpet-tile.png"
-      video-src="/videos/CarpetTiles.mp4"
+      video-key="carpetTiles"
     />
 
     <div class="propertiesLayoutContainer">
@@ -249,16 +238,16 @@
                 </div>
                 <div class="girdImagesContainer paddingTop60">
                     <div data-aos="zoom-in" data-aos-duration="600" data-aos-delay="300">
-                        <img src="https://s3.ap-south-1.amazonaws.com/prepseed/prod/ldoc/media/WorKSpace1.jpg" alt="">
+                        <img src="/Images/site/carpet-tiles-office-workspace-1.webp" alt="">
                     </div>
                     <div data-aos="zoom-in" data-aos-duration="600" data-aos-delay="400">
-                        <img src="https://s3.ap-south-1.amazonaws.com/prepseed/prod/ldoc/media/WorKSpace2.jpg" alt="">
+                        <img src="/Images/site/carpet-tiles-office-workspace-2.webp" alt="">
                     </div>
                     <div data-aos="zoom-in" data-aos-duration="600" data-aos-delay="500">
-                        <img src="https://s3.ap-south-1.amazonaws.com/prepseed/prod/ldoc/media/WorKSpace3.jpg" alt="">
+                        <img src="/Images/site/carpet-tiles-office-workspace-3.webp" alt="">
                     </div>
                     <div data-aos="zoom-in" data-aos-duration="600" data-aos-delay="600">
-                        <img src="https://s3.ap-south-1.amazonaws.com/prepseed/prod/ldoc/media/WorKSpace4.jpg" alt="">
+                        <img src="/Images/site/carpet-tiles-office-workspace-4.webp" alt="">
                     </div>
                 </div>
             </div>
@@ -280,7 +269,7 @@ import { Navigation as SwiperNavigation, Autoplay } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/navigation";
 import CategoriesData from "../../CategoriesLayout/Categories";
-import designSwatchesData, { hasPdf } from "./designSwatches.js";
+import designSwatchesData, { designAlt, designPath } from "./designSwatches.js";
 import CommonTopLayout from "../../CommonTopLayout/CommonTopLayout.vue";
 import GetInTouch from "../../../GetInTouch/GetInTouch.vue";
 import MakeInIndia from "../MakeInIndia/MakeInIndia.vue";
@@ -383,7 +372,7 @@ const category = computed(() => {
 // Design swatches (data shared with the sitemap)
 const designSwatches = computed(() =>
   [...designSwatchesData].sort((a, b) =>
-    a.code.localeCompare(b.code, undefined, { sensitivity: "base" }),
+    a.name.localeCompare(b.name, undefined, { sensitivity: "base" }),
   ),
 );
 

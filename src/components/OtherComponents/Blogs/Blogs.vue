@@ -68,36 +68,39 @@
         </div>
       </div>
 
-      <!-- Pagination -->
+      <!-- Pagination. With "All" selected each page is a plain link to its own
+           URL (/blogs, /blogs/page/2 ...), so crawlers reach every post; with a
+           category selected the pages switch in place, as before. -->
       <div v-if="totalPages > 1" class="blogs-pagination paddingTop60">
-        <button
-          type="button"
+        <component
+          :is="pageLinkTag(currentPage - 1)"
+          v-bind="pageLinkProps(currentPage - 1)"
           class="blogs-page-btn"
-          :disabled="currentPage === 1"
           aria-label="Previous page"
           @click="goToPage(currentPage - 1)"
         >
           ‹
-        </button>
-        <button
+        </component>
+        <component
+          :is="pageLinkTag(page)"
           v-for="page in totalPages"
           :key="page"
-          type="button"
+          v-bind="pageLinkProps(page)"
           class="blogs-page-btn"
           :class="{ active: currentPage === page }"
           @click="goToPage(page)"
         >
           {{ page }}
-        </button>
-        <button
-          type="button"
+        </component>
+        <component
+          :is="pageLinkTag(currentPage + 1)"
+          v-bind="pageLinkProps(currentPage + 1)"
           class="blogs-page-btn"
-          :disabled="currentPage === totalPages"
           aria-label="Next page"
           @click="goToPage(currentPage + 1)"
         >
           ›
-        </button>
+        </component>
       </div>
 
       <p v-if="!filteredBlogs.length" class="blogs-empty paddingTop60">
@@ -108,7 +111,8 @@
 </template>
 
 <script setup>
-import { computed, ref } from "vue";
+import { computed, ref, resolveComponent } from "vue";
+import { BLOG_PAGE_SIZE, blogIndexPageCount, blogIndexPath } from "./BlogSeo.js";
 import CommonTopLayout from "../Categories/CommonTopLayout/CommonTopLayout.vue";
 import BlogCard from "./BlogCard/BlogCard.vue";
 import BlogsData from "./BlogsData.js";
@@ -127,26 +131,40 @@ const filteredBlogs = computed(() =>
     : sortedBlogs.filter((blog) => blog.category === activeCategory.value)
 );
 
+// page: the page number from /blogs/page/:page (none on /blogs itself).
+const props = defineProps({ page: { type: String, default: "1" } });
+
 // Latest article is featured; the rest are paged in a 3-column grid
-const PAGE_SIZE = 9;
-const currentPage = ref(1);
+const PAGE_SIZE = BLOG_PAGE_SIZE;
+// With a category selected, the page is kept here; with "All", in the URL.
+const categoryPage = ref(1);
+const isAll = computed(() => activeCategory.value === "All");
+const currentPage = computed(() =>
+  isAll.value ? Number(props.page) || 1 : categoryPage.value
+);
 
 const featuredBlog = computed(() => filteredBlogs.value[0] || null);
 const totalPages = computed(() =>
-  Math.max(1, Math.ceil((filteredBlogs.value.length - 1) / PAGE_SIZE))
+  isAll.value
+    ? blogIndexPageCount(filteredBlogs.value.length)
+    : Math.max(1, Math.ceil((filteredBlogs.value.length - 1) / PAGE_SIZE))
 );
 const remainingBlogs = computed(() => {
   const start = 1 + (currentPage.value - 1) * PAGE_SIZE;
   return filteredBlogs.value.slice(start, start + PAGE_SIZE);
 });
 
-const selectCategory = (category) => {
-  activeCategory.value = category;
-  currentPage.value = 1;
-};
+const RouterLink = resolveComponent("RouterLink");
+const inRange = (page) => page >= 1 && page <= totalPages.value;
+// A link for another page of "All"; otherwise a button (disabled at the ends).
+const pageLinkTag = (page) =>
+  isAll.value && inRange(page) && page !== currentPage.value ? RouterLink : "button";
+const pageLinkProps = (page) =>
+  pageLinkTag(page) === RouterLink
+    ? { to: blogIndexPath(page) }
+    : { type: "button", disabled: !inRange(page) };
 
-const goToPage = (page) => {
-  currentPage.value = page;
+const scrollToList = () => {
   const grid = document.querySelector(".BlogsListingContainer .blogs-featured");
   if (grid) {
     window.scrollTo({
@@ -154,6 +172,17 @@ const goToPage = (page) => {
       behavior: "smooth",
     });
   }
+};
+
+const selectCategory = (category) => {
+  activeCategory.value = category;
+  categoryPage.value = 1;
+};
+
+const goToPage = (page) => {
+  if (!inRange(page)) return;
+  if (!isAll.value) categoryPage.value = page;
+  scrollToList();
 };
 </script>
 

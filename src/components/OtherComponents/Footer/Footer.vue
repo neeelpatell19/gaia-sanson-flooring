@@ -14,7 +14,7 @@ import "./Footer.css"
 
             <!-- Contact Us Section -->
             <div class="footer-section contact-section" data-aos="fade-up" data-aos-delay="200">
-                <h3 class="section-title">CONTACT US</h3>
+                <p class="section-title">CONTACT US</p>
                 <div class="contact-info">
                     <div class="contact-item">
                         <a href="tel:+919910921119" target="_blank"><i style="color: white;" class="fas fa-phone"></i></a>
@@ -46,7 +46,7 @@ import "./Footer.css"
 
             <!-- Navigation Section -->
             <div class="footer-section navigation-section" data-aos="fade-up" data-aos-delay="300">
-                <h3 class="section-title">NAVIGATION</h3>
+                <p class="section-title">NAVIGATION</p>
                 <nav class="footer-nav">
                     <div v-for="navItem in navigationData" :key="navItem.name" class="nav-group">
                         <router-link :to="navItem.path" class="nav-link main-link">{{ navItem.name }}</router-link>
@@ -62,15 +62,15 @@ import "./Footer.css"
 
             <!-- Address Section -->
             <div class="footer-section address-section" data-aos="fade-up" data-aos-delay="400">
-                <h3 class="section-title">ADDRESS</h3>
+                <p class="section-title">ADDRESS</p>
                 <div class="address-info">
                     <div class="address-item">
-                        <h4 class="address-subtitle">Corporate Office:</h4>
+                        <p class="address-subtitle">Corporate Office:</p>
                         <p class="address-text">B-5B, Plot No. 70, 1st Floor, Rama Road Industrial Area, New Delhi -
                             110015</p>
                     </div>
                     <div class="address-item">
-                        <h4 class="address-subtitle">Manufacturing Unit:</h4>
+                        <p class="address-subtitle">Manufacturing Unit:</p>
                         <!-- <p class="address-text">D-9, Flatted Factory Complex, Jhandewalan, New Delhi - 110055</p> -->
                         <p class="address-text">SY No. 7/P and 8/P,
                             Kodicherla Village, Kothur Mandal,
@@ -85,11 +85,11 @@ import "./Footer.css"
         <div class="footer-bottom Container">
             <div class="footer-bottom-content">
                 <div class="legal-links">
-                    <a href="#" class="legal-link">Terms & Services</a>
-                    <a href="#" class="legal-link">Privacy Policy</a>
+                    <router-link to="/terms" class="legal-link">Terms & Services</router-link>
+                    <router-link to="/privacy-policy" class="legal-link">Privacy Policy</router-link>
                 </div>
                 <div class="copyright">
-                    <p>© 2021 All Rights Reserved</p>
+                    <p>© {{ year }} All Rights Reserved</p>
                 </div>
                 <div class="social-links">
                     <!-- <a href="https://www.linkedin.com/company/gaia-by-sanson-floorings/" target="_blank"
@@ -116,6 +116,9 @@ import navigationBarData from '../NavigationBar/NavigationBarData.js';
 
 // Use the navigation data in the footer
 const navigationData = navigationBarData;
+
+// The current year, so the notice never goes stale (T13).
+const year = new Date().getFullYear();
 </script>
 
 <style scoped>

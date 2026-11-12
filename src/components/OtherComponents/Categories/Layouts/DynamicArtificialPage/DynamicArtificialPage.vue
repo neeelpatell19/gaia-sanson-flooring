@@ -48,13 +48,13 @@
         <div class="grassContentSection">
           <!-- Overview Section -->
           <div class="contentSection">
-            <h3 class="sectionTitle">Overview</h3>
+            <h2 class="sectionTitle">Overview</h2>
             <p class="sectionContent">{{ grassData.overview }}</p>
           </div>
 
           <!-- Ideal For Section -->
           <div class="contentSection">
-            <h3 class="sectionTitle">Ideal For</h3>
+            <h2 class="sectionTitle">Ideal For</h2>
             <div class="idealForTags">
               <div
                 v-for="application in grassData.idealFor"
@@ -68,7 +68,7 @@
 
           <!-- Specifications Section -->
           <div class="contentSection">
-            <h3 class="sectionTitle">Specifications</h3>
+            <h2 class="sectionTitle">Specifications</h2>
             <ul class="specificationsList">
               <li
                 v-for="spec in grassData.specifications"

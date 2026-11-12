@@ -7,8 +7,8 @@ export default {
             visionData: {
                 title: "Your Vision, Our Custom Tiles & Acoustic Expertise",
                 description: "To lead the transformation of flooring and acoustic solutions in India by setting global benchmarks in innovation, quality, and sustainability.",
-                mainImage: "https://s3.ap-south-1.amazonaws.com/prepseed/prod/ldoc/media/YourVisionImage1.png",
-                secondaryImage: "https://s3.ap-south-1.amazonaws.com/prepseed/prod/ldoc/media/YourVisionImage2.png"
+                mainImage: "/Images/site/your-vision-carpet-interior-1.webp",
+                secondaryImage: "/Images/site/your-vision-carpet-interior-2.webp"
             }
         }
     }

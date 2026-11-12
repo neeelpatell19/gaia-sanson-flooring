@@ -11,27 +11,32 @@
             class="description-section mobile-description"
             style="margin-bottom: 24px"
           >
-            <h3>
+            <p class="lead-text">
               {{ description }}
-            </h3>
+            </p>
           </div>
-          <div class="input-group">
+          <!-- Opens an e-mail to the sales team that records the page it was
+               sent from, and reports a GA4 "generate_lead" conversion. -->
+          <form class="input-group" @submit.prevent="sendEnquiry">
+            <label class="visually-hidden" :for="inputId">Your email address</label>
             <input
+              :id="inputId"
+              v-model="email"
               type="email"
               placeholder="Your email address"
               class="email-input"
             />
-            <button class="submit-button" type="submit">
+            <button class="submit-button" type="submit" aria-label="Send enquiry">
               <span class="arrow-icon">↗</span>
             </button>
-          </div>
+          </form>
         </div>
 
         <!-- Right Section - Dynamic Descriptive Text -->
         <div class="description-section desktop-description">
-          <h3>
+          <p class="lead-text">
             {{ description }}
-          </h3>
+          </p>
         </div>
       </div>
     </div>
@@ -39,8 +44,12 @@
 </template>
 
 <script setup>
+import { computed, ref, useId } from "vue";
+import { useRoute } from "vue-router";
+import { track } from "../../../analytics.js";
+
 // Define props for dynamic content
-defineProps({
+const props = defineProps({
   title: {
     type: String,
     default: "Get In Touch!",
@@ -55,8 +64,40 @@ defineProps({
       "We customize carpets — including artificial grass — to your size, color, and design. Tell us your idea, we'll make it real.",
   },
 });
+
+const CONTACT_EMAIL = "contact@sansonfloorings.com";
+const route = useRoute();
+const email = ref("");
+const inputId = useId();
+
+const mailtoHref = computed(
+  () =>
+    `mailto:${CONTACT_EMAIL}?subject=${encodeURIComponent(
+      `Website enquiry from ${route.path}`
+    )}`
+);
+
+function sendEnquiry() {
+  track("generate_lead", { form: "get_in_touch", source_page: route.path });
+  const body = `Hello GAIA team,
+
+Please contact me about: ${props.subtitle}
+
+My email: ${email.value}
+Sent from: https://sansonfloorings.com${route.path}`;
+  window.location.href = `${mailtoHref.value}&body=${encodeURIComponent(body)}`;
+}
 </script>
 
 <style scoped>
 @import "./GetInTouch.css";
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  white-space: nowrap;
+}
 </style>

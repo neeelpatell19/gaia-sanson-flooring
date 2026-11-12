@@ -9,7 +9,7 @@ export default {
         description:
           "Our carpets, made from locally sourced materials, reflect India's craftsmanship and commitment to sustainability. By choosing them, you support the Make in India movement, strengthening the local economy and empowering artisans.",
         image:
-          "https://s3.ap-south-1.amazonaws.com/prepseed/prod/ldoc/media/HandcraftedWith Image.png",
+          "/Images/site/handcrafted-carpet-tiles.webp",
       },
     };
   },
@@ -47,19 +47,19 @@ export default {
               <div class="LogoContainerEditRow logo-row-top">
                 <div>
                   <img
-                    src="https://s3.ap-south-1.amazonaws.com/prepseed/prod/ldoc/media/StartUpIndiaImageUpdate.png"
+                    src="/Images/site/startup-india-logo.webp"
                     alt="Startup India"
                   />
                 </div>
                 <div>
                   <img
-                    src="https://s3.ap-south-1.amazonaws.com/prepseed/prod/ldoc/media/MakeInIndeaLogoImageNew.png"
+                    src="/Images/site/make-in-india-logo.webp"
                     alt="Make in India"
                   />
                 </div>
                 <div>
                   <img
-                    src="https://s3.ap-south-1.amazonaws.com/prepseed/prod/ldoc/media/GreenproLogo.png"
+                    src="/Images/site/greenpro-certified-logo.webp"
                     alt="GreenPro Certified Logo"
                     class="greenpro-logo-inline-img"
                   />
@@ -106,10 +106,10 @@ export default {
                     </p>
                     <div class="sets-apart-logos-Container">
               <div class="sets-apart-logos-Container-item">
-                <img src="https://s3.ap-south-1.amazonaws.com/prepseed/prod/ldoc/media/StartUpIndiaImageUpdate.png" alt="Startup India">
+                <img src="/Images/site/startup-india-logo.webp" alt="Startup India">
               </div>
               <div class="sets-apart-logos-Container-item">
-                <img src="https://s3.ap-south-1.amazonaws.com/prepseed/prod/ldoc/media/MakeInIndiaUpaatedLogoImage.webp" alt="Make in India">
+                <img src="/Images/site/make-in-india-logo-alt.webp" alt="Make in India">
               </div>
             </div>
                 </div>

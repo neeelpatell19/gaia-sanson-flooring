@@ -5,7 +5,7 @@
                 <!-- Left Section - Image -->
                 <div class="visionImage">
                     <div>
-                        <img src="https://s3.ap-south-1.amazonaws.com/prepseed/prod/ldoc/media/OurVisionImageUpdat.png" 
+                        <img src="/Images/site/gaia-our-vision.webp" 
                              alt="Cozy carpet with book and coffee mug" />
                     </div>
                 </div>

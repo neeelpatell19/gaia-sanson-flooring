@@ -3,7 +3,7 @@
     <CommonTopLayout
       heading="Acoustic PET Panels"
       imageSrc="/Images/acousticPet.png"
-      imageAlt="Acoustic Solutions"
+      imageAlt="Purple 3D acoustic PET wall panels behind a lounge seating area"
     />
 
     <!-- <div class="BlueBackContainer paddingTop80 paddingBottom80">
@@ -37,11 +37,11 @@
                     <div class="AccousticContainerLogo">
                         <div class="sets-apart-logos-Container" style="justify-content: start;">
                             <div class="sets-apart-logos-Container-item">
-                                <img src="https://s3.ap-south-1.amazonaws.com/prepseed/prod/ldoc/media/StartUpIndiaImageUpdate.png"
+                                <img src="/Images/site/startup-india-logo.webp"
                                     alt="Startup India">
                             </div>
                             <div class="sets-apart-logos-Container-item">
-                                <img src="https://s3.ap-south-1.amazonaws.com/prepseed/prod/ldoc/media/MakeInIndeaLogoImageNew.png"
+                                <img src="/Images/site/make-in-india-logo.webp"
                                     alt="Make in India">
                             </div>
                         </div>
@@ -68,13 +68,13 @@
                   data-aos-delay="150"
                 >
                   <img
-                    src="https://s3.ap-south-1.amazonaws.com/prepseed/prod/ldoc/media/GreenproLogo.png"
+                    src="/Images/site/greenpro-certified-logo.webp"
                     alt="GreenPro Certified Logo"
                     class="greenpro-logo-inline-img"
                   />
                 </div>
               </h2>
-              <h3
+              <p class="lead-text"
                 data-aos="fade-up"
                 data-aos-duration="600"
                 data-aos-delay="200"
@@ -86,7 +86,7 @@
                 environmental sustainability. Made with recycled polyester
                 fibers, our panels deliver top-tier performance while minimizing
                 ecological impact
-              </h3>
+              </p>
             </div>
             <div class="AccousticContainerLogo">
               <div
@@ -95,13 +95,13 @@
               >
                 <div class="sets-apart-logos-Container-item">
                   <img
-                    src="https://s3.ap-south-1.amazonaws.com/prepseed/prod/ldoc/media/StartUpIndiaImageUpdate.png"
+                    src="/Images/site/startup-india-logo.webp"
                     alt="Startup India"
                   />
                 </div>
                 <div class="sets-apart-logos-Container-item">
                   <img
-                    src="https://s3.ap-south-1.amazonaws.com/prepseed/prod/ldoc/media/MakeInIndeaLogoImageNew.png"
+                    src="/Images/site/make-in-india-logo.webp"
                     alt="Make in India"
                   />
                 </div>
@@ -150,11 +150,11 @@
                     </div>
                     <div class="width100 EditContainerContentImage">
                         <div>
-                            <img src="https://s3.ap-south-1.amazonaws.com/prepseed/prod/ldoc/media/StartUpIndiaImageUpdate.png"
+                            <img src="/Images/site/startup-india-logo.webp"
                                 alt="Startup India">
                         </div>
                         <div>
-                            <img src="https://s3.ap-south-1.amazonaws.com/prepseed/prod/ldoc/media/MakeInIndiaUpaatedLogoImage.webp"
+                            <img src="/Images/site/make-in-india-logo-alt.webp"
                                 alt="Make in India">
                         </div>
                     </div>
@@ -187,7 +187,7 @@
             data-aos-delay="100"
           >
             <img
-              src="https://s3.ap-south-1.amazonaws.com/prepseed/prod/ldoc/media/SpecificationAboutusimage.jpg"
+              src="/Images/site/acoustic-pet-panels-specification.webp"
               alt="Specification Image"
             />
           </div>
@@ -335,7 +335,7 @@
             data-aos-delay="300"
           >
             <img
-              src="https://s3.ap-south-1.amazonaws.com/prepseed/prod/ldoc/media/FeaturesImages.png"
+              src="/Images/site/acoustic-pet-panels-features.webp"
               alt="Modern Conference Room with Acoustic Solutions"
             />
           </div>
@@ -355,7 +355,7 @@
             data-aos-duration="800"
             data-aos-delay="200"
           >
-            <img src="/Images/VariousAplicationsUpdateImage.png" alt="" />
+            <img src="/Images/VariousAplicationsUpdateImage.png" alt="Hexagonal acoustic PET panels: balanced sound field, solves standing waves, reduces echo and reduces noise" loading="lazy" />
           </div>
           <!-- <div class="SurfaceContentContainer">
                         <div>
@@ -382,7 +382,7 @@
     </div>
     <GreenProCertified
       image-src="/Images/GreenProCertified/green-pro-certified.png"
-      video-src="/videos/GreenPro.mp4"
+      video-key="acousticPanels"
     />
     <div class="OurColoursCardContainer">
       <div class="Container">
@@ -1225,7 +1225,7 @@ const interiorSpaces = [
     description:
       "Create a peaceful and productive environment for work and study.",
     image:
-      "https://s3.ap-south-1.amazonaws.com/prepseed/prod/ldoc/media/LastImage1.png",
+      "/Images/site/acoustic-pet-panels-application-1.webp",
   },
   {
     id: 2,
@@ -1233,7 +1233,7 @@ const interiorSpaces = [
     description:
       "Transform your living space into a sanctuary for relaxation and entertainment.",
     image:
-      "https://s3.ap-south-1.amazonaws.com/prepseed/prod/ldoc/media/LastImage2.png",
+      "/Images/site/acoustic-pet-panels-application-2.webp",
   },
   {
     id: 3,
@@ -1241,7 +1241,7 @@ const interiorSpaces = [
     description:
       "Enjoy immersive sound and a cinematic experience in your own home.",
     image:
-      "https://s3.ap-south-1.amazonaws.com/prepseed/prod/ldoc/media/LastImage3.png",
+      "/Images/site/acoustic-pet-panels-application-3.webp",
   },
   {
     id: 4,
@@ -1249,7 +1249,7 @@ const interiorSpaces = [
     description:
       "Perfect for practicing, recording, or just enjoying your favorite tunes.",
     image:
-      "https://s3.ap-south-1.amazonaws.com/prepseed/prod/ldoc/media/LastImage4.png",
+      "/Images/site/acoustic-pet-panels-application-4.webp",
   },
 ];
 </script>

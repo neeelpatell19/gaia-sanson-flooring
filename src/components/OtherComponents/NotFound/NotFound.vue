@@ -3,7 +3,7 @@
     <CommonTopLayout
       heading="Page Not Found"
       imageSrc="/Images/AboutUsBannerImage.webp"
-      imageAlt="GAIA acoustic panels in a modern office"
+      imageAlt="Open-plan office with desks on grey GAIA carpet tiles"
     />
 
     <div class="NotFoundContent Container paddingTop80 marginBottom80">
@@ -14,17 +14,17 @@
       </p>
       <ul class="NotFoundLinks">
         <li><router-link to="/">Home</router-link></li>
-        <li><router-link to="/categories">Our product range</router-link></li>
+        <li><router-link to="/products">Our product range</router-link></li>
         <li>
-          <router-link to="/categories/carpet-tiles">Carpet tiles</router-link>
+          <router-link to="/carpet-tiles">Carpet tiles</router-link>
         </li>
         <li>
-          <router-link to="/categories/acoustic-tiles"
+          <router-link to="/acoustic-pet-panels"
             >Acoustic PET panels</router-link
           >
         </li>
         <li>
-          <router-link to="/categories/artificial-multiturf"
+          <router-link to="/artificial-grass"
             >Artificial grass and multiturf</router-link
           >
         </li>

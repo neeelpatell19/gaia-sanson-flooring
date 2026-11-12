@@ -30,25 +30,25 @@ const associateLogos = [
         id: 1,
         name: 'SEEDO TOYS',
         tagline: 'Innovative Play Solutions',
-        image: 'https://s3.ap-south-1.amazonaws.com/prepseed/prod/ldoc/media/SeedoToys.png'
+        image: '/Images/site/seedo-toys-logo.webp'
     },
     {
         id: 2,
         name: 'SanFit',
         tagline: 'Enhancing Safety',
-        image: 'https://s3.ap-south-1.amazonaws.com/prepseed/prod/ldoc/media/SanFitLogo.png'
+        image: '/Images/site/sanfit-logo.webp'
     },
     {
         id: 3,
         name: 'Sanson Promo Innovations LLP',
         tagline: 'Creative Promotional Solutions',
-        image: 'https://s3.ap-south-1.amazonaws.com/prepseed/prod/ldoc/media/SansonLogo.png'
+        image: '/Images/site/sanson-logo.webp'
     },
     {
         id: 4,
         name: 'Make in India',
         tagline: 'Manufacturing Excellence',
-        image: 'https://s3.ap-south-1.amazonaws.com/prepseed/prod/ldoc/media/make-in-india-270037.png'
+        image: '/Images/site/make-in-india-logo-associate.webp'
     },
     {
         id: 5,

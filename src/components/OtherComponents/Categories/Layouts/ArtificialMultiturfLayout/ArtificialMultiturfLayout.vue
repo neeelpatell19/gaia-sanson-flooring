@@ -1,13 +1,13 @@
 <template>
   <div class="width100">
     <!-- <CommonTopLayout heading="Premium Artificial Grass for Every Space"
-            imageSrc="https://s3.ap-south-1.amazonaws.com/prepseed/prod/ldoc/media/Acoustic Solutions Image.png"
+            imageSrc="/Images/site/artificial-grass-solutions.webp"
             imageAlt="Artificial & Multiturf" /> -->
 
     <CommonTopLayout
       heading="Artificial Grass & Multiturf "
       imageSrc="/Images/ArtificialGrassImage.webp"
-      imageAlt="Artificial grass background image"
+      imageAlt="Rooftop cafe tables and chairs on green GAIA artificial grass"
     />
     <div class="paddingTop80" style="background-color: white !important">
       <MakeInIndia
@@ -24,7 +24,7 @@
         <div class="ArtificialMultiturfGridItem">
           <div data-aos="fade-up" data-aos-duration="600" data-aos-delay="200">
             <img
-              src="https://s3.ap-south-1.amazonaws.com/prepseed/prod/ldoc/media/LandScapeMainImage.jpg"
+              src="/Images/site/landscape-artificial-grass.webp"
               alt="Landscape artificial grass"
             />
             <div class="ArtificialMultiturfGridItemText">
@@ -49,14 +49,14 @@
             <img src="/Images/products/multiturf2.jpg" alt="MultiTurf artificial grass" />
             <div class="ArtificialMultiturfGridItemText">
               <h3>MultiTurf</h3>
-              <router-link to="/artificial-grass/multisports-grass">
+              <router-link to="/artificial-grass/multiturf">
                 <button>View More</button>
               </router-link>
             </div>
           </div>
           <div data-aos="fade-up" data-aos-duration="600" data-aos-delay="500">
             <img
-              src="https://s3.ap-south-1.amazonaws.com/prepseed/prod/ldoc/media/curly Grass.jpg"
+              src="/Images/site/curly-grass.webp"
               alt="Curly artificial grass"
             />
             <div class="ArtificialMultiturfGridItemText">
@@ -281,21 +281,21 @@ const onSwiper = (swiper) => {
 const DesignedData = [
   {
     image:
-      "https://s3.ap-south-1.amazonaws.com/prepseed/prod/ldoc/media/Kids at Play.png",
+      "/Images/site/artificial-grass-kids-play-area.webp",
     alt: "Child-friendly play lounge with artificial grass",
     title: "Child-Friendly<br>Play Lounge",
     description: "Soft, safe, and always green – perfect turf for endless fun.",
   },
   {
     image:
-      "https://s3.ap-south-1.amazonaws.com/prepseed/prod/ldoc/media/Indoor Play Zone.png",
+      "/Images/site/artificial-grass-indoor-play-zone.webp",
     alt: "Indoor play zone with artificial grass",
     title: "Indoor<br>Play Zone",
     description: "Bring the playground indoors with vibrant, cushioned grass.",
   },
   {
     image:
-      "https://s3.ap-south-1.amazonaws.com/prepseed/prod/ldoc/media/Colorful Outdoor Playground.png",
+      "/Images/site/artificial-grass-outdoor-playground.webp",
     alt: "Colorful outdoor playground with artificial grass",
     title: "Colorful Outdoor<br>Playground",
     description:

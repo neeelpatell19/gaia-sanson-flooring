@@ -6,27 +6,27 @@ const navigationBarData = [
   // },
   {
     name: "Our Products",
-    path: "",
+    path: "/products",
     hasDropdown: true,
     dropdownItems: [
       {
         name: "Carpet Tiles",
-        path: "/categories/carpet-tiles",
+        path: "/carpet-tiles",
         description: "Modular carpet solutions for flexible installations",
       },
       {
         name: "Artificial Grass & Multiturf",
-        path: "/categories/artificial-multiturf",
+        path: "/artificial-grass",
         description: "Synthetic grass and outdoor flooring solutions",
       },
       {
         name: "Acoustic PET Panels",
-        path: "/categories/acoustic-tiles",
+        path: "/acoustic-pet-panels",
         description: "Sound-absorbing panels for noise control",
       },
       {
         name: "Broadloom Carpets",
-        path: "/categories/broadloom-carpets",
+        path: "/broadloom-carpets",
         description: "Seamless wall-to-wall carpeting solutions",
       },
     ],

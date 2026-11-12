@@ -3,6 +3,8 @@ const CategoriesData = [
         id: 1,
         name: 'Carpet Tiles',
         slug: 'carpet-tiles',
+        heroImage: '/Images/carpet_tiles.webp',
+        heroImageAlt: 'Home office desk and chair on olive patterned GAIA carpet tiles',
         seoTitle: "Modular Carpet Tiles | GAIA by Sanson Floorings",
         metaDescription:
             "Modular carpet tiles for offices and homes: easy to install and replace, durable, stain-resistant and sound-absorbing. GreenPro labelled, by GAIA Sanson Floorings.",
@@ -26,7 +28,9 @@ const CategoriesData = [
     {
         id: 2,
         name: 'Artificial & Multiturf',
-        slug: 'artificial-multiturf',
+        slug: 'artificial-grass',
+        heroImage: '/Images/ArtificialGrassImage.webp',
+        heroImageAlt: 'Rooftop cafe tables and chairs on green GAIA artificial grass',
         seoTitle: "Artificial Grass & Multiturf | GAIA by Sanson Floorings",
         metaDescription:
             "UV-resistant artificial grass and multiturf for gardens, terraces, sports facilities and landscaping. Landscape, sports, multisports and curly grass by GAIA.",
@@ -51,6 +55,8 @@ const CategoriesData = [
         id: 3,
         name: 'Broadloom Carpets',
         slug: 'broadloom-carpets',
+        heroImage: '/Images/BroadloomCarpetsbannerImage.webp',
+        heroImageAlt: 'Grey armchair on gold geometric-pattern GAIA broadloom carpet',
         seoTitle: "Broadloom Carpets | GAIA by Sanson Floorings",
         metaDescription:
             "Seamless broadloom carpets for large areas, with a luxurious feel and excellent sound absorption. Explore the broadloom range from GAIA by Sanson Floorings, New Delhi.",
@@ -74,7 +80,9 @@ const CategoriesData = [
     {
         id: 4,
         name: 'Acoustic PET Panels',
-        slug: 'acoustic-tiles',
+        slug: 'acoustic-pet-panels',
+        heroImage: '/Images/acousticPet.png',
+        heroImageAlt: 'Purple 3D acoustic PET wall panels behind a lounge seating area',
         seoTitle: "Acoustic PET Panels, GreenPro Certified | GAIA",
         metaDescription:
             "Acoustic PET panels made with recycled polyester fibres to reduce noise and improve sound quality in any space. GreenPro certified and made in India by GAIA.",

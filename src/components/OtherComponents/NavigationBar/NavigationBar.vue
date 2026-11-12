@@ -65,8 +65,9 @@
             </button>
         </div>
 
-        <!-- Mobile Navigation -->
-        <div class="mobile-nav" :class="{ 'show': isMobileMenuOpen }">
+        <!-- Mobile Navigation: added once the page is running in the browser, so
+             the page source carries the menu only once (the desktop list). -->
+        <div v-if="isMounted" class="mobile-nav" :class="{ 'show': isMobileMenuOpen }">
             <ul class="mobile-nav-links">
                 <li v-for="item in navigationData" :key="item.name" class="mobile-nav-item">
                     <router-link v-if="!item.hasDropdown" :to="item.path" class="mobile-nav-link"
@@ -108,6 +109,7 @@ export default {
         const openDropdown = ref(null)
         const openMobileDropdown = ref(null)
         const searchQuery = ref('')
+        const isMounted = ref(false)
 
         const toggleMobileMenu = () => {
             isMobileMenuOpen.value = !isMobileMenuOpen.value
@@ -149,6 +151,7 @@ export default {
         }
 
         onMounted(() => {
+            isMounted.value = true
             document.addEventListener('click', handleClickOutside)
             window.addEventListener('resize', handleResize)
         })
@@ -161,6 +164,7 @@ export default {
         return {
             navigationData: navigationBarData,
             isMobileMenuOpen,
+            isMounted,
             openDropdown,
             openMobileDropdown,
             searchQuery,

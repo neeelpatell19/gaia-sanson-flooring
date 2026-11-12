@@ -1,5 +1,5 @@
 import HomeRoutes from '../components/HomeRoutes/HomeRoutes.vue'
-import CategoriesRoutes from '../components/OtherComponents/Categories/CategoriesLayout/Categories.vue'
+import ProductsHub from '../components/OtherComponents/Categories/CategoriesLayout/Categories.vue'
 import CategoryDetail from '../components/OtherComponents/Categories/CategoriesLayout/CategoryDetail.vue'
 import AnimationDemo from '../components/FramerAnimation/AnimationDemo.vue'
 import AboutUs from '../components/OtherComponents/About/About.vue'
@@ -8,7 +8,9 @@ import DynamicArtificialPage from '../components/OtherComponents/Categories/Layo
 import Blogs from '../components/OtherComponents/Blogs/Blogs.vue'
 import BlogDetail from '../components/OtherComponents/Blogs/BlogDetail/BlogDetail.vue'
 import NotFound from '../components/OtherComponents/NotFound/NotFound.vue'
-import { isValidBlog, isValidCategory, isValidGrassType } from '../seo/pages.js'
+import CarpetTileDesign from '../components/OtherComponents/Categories/Layouts/CarpetTilesLayout/CarpetTileDesign.vue'
+import LegalPage from '../components/OtherComponents/Legal/LegalPage.vue'
+import { CATEGORY_SLUGS, isValidBlog, isValidBlogPage, isValidCategory, isValidDesign, isValidGrassType } from '../seo/pages.js'
 
 // vite-ssg creates the router (browser history in the browser, memory
 // history while pre-rendering), so this file exports the options only.
@@ -19,14 +21,25 @@ export const routes = [
         component: HomeRoutes
     },
     {
-        path: '/categories',
-        name: 'Categories',
-        component: CategoriesRoutes
+        // The products hub. "Our Products" links here from every page.
+        path: '/products',
+        name: 'Products',
+        component: ProductsHub
     },
     {
-        path: '/categories/:slug',
+        // Category pages sit at the root with keyword URLs: /carpet-tiles,
+        // /broadloom-carpets, /acoustic-pet-panels, /artificial-grass. The old
+        // /categories/... URLs 301 here (vercel.json).
+        path: `/:slug(${CATEGORY_SLUGS.join('|')})`,
         name: 'CategoryDetail',
         component: CategoryDetail,
+        props: true
+    },
+    {
+        // One page per carpet tile design, e.g. /carpet-tiles/cobble.
+        path: '/carpet-tiles/:design',
+        name: 'CarpetTileDesign',
+        component: CarpetTileDesign,
         props: true
     },
     {
@@ -46,6 +59,18 @@ export const routes = [
         component: Tools
     },
     {
+        path: '/terms',
+        name: 'Terms',
+        component: LegalPage,
+        props: { page: 'terms' }
+    },
+    {
+        path: '/privacy-policy',
+        name: 'Privacy',
+        component: LegalPage,
+        props: { page: 'privacy' }
+    },
+    {
         path: '/about-us',
         name: 'AboutUs',
         component: AboutUs
@@ -54,6 +79,13 @@ export const routes = [
         path: '/blogs',
         name: 'Blogs',
         component: Blogs
+    },
+    {
+        // Later pages of the blog index: /blogs/page/2, /blogs/page/3 ...
+        path: '/blogs/page/:page(\\d+)',
+        name: 'BlogsPage',
+        component: Blogs,
+        props: true
     },
     {
         path: '/blogs/:slug',
@@ -71,12 +103,14 @@ export const routes = [
 ]
 
 // Routes whose :param must be one of the known pages. Without this check
-// /categories/anything would show an empty page, and any grass type would
+// /carpet-tiles/anything would show an empty page, and any grass type would
 // show the landscape grass page: duplicate content a crawler can index.
 const PARAM_CHECKS = {
     CategoryDetail: ['slug', isValidCategory],
     DynamicArtificialPage: ['grassType', isValidGrassType],
     BlogDetail: ['slug', isValidBlog],
+    CarpetTileDesign: ['design', isValidDesign],
+    BlogsPage: ['page', isValidBlogPage],
 }
 
 // to.path is already percent-encoded and vue-router encodes params again,
@@ -110,6 +144,10 @@ export const scrollBehavior = (to, from, savedPosition) => {
     if (to.hash && document.getElementById(to.hash.slice(1))) {
         return { el: to.hash, top: 110, behavior: 'smooth' }
     }
+    // Paging through the blog index keeps the place: the page itself scrolls
+    // smoothly to the article list, as it did before pages had their own URLs.
+    const BLOG_INDEX = ['Blogs', 'BlogsPage']
+    if (BLOG_INDEX.includes(to.name) && BLOG_INDEX.includes(from.name)) return false
     // Every new page starts at the top.
     return { top: 0 }
 }

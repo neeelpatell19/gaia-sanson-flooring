@@ -8,7 +8,8 @@
     "build": "vite-ssg build && node scripts/verify-seo.js",
     "preview": "vite preview",
     "verify:seo": "node scripts/verify-seo.js",
-    "build:only": "vite-ssg build"
+    "build:only": "vite-ssg build",
+    "indexnow": "node scripts/indexnow.js"
   },
   "dependencies": {
     "@unhead/vue": "^2.1.17",

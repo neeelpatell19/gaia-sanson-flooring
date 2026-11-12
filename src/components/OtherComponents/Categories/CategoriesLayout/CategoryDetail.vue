@@ -13,7 +13,7 @@
       <div class="CategoryDetailContainer">
         <!-- Breadcrumb Navigation -->
         <div class="breadcrumb">
-          <router-link to="/categories" class="breadcrumb-link"
+          <router-link to="/products" class="breadcrumb-link"
             >Categories</router-link
           >
           <span class="breadcrumb-separator">/</span>
@@ -73,7 +73,7 @@
             <router-link
               v-for="relatedCategory in relatedCategories"
               :key="relatedCategory.id"
-              :to="`/categories/${relatedCategory.slug}`"
+              :to="`/${relatedCategory.slug}`"
               class="related-category-card"
             >
               <img :src="relatedCategory.image" :alt="relatedCategory.name" />
@@ -118,8 +118,8 @@ const currentLayout = computed(() => {
   const layoutMap = {
     "carpet-tiles": CarpetTilesLayout,
     "broadloom-carpets": BroadloomCarpetsLayout,
-    "acoustic-tiles": AcousticTilesLayout,
-    "artificial-multiturf": ArtificialMultiturfLayout,
+    "acoustic-pet-panels": AcousticTilesLayout,
+    "artificial-grass": ArtificialMultiturfLayout,
   };
 
   return layoutMap[category.value.slug] || null;

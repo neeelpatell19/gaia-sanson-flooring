@@ -332,7 +332,7 @@
   left: 0;
   width: 100%;
   height: 100%;
-  background: url("https://s3.ap-south-1.amazonaws.com/prepseed/prod/ldoc/media/BackgroundCarpet.png");
+  background: url("/Images/site/carpet-tile-texture-background.webp");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -502,7 +502,7 @@
   left: 300px;
   width: 200px;
   height: 800px;
-  background-image: url("https://s3.ap-south-1.amazonaws.com/prepseed/prod/ldoc/media/DownloadImage3.png");
+  background-image: url("/Images/site/carpet-tiles-brochure-3.webp");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -521,7 +521,7 @@
   left: 200px;
   width: 200px;
   height: 500px;
-  background-image: url("https://s3.ap-south-1.amazonaws.com/prepseed/prod/ldoc/media/DownloadImage2.png");
+  background-image: url("/Images/site/carpet-tiles-brochure-2.webp");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -534,7 +534,7 @@
   right: 30px;
   width: 200px;
   height: 200px;
-  background-image: url("https://s3.ap-south-1.amazonaws.com/prepseed/prod/ldoc/media/DownloadImage1.png");
+  background-image: url("/Images/site/carpet-tiles-brochure-1.webp");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -547,7 +547,7 @@
   left: 70px;
   width: 200px;
   height: 350px;
-  background-image: url("https://s3.ap-south-1.amazonaws.com/prepseed/prod/ldoc/media/DownloadImageImage.png");
+  background-image: url("/Images/site/carpet-tiles-brochure-cover.webp");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -584,7 +584,7 @@
   /* position: absolute; */
   /* top: 0;
     left: 0; */
-  background-image: url("https://s3.ap-south-1.amazonaws.com/prepseed/prod/ldoc/media/DownloadImage4.png");
+  background-image: url("/Images/site/carpet-tiles-brochure-4.webp");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -597,7 +597,7 @@
   /* position: absolute; */
   /* top: 0;
     left: 0; */
-  background-image: url("https://s3.ap-south-1.amazonaws.com/prepseed/prod/ldoc/media/DownloadImage5.png");
+  background-image: url("/Images/site/carpet-tiles-brochure-5.webp");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -610,7 +610,7 @@
   /* position: absolute; */
   /* top: 0;
     left: 0; */
-  background-image: url("https://s3.ap-south-1.amazonaws.com/prepseed/prod/ldoc/media/DownloadImage6.png");
+  background-image: url("/Images/site/carpet-tiles-brochure-6.webp");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -625,7 +625,7 @@
   left: 530px;
   width: 250px;
   height: 300px;
-  background-image: url("https://s3.ap-south-1.amazonaws.com/prepseed/prod/ldoc/media/BlueCarpetImage.png");
+  background-image: url("/Images/site/blue-carpet-tiles.webp");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -637,7 +637,7 @@
   left: 480px;
   width: 200px;
   height: 650px;
-  background-image: url("https://s3.ap-south-1.amazonaws.com/prepseed/prod/ldoc/media/DownloadImage7.png");
+  background-image: url("/Images/site/carpet-tiles-brochure-7.webp");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -650,7 +650,7 @@
   left: 400px;
   width: 600px;
   height: 200px;
-  background-image: url("https://s3.ap-south-1.amazonaws.com/prepseed/prod/ldoc/media/DownloadImage8.png");
+  background-image: url("/Images/site/carpet-tiles-brochure-8.webp");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -662,7 +662,7 @@
   left: 390px;
   width: 400px;
   height: 200px;
-  background-image: url("https://s3.ap-south-1.amazonaws.com/prepseed/prod/ldoc/media/CarpetDesignsImage.png");
+  background-image: url("/Images/site/carpet-tile-designs.webp");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;

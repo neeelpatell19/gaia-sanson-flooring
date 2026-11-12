@@ -8,7 +8,7 @@ const HomeProductsData = [
       "/Images/carpetImage3.png",
     bgColor: "#d4c4b0",
     textColor: "#8b6f47",
-    link: "/categories/carpet-tiles",
+    link: "/carpet-tiles",
   },
   {
     id: 2,
@@ -19,7 +19,7 @@ const HomeProductsData = [
       "/Images/image335.png",
     bgColor: "#8b7355",
     textColor: "#f5f5f0",
-    link: "/categories/broadloom-carpets",
+    link: "/broadloom-carpets",
   },
   {
     id: 3,
@@ -29,7 +29,7 @@ const HomeProductsData = [
     image: "/Images/acousticPetPanel.jpeg",
     bgColor: "#f5f5f0",
     textColor: "#8b6f47",
-    link: "/categories/acoustic-tiles",
+    link: "/acoustic-pet-panels",
   },
   {
     id: 4,
@@ -40,7 +40,7 @@ const HomeProductsData = [
       "/Images/sportsGrass.jpg",
     bgColor: "#e8d5c4",
     textColor: "#6b5b47",
-    link: "/categories/artificial-multiturf",
+    link: "/artificial-grass",
   },
 ];
 

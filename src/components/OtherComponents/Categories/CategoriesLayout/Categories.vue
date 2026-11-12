@@ -16,7 +16,7 @@
           <router-link
             v-for="category in CategoriesData"
             :key="category.id"
-            :to="`/categories/${category.slug}`"
+            :to="`/${category.slug}`"
             class="CategoryItem"
           >
             <div class="categoryImage">

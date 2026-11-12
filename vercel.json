@@ -3,10 +3,45 @@
   "trailingSlash": false,
   "redirects": [
     {
+      "source": "/categories",
+      "destination": "https://sansonfloorings.com/products",
+      "statusCode": 301
+    },
+    {
+      "source": "/categories/carpet-tiles",
+      "destination": "https://sansonfloorings.com/carpet-tiles",
+      "statusCode": 301
+    },
+    {
+      "source": "/categories/broadloom-carpets",
+      "destination": "https://sansonfloorings.com/broadloom-carpets",
+      "statusCode": 301
+    },
+    {
+      "source": "/categories/acoustic-tiles",
+      "destination": "https://sansonfloorings.com/acoustic-pet-panels",
+      "statusCode": 301
+    },
+    {
+      "source": "/categories/artificial-multiturf",
+      "destination": "https://sansonfloorings.com/artificial-grass",
+      "statusCode": 301
+    },
+    {
+      "source": "/artificial-grass/multisports-grass",
+      "destination": "https://sansonfloorings.com/artificial-grass/multiturf",
+      "statusCode": 301
+    },
+    {
       "source": "/(.*)",
-      "has": [{ "type": "host", "value": "www.sansonfloorings.com" }],
+      "has": [
+        {
+          "type": "host",
+          "value": "www.sansonfloorings.com"
+        }
+      ],
       "destination": "https://sansonfloorings.com/$1",
-      "permanent": true
+      "statusCode": 301
     }
   ],
   "rewrites": [
@@ -19,7 +54,10 @@
     {
       "source": "/assets/(.*)",
       "headers": [
-        { "key": "Cache-Control", "value": "public, max-age=31536000, immutable" }
+        {
+          "key": "Cache-Control",
+          "value": "public, max-age=31536000, immutable"
+        }
       ]
     },
     {
@@ -32,9 +70,282 @@
       ]
     },
     {
+      "source": "/pdfs/GAIA_AANGAN.pdf",
+      "headers": [
+        {
+          "key": "Link",
+          "value": "<https://sansonfloorings.com/carpet-tiles/aangan>; rel=\"canonical\""
+        }
+      ]
+    },
+    {
+      "source": "/pdfs/GAIA_ALANKRIT.pdf",
+      "headers": [
+        {
+          "key": "Link",
+          "value": "<https://sansonfloorings.com/carpet-tiles/alankrit>; rel=\"canonical\""
+        }
+      ]
+    },
+    {
+      "source": "/pdfs/GAIA_DALAAN.pdf",
+      "headers": [
+        {
+          "key": "Link",
+          "value": "<https://sansonfloorings.com/carpet-tiles/dalaan>; rel=\"canonical\""
+        }
+      ]
+    },
+    {
+      "source": "/pdfs/GAIA_DRIP.pdf",
+      "headers": [
+        {
+          "key": "Link",
+          "value": "<https://sansonfloorings.com/carpet-tiles/drip>; rel=\"canonical\""
+        }
+      ]
+    },
+    {
+      "source": "/pdfs/GAIA_GRIDWORK.pdf",
+      "headers": [
+        {
+          "key": "Link",
+          "value": "<https://sansonfloorings.com/carpet-tiles/grid-work>; rel=\"canonical\""
+        }
+      ]
+    },
+    {
+      "source": "/pdfs/GAIA_MAJESTY.pdf",
+      "headers": [
+        {
+          "key": "Link",
+          "value": "<https://sansonfloorings.com/carpet-tiles/majesty>; rel=\"canonical\""
+        }
+      ]
+    },
+    {
+      "source": "/pdfs/GAIA_MIAMI.pdf",
+      "headers": [
+        {
+          "key": "Link",
+          "value": "<https://sansonfloorings.com/carpet-tiles/miami>; rel=\"canonical\""
+        }
+      ]
+    },
+    {
+      "source": "/pdfs/GAIA_NAQSH.pdf",
+      "headers": [
+        {
+          "key": "Link",
+          "value": "<https://sansonfloorings.com/carpet-tiles/naqsh>; rel=\"canonical\""
+        }
+      ]
+    },
+    {
+      "source": "/pdfs/GAIA_PARAMOUNT.pdf",
+      "headers": [
+        {
+          "key": "Link",
+          "value": "<https://sansonfloorings.com/carpet-tiles/paramount>; rel=\"canonical\""
+        }
+      ]
+    },
+    {
+      "source": "/pdfs/GAIA_PINNACLE.pdf",
+      "headers": [
+        {
+          "key": "Link",
+          "value": "<https://sansonfloorings.com/carpet-tiles/pinnacle>; rel=\"canonical\""
+        }
+      ]
+    },
+    {
+      "source": "/pdfs/GAIA_PLATEAU.pdf",
+      "headers": [
+        {
+          "key": "Link",
+          "value": "<https://sansonfloorings.com/carpet-tiles/plateau>; rel=\"canonical\""
+        }
+      ]
+    },
+    {
+      "source": "/pdfs/GAIA_SHINING\\+GLOW.pdf",
+      "headers": [
+        {
+          "key": "Link",
+          "value": "<https://sansonfloorings.com/carpet-tiles/shining-glow>; rel=\"canonical\""
+        }
+      ]
+    },
+    {
+      "source": "/pdfs/GAIA_SIGNATURE.pdf",
+      "headers": [
+        {
+          "key": "Link",
+          "value": "<https://sansonfloorings.com/carpet-tiles/signature>; rel=\"canonical\""
+        }
+      ]
+    },
+    {
+      "source": "/pdfs/GAIA_ASCEND.pdf",
+      "headers": [
+        {
+          "key": "Link",
+          "value": "<https://sansonfloorings.com/carpet-tiles/ascend>; rel=\"canonical\""
+        }
+      ]
+    },
+    {
+      "source": "/pdfs/GAIA_CHROMATIC.pdf",
+      "headers": [
+        {
+          "key": "Link",
+          "value": "<https://sansonfloorings.com/carpet-tiles/chromatic>; rel=\"canonical\""
+        }
+      ]
+    },
+    {
+      "source": "/pdfs/GAIA_COBBLE.pdf",
+      "headers": [
+        {
+          "key": "Link",
+          "value": "<https://sansonfloorings.com/carpet-tiles/cobble>; rel=\"canonical\""
+        }
+      ]
+    },
+    {
+      "source": "/pdfs/GAIA_ELITE.pdf",
+      "headers": [
+        {
+          "key": "Link",
+          "value": "<https://sansonfloorings.com/carpet-tiles/elite>; rel=\"canonical\""
+        }
+      ]
+    },
+    {
+      "source": "/pdfs/GAIA_EMINENCE.pdf",
+      "headers": [
+        {
+          "key": "Link",
+          "value": "<https://sansonfloorings.com/carpet-tiles/eminence>; rel=\"canonical\""
+        }
+      ]
+    },
+    {
+      "source": "/pdfs/GAIA_GRANDEUR.pdf",
+      "headers": [
+        {
+          "key": "Link",
+          "value": "<https://sansonfloorings.com/carpet-tiles/grandeur>; rel=\"canonical\""
+        }
+      ]
+    },
+    {
+      "source": "/pdfs/GAIA_LEGACY.pdf",
+      "headers": [
+        {
+          "key": "Link",
+          "value": "<https://sansonfloorings.com/carpet-tiles/legacy>; rel=\"canonical\""
+        }
+      ]
+    },
+    {
+      "source": "/pdfs/GAIA_NOVA.pdf",
+      "headers": [
+        {
+          "key": "Link",
+          "value": "<https://sansonfloorings.com/carpet-tiles/nova>; rel=\"canonical\""
+        }
+      ]
+    },
+    {
+      "source": "/pdfs/GAIA_OPULENCE.pdf",
+      "headers": [
+        {
+          "key": "Link",
+          "value": "<https://sansonfloorings.com/carpet-tiles/opulence>; rel=\"canonical\""
+        }
+      ]
+    },
+    {
+      "source": "/pdfs/GAIA_SOVEREIGN.pdf",
+      "headers": [
+        {
+          "key": "Link",
+          "value": "<https://sansonfloorings.com/carpet-tiles/sovereign>; rel=\"canonical\""
+        }
+      ]
+    },
+    {
+      "source": "/pdfs/GAIA_STAIRWAY.pdf",
+      "headers": [
+        {
+          "key": "Link",
+          "value": "<https://sansonfloorings.com/carpet-tiles/stairway>; rel=\"canonical\""
+        }
+      ]
+    },
+    {
+      "source": "/pdfs/GAIA_STERLING.pdf",
+      "headers": [
+        {
+          "key": "Link",
+          "value": "<https://sansonfloorings.com/carpet-tiles/sterling>; rel=\"canonical\""
+        }
+      ]
+    },
+    {
+      "source": "/pdfs/GAIA_STREET.pdf",
+      "headers": [
+        {
+          "key": "Link",
+          "value": "<https://sansonfloorings.com/carpet-tiles/street>; rel=\"canonical\""
+        }
+      ]
+    },
+    {
+      "source": "/pdfs/GAIA_VIRTUE.pdf",
+      "headers": [
+        {
+          "key": "Link",
+          "value": "<https://sansonfloorings.com/carpet-tiles/virtue>; rel=\"canonical\""
+        }
+      ]
+    },
+    {
+      "source": "/pdfs/GAIA_ZARA.pdf",
+      "headers": [
+        {
+          "key": "Link",
+          "value": "<https://sansonfloorings.com/carpet-tiles/zara>; rel=\"canonical\""
+        }
+      ]
+    },
+    {
+      "source": "/pdfs/GAIA_ZENITH.pdf",
+      "headers": [
+        {
+          "key": "Link",
+          "value": "<https://sansonfloorings.com/carpet-tiles/zenith>; rel=\"canonical\""
+        }
+      ]
+    },
+    {
+      "source": "/pdfs/GAIA(.+)ACOUSTIC(.+)CATALOGUE\\.pdf",
+      "headers": [
+        {
+          "key": "Link",
+          "value": "<https://sansonfloorings.com/acoustic-pet-panels>; rel=\"canonical\""
+        }
+      ]
+    },
+    {
       "source": "/(.*)",
       "headers": [
-        { "key": "X-Content-Type-Options", "value": "nosniff" }
+        {
+          "key": "X-Content-Type-Options",
+          "value": "nosniff"
+        }
       ]
     }
   ]

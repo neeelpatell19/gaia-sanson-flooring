@@ -21,7 +21,7 @@ export default {
                     <!-- Image Placeholder (for future use) -->
                     <div class="card-image-placeholder">
                         <!-- Image will be added later -->
-                        <img :src="card.image" alt="Card Image" />
+                        <img :src="card.image" alt="" aria-hidden="true" />
                     </div>
 
                     <!-- Card Content -->

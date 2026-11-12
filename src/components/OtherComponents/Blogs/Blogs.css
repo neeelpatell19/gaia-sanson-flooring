@@ -121,6 +121,11 @@
   font-weight: 500;
   cursor: pointer;
   transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  /* the page buttons are <a> links */
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
 }
 
 .BlogsListingContainer .blogs-page-btn:hover:not(:disabled),

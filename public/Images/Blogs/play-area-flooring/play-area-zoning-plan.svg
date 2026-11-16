@@ -1,0 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 600" width="640" height="600" font-family="Arial, Helvetica, sans-serif" role="img" aria-labelledby="t d">
+<title id="t">Play area zoning plan</title>
+<desc id="d">Play area in four zones: impact-absorbing surfacing in the fall zones around a climbing frame and swings, firm turf for tricycles and ball games, a soft landscape grass lawn for open play, and a shaded seating corner, with a paved path.</desc>
+<rect width="640" height="600" fill="#fbf8f2"/>
+<text x="320" y="36" text-anchor="middle" font-size="25" font-weight="700" fill="#2f394a">Plan the play area by activity</text>
+<rect x="30" y="60" width="580" height="410" fill="#fff" stroke="#2f394a" stroke-width="4"/>
+<rect x="44" y="74" width="226" height="180" rx="14" fill="#f2c6b4"/>
+<rect x="44" y="270" width="226" height="186" rx="14" fill="#f2c6b4"/>
+<rect x="110" y="120" width="94" height="60" fill="#2f394a"/>
+<g stroke="#2f394a" stroke-width="5" fill="none"><path d="M90 340 L120 310 L198 310 L228 340"/></g>
+<g stroke="#2f394a" stroke-width="2"><line x1="140" y1="310" x2="140" y2="350"/><line x1="182" y1="310" x2="182" y2="350"/></g>
+<rect x="286" y="74" width="310" height="160" rx="14" fill="#7fb35a"/>
+<rect x="286" y="250" width="200" height="206" rx="14" fill="#b9dc95"/>
+<rect x="502" y="250" width="94" height="206" rx="14" fill="#e3eef7" stroke="#2a7fc1" stroke-width="2" stroke-dasharray="8 5"/>
+<rect x="490" y="440" width="120" height="30" fill="#d6d1c7"/>
+<g font-size="20" font-weight="700" fill="#2f394a" text-anchor="middle">
+<text x="157" y="214">Fall zone</text>
+<text x="157" y="386">Fall zone</text>
+<text x="441" y="128" fill="#fff">Firm turf</text>
+<text x="386" y="330">Soft lawn</text>
+<text x="549" y="330">Shade</text>
+</g>
+<g font-size="18" fill="#2f394a" text-anchor="middle">
+<text x="157" y="110">climbing frame</text>
+<text x="157" y="238">impact surfacing</text>
+<text x="157" y="410">impact surfacing</text>
+<text x="157" y="298">swings</text>
+<text x="441" y="158" fill="#fff">tricycles and</text>
+<text x="441" y="182" fill="#fff">ball games</text>
+<text x="386" y="356">open play,</text>
+<text x="386" y="380">sitting, picnics</text>
+<text x="549" y="356">seating</text>
+<text x="549" y="494">paved path</text>
+</g>
+<g font-size="18" fill="#2f394a">
+<rect x="40" y="520" width="34" height="24" rx="4" fill="#f2c6b4"/><text x="84" y="538">Impact surfacing</text>
+<rect x="300" y="520" width="34" height="24" rx="4" fill="#7fb35a"/><text x="344" y="538">Firm turf (MultiTurf)</text>
+<rect x="40" y="558" width="34" height="24" rx="4" fill="#b9dc95"/><text x="84" y="576">Landscape grass</text>
+<rect x="300" y="558" width="34" height="24" rx="4" fill="#e3eef7" stroke="#2a7fc1" stroke-dasharray="6 4"/><text x="344" y="576">Shaded seating</text>
+</g>
+</svg>

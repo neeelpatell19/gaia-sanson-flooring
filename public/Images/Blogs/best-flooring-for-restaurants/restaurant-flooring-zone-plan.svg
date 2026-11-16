@@ -1,0 +1,46 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 600" width="640" height="600" font-family="Arial, Helvetica, sans-serif" role="img" aria-labelledby="t d">
+<title id="t">Restaurant flooring by zone</title>
+<desc id="d">Restaurant plan: kitchen on a sealed slip-resistant hard floor, bar and entrance on a hard-wearing floor, dining room on carpet tiles or broadloom crossed by a hard service route, and a terrace with artificial grass and a paved path.</desc>
+<rect width="640" height="600" fill="#fbf8f2"/>
+<text x="320" y="36" text-anchor="middle" font-size="25" font-weight="700" fill="#2f394a">Choose the floor zone by zone</text>
+<rect x="30" y="60" width="580" height="390" fill="#fff" stroke="#2f394a" stroke-width="4"/>
+<rect x="34" y="64" width="196" height="180" fill="#cfd8e3"/>
+<rect x="34" y="248" width="196" height="198" fill="#e2ddd3"/>
+<rect x="234" y="64" width="236" height="382" fill="#d9c9a3"/>
+<rect x="234" y="226" width="236" height="44" fill="#e2ddd3"/>
+<rect x="474" y="64" width="132" height="382" fill="#a9cf86"/>
+<rect x="525" y="64" width="34" height="382" fill="#d6d1c7"/>
+<line x1="230" y1="60" x2="230" y2="450" stroke="#2f394a" stroke-width="3"/>
+<line x1="230" y1="226" x2="230" y2="270" stroke="#fff" stroke-width="5"/>
+<line x1="472" y1="60" x2="472" y2="450" stroke="#2f394a" stroke-width="3"/>
+<line x1="472" y1="226" x2="472" y2="270" stroke="#fff" stroke-width="5"/>
+<line x1="34" y1="246" x2="230" y2="246" stroke="#2f394a" stroke-width="3"/>
+<line x1="90" y1="450" x2="170" y2="450" stroke="#fff" stroke-width="7"/>
+<g fill="#fff" stroke="#2f394a" stroke-width="2">
+<circle cx="290" cy="120" r="20"/><circle cx="410" cy="120" r="20"/><circle cx="290" cy="185" r="20"/><circle cx="410" cy="185" r="20"/>
+<circle cx="290" cy="320" r="20"/><circle cx="410" cy="320" r="20"/><circle cx="290" cy="390" r="20"/><circle cx="410" cy="390" r="20"/>
+</g>
+<g font-size="21" font-weight="700" fill="#2f394a" text-anchor="middle">
+<text x="132" y="140">Kitchen</text>
+<text x="132" y="330">Bar and</text>
+<text x="132" y="355">entrance</text>
+<text x="350" y="158">Dining</text>
+<text x="350" y="362">Dining</text>
+<text transform="translate(510 255) rotate(-90)">Terrace</text>
+</g>
+<g font-size="18" fill="#2f394a" text-anchor="middle">
+<text x="132" y="168">sealed, slip-</text>
+<text x="132" y="190">resistant</text>
+<text x="132" y="383">hard-wearing</text>
+<text x="350" y="254">hard service route</text>
+<text x="350" y="182">carpet</text>
+<text x="132" y="474">entrance</text>
+<text transform="translate(590 255) rotate(-90)">grass, paved path</text>
+</g>
+<g font-size="18" fill="#2f394a">
+<rect x="40" y="500" width="34" height="24" fill="#cfd8e3"/><text x="84" y="518">Slip-resistant hard floor</text>
+<rect x="350" y="500" width="34" height="24" fill="#e2ddd3"/><text x="394" y="518">Hard-wearing floor</text>
+<rect x="40" y="546" width="34" height="24" fill="#d9c9a3"/><text x="84" y="564">Carpet tiles or broadloom</text>
+<rect x="350" y="546" width="34" height="24" fill="#a9cf86"/><text x="394" y="564">Artificial grass</text>
+</g>
+</svg>

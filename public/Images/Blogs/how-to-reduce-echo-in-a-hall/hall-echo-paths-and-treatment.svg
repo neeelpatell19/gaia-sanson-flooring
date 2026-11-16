@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 600" width="640" height="600" font-family="Arial, Helvetica, sans-serif" role="img" aria-labelledby="t d">
+<title id="t">Echo paths in a hall and where to treat them</title>
+<desc id="d">Two sections through a hall. Untreated: sound from the stage reflects off the high ceiling and returns late from the rear wall. Treated: baffles hang under the ceiling, panels line the rear wall and bands of panels break up the side walls.</desc>
+<rect width="640" height="600" fill="#fbf8f2"/>
+<defs><marker id="a" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0 0L10 5L0 10z" fill="#c0392b"/></marker></defs>
+<text x="320" y="36" text-anchor="middle" font-size="25" font-weight="700" fill="#2f394a">Treat the longest paths first</text>
+<text x="40" y="78" font-size="21" font-weight="700" fill="#2f394a">Untreated</text>
+<rect x="40" y="90" width="560" height="180" fill="#fff" stroke="#2f394a" stroke-width="4"/>
+<rect x="42" y="236" width="80" height="32" fill="#d8d2c6"/>
+<circle cx="82" cy="220" r="11" fill="#2f394a"/>
+<g stroke="#c0392b" stroke-width="3" fill="none" marker-end="url(#a)">
+<polyline points="94,214 300,94 470,262"/>
+<line x1="96" y1="200" x2="592" y2="200"/>
+<line x1="592" y1="226" x2="140" y2="226" stroke-dasharray="9 6"/>
+</g>
+<g font-size="18" fill="#2f394a">
+<text x="360" y="118">ceiling reflection</text>
+<text x="440" y="190">to the rear wall</text>
+<text x="135" y="254" fill="#c0392b" font-weight="700">late echo back to the stage</text>
+<text x="52" y="292" font-size="17">stage</text>
+</g>
+<text x="40" y="338" font-size="21" font-weight="700" fill="#2f394a">Treated</text>
+<rect x="40" y="350" width="560" height="180" fill="#fff" stroke="#2f394a" stroke-width="4"/>
+<rect x="42" y="496" width="80" height="32" fill="#d8d2c6"/>
+<circle cx="82" cy="480" r="11" fill="#2f394a"/>
+<g fill="#a38703">
+<rect x="170" y="354" width="10" height="56"/><rect x="230" y="354" width="10" height="56"/><rect x="290" y="354" width="10" height="56"/><rect x="350" y="354" width="10" height="56"/><rect x="410" y="354" width="10" height="56"/><rect x="470" y="354" width="10" height="56"/><rect x="530" y="354" width="10" height="56"/>
+<rect x="584" y="400" width="14" height="110"/>
+</g>
+<g font-size="18" fill="#2f394a">
+<text x="355" y="436" text-anchor="middle">baffles under the ceiling</text>
+<text x="570" y="470" text-anchor="end">rear wall panels</text>
+<text x="355" y="504" text-anchor="middle">plus staggered bands on side walls</text>
+<text x="52" y="552" font-size="17">stage</text>
+</g>
+<g font-size="18" fill="#2f394a">
+<rect x="160" y="572" width="34" height="14" fill="#a38703"/><text x="204" y="586">Acoustic treatment</text>
+<line x1="390" y1="579" x2="430" y2="579" stroke="#c0392b" stroke-width="3"/><text x="440" y="586">Reflections</text>
+</g>
+</svg>

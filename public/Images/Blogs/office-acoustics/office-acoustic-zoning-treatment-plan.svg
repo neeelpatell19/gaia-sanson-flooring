@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 600" width="640" height="600" font-family="Arial, Helvetica, sans-serif" role="img" aria-labelledby="t d">
+<title id="t">Office acoustic treatment by zone</title>
+<desc id="d">Three zones. Entrance zone: reception, pantry, collaboration; ceiling clouds and hard floor. Open desks: ceiling baffles, wall panels, carpet tiles. Quiet zone: meeting rooms, cabins, phone booths; full-height walls, sealed doors, panels and carpet.</desc>
+<rect width="640" height="600" fill="#fbf8f2"/>
+<text x="320" y="38" text-anchor="middle" font-size="26" font-weight="700" fill="#2f394a">Treat each office zone for its job</text>
+<g font-size="20">
+<rect x="24" y="64" width="592" height="150" rx="12" fill="#fbecd6" stroke="#e0861a" stroke-width="2"/>
+<text x="44" y="100" font-size="22" font-weight="700" fill="#b8650f">Entrance zone</text>
+<text x="44" y="128" fill="#2f394a">Reception, pantry, collaboration</text>
+<text x="44" y="164" fill="#2f394a">Absorb: ceiling clouds overhead</text>
+<text x="44" y="192" fill="#2f394a">Floor: hard and cleanable</text>
+<rect x="24" y="228" width="592" height="150" rx="12" fill="#e3eef7" stroke="#2a7fc1" stroke-width="2"/>
+<text x="44" y="264" font-size="22" font-weight="700" fill="#1f5f8f">Open desks</text>
+<text x="44" y="292" fill="#2f394a">Focused and team work</text>
+<text x="44" y="328" fill="#2f394a">Absorb: baffles or clouds, wall panels</text>
+<text x="44" y="356" fill="#2f394a">Floor: carpet tiles</text>
+<rect x="24" y="392" width="592" height="180" rx="12" fill="#e9e3f2" stroke="#7b5aa6" stroke-width="2"/>
+<text x="44" y="428" font-size="22" font-weight="700" fill="#5d3f87">Quiet zone</text>
+<text x="44" y="456" fill="#2f394a">Meeting rooms, cabins, phone booths</text>
+<text x="44" y="492" fill="#2f394a">Block: walls to the slab, sealed doors</text>
+<text x="44" y="520" fill="#2f394a">Absorb: panels on facing walls</text>
+<text x="44" y="548" fill="#2f394a">Floor: carpet tiles or broadloom</text>
+</g>
+<g font-size="18" font-weight="700" fill="#fff">
+<rect x="470" y="84" width="128" height="34" rx="17" fill="#e0861a"/><text x="534" y="107" text-anchor="middle">Loud</text>
+<rect x="470" y="248" width="128" height="34" rx="17" fill="#2a7fc1"/><text x="534" y="271" text-anchor="middle">Busy</text>
+<rect x="470" y="412" width="128" height="34" rx="17" fill="#7b5aa6"/><text x="534" y="435" text-anchor="middle">Private</text>
+</g>
+</svg>

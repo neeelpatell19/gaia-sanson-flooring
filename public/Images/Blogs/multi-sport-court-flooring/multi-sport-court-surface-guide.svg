@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 600" width="640" height="600" font-family="Arial, Helvetica, sans-serif" role="img" aria-labelledby="t d">
+<title id="t">Choosing a multi-sport court surface</title>
+<desc id="d">Short turf such as MultiTurf is good for tennis, badminton, football training, skating and children's play, and possible for basketball. A hard acrylic or polymeric court is good for basketball, tennis and skating, possible for badminton and football training, and not ideal for children's play.</desc>
+<rect width="640" height="600" fill="#fbf8f2"/>
+<text x="320" y="36" text-anchor="middle" font-size="25" font-weight="700" fill="#2f394a">Match the surface to the sport</text>
+<g font-size="19" font-weight="700" fill="#2f394a" text-anchor="middle"><text x="400" y="84">Short turf</text><text x="400" y="106" font-weight="400" font-size="17">(MultiTurf)</text><text x="555" y="84">Hard court</text><text x="555" y="106" font-weight="400" font-size="17">(acrylic)</text></g>
+<rect x="24" y="120" width="592" height="60" rx="8" fill="#f1ece2"/>
+<text x="44" y="157" font-size="20" fill="#2f394a">Tennis</text>
+<circle cx="400" cy="150" r="16" fill="#5b8f2e"/><path d="M392 150 l6 6 l10 -12" stroke="#fff" stroke-width="4" fill="none"/>
+<circle cx="555" cy="150" r="16" fill="#5b8f2e"/><path d="M547 150 l6 6 l10 -12" stroke="#fff" stroke-width="4" fill="none"/>
+<text x="44" y="219" font-size="20" fill="#2f394a">Badminton</text>
+<circle cx="400" cy="212" r="16" fill="#5b8f2e"/><path d="M392 212 l6 6 l10 -12" stroke="#fff" stroke-width="4" fill="none"/>
+<circle cx="555" cy="212" r="14" fill="none" stroke="#d08a12" stroke-width="4"/>
+<rect x="24" y="244" width="592" height="60" rx="8" fill="#f1ece2"/>
+<text x="44" y="281" font-size="20" fill="#2f394a">Football training</text>
+<circle cx="400" cy="274" r="16" fill="#5b8f2e"/><path d="M392 274 l6 6 l10 -12" stroke="#fff" stroke-width="4" fill="none"/>
+<circle cx="555" cy="274" r="14" fill="none" stroke="#d08a12" stroke-width="4"/>
+<text x="44" y="343" font-size="20" fill="#2f394a">Skating</text>
+<circle cx="400" cy="336" r="16" fill="#5b8f2e"/><path d="M392 336 l6 6 l10 -12" stroke="#fff" stroke-width="4" fill="none"/>
+<circle cx="555" cy="336" r="16" fill="#5b8f2e"/><path d="M547 336 l6 6 l10 -12" stroke="#fff" stroke-width="4" fill="none"/>
+<rect x="24" y="368" width="592" height="60" rx="8" fill="#f1ece2"/>
+<text x="44" y="405" font-size="20" fill="#2f394a">Children&#8217;s play</text>
+<circle cx="400" cy="398" r="16" fill="#5b8f2e"/><path d="M392 398 l6 6 l10 -12" stroke="#fff" stroke-width="4" fill="none"/>
+<path d="M545 388 l20 20 M565 388 l-20 20" stroke="#8a8f98" stroke-width="4"/>
+<text x="44" y="467" font-size="20" fill="#2f394a">Basketball</text>
+<circle cx="400" cy="460" r="14" fill="none" stroke="#d08a12" stroke-width="4"/>
+<circle cx="555" cy="460" r="16" fill="#5b8f2e"/><path d="M547 460 l6 6 l10 -12" stroke="#fff" stroke-width="4" fill="none"/>
+<g font-size="18" fill="#2f394a"><circle cx="60" cy="540" r="16" fill="#5b8f2e"/><path d="M52 540 l6 6 l10 -12" stroke="#fff" stroke-width="4" fill="none"/><text x="86" y="546">Good</text><circle cx="220" cy="540" r="14" fill="none" stroke="#d08a12" stroke-width="4"/><text x="246" y="546">Possible</text><path d="M390 530 l20 20 M410 530 l-20 20" stroke="#8a8f98" stroke-width="4"/><text x="424" y="546">Not ideal</text></g>
+</svg>

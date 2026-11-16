@@ -32,7 +32,15 @@ export function buildArticleSchemas(blog) {
       image: [absoluteUrl(blog.ogImage || blog.coverImage)],
       datePublished: blog.publishedDate,
       dateModified: blog.updatedDate || blog.publishedDate,
-      author: organization,
+      author: blog.authorProfile
+        ? {
+            "@type": "Person",
+            name: blog.authorProfile.name,
+            ...(blog.authorProfile.role ? { jobTitle: blog.authorProfile.role } : {}),
+            ...(blog.authorProfile.url ? { url: blog.authorProfile.url } : {}),
+            worksFor: organization,
+          }
+        : organization,
       publisher: organization,
       about: blog.tags.map((name) => ({ "@type": "Thing", name })),
     },

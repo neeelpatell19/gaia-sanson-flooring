@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 560" width="640" height="560" font-family="Arial, Helvetica, sans-serif" role="img" aria-labelledby="t d">
+<title id="t">Shade plan for an artificial lawn</title>
+<desc id="d">Plan of a home lawn with the sun moving from east to west. A pergola shades the seating on the west side, a tree shades the play corner, a tap sits by the lawn, and the open centre is used in mornings and evenings.</desc>
+<defs>
+<pattern id="g" width="12" height="12" patternUnits="userSpaceOnUse"><rect width="12" height="12" fill="#7cb342"/><path d="M3 10l1.5-5M8 11l1-6" stroke="#5d8f2e" stroke-width="1.5"/></pattern>
+<marker id="a" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="8" markerHeight="8" orient="auto"><path d="M0 0L10 5L0 10z" fill="#e0a21a"/></marker>
+</defs>
+<rect width="640" height="560" fill="#fbf8f2"/>
+<text x="320" y="38" text-anchor="middle" font-size="26" font-weight="700" fill="#2f394a">Shade where people sit and play</text>
+<path d="M560 140 Q320 40 80 140" fill="none" stroke="#e0a21a" stroke-width="4" stroke-dasharray="10 8" marker-end="url(#a)"/>
+<circle cx="560" cy="140" r="16" fill="#f6c343"/><text x="560" y="182" text-anchor="middle" font-size="20" fill="#2f394a">East</text>
+<circle cx="80" cy="140" r="16" fill="#f6c343"/><text x="80" y="182" text-anchor="middle" font-size="20" fill="#2f394a">West</text>
+<text x="320" y="128" text-anchor="middle" font-size="20" fill="#8a6d1a">Sun path, morning to evening</text>
+<rect x="60" y="200" width="520" height="280" rx="6" fill="url(#g)" stroke="#2f394a" stroke-width="3"/>
+<rect x="72" y="212" width="170" height="256" fill="#2f394a" fill-opacity="0.28" stroke="#2f394a" stroke-width="2" stroke-dasharray="8 6"/>
+<g stroke="#5a4632" stroke-width="5"><line x1="80" y1="230" x2="234" y2="230"/><line x1="80" y1="290" x2="234" y2="290"/><line x1="80" y1="350" x2="234" y2="350"/><line x1="80" y1="410" x2="234" y2="410"/></g>
+<rect x="104" y="300" width="106" height="40" rx="6" fill="#fbf8f2" stroke="#2f394a" stroke-width="2"/>
+<text x="157" y="327" text-anchor="middle" font-size="20" font-weight="700" fill="#2f394a">Seating</text>
+<text x="157" y="452" text-anchor="middle" font-size="20" font-weight="700" fill="#fff">Pergola</text>
+<circle cx="500" cy="270" r="66" fill="#2e6b30" fill-opacity="0.55" stroke="#1f4d21" stroke-width="2"/>
+<text x="500" y="266" text-anchor="middle" font-size="20" font-weight="700" fill="#fff">Tree shade</text>
+<text x="500" y="292" text-anchor="middle" font-size="20" fill="#fff">play corner</text>
+<rect x="290" y="330" width="170" height="64" rx="8" fill="#fbf8f2" fill-opacity="0.92" stroke="#2f394a" stroke-width="2"/>
+<text x="375" y="358" text-anchor="middle" font-size="20" font-weight="700" fill="#2f394a">Open lawn</text>
+<text x="375" y="382" text-anchor="middle" font-size="18" fill="#2f394a">mornings, evenings</text>
+<circle cx="560" cy="460" r="14" fill="#2a7fc1" stroke="#fff" stroke-width="3"/>
+<text x="600" y="530" text-anchor="end" font-size="20" fill="#2f394a">Tap for rinsing</text>
+<line x1="560" y1="476" x2="560" y2="508" stroke="#2a7fc1" stroke-width="2"/>
+<text x="60" y="530" font-size="20" fill="#2f394a">Shade the west side first</text>
+</svg>

@@ -32,8 +32,12 @@
 
         <div class="blog-detail-meta">
           <div class="blog-detail-meta-row">
-            <span class="blog-detail-author">{{ blog.author }}</span>
+            <span class="blog-detail-author">{{ blog.authorProfile ? blog.authorProfile.name : blog.author }}</span>
+            <span v-if="blog.authorProfile && blog.authorProfile.role">{{ blog.authorProfile.role }}</span>
             <span>{{ blog.location }}</span>
+          </div>
+          <div v-if="blog.reviewedBy" class="blog-detail-meta-row">
+            <span>Reviewed by {{ blog.reviewedBy.name }}<template v-if="blog.reviewedBy.role">, {{ blog.reviewedBy.role }}</template></span>
           </div>
           <div class="blog-detail-meta-row">
             <span>{{ formatBlogDate(blog.publishedDate) }}</span>

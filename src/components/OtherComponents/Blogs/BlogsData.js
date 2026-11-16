@@ -18,6 +18,986 @@
 
 const BlogsData = [
   {
+    id: 57,
+    slug: "pet-acoustic-panels-india",
+    title: "PET Acoustic Panels in India: What to Check Before You Buy",
+    seoTitle: "PET Acoustic Panels in India: What to Check | GAIA",
+    metaDescription:
+      "Buying PET acoustic panels in India? Check tested NRC and mounting, thickness and sheet weight, GreenPro certificate numbers, where they are made and finishes.",
+    excerpt:
+      "The checks that separate a well-documented PET acoustic panel from a sales sheet, with GAIA's thicknesses, NRC values and GreenPro certificate numbers.",
+    category: "Acoustic Panels",
+    cluster: "acoustic-panels",
+    tags: ["Acoustic Panels", "PET Panels", "GreenPro"],
+    author: "GAIA by Sanson Floorings",
+    location: "New Delhi",
+    publishedDate: "2026-11-16",
+    readTime: "6 min read",
+    coverImage:
+      "/Images/Blogs/pet-acoustic-panels-india/hero-geometric-pet-acoustic-wall-workspace.webp",
+    coverImageAlt:
+      "Workspace with a geometric acoustic wall of navy, orange, beige and grey panels above a desk, beside open shelves and plants",
+    ogImage:
+      "/Images/Blogs/pet-acoustic-panels-india/og-pet-acoustic-panels-india.jpg",
+    relatedProduct: {
+      name: "Acoustic PET Panels",
+      path: "/acoustic-pet-panels",
+    },
+    faqs: [
+      {
+        question: "Are PET acoustic panels better than foam?",
+        answer:
+          "For most interiors, yes. PET panels are denser, hold their shape, can be printed or carved, and GAIA's are GreenPro certified. Foam suits small studios on a tight budget. The full comparison is in our article on PET panels and acoustic foam.",
+      },
+      {
+        question: "What size are PET acoustic panels?",
+        answer:
+          "GAIA PET acoustic panels come as 1220 × 2440 mm sheets in 9, 12, 18 and 24 mm thicknesses. They can be cut on site into tiles, strips or shapes, and other sheet weights and lengths can be made to order.",
+      },
+      {
+        question: "Do PET acoustic panels soundproof a room?",
+        answer:
+          "No. They absorb sound inside a room, cutting echo and noise build-up, but they do not stop sound travelling through walls. Blocking sound between rooms needs mass and airtight construction.",
+      },
+      {
+        question: "How long do PET acoustic panels last?",
+        answer:
+          "Indoors and out of direct sun, many years. The board does not crumble like foam, and surface dust can be vacuumed off with a soft brush.",
+      },
+    ],
+  },
+  {
+    id: 56,
+    slug: "carpet-tile-specification",
+    title: "Carpet Tile Specifications Explained: Gauge, Pile Weight, Yarn and Backing",
+    seoTitle: "Carpet Tile Specification: Gauge, Pile Weight, Yarn | GAIA",
+    metaDescription:
+      "How to read a carpet tile specification: format, yarn, gauge, pile weight, tile height, backing and certificates, explained with GAIA's own collections.",
+    excerpt:
+      "What each line of a carpet tile specification means, how to compare tiles between makers, and which certificates and test reports to ask for.",
+    category: "Carpet Tiles",
+    cluster: "flooring-choices",
+    tags: ["Carpet Tiles", "Specification", "GreenPro"],
+    author: "GAIA by Sanson Floorings",
+    location: "New Delhi",
+    publishedDate: "2026-11-16",
+    readTime: "6 min read",
+    coverImage:
+      "/Images/Blogs/carpet-tile-specification/hero-miami-carpet-planks-open-office.webp",
+    coverImageAlt:
+      "Open office with timber ceiling slats, a central island and workstations on grey striped carpet planks",
+    ogImage:
+      "/Images/Blogs/carpet-tile-specification/og-carpet-tile-specification.jpg",
+    relatedProduct: {
+      name: "Carpet Tiles",
+      path: "/carpet-tiles",
+    },
+    faqs: [
+      {
+        question: "What is a good pile weight for office carpet tiles?",
+        answer:
+          "For busy open offices and corridors, a heavier pile on a fine gauge, such as GAIA's 18 oz, 1/12 gauge constructions, holds up best. Cabins and meeting rooms can use lighter constructions around 500 g/m².",
+      },
+      {
+        question: "Is a 1/12 gauge better than 1/10?",
+        answer:
+          "A 1/12 gauge places tuft rows closer together, so it usually gives a denser surface. Density depends on pile weight and height too, so compare all three lines together.",
+      },
+      {
+        question: "How many carpet tiles are in a box?",
+        answer:
+          "GAIA packs 20 tiles or planks to a box. A box of 50 × 50 cm tiles or 25 × 100 cm planks covers 5 m².",
+      },
+      {
+        question: "Where are GAIA carpet tiles made?",
+        answer:
+          "At GAIA's plant in Kodicherla village, Kothur mandal, Ranga Reddy district, near Hyderabad, Telangana.",
+      },
+    ],
+  },
+  {
+    id: 55,
+    slug: "artificial-grass-pile-height",
+    title: "Artificial Grass Pile Height: Which Height for Lawns, Balconies and Sport?",
+    seoTitle: "Artificial Grass Pile Height: 10 mm to 60 mm Explained | GAIA",
+    metaDescription:
+      "Which artificial grass pile height do you need? 10–15 mm for courts, 20–35 mm for balconies, 40–60 mm for soft lawns and 30 or 50 mm football turf.",
+    excerpt:
+      "How pile height changes the look, feel and upkeep of artificial grass, and which height suits balconies, gardens, play areas, courts and pitches.",
+    category: "Artificial Grass",
+    cluster: "outdoor-living",
+    tags: ["Artificial Grass", "Landscape Grass", "MultiTurf"],
+    author: "GAIA by Sanson Floorings",
+    location: "New Delhi",
+    publishedDate: "2026-11-16",
+    readTime: "5 min read",
+    coverImage:
+      "/Images/Blogs/artificial-grass-pile-height/hero-landscape-grass-garden-seating.webp",
+    coverImageAlt:
+      "Garden lawn of artificial grass with an outdoor sofa, cushions and a low table among plants",
+    ogImage:
+      "/Images/Blogs/artificial-grass-pile-height/og-artificial-grass-pile-height.jpg",
+    relatedProduct: {
+      name: "Landscape Grass",
+      path: "/artificial-grass/landscape-grass",
+    },
+    faqs: [
+      {
+        question: "What is the most popular artificial grass height for homes?",
+        answer:
+          "For balconies and terraces, a short pile of 20 to 35 mm. For garden lawns, 35 to 45 mm is a common balance between a soft look and good wear.",
+      },
+      {
+        question: "Is 40 mm artificial grass too long?",
+        answer:
+          "Not for a garden lawn with moderate use. It will need regular brushing in walkways, and a shorter pile suits balconies, play areas with wheels and spaces with furniture.",
+      },
+      {
+        question: "Which pile height is best for pets?",
+        answer:
+          "A short to mid pile, around 20 to 35 mm, is easier to rinse and keep clean. Good drainage underneath matters more than height.",
+      },
+      {
+        question: "What pile height is used for football turf?",
+        answer:
+          "GAIA football turf comes in 30 mm and 50 mm. The 30 mm plays firmer and faster; the 50 mm gives a fuller, more cushioned surface once it is filled.",
+      },
+    ],
+  },
+  {
+    id: 54,
+    slug: "nylon-vs-polypropylene-carpet-tiles",
+    title: "Nylon vs Polypropylene Carpet Tiles: Which Should You Choose?",
+    seoTitle: "Nylon vs Polypropylene Carpet Tiles: Which to Choose? | GAIA",
+    metaDescription:
+      "Nylon vs polypropylene carpet tiles: which lasts longer, which cleans easier, which suits Indian conditions, and how to use both on one project.",
+    excerpt:
+      "Nylon springs back under heavy traffic; polypropylene resists water and stains for less. How to choose, zone by zone, with GAIA's collections in both yarns.",
+    category: "Carpet Tiles",
+    cluster: "flooring-choices",
+    tags: ["Carpet Tiles", "Nylon", "Polypropylene"],
+    author: "GAIA by Sanson Floorings",
+    location: "New Delhi",
+    publishedDate: "2026-11-16",
+    readTime: "5 min read",
+    coverImage:
+      "/Images/Blogs/nylon-vs-polypropylene-carpet-tiles/hero-sbt-carpet-tiles-cafe.webp",
+    coverImageAlt:
+      "Café with blush chairs around round tables, framed prints and a long banquette, on grey GAIA SBT carpet tiles",
+    ogImage:
+      "/Images/Blogs/nylon-vs-polypropylene-carpet-tiles/og-nylon-vs-polypropylene-carpet-tiles.jpg",
+    relatedProduct: {
+      name: "Carpet Tiles",
+      path: "/carpet-tiles",
+    },
+    faqs: [
+      {
+        question: "Is polypropylene carpet cheaper than nylon?",
+        answer:
+          "Generally, yes. Polypropylene costs less to make, which is why it is widely used for offices, schools and hospitality spaces with moderate traffic.",
+      },
+      {
+        question: "Is nylon carpet worth the extra cost?",
+        answer:
+          "On the busiest floors, usually. Nylon recovers from crushing, so traffic lanes stay less visible and the floor looks newer for longer before tiles need replacing.",
+      },
+      {
+        question: "Is olefin the same as polypropylene?",
+        answer:
+          "Yes. Olefin is the name used in the carpet trade for polypropylene fibre.",
+      },
+      {
+        question: "Does polypropylene carpet fade in sunlight?",
+        answer:
+          "Its colour is usually added when the fibre is made, which helps it resist fading from cleaning. For floors in strong, direct sun, ask for colourfastness to light test results.",
+      },
+    ],
+  },
+  {
+    id: 53,
+    slug: "pet-acoustic-panel-thickness",
+    title: "9 mm, 12 mm, 18 mm or 24 mm: Which PET Acoustic Panel Thickness?",
+    seoTitle: "PET Acoustic Panel Thickness: 9, 12, 18 or 24 mm? | GAIA",
+    metaDescription:
+      "Which PET acoustic panel thickness do you need? When 9 or 12 mm is enough, when 18 or 24 mm pays off, and why mounting on an air gap matters more.",
+    excerpt:
+      "How panel thickness and mounting change absorption, which rooms suit 9, 12, 18 and 24 mm boards, and how to compare panels between suppliers.",
+    category: "Acoustic Panels",
+    cluster: "acoustic-panels",
+    tags: ["Acoustic Panels", "PET Panels", "NRC"],
+    author: "GAIA by Sanson Floorings",
+    location: "New Delhi",
+    publishedDate: "2026-11-16",
+    readTime: "6 min read",
+    coverImage:
+      "/Images/Blogs/pet-acoustic-panel-thickness/hero-red-perforated-acoustic-screens-office.webp",
+    coverImageAlt:
+      "Open office with red perforated acoustic screens, suspended ceiling panels and orange and blue seating",
+    ogImage:
+      "/Images/Blogs/pet-acoustic-panel-thickness/og-pet-acoustic-panel-thickness.jpg",
+    relatedProduct: {
+      name: "Acoustic PET Panels",
+      path: "/acoustic-pet-panels",
+    },
+    faqs: [
+      {
+        question: "Is 9 mm acoustic panel good enough?",
+        answer:
+          "For offices, classrooms and feature walls, often yes, especially on an air gap. For home theatres, music rooms or loud halls, 18 or 24 mm boards control low sound better.",
+      },
+      {
+        question: "Is 12 mm or 24 mm better for a home theatre?",
+        answer:
+          "24 mm, mounted with an air gap. Film soundtracks carry a lot of low-frequency energy, and the thicker board absorbs more of it than a 12 mm panel can.",
+      },
+      {
+        question: "Can thin panels be layered to make a thicker one?",
+        answer:
+          "It is rarely worth it. Mounting a single board on an air gap adds far more absorption than stacking two thin boards, and it costs less.",
+      },
+      {
+        question: "What size sheets do PET panels come in?",
+        answer:
+          "GAIA PET panels come as 1220 × 2440 mm sheets in all four thicknesses, and can be cut into tiles, strips and shapes on site.",
+      },
+    ],
+  },
+  {
+    id: 47,
+    slug: "best-flooring-for-schools",
+    title: "Best Flooring for Schools: Classrooms, Corridors, Libraries and Play Areas",
+    seoTitle: "Best Flooring for Schools: Room by Room Guide | GAIA",
+    metaDescription:
+      "The best flooring for schools: hard floors for corridors, canteens and labs, carpet tiles for libraries and early years, and turf for play and sport.",
+    excerpt:
+      "School floors take more wear than almost any other. Which flooring suits classrooms, corridors, libraries and play areas, and why carpet tiles help.",
+    category: "Carpet Tiles",
+    cluster: "flooring-choices",
+    tags: ["Schools", "Education", "Carpet Tiles", "MultiTurf"],
+    author: "GAIA by Sanson Floorings",
+    location: "New Delhi",
+    publishedDate: "2026-11-16",
+    readTime: "5 min read",
+    coverImage:
+      "/Images/Blogs/best-flooring-for-schools/hero-primary-classroom-desks-chairs.webp",
+    coverImageAlt:
+      "Bright primary classroom with timber desks, yellow chairs, a green board and children's work on the walls",
+    ogImage:
+      "/Images/Blogs/best-flooring-for-schools/og-best-flooring-for-schools.jpg",
+    relatedProduct: {
+      name: "Carpet Tiles",
+      path: "/carpet-tiles",
+    },
+    faqs: [
+      {
+        question: "Are carpet tiles safe for schools?",
+        answer:
+          "In libraries, classrooms and staff rooms, yes. Keep them out of wet areas such as toilets, labs and canteens, and maintain them with regular vacuuming and prompt spot cleaning.",
+      },
+      {
+        question: "Which flooring lasts longest in school corridors?",
+        answer:
+          "A hard, slip-resistant floor designed for heavy commercial traffic, supported by good entrance matting to stop grit being carried in.",
+      },
+      {
+        question: "How long do carpet tiles last in a school?",
+        answer:
+          "With regular vacuuming and prompt spot cleaning, many years in libraries and classrooms. Worn or stained tiles near doors can be swapped individually, so the floor never needs replacing all at once.",
+      },
+      {
+        question: "Can schools lay new flooring during term time?",
+        answer:
+          "Carpet tiles can go down room by room over a weekend, but most schools plan larger areas for holidays so rooms are clear and adhesives have time to cure.",
+      },
+    ],
+  },
+  {
+    id: 51,
+    slug: "artificial-turf-for-gym",
+    title: "Artificial Turf for Gyms: Sled Tracks, Functional Zones and Pile Height",
+    seoTitle: "Artificial Turf for Gyms: Sled Tracks and Layout | GAIA",
+    metaDescription:
+      "Artificial turf for gyms: which pile height suits sled tracks and agility work, where turf belongs, why weights stay on rubber, and how to clean it.",
+    excerpt:
+      "Turf tracks suit sleds, sprints and floor work. Which pile height to choose, where turf belongs in a gym, and where it does not.",
+    category: "Artificial Grass",
+    cluster: "play-and-sport",
+    tags: ["Gym Flooring", "MultiTurf", "Sled Track", "Fitness"],
+    author: "GAIA by Sanson Floorings",
+    location: "New Delhi",
+    publishedDate: "2026-11-16",
+    readTime: "5 min read",
+    coverImage:
+      "/Images/Blogs/artificial-turf-for-gym/hero-turf-with-blue-lines.webp",
+    coverImageAlt:
+      "Green turf with blue and yellow lines marking a playing area",
+    ogImage:
+      "/Images/Blogs/artificial-turf-for-gym/og-artificial-turf-for-gym.jpg",
+    relatedProduct: {
+      name: "MultiTurf",
+      path: "/artificial-grass/multiturf",
+    },
+    faqs: [
+      {
+        question: "How long should a sled track be?",
+        answer:
+          "As long as the room allows. Even a short track supports pushes and pulls, but a longer straight run gives more useful sprint and sled work.",
+      },
+      {
+        question: "Can artificial turf be laid over rubber gym flooring?",
+        answer:
+          "Usually it is laid on the screed beside the rubber, finished flush. Laying turf on top of loose rubber tiles makes the surface uneven and unstable.",
+      },
+      {
+        question: "Is 10 mm or 15 mm turf better for a gym?",
+        answer:
+          "The 10 mm pile gives the fastest sled glide and the firmest footing; the 15 mm pile is a little softer for crawling, stretching and floor work.",
+      },
+      {
+        question: "Does gym turf need infill?",
+        answer:
+          "Short gym turf is usually laid without loose infill, so it stays clean and sleds glide freely. Follow the installation method specified for the turf you choose.",
+      },
+    ],
+  },
+  {
+    id: 50,
+    slug: "multi-sport-court-flooring",
+    title: "Multi-Sport Court Flooring: One Surface for Tennis, Badminton and Play",
+    seoTitle: "Multi-Sport Court Flooring: Choosing the Surface | GAIA",
+    metaDescription:
+      "Multi-sport court flooring: when short turf such as MultiTurf suits tennis, badminton and play, when a hard court is better, and how to plan lines.",
+    excerpt:
+      "One court for many games: how to choose between short turf and a hard court, which MultiTurf height to pick, and how to plan the lines.",
+    category: "Artificial Grass",
+    cluster: "play-and-sport",
+    tags: ["MultiTurf", "Sports Courts", "Tennis", "Badminton"],
+    author: "GAIA by Sanson Floorings",
+    location: "New Delhi",
+    publishedDate: "2026-11-16",
+    readTime: "5 min read",
+    coverImage:
+      "/Images/Blogs/multi-sport-court-flooring/hero-multiturf-court-aerial.webp",
+    coverImageAlt:
+      "Aerial view of a blue tennis court with white lines, set in green surrounding turf",
+    ogImage:
+      "/Images/Blogs/multi-sport-court-flooring/og-multi-sport-court-flooring.jpg",
+    relatedProduct: {
+      name: "MultiTurf",
+      path: "/artificial-grass/multiturf",
+    },
+    faqs: [
+      {
+        question: "Can badminton be played on artificial turf?",
+        answer:
+          "Yes. A short, dense turf gives good footing for badminton. Outdoors, wind affects the shuttle more than the surface does, so sheltered courts play best.",
+      },
+      {
+        question: "Is artificial turf good for a tennis court?",
+        answer:
+          "Yes, a short turf gives a comfortable, consistent surface for recreational tennis, with a slightly slower bounce than a hard court.",
+      },
+      {
+        question: "Can skating be done on MultiTurf?",
+        answer:
+          "Yes. GAIA MultiTurf is made for skating areas as well as tennis and badminton courts, because its short, dense pile gives wheels a smooth, even roll.",
+      },
+      {
+        question: "How long does a turf court take to install?",
+        answer:
+          "On a sound, level slab, a typical society court can be laid and lined in a few days. Repairs to the base, drainage or waterproofing add time before laying starts.",
+      },
+    ],
+  },
+  {
+    id: 49,
+    slug: "football-turf-5-a-side",
+    title: "Football Turf for a 5-a-Side Pitch: Pile Height, Base and Pitch Size",
+    seoTitle: "Football Turf for 5-a-Side: 30 mm or 50 mm? | GAIA",
+    metaDescription:
+      "Choosing football turf for a 5-a-side pitch: 30 mm or 50 mm pile, the base and infill it needs, pitch sizes, rooftop checks and how to maintain it.",
+    excerpt:
+      "How to choose turf for a 5-a-side pitch: pile height, base, infill, pitch size and the checks a rooftop pitch needs before anything is ordered.",
+    category: "Artificial Grass",
+    cluster: "play-and-sport",
+    tags: ["Football Turf", "Sports Grass", "5-a-Side", "Rooftop"],
+    author: "GAIA by Sanson Floorings",
+    location: "New Delhi",
+    publishedDate: "2026-11-16",
+    readTime: "5 min read",
+    coverImage:
+      "/Images/Blogs/football-turf-5-a-side/hero-covered-football-turf-pitch.webp",
+    coverImageAlt:
+      "Football turf pitch under a steel roof with white corner lines and trees beyond",
+    ogImage:
+      "/Images/Blogs/football-turf-5-a-side/og-football-turf-5-a-side.jpg",
+    relatedProduct: {
+      name: "Sports Grass",
+      path: "/artificial-grass/sports-grass",
+    },
+    faqs: [
+      {
+        question: "Can football turf be laid on a rooftop?",
+        answer:
+          "Yes, once a structural engineer has confirmed the slab's capacity and the waterproofing is protected. A 30 mm turf keeps the infill load lower.",
+      },
+      {
+        question: "Is 50 mm turf too long for 5-a-side?",
+        answer:
+          "No. Filled correctly, it gives a cushioned, consistent surface for heavy play; a 30 mm turf simply gives a faster, firmer game.",
+      },
+      {
+        question: "Can you play cricket on football turf?",
+        answer:
+          "Casual box cricket, yes. For regular net practice, a dedicated pitch strip gives a truer bounce than football turf.",
+      },
+      {
+        question: "How much infill does football turf need?",
+        answer:
+          "It depends on the pile height. A 50 mm turf holds more sand and performance infill than a 30 mm turf, which is one reason the shorter turf suits rooftops.",
+      },
+    ],
+  },
+  {
+    id: 48,
+    slug: "play-area-flooring",
+    title: "Play Area Flooring: Safe Surfaces for Homes, Schools and Housing Societies",
+    seoTitle: "Play Area Flooring: Safe Indoor and Outdoor Options | GAIA",
+    metaDescription:
+      "Play area flooring explained: impact surfacing under equipment, artificial grass for open play, firm turf for wheels and ball games, and carpet tiles indoors.",
+    excerpt:
+      "Play floors must cushion falls, take wheels and clean easily. Which surface goes where, indoors and out, and what to put under climbing frames.",
+    category: "Artificial Grass",
+    cluster: "play-and-sport",
+    tags: ["Play Areas", "Artificial Grass", "MultiTurf", "Children"],
+    author: "GAIA by Sanson Floorings",
+    location: "New Delhi",
+    publishedDate: "2026-11-16",
+    readTime: "5 min read",
+    coverImage:
+      "/Images/Blogs/play-area-flooring/hero-coloured-turf-lanes.webp",
+    coverImageAlt:
+      "Lanes of yellow, red and blue turf separated by white lines",
+    ogImage:
+      "/Images/Blogs/play-area-flooring/og-play-area-flooring.jpg",
+    relatedProduct: {
+      name: "MultiTurf",
+      path: "/artificial-grass/multiturf",
+    },
+    faqs: [
+      {
+        question: "Is artificial grass safe for children?",
+        answer:
+          "For running, sitting and playing on the ground, yes, with shade in strong sun and regular cleaning. Under climbing equipment it must sit on a tested shock pad.",
+      },
+      {
+        question: "Which floor suits a toddler play area best?",
+        answer:
+          "A soft, clean, easy-to-wipe floor: carpet tiles indoors, or a soft landscape grass outdoors, with cushioned surfacing under any low climbing pieces.",
+      },
+      {
+        question: "How far should safety surfacing extend around play equipment?",
+        answer:
+          "At least 1.8 m in every direction around a freestanding climber, following the CPSC handbook, and further in front of slides and swings. Measure it on the plan before choosing surfaces.",
+      },
+      {
+        question: "Can coloured artificial grass be used in a play area?",
+        answer:
+          "Yes. Coloured turf can mark games, routes and quiet corners, and it plays like green turf of the same pile. Under climbing equipment it still needs a tested shock pad.",
+      },
+    ],
+  },
+  {
+    id: 44,
+    slug: "how-to-reduce-echo-in-a-hall",
+    title: "How to Reduce Echo in a Hall: Banquet, Community and Multipurpose Halls",
+    seoTitle: "How to Reduce Echo in a Hall: Ceiling and Walls | GAIA",
+    metaDescription:
+      "How to reduce echo in a hall: treat the ceiling with baffles or clouds, panel the rear and side walls, and size absorption for the hall's volume and use.",
+    excerpt:
+      "Banquet, community and sports halls echo because they are big and hard. Where treatment goes, baffles or clouds, and how carpet helps.",
+    category: "Acoustic Panels",
+    cluster: "room-acoustics",
+    tags: ["Acoustic Panels", "Halls", "Echo", "Ceiling Baffles"],
+    author: "GAIA by Sanson Floorings",
+    location: "New Delhi",
+    publishedDate: "2026-11-16",
+    readTime: "6 min read",
+    coverImage:
+      "/Images/Blogs/how-to-reduce-echo-in-a-hall/hero-grand-hall-banquet-tables.webp",
+    coverImageAlt:
+      "Grand hall with an arched glazed roof, tall arched windows and long tables laid for a banquet",
+    ogImage:
+      "/Images/Blogs/how-to-reduce-echo-in-a-hall/og-how-to-reduce-echo-in-a-hall.jpg",
+    relatedProduct: {
+      name: "Acoustic Ceiling Baffles and Clouds",
+      path: "/acoustic-pet-panels",
+    },
+    faqs: [
+      {
+        question: "Can echo in a hall be reduced without changing the ceiling?",
+        answer:
+          "Yes. Suspended baffles and clouds hang below an existing ceiling or roof on wires, so the ceiling itself stays as it is.",
+      },
+      {
+        question: "Do acoustic panels in a hall stop sound reaching neighbours?",
+        answer:
+          "No. Panels reduce echo inside the hall; keeping sound in depends on heavy, airtight walls, roofs, doors and windows.",
+      },
+      {
+        question: "Can a hall be treated in phases?",
+        answer:
+          "It can. Start with the ceiling over the main floor and the rear wall, then add side-wall panels if speech is still blurred.",
+      },
+      {
+        question: "What is the cheapest way to reduce echo in a hall?",
+        answer:
+          "Treat the ceiling first with suspended baffles or clouds, then the rear wall. Fixing panels on an air gap gets more absorption from each square metre, so fewer panels are needed.",
+      },
+    ],
+  },
+  {
+    id: 46,
+    slug: "best-flooring-for-restaurants",
+    title: "Best Flooring for Restaurants: Kitchens, Bars, Dining Rooms and Terraces",
+    seoTitle: "Best Flooring for Restaurants: Zone by Zone | GAIA",
+    metaDescription:
+      "The best flooring for restaurants by zone: slip-resistant kitchens, hard-wearing bars, carpet tiles or broadloom in dining rooms, and artificial grass terraces.",
+    excerpt:
+      "Kitchens, bars, dining rooms and terraces need different floors. How to choose each, where carpet works, and how to join them safely.",
+    category: "Carpet Tiles",
+    cluster: "hospitality-spaces",
+    tags: ["Restaurants", "Carpet Tiles", "Broadloom"],
+    author: "GAIA by Sanson Floorings",
+    location: "New Delhi",
+    publishedDate: "2026-11-16",
+    readTime: "6 min read",
+    coverImage:
+      "/Images/Blogs/best-flooring-for-restaurants/hero-trends-carpet-tiles-dining.webp",
+    coverImageAlt:
+      "Dining space with a live-edge timber table and dark chairs on striped grey GAIA Trends carpet tiles, beside a garden window",
+    ogImage:
+      "/Images/Blogs/best-flooring-for-restaurants/og-best-flooring-for-restaurants.jpg",
+    relatedProduct: {
+      name: "Carpet Tiles",
+      path: "/carpet-tiles",
+    },
+    faqs: [
+      {
+        question: "Is carpet hygienic for a restaurant?",
+        answer:
+          "In dining areas, yes, when it is vacuumed daily, spills are treated at once and it is deep-cleaned on a schedule. Keep carpet out of kitchens, wash areas and food preparation zones.",
+      },
+      {
+        question: "What restaurant flooring is easiest to maintain?",
+        answer:
+          "Hard floors are quickest to mop in wet and busy zones, while carpet tiles are easiest to repair in dining rooms, because single damaged tiles can be replaced.",
+      },
+      {
+        question: "Which carpet colours hide stains best in a restaurant?",
+        answer:
+          "Mid to dark tones with a pattern or tonal variation. Flat pale colours show every mark, while a patterned grey, brown or blue hides daily spills between cleans.",
+      },
+      {
+        question: "Can a restaurant mix carpet and hard flooring?",
+        answer:
+          "Yes, and most do. Carpet goes in the seating zones and hard floors on the kitchen side and the routes trays travel, joined with flush transition strips.",
+      },
+    ],
+  },
+  {
+    id: 41,
+    slug: "how-to-install-acoustic-panels",
+    title: "How to Install Acoustic Panels: Direct Fix or Air Gap, Step by Step",
+    seoTitle: "How to Install Acoustic Panels: Step by Step | GAIA",
+    metaDescription:
+      "How to install acoustic panels: direct fixing versus battens and clips with an air gap, set-out, cutting, sockets and lights, ceilings and common mistakes.",
+    excerpt:
+      "Plan the elevation, choose the mounting, set out a level line, then cut and fix. How to install acoustic wall and ceiling panels properly.",
+    category: "Acoustic Panels",
+    cluster: "acoustic-panels",
+    tags: ["Acoustic Panels", "Installation", "Acoustics"],
+    author: "GAIA by Sanson Floorings",
+    location: "New Delhi",
+    publishedDate: "2026-11-16",
+    readTime: "6 min read",
+    coverImage:
+      "/Images/Blogs/how-to-install-acoustic-panels/hero-salon-slatted-wall-panelling.webp",
+    coverImageAlt:
+      "Salon with evenly spaced slatted wall panelling, round mirrors, styling chairs and square ceiling lights",
+    ogImage:
+      "/Images/Blogs/how-to-install-acoustic-panels/og-how-to-install-acoustic-panels.jpg",
+    relatedProduct: {
+      name: "Acoustic PET Panels",
+      path: "/acoustic-pet-panels",
+    },
+    faqs: [
+      {
+        question: "Can you install acoustic panels without drilling?",
+        answer:
+          "On a sound, smooth wall, panels can be fixed with a suitable adhesive, which suits direct fixing. Air-gap mounting needs battens or clips, which are normally screwed to the wall.",
+      },
+      {
+        question: "Can acoustic panels be installed in a rented home?",
+        answer:
+          "Yes, with fixings that can be removed and the holes filled afterwards, such as clips or light battens. Agree the method with the owner first.",
+      },
+      {
+        question: "How long does it take to install acoustic panels?",
+        answer:
+          "A single feature wall glued flat can be done in a day. Battens or clips for an air gap, cut-outs for fittings and ceiling suspension add time, so plan a larger room over two or three days.",
+      },
+      {
+        question: "Can PET acoustic panels be cut on site?",
+        answer:
+          "Yes. GAIA PET panels come as 1220 × 2440 mm sheets, made at GAIA's plant in Kothur, near Hyderabad, and they can be cut on site into tiles, strips and openings for fittings.",
+      },
+    ],
+  },
+  {
+    id: 40,
+    slug: "acoustic-panels-for-walls",
+    title: "Acoustic Panels for Walls: Types, Thickness and Where to Put Them",
+    seoTitle: "Acoustic Panels for Walls: Types and Placement | GAIA",
+    metaDescription:
+      "Acoustic panels for walls: how they work, the main types, thickness, NRC and mounting, where to place them, and how to choose the right panel for a room.",
+    excerpt:
+      "Everything about acoustic wall panels in one place: types, materials, thickness, absorption ratings, placement, installation and the rooms that need them.",
+    category: "Acoustic Panels",
+    cluster: "acoustic-panels",
+    tags: ["Acoustic Panels", "Acoustics", "Interior Design"],
+    author: "GAIA by Sanson Floorings",
+    location: "New Delhi",
+    publishedDate: "2026-11-16",
+    readTime: "7 min read",
+    coverImage:
+      "/Images/Blogs/acoustic-panels-for-walls/hero-purple-3d-acoustic-wall-lounge.webp",
+    coverImageAlt:
+      "Office lounge with a purple faceted acoustic wall behind grey sofas, where two people sit talking",
+    ogImage:
+      "/Images/Blogs/acoustic-panels-for-walls/og-acoustic-panels-for-walls.jpg",
+    relatedProduct: {
+      name: "Acoustic PET Panels",
+      path: "/acoustic-pet-panels",
+    },
+    faqs: [
+      {
+        question: "Do acoustic panels have to cover the whole wall?",
+        answer:
+          "No. Most rooms need treatment on part of several walls rather than all of one. Spreading panels in groups is more effective than covering a single wall completely.",
+      },
+      {
+        question: "How do you clean PET acoustic panels?",
+        answer:
+          "Dust them with a soft brush or a vacuum fitted with a brush attachment. Keep water and cleaning sprays off the face unless the supplier confirms they are safe.",
+      },
+      {
+        question: "Can acoustic panels go in kitchens, bathrooms or outdoors?",
+        answer:
+          "Keep standard acoustic panels to dry, indoor rooms. Steam, splashes, grease and rain all affect porous materials, so wet areas and covered outdoor spaces need products and fixings specified for those conditions. Ask our team before planning panels anywhere damp.",
+      },
+      {
+        question: "What thickness of acoustic panel is best for walls?",
+        answer:
+          "For offices, classrooms and feature walls, 9 or 12 mm usually does the job, ideally on an air gap. For home theatres, studios and loud halls, 18 or 24 mm boards control low sound better.",
+      },
+    ],
+  },
+  {
+    id: 42,
+    slug: "acoustic-panels-for-home",
+    title: "Acoustic Panels for Home: Living Rooms, Home Offices and Bedrooms",
+    seoTitle: "Acoustic Panels for Home: Room-by-Room Ideas | GAIA",
+    metaDescription:
+      "Acoustic panels for home: where to put them in living rooms, home offices, bedrooms and playrooms, design ideas, and what they can and cannot fix.",
+    excerpt:
+      "Hard floors and big windows make homes echo. Where acoustic panels help most, room by room, with ideas that look like part of the design.",
+    category: "Acoustic Panels",
+    cluster: "home-interiors",
+    tags: ["Acoustic Panels", "Home", "Interior Design"],
+    author: "GAIA by Sanson Floorings",
+    location: "New Delhi",
+    publishedDate: "2026-11-16",
+    readTime: "5 min read",
+    coverImage:
+      "/Images/Blogs/acoustic-panels-for-home/hero-living-room-slatted-panel-wall.webp",
+    coverImageAlt:
+      "Living room with a dark slatted panel wall behind a green sofa with cushions, a timber coffee table and a plant",
+    ogImage:
+      "/Images/Blogs/acoustic-panels-for-home/og-acoustic-panels-for-home.jpg",
+    relatedProduct: {
+      name: "Acoustic PET Panels",
+      path: "/acoustic-pet-panels",
+    },
+    faqs: [
+      {
+        question: "Are acoustic panels safe in a child's room?",
+        answer:
+          "PET panels are a common choice in homes and schools. Fix them securely, keep them away from heaters and lamps, and choose a fixing that small hands cannot pull loose.",
+      },
+      {
+        question: "Will acoustic panels stop noise from my neighbours?",
+        answer:
+          "Not on their own. Noise coming through a shared wall or floor needs construction work: heavier linings, sealed gaps and, for floors, a soft finish above.",
+      },
+      {
+        question: "How many acoustic panels does a living room need?",
+        answer:
+          "It depends on the room's size, ceiling height and finishes. Rules of thumb such as covering a quarter of the walls are only a starting point; our panel quantity method gives a proper estimate in a few steps.",
+      },
+      {
+        question: "Do acoustic panels need cleaning?",
+        answer:
+          "Very little. Vacuum them every few weeks with a soft brush attachment, especially in dusty months, and spot-clean marks with a damp cloth.",
+      },
+    ],
+  },
+  {
+    id: 39,
+    slug: "how-many-acoustic-panels-do-i-need",
+    title: "How Many Acoustic Panels Does a Room Need? A Simple Calculation",
+    seoTitle: "How Many Acoustic Panels Do I Need? Calculator | GAIA",
+    metaDescription:
+      "How many acoustic panels does a room need? A simple Sabine calculation with a worked 6 x 5 m example, why mounting changes the number, and where to place them.",
+    excerpt:
+      "The calculation behind 'how many panels': room volume, target reverberation time and panel absorption, with a worked meeting-room example.",
+    category: "Acoustic Panels",
+    cluster: "room-acoustics",
+    tags: ["Acoustics", "Acoustic Panels", "Planning"],
+    author: "GAIA by Sanson Floorings",
+    location: "New Delhi",
+    publishedDate: "2026-11-16",
+    readTime: "6 min read",
+    coverImage:
+      "/Images/Blogs/how-many-acoustic-panels-do-i-need/hero-colourful-wall-panels-corner.webp",
+    coverImageAlt:
+      "A corner wall covered in square three-dimensional panels in shades of orange, red, pink and purple",
+    ogImage:
+      "/Images/Blogs/how-many-acoustic-panels-do-i-need/og-how-many-acoustic-panels-do-i-need.jpg",
+    relatedProduct: {
+      name: "Acoustic PET Panels",
+      path: "/acoustic-pet-panels",
+    },
+    faqs: [
+      {
+        question: "Can you have too many acoustic panels?",
+        answer:
+          "Yes. A room with too much absorption sounds dull and lifeless, and speech loses its natural warmth. Aim for the target reverberation time, not for the most absorption possible.",
+      },
+      {
+        question: "Do thicker panels mean you need fewer?",
+        answer:
+          "Often, since a thicker board or more depth behind it lifts absorption, especially at lower frequencies. Compare tested absorption for the thickness and mounting you will actually use.",
+      },
+      {
+        question: "How many acoustic panels does a home theatre need?",
+        answer:
+          "Usually more than a living room of the same size, because film sound carries strong low frequencies. Expect to cover a large share of the side and rear walls with thick panels on an air gap.",
+      },
+      {
+        question: "What size is one GAIA PET acoustic sheet?",
+        answer:
+          "A GAIA PET acoustic sheet measures 1220 × 2440 mm, which is just under 3 m². Every thickness is made at GAIA's plant in Kothur, near Hyderabad, under its own GreenPro certificate. Sheets can be cut into smaller tiles or strips without changing the total area needed.",
+      },
+    ],
+  },
+  {
+    id: 38,
+    slug: "office-acoustics",
+    title: "Office Acoustics: How to Plan a Quieter, More Private Workplace",
+    seoTitle: "Office Acoustics: Planning a Quieter Workplace | GAIA",
+    metaDescription:
+      "Office acoustics explained: zone, absorb, block and cover. Ceilings, wall panels, carpet and privacy for open desks, meeting rooms, cabins and booths.",
+    excerpt:
+      "Everything that makes an office quieter and more private, from layout and acoustic ceilings to wall panels, carpet tiles and sealed meeting rooms.",
+    category: "Acoustic Panels",
+    cluster: "office-design",
+    tags: ["Acoustics", "Workplace", "Office Design"],
+    author: "GAIA by Sanson Floorings",
+    location: "New Delhi",
+    publishedDate: "2026-11-16",
+    readTime: "7 min read",
+    coverImage:
+      "/Images/Blogs/office-acoustics/hero-open-office-carpet-workstations.webp",
+    coverImageAlt:
+      "Open office with grey carpet, rows of workstations, a long shared table and linear lights under an exposed ceiling",
+    ogImage:
+      "/Images/Blogs/office-acoustics/og-office-acoustics.jpg",
+    relatedProduct: {
+      name: "Acoustic PET Panels",
+      path: "/acoustic-pet-panels",
+    },
+    faqs: [
+      {
+        question: "When should acoustics be planned in an office project?",
+        answer:
+          "At the layout stage, before ceilings, lighting and services are fixed. Retrofitting absorption is possible, but planning it early is cheaper and looks better.",
+      },
+      {
+        question: "Do acoustic panels make an office soundproof?",
+        answer:
+          "No. They reduce echo and the spread of noise inside a space. Stopping sound passing between rooms depends on walls, doors and the ceiling void.",
+      },
+      {
+        question: "Is sound masking worth adding?",
+        answer:
+          "In large open offices, often yes, once ceilings and floors are absorbent. It is not a substitute for absorption or for enclosed rooms where privacy is needed.",
+      },
+      {
+        question: "How much acoustic treatment does an office need?",
+        answer:
+          "Enough absorption for the room's volume and use: usually an absorbent ceiling and carpet, plus wall panels where voices are aimed.",
+      },
+    ],
+  },
+  {
+    id: 33,
+    slug: "does-artificial-grass-get-hot",
+    title: "Does Artificial Grass Get Hot? How to Keep a Lawn Cool in Summer",
+    seoTitle: "Does Artificial Grass Get Hot? Keeping It Cool | GAIA",
+    metaDescription:
+      "Artificial grass gets much hotter than a watered lawn in direct sun. Why it heats up, how hot it gets, and how shade, rinsing and timing keep it usable.",
+    excerpt:
+      "Artificial grass heats up fast in direct sun. Why it happens, how hot it gets, and the shade plan that keeps a lawn usable through an Indian summer.",
+    category: "Artificial Grass",
+    cluster: "outdoor-living",
+    tags: ["Artificial Grass", "Outdoor Living", "Home"],
+    author: "GAIA by Sanson Floorings",
+    location: "New Delhi",
+    publishedDate: "2026-11-16",
+    readTime: "6 min read",
+    coverImage:
+      "/Images/Blogs/does-artificial-grass-get-hot/hero-cafe-seating-on-artificial-grass.webp",
+    coverImageAlt:
+      "Café tables and chairs on artificial grass in sunshine beside a glazed building",
+    ogImage:
+      "/Images/Blogs/does-artificial-grass-get-hot/og-does-artificial-grass-get-hot.jpg",
+    relatedProduct: {
+      name: "Landscape Grass",
+      path: "/artificial-grass/landscape-grass",
+    },
+    faqs: [
+      {
+        question: "Does watering artificial grass cool it down?",
+        answer:
+          "Yes, quickly but briefly. A rinse lowers the surface temperature straight away, and the cooling fades over the following hours as the water evaporates.",
+      },
+      {
+        question: "Is artificial grass hotter than paving stones?",
+        answer:
+          "Both get hot in full sun, and both cool down when shaded. The practical answer is the same for any outdoor floor: shade the areas people use most.",
+      },
+      {
+        question: "How hot does artificial grass get in an Indian summer?",
+        answer:
+          "In full sun it can run tens of degrees hotter than the air. Field measurements in hot climates have recorded artificial turf at around 76°C, so shade and timing matter in April to June.",
+      },
+      {
+        question: "Can artificial grass be used on a terrace in summer?",
+        answer:
+          "Yes, with shade over the areas people use and a tap within reach for rinsing. Roof slabs store heat, so a terrace lawn stays warm into the evening unless it is shaded.",
+      },
+    ],
+  },
+  {
+    id: 35,
+    slug: "how-to-install-artificial-grass",
+    title: "How to Install Artificial Grass on Soil, Concrete or a Terrace",
+    seoTitle: "How to Install Artificial Grass: Step by Step | GAIA",
+    metaDescription:
+      "How to install artificial grass: preparing a soil base, laying on concrete or a terrace, joining rolls, fixing edges, and the mistakes to avoid.",
+    excerpt:
+      "Most artificial lawn problems start underneath. The base, the seams and the edges, step by step, on soil, concrete and terraces.",
+    category: "Artificial Grass",
+    cluster: "outdoor-living",
+    tags: ["Artificial Grass", "Installation", "Home"],
+    author: "GAIA by Sanson Floorings",
+    location: "New Delhi",
+    publishedDate: "2026-11-16",
+    readTime: "5 min read",
+    coverImage:
+      "/Images/Blogs/how-to-install-artificial-grass/hero-artificial-grass-rolls-ready-to-lay.webp",
+    coverImageAlt:
+      "Rolls of artificial grass stacked against a low timber fence",
+    ogImage:
+      "/Images/Blogs/how-to-install-artificial-grass/og-how-to-install-artificial-grass.jpg",
+    relatedProduct: {
+      name: "Landscape Grass",
+      path: "/artificial-grass/landscape-grass",
+    },
+    faqs: [
+      {
+        question: "Can I install artificial grass myself?",
+        answer:
+          "On a balcony or a sound concrete area, a careful homeowner often can. A lawn on soil needs excavation, compaction and levelling equipment, which is usually a job for an experienced installer.",
+      },
+      {
+        question: "Do you need sand on top of artificial grass?",
+        answer:
+          "Not always. Some landscape grasses are laid without infill, while sports turf usually needs it. Follow the installation method for the grass you choose.",
+      },
+      {
+        question: "Can artificial grass be laid on tiles?",
+        answer:
+          "Yes, on sound, level tiles that drain. Clean the surface, check water runs off towards a drain, and fix the grass at the edges; on a terrace, protect the waterproofing first.",
+      },
+      {
+        question: "How long does it take to install artificial grass?",
+        answer:
+          "A balcony or small terrace on a sound surface usually takes a day. A lawn on soil takes longer, because the base has to be excavated, built up, compacted and levelled first.",
+      },
+    ],
+  },
+  {
+    id: 34,
+    slug: "how-to-clean-artificial-grass",
+    title: "How to Clean Artificial Grass: A Simple Routine for Indian Homes",
+    seoTitle: "How to Clean Artificial Grass: Weekly to Yearly | GAIA",
+    metaDescription:
+      "How to clean artificial grass: weekly leaf clearing, rinsing, monthly brushing, pet waste and stains, plus cleaning after the monsoon, Holi and Diwali.",
+    excerpt:
+      "A weekly, monthly and seasonal routine for artificial grass in India, from leaves and dust to pet waste, stains and festival clean-ups.",
+    category: "Artificial Grass",
+    cluster: "outdoor-living",
+    tags: ["Artificial Grass", "Maintenance", "Home"],
+    author: "GAIA by Sanson Floorings",
+    location: "New Delhi",
+    publishedDate: "2026-11-16",
+    readTime: "6 min read",
+    coverImage:
+      "/Images/Blogs/how-to-clean-artificial-grass/hero-deck-and-landscape-grass-lawn.webp",
+    coverImageAlt:
+      "Timber deck beside a strip of artificial lawn running between garden planting and a covered seating area",
+    ogImage:
+      "/Images/Blogs/how-to-clean-artificial-grass/og-how-to-clean-artificial-grass.jpg",
+    relatedProduct: {
+      name: "Landscape Grass",
+      path: "/artificial-grass/landscape-grass",
+    },
+    faqs: [
+      {
+        question: "Can you use soap on artificial grass?",
+        answer:
+          "Yes. Mild liquid soap or detergent in water is the safest everyday cleaner. Rinse it off thoroughly so no residue stays in the pile.",
+      },
+      {
+        question: "Does artificial grass need watering?",
+        answer:
+          "Not to stay green. It only needs rinsing to wash away dust and pet urine, and occasionally to cool the surface on a hot afternoon.",
+      },
+      {
+        question: "How often should artificial grass be brushed?",
+        answer:
+          "Every month for most home lawns, and every week on busy paths, play areas and sports surfaces. Brush against the lean of the blades so they stand upright.",
+      },
+      {
+        question: "How do you stop artificial grass smelling of pet urine?",
+        answer:
+          "Rinse the area with plenty of water after use, and wash it weekly with a mild enzyme cleaner made for artificial turf. Good drainage under the grass prevents most odour.",
+      },
+    ],
+  },
+  {
     id: 32,
     slug: "meeting-room-acoustics",
     title: "Meeting Room Acoustics: How to Sound Clear on Video Calls",

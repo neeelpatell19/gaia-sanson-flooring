@@ -106,7 +106,7 @@ export const organizationSchema = ({ full = false, catalog = [] } = {}) => ({
     hasOfferCatalog: {
       "@type": "OfferCatalog",
       name: `${SITE_NAME} product range`,
-      url: canonicalUrl("/products"),
+      url: canonicalUrl("/"),
       itemListElement: catalog.map((item) => ({
         "@type": "OfferCatalog",
         name: item.name,

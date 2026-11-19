@@ -1,5 +1,4 @@
 import HomeRoutes from '../components/HomeRoutes/HomeRoutes.vue'
-import ProductsHub from '../components/OtherComponents/Categories/CategoriesLayout/Categories.vue'
 import CategoryDetail from '../components/OtherComponents/Categories/CategoriesLayout/CategoryDetail.vue'
 import AnimationDemo from '../components/FramerAnimation/AnimationDemo.vue'
 import AboutUs from '../components/OtherComponents/About/About.vue'
@@ -19,12 +18,6 @@ export const routes = [
         path: '/',
         name: 'Home',
         component: HomeRoutes
-    },
-    {
-        // The products hub. "Our Products" links here from every page.
-        path: '/products',
-        name: 'Products',
-        component: ProductsHub
     },
     {
         // Category pages sit at the root with keyword URLs: /carpet-tiles,

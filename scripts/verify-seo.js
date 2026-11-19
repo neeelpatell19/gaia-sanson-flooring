@@ -22,7 +22,6 @@ const SITE = 'https://sansonfloorings.com';
 // the app is caught here.
 const INDEXABLE = [
   '/',
-  '/products',
   '/carpet-tiles',
   '/broadloom-carpets',
   '/acoustic-pet-panels',
@@ -43,7 +42,7 @@ const INDEXABLE = [
 
 // Old URLs that must 301 straight to their new address (no chains).
 const MOVED = {
-  '/categories': '/products',
+  '/categories': '/',
   '/categories/carpet-tiles': '/carpet-tiles',
   '/categories/broadloom-carpets': '/broadloom-carpets',
   '/categories/acoustic-tiles': '/acoustic-pet-panels',
@@ -220,7 +219,7 @@ function checkPage(route, { indexable }) {
     if (route !== '/' && !ldTypes.includes('BreadcrumbList')) fail(where, 'JSON-LD is missing BreadcrumbList');
     if (isArticle(route) && !ldTypes.includes('Article')) fail(where, 'JSON-LD is missing Article');
     if (route.startsWith('/carpet-tiles/') && !ldTypes.includes('Product')) fail(where, 'JSON-LD is missing Product');
-    if (['/products', '/carpet-tiles', '/artificial-grass'].includes(route) && !ldNodes.some((n) => n.mainEntity?.['@type'] === 'ItemList'))
+    if (['/carpet-tiles', '/artificial-grass'].includes(route) && !ldNodes.some((n) => n.mainEntity?.['@type'] === 'ItemList'))
       fail(where, 'JSON-LD is missing the ItemList of products on the page');
   }
 

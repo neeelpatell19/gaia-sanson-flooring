@@ -13,8 +13,8 @@
       <div class="CategoryDetailContainer">
         <!-- Breadcrumb Navigation -->
         <div class="breadcrumb">
-          <router-link to="/products" class="breadcrumb-link"
-            >Categories</router-link
+          <router-link to="/" class="breadcrumb-link"
+            >Home</router-link
           >
           <span class="breadcrumb-separator">/</span>
           <span class="breadcrumb-current">{{ category?.name }}</span>

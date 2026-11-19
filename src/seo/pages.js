@@ -41,7 +41,6 @@ import {
 } from "./site.js";
 
 const HOME = { name: "Home", path: "/" };
-const PRODUCTS = { name: "Products", path: "/products" };
 const ORGANIZATION_REF = { "@id": ORGANIZATION_ID };
 
 // The product range, as listed on the home and products pages.
@@ -87,7 +86,6 @@ const blogIndexPaths = () =>
 export function getIndexablePaths() {
   return [
     "/",
-    "/products",
     ...CategoriesData.map((c) => `/${c.slug}`),
     ...CarpetTileDesigns.map(designPath),
     ...Object.keys(grassTypesData).map((slug) => `/artificial-grass/${slug}`),
@@ -138,16 +136,6 @@ const STATIC_PAGES = {
       "India's first startup offering integrated solutions in floorings and acoustic panels. Carpet tiles, broadloom carpets, acoustic PET panels and artificial grass.",
     localBusiness: true,
     webPage: { about: ORGANIZATION_REF },
-  },
-  Products: {
-    path: "/products",
-    title: "Flooring & Acoustic Product Range | GAIA by Sanson Floorings",
-    description:
-      "Explore GAIA's product range: modular carpet tiles, broadloom carpets, acoustic PET panels, and artificial grass and multiturf for interiors, sports and landscapes.",
-    image: "/Images/carpet_tiles.webp",
-    imageAlt: "Home office desk and chair on olive patterned GAIA carpet tiles",
-    crumbs: [PRODUCTS],
-    webPage: { type: "CollectionPage", mainEntity: itemListSchema(CATALOG) },
   },
   AboutUs: {
     path: "/about-us",
@@ -207,7 +195,7 @@ function categoryPage(slug) {
     description: category.metaDescription,
     image: category.heroImage,
     imageAlt: category.heroImageAlt,
-    crumbs: [PRODUCTS, { name: category.name, path }],
+    crumbs: [{ name: category.name, path }],
     webPage: {
       type: "CollectionPage",
       about: { "@type": "Thing", name: category.name },
@@ -233,7 +221,6 @@ function grassPage(slug) {
     image: grass.imageSrc,
     imageAlt: grass.imageAlt,
     crumbs: [
-      PRODUCTS,
       { name: category.name, path: `/${category.slug}` },
       { name: grass.heading.trim(), path: `/artificial-grass/${slug}` },
     ],
@@ -258,7 +245,6 @@ function designPage(slug) {
     image: design.image,
     imageAlt: designAlt(design),
     crumbs: [
-      PRODUCTS,
       { name: category.name, path: `/${category.slug}` },
       { name: design.name, path },
     ],
@@ -399,7 +385,6 @@ export function resolvePageSeo(route) {
 // The SEO of a page by its path, for the sitemap and the build checks.
 const ROUTE_BY_PATH = [
   [/^\/$/, () => ({ name: "Home" })],
-  [/^\/products$/, () => ({ name: "Products" })],
   [/^\/about-us$/, () => ({ name: "AboutUs" })],
   [/^\/tools$/, () => ({ name: "Tools" })],
   [/^\/blogs$/, () => ({ name: "Blogs" })],

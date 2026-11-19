@@ -6,7 +6,7 @@ const navigationBarData = [
   // },
   {
     name: "Our Products",
-    path: "/products",
+    path: "",
     hasDropdown: true,
     dropdownItems: [
       {

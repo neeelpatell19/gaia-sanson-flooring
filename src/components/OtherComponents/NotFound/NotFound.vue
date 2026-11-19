@@ -14,7 +14,6 @@
       </p>
       <ul class="NotFoundLinks">
         <li><router-link to="/">Home</router-link></li>
-        <li><router-link to="/products">Our product range</router-link></li>
         <li>
           <router-link to="/carpet-tiles">Carpet tiles</router-link>
         </li>

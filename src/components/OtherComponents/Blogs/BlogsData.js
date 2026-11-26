@@ -18,6 +18,981 @@
 
 const BlogsData = [
   {
+    id: 77,
+    slug: "carpet-tile-backing",
+    title: "Carpet Tile Backing Explained: Bitumen, PVC and Cushion Backs",
+    seoTitle: "Carpet Tile Backing: Bitumen, PVC and Cushion | GAIA",
+    metaDescription:
+      "What carpet tile backing does, how bitumen, PVC and cushion backs differ, what Eco Back means, and how to choose a backing for Indian conditions.",
+    excerpt:
+      "The hidden layer that keeps carpet tiles flat: how the main backing types compare, and what to check before you order.",
+    category: "Carpet Tiles",
+    cluster: "flooring-choices",
+    tags: ["Carpet Tiles", "Backing", "Specification"],
+    author: "GAIA by Sanson Floorings",
+    location: "New Delhi",
+    publishedDate: "2026-11-26",
+    readTime: "5 min read",
+    coverImage:
+      "/Images/Blogs/carpet-tile-backing/hero-gridwork-carpet-tiles-open-office.webp",
+    coverImageAlt:
+      "Open office with workstations and glazed walls, on grey GAIA Gridwork carpet tiles",
+    ogImage:
+      "/Images/Blogs/carpet-tile-backing/og-carpet-tile-backing.jpg",
+    relatedProduct: {
+      name: "Carpet Tiles",
+      path: "/carpet-tiles",
+    },
+    faqs: [
+      {
+        question: "Which carpet tile backing is best?",
+        answer:
+          "No backing is best everywhere. A heavy bitumen backing suits busy commercial floors, PVC gives a lighter, stiffer tile, and a cushion backing suits areas where comfort and quieter footfall matter most.",
+      },
+      {
+        question: "Do carpet tiles need an underlay?",
+        answer:
+          "No. The backing does the job of an underlay. Cushion-backed tiles build softness into the tile itself.",
+      },
+      {
+        question: "Can carpet tiles be laid without glue?",
+        answer:
+          "Most are laid with a releasable tackifier rather than permanent glue, which holds them in place but lets single tiles be lifted. Small areas are sometimes loose-laid, but adhesive keeps tiles from shifting in busy spaces.",
+      },
+      {
+        question: "What backing do GAIA carpet tiles have?",
+        answer:
+          "All GAIA carpet tiles and planks have a bitumen backing. The Rhythm and SBT collections are made in GAIA's Eco Back style.",
+      },
+    ],
+  },
+  {
+    id: 76,
+    slug: "carpet-tile-laying-patterns",
+    title: "Carpet Tile Laying Patterns: Quarter-Turn, Brick, Ashlar, Monolithic and Herringbone",
+    seoTitle: "Carpet Tile Laying Patterns Explained | GAIA",
+    metaDescription:
+      "The main carpet tile laying patterns, Quarter-turn, Brick, Ashlar and Monolithic, plus Ashlar and Herringbone for planks, and how to choose one.",
+    excerpt:
+      "How each laying pattern changes the look of a carpet tile floor, which patterns suit tiles and planks, and how to choose for each space.",
+    category: "Carpet Tiles",
+    cluster: "flooring-choices",
+    tags: ["Carpet Tiles", "Carpet Planks", "Installation"],
+    author: "GAIA by Sanson Floorings",
+    location: "New Delhi",
+    publishedDate: "2026-11-26",
+    readTime: "5 min read",
+    coverImage:
+      "/Images/Blogs/carpet-tile-laying-patterns/hero-gridwork-carpet-tiles-checkerboard-cafe.webp",
+    coverImageAlt:
+      "Café booth with timber chairs under woven pendant lights, on grey GAIA Gridwork carpet tiles laid in a checkerboard",
+    ogImage:
+      "/Images/Blogs/carpet-tile-laying-patterns/og-carpet-tile-laying-patterns.jpg",
+    relatedProduct: {
+      name: "Carpet Tiles",
+      path: "/carpet-tiles",
+    },
+    faqs: [
+      {
+        question: "What is the most popular carpet tile pattern?",
+        answer:
+          "Quarter-turn is widely used in offices because it hides seams and replacements well. Monolithic is chosen where a uniform, broadloom-like look matters.",
+      },
+      {
+        question: "What is the difference between Ashlar and Brick?",
+        answer:
+          "Both offset the tiles by half a tile. Brick shifts each row sideways; Ashlar shifts each column. For planks, Ashlar means rows staggered like a timber floor.",
+      },
+      {
+        question: "Do carpet tile arrows matter?",
+        answer:
+          "Yes. The arrow shows the pile direction, and the pattern depends on how the arrows are arranged. Ignoring them produces a patchy floor.",
+      },
+      {
+        question: "Can carpet planks be laid in a Quarter-turn pattern?",
+        answer:
+          "Quarter-turn is a pattern for square tiles. GAIA's 25 × 100 cm planks are laid in Ashlar or Herringbone.",
+      },
+    ],
+  },
+  {
+    id: 75,
+    slug: "do-carpet-tiles-reduce-noise",
+    title: "Do Carpet Tiles Reduce Noise? What They Fix and What They Don't",
+    seoTitle: "Do Carpet Tiles Reduce Noise? | GAIA",
+    metaDescription:
+      "Carpet tiles cut footfall and chair noise at source and reduce sound to the floor below. Learn where they help, where they do not, and what to pair them with.",
+    excerpt:
+      "Which noise carpet tiles reduce, which they leave alone, and how to combine them with ceiling and wall absorption.",
+    category: "Carpet Tiles",
+    cluster: "room-acoustics",
+    tags: ["Carpet Tiles", "Acoustics", "Offices"],
+    author: "GAIA by Sanson Floorings",
+    location: "New Delhi",
+    publishedDate: "2026-11-26",
+    readTime: "5 min read",
+    coverImage:
+      "/Images/Blogs/do-carpet-tiles-reduce-noise/hero-open-plan-office-carpet-tiles.webp",
+    coverImageAlt:
+      "Bright open-plan office with rows of desks and black chairs on grey patterned GAIA carpet",
+    ogImage:
+      "/Images/Blogs/do-carpet-tiles-reduce-noise/og-do-carpet-tiles-reduce-noise.jpg",
+    relatedProduct: {
+      name: "Carpet Tiles",
+      path: "/carpet-tiles",
+    },
+    faqs: [
+      {
+        question: "Are carpet tiles good for sound absorption?",
+        answer:
+          "They absorb some airborne sound at floor level and greatly reduce impact noise. For strong absorption in a room, add acoustic panels on the ceiling and walls.",
+      },
+      {
+        question: "Are carpet tiles quieter than vinyl flooring?",
+        answer:
+          "Generally yes, for footfall and chair noise, because the pile cushions impact. The two floors are compared in carpet tiles vs vinyl flooring.",
+      },
+      {
+        question: "Do carpet tiles help in classrooms?",
+        answer:
+          "Yes. They quieten chair movement and footsteps, which are a large part of classroom noise, and work best with an absorbent ceiling.",
+      },
+    ],
+  },
+  {
+    id: 74,
+    slug: "how-long-do-carpet-tiles-last",
+    title: "How Long Do Carpet Tiles Last? What Shortens and Extends Their Life",
+    seoTitle: "How Long Do Carpet Tiles Last? | GAIA",
+    metaDescription:
+      "How long carpet tiles last depends on traffic, yarn, construction and cleaning. See what wears them out, how to extend their life and when to replace them.",
+    excerpt:
+      "What decides the life of a carpet tile floor, how to keep it looking good for longer, and why single tiles can be replaced.",
+    category: "Carpet Tiles",
+    cluster: "flooring-choices",
+    tags: ["Carpet Tiles", "Maintenance", "Durability"],
+    author: "GAIA by Sanson Floorings",
+    location: "New Delhi",
+    publishedDate: "2026-11-26",
+    readTime: "5 min read",
+    coverImage:
+      "/Images/Blogs/how-long-do-carpet-tiles-last/hero-trends-carpet-tiles-office-kitchen.webp",
+    coverImageAlt:
+      "Office kitchen with a timber-slat ceiling and island counters, on blue graded GAIA Trends carpet tiles",
+    ogImage:
+      "/Images/Blogs/how-long-do-carpet-tiles-last/og-how-long-do-carpet-tiles-last.jpg",
+    relatedProduct: {
+      name: "Carpet Tiles",
+      path: "/carpet-tiles",
+    },
+    faqs: [
+      {
+        question: "Do carpet tiles last longer than carpet?",
+        answer:
+          "The floor as a whole often does, because worn tiles can be replaced singly instead of recarpeting the room. The fibre itself wears at a similar rate to broadloom of the same construction.",
+      },
+      {
+        question: "How many spare carpet tiles should I keep?",
+        answer:
+          "Keep a small stock from the same batch for replacements. Some facility standards ask for about 5 per cent of the installed area, or at least one box.",
+      },
+      {
+        question: "Can worn carpet tiles be cleaned back to new?",
+        answer:
+          "Cleaning removes soil and many stains, but it cannot restore crushed or cut fibres. Once a traffic lane stays flat after cleaning, replace those tiles.",
+      },
+    ],
+  },
+  {
+    id: 73,
+    slug: "low-voc-flooring-certifications",
+    title: "GreenPro, CRI Green Label Plus and FloorScore: Low-VOC Flooring Certifications Explained",
+    seoTitle: "Low-VOC Flooring Certifications Explained | GAIA",
+    metaDescription:
+      "GreenPro, CRI Green Label Plus and FloorScore compared: what each certifies, which floors they cover, and how to check a flooring certificate.",
+    excerpt:
+      "What the three most-requested flooring certifications check, how they differ, and how to verify a certificate for your submission.",
+    category: "Carpet Tiles",
+    cluster: "sustainable-interiors",
+    tags: ["GreenPro", "Carpet Tiles", "Indoor Air Quality"],
+    author: "GAIA by Sanson Floorings",
+    location: "New Delhi",
+    publishedDate: "2026-11-26",
+    readTime: "5 min read",
+    coverImage:
+      "/Images/Blogs/low-voc-flooring-certifications/hero-brixx-carpet-dining-area.webp",
+    coverImageAlt:
+      "Dining area with a live-edge timber table and chairs beside a garden window, on grey GAIA Brixx carpet",
+    ogImage:
+      "/Images/Blogs/low-voc-flooring-certifications/og-low-voc-flooring-certifications.jpg",
+    relatedProduct: {
+      name: "Carpet Tiles",
+      path: "/carpet-tiles",
+    },
+    faqs: [
+      {
+        question: "Is GreenPro the same as CRI Green Label Plus?",
+        answer:
+          "No. GreenPro is an Indian ecolabel that assesses a product across its life cycle. Green Label Plus is a carpet emissions test from the US Carpet and Rug Institute.",
+      },
+      {
+        question: "Do carpet tiles give off VOCs?",
+        answer:
+          "Most new building products give off some VOCs, mainly in the early weeks. Choosing certified products and low-emission adhesives, and ventilating after fitting, keeps emissions low.",
+      },
+      {
+        question: "Which GAIA products are GreenPro certified?",
+        answer:
+          "GAIA's PET acoustic panels in 9, 12, 18 and 24 mm, and its bitumen-backed carpet tiles and planks in polypropylene and nylon. The certificates are valid until December 2027.",
+      },
+      {
+        question: "Do acoustic panels need a VOC certificate?",
+        answer:
+          "Many green building projects ask for emission data on wall and ceiling finishes as well as floors. GAIA PET acoustic panels are GreenPro certified in 9, 12, 18 and 24 mm, and our team will send the certificates for your submission.",
+      },
+    ],
+  },
+  {
+    id: 72,
+    slug: "carpet-tiles-over-existing-tiles",
+    title: "Can You Lay Carpet Tiles Over Existing Floor Tiles?",
+    seoTitle: "Can You Lay Carpet Tiles Over Existing Tiles? | GAIA",
+    metaDescription:
+      "Yes, if the old floor is sound, level, clean and dry. How to prepare ceramic, vitrified or stone tiles before laying carpet tiles over them.",
+    excerpt:
+      "How to carpet over an existing tiled floor without breaking it out: the checks, the preparation and the details at doors and edges.",
+    category: "Carpet Tiles",
+    cluster: "flooring-choices",
+    tags: ["Carpet Tiles", "Installation", "Renovation"],
+    author: "GAIA by Sanson Floorings",
+    location: "New Delhi",
+    publishedDate: "2026-11-26",
+    readTime: "5 min read",
+    coverImage:
+      "/Images/Blogs/carpet-tiles-over-existing-tiles/hero-gaia-carpet-home-study.webp",
+    coverImageAlt:
+      "Home study with a desk, office chair and shelves, on grey GAIA carpet",
+    ogImage:
+      "/Images/Blogs/carpet-tiles-over-existing-tiles/og-carpet-tiles-over-existing-tiles.jpg",
+    relatedProduct: {
+      name: "Carpet Tiles",
+      path: "/carpet-tiles",
+    },
+    faqs: [
+      {
+        question: "Do I need to remove old tiles before laying carpet tiles?",
+        answer:
+          "Not if they are sound, level and dry. Loose, cracked or damp tiles must be fixed before laying.",
+      },
+      {
+        question: "Can carpet tiles be laid on marble or Kota stone?",
+        answer:
+          "Yes, with the same preparation: remove polish, fill joints, level high spots and use a primer the adhesive maker approves.",
+      },
+      {
+        question: "Can carpet tiles be removed later without damaging the tiles beneath?",
+        answer:
+          "Carpet tiles laid on a releasable tackifier lift off. Some adhesive residue and any filler in the grout lines will need cleaning off afterwards.",
+      },
+      {
+        question: "How long does it take to carpet over an old tiled floor?",
+        answer:
+          "Preparation usually takes longer than laying. Once the old tiles are sound, filled and primed, an average office floor or a few rooms at home can be laid in a day or two.",
+      },
+      {
+        question: "Can carpet tiles go over underfloor heating?",
+        answer:
+          "Ask before ordering. The backing, adhesive and heating system must be compatible, and the heating maker's limits on floor coverings apply.",
+      },
+    ],
+  },
+  {
+    id: 71,
+    slug: "how-to-replace-a-carpet-tile",
+    title: "How to Replace a Damaged Carpet Tile",
+    seoTitle: "How to Replace a Damaged Carpet Tile | GAIA",
+    metaDescription:
+      "Replace a damaged carpet tile in minutes: lift it, clean the floor, check the tackifier and fit a matching spare with its arrow the right way.",
+    excerpt:
+      "A step-by-step guide to swapping a stained or worn carpet tile, and how to keep matching spares on hand.",
+    category: "Carpet Tiles",
+    cluster: "flooring-choices",
+    tags: ["Carpet Tiles", "Maintenance", "How-to"],
+    author: "GAIA by Sanson Floorings",
+    location: "New Delhi",
+    publishedDate: "2026-11-26",
+    readTime: "5 min read",
+    coverImage:
+      "/Images/Blogs/how-to-replace-a-carpet-tile/hero-bloxx-carpet-close-view.webp",
+    coverImageAlt:
+      "Close view of grey patterned GAIA Bloxx carpet beside a grey sofa",
+    ogImage:
+      "/Images/Blogs/how-to-replace-a-carpet-tile/og-how-to-replace-a-carpet-tile.jpg",
+    relatedProduct: {
+      name: "Carpet Tiles",
+      path: "/carpet-tiles",
+    },
+    faqs: [
+      {
+        question: "Can I replace a carpet tile myself?",
+        answer:
+          "Yes. On tiles laid with a releasable tackifier, it needs only a putty knife, a vacuum and a matching spare.",
+      },
+      {
+        question: "What if I have no spare carpet tiles?",
+        answer:
+          "Take a tile from an area hidden under furniture and use it as the replacement, then fill the hidden spot with the nearest available match.",
+      },
+      {
+        question: "Do I need new adhesive for a replacement tile?",
+        answer:
+          "Only if the old tackifier has lost its grip or was scraped away. Clean off loose residue and apply a thin coat of the recommended tackifier.",
+      },
+    ],
+  },
+  {
+    id: 70,
+    slug: "acoustic-baffles-vs-clouds",
+    title: "Acoustic Baffles vs Ceiling Clouds: Which Suits Your Space?",
+    seoTitle: "Acoustic Baffles vs Ceiling Clouds | GAIA",
+    metaDescription:
+      "Acoustic baffles suit tall, open ceilings; ceiling clouds suit lower rooms and focused zones. How each works and how to choose for your space.",
+    excerpt:
+      "How vertical baffles and horizontal clouds treat an exposed ceiling, and which suits offices, cafés, halls and classrooms.",
+    category: "Acoustic Panels",
+    cluster: "room-acoustics",
+    tags: ["Acoustic Panels", "Ceilings", "Baffles"],
+    author: "GAIA by Sanson Floorings",
+    location: "New Delhi",
+    publishedDate: "2026-11-26",
+    readTime: "5 min read",
+    coverImage:
+      "/Images/Blogs/acoustic-baffles-vs-clouds/hero-wave-acoustic-baffles-ceiling.webp",
+    coverImageAlt:
+      "Long hall with a green and timber wave-shaped acoustic baffle ceiling above tall windows and trees",
+    ogImage:
+      "/Images/Blogs/acoustic-baffles-vs-clouds/og-acoustic-baffles-vs-clouds.jpg",
+    relatedProduct: {
+      name: "Acoustic PET Panels",
+      path: "/acoustic-pet-panels",
+    },
+    faqs: [
+      {
+        question: "Can baffles and clouds be used together?",
+        answer:
+          "Yes. Many spaces use baffles over circulation and open areas and clouds over meeting or dining zones, with wall panels where people talk.",
+      },
+      {
+        question: "Do acoustic baffles work in low ceilings?",
+        answer:
+          "They can, but they take headroom. In lower rooms, clouds or panels fixed to the ceiling are usually a better fit.",
+      },
+      {
+        question: "Can acoustic clouds be custom shapes?",
+        answer:
+          "Yes. GAIA ceiling clouds are available in a variety of shapes and custom sizes.",
+      },
+    ],
+  },
+  {
+    id: 69,
+    slug: "pet-vs-wooden-acoustic-panels",
+    title: "PET vs Wooden Acoustic Panels: Which Should You Choose?",
+    seoTitle: "PET vs Wooden Acoustic Panels | GAIA",
+    metaDescription:
+      "PET and wooden slat acoustic panels compared on absorption, looks, humidity, weight and installation, with GAIA PET panel NRC values.",
+    excerpt:
+      "How PET and timber slat panels absorb sound differently, and which suits Indian offices, restaurants and homes.",
+    category: "Acoustic Panels",
+    cluster: "acoustic-panels",
+    tags: ["Acoustic Panels", "PET Panels", "Interiors"],
+    author: "GAIA by Sanson Floorings",
+    location: "New Delhi",
+    publishedDate: "2026-11-26",
+    readTime: "5 min read",
+    coverImage:
+      "/Images/Blogs/pet-vs-wooden-acoustic-panels/hero-vertical-acoustic-panels-boardroom.webp",
+    coverImageAlt:
+      "Boardroom with a long white table in front of a wall of dark grey vertical acoustic panels",
+    ogImage:
+      "/Images/Blogs/pet-vs-wooden-acoustic-panels/og-pet-vs-wooden-acoustic-panels.jpg",
+    relatedProduct: {
+      name: "Acoustic PET Panels",
+      path: "/acoustic-pet-panels",
+    },
+    faqs: [
+      {
+        question: "Are wooden slat panels good for acoustics?",
+        answer:
+          "They can be, when the gaps between slats and the felt backing are well designed and the panel is mounted over an air gap. Compare tested NRC values before buying.",
+      },
+      {
+        question: "Are PET acoustic panels eco-friendly?",
+        answer:
+          "GAIA PET panels are made from recycled polyester fibres and are GreenPro certified in 9, 12, 18 and 24 mm thicknesses.",
+      },
+      {
+        question: "Can PET and wooden panels be used together?",
+        answer:
+          "Yes. A timber feature wall can be paired with PET panels on other walls and the ceiling to reach the absorption the room needs.",
+      },
+    ],
+  },
+  {
+    id: 68,
+    slug: "how-to-clean-acoustic-panels",
+    title: "How to Clean Acoustic Panels Without Damaging Them",
+    seoTitle: "How to Clean Acoustic Panels | GAIA",
+    metaDescription:
+      "Vacuum gently, lift fluff with a lint roller and blot marks with a barely damp cloth. What never to use on acoustic panels, and how often to clean.",
+    excerpt:
+      "A gentle routine for dusting and spot-cleaning acoustic panels, and the mistakes that reduce their sound absorption.",
+    category: "Acoustic Panels",
+    cluster: "acoustic-panels",
+    tags: ["Acoustic Panels", "Maintenance", "How-to"],
+    author: "GAIA by Sanson Floorings",
+    location: "New Delhi",
+    publishedDate: "2026-11-26",
+    readTime: "5 min read",
+    coverImage:
+      "/Images/Blogs/how-to-clean-acoustic-panels/hero-acoustic-wall-meeting-room.webp",
+    coverImageAlt:
+      "Meeting room with a round table and chairs in front of a dark acoustic panel wall, with a ring pendant light",
+    ogImage:
+      "/Images/Blogs/how-to-clean-acoustic-panels/og-how-to-clean-acoustic-panels.jpg",
+    relatedProduct: {
+      name: "Acoustic PET Panels",
+      path: "/acoustic-pet-panels",
+    },
+    faqs: [
+      {
+        question: "Can I use a damp cloth on acoustic panels?",
+        answer:
+          "Yes, for spot cleaning, as long as the cloth is barely damp and you blot rather than rub. Let the panel dry fully afterwards.",
+      },
+      {
+        question: "Does cleaning reduce sound absorption?",
+        answer:
+          "Gentle vacuuming and spot cleaning do not. Paint, sealants and heavy soaking do, because they change the panel's surface.",
+      },
+      {
+        question: "How do I clean acoustic ceiling baffles?",
+        answer:
+          "Vacuum them with a soft brush on an extension wand, from a stable ladder or platform, without pulling on the panels or their suspension.",
+      },
+      {
+        question: "Can acoustic panels be cleaned with a steam cleaner?",
+        answer:
+          "No. Heat and moisture from a steam cleaner can distort PET panels and leave damp behind them. Use a vacuum and a barely damp cloth instead.",
+      },
+    ],
+  },
+  {
+    id: 67,
+    slug: "acoustics-for-places-of-worship",
+    title: "Acoustics for Temples, Gurdwaras, Churches and Prayer Halls",
+    seoTitle: "Acoustics for Places of Worship | GAIA",
+    metaDescription:
+      "How to make speech clear in temples, gurdwaras, churches, mosques and prayer halls while keeping music and singing full, with acoustic panels.",
+    excerpt:
+      "Why worship halls echo, how to balance clear speech with singing and music, and where acoustic treatment should go.",
+    category: "Acoustic Panels",
+    cluster: "room-acoustics",
+    tags: ["Acoustic Panels", "Halls", "Echo"],
+    author: "GAIA by Sanson Floorings",
+    location: "New Delhi",
+    publishedDate: "2026-11-26",
+    readTime: "5 min read",
+    coverImage:
+      "/Images/Blogs/acoustics-for-places-of-worship/hero-coloured-acoustic-ceiling-hall.webp",
+    coverImageAlt:
+      "Large hall with tall windows and a ceiling of coloured acoustic cells above timber furniture",
+    ogImage:
+      "/Images/Blogs/acoustics-for-places-of-worship/og-acoustics-for-places-of-worship.jpg",
+    relatedProduct: {
+      name: "Acoustic PET Panels",
+      path: "/acoustic-pet-panels",
+    },
+    faqs: [
+      {
+        question: "Will acoustic panels make singing sound dull?",
+        answer:
+          "Not if they are placed well. Treating the rear, upper walls and ceiling while keeping the front reflective keeps singing full and makes speech clearer.",
+      },
+      {
+        question: "Can acoustic panels be fitted to a heritage building?",
+        answer:
+          "Often, with care. Suspended clouds and panels on battens can avoid fixing into fragile surfaces. Seek approval for any listed or protected building.",
+      },
+      {
+        question: "Do carpets help in a prayer hall?",
+        answer:
+          "Yes. Carpet in seating areas and aisles softens footfall and adds absorption at floor level, though walls and ceiling do most of the work.",
+      },
+    ],
+  },
+  {
+    id: 66,
+    slug: "acoustic-panels-for-gyms-and-studios",
+    title: "Acoustic Panels for Gyms, Dance Studios and Yoga Rooms",
+    seoTitle: "Acoustic Panels for Gyms and Studios | GAIA",
+    metaDescription:
+      "How acoustic panels cut echo in gyms, dance studios and yoga rooms, where to place them, and why they do not stop noise reaching neighbours.",
+    excerpt:
+      "Where acoustic panels help in fitness spaces, where they stop, and how flooring and soundproofing complete the picture.",
+    category: "Acoustic Panels",
+    cluster: "room-acoustics",
+    tags: ["Acoustic Panels", "Gyms", "Studios"],
+    author: "GAIA by Sanson Floorings",
+    location: "New Delhi",
+    publishedDate: "2026-11-26",
+    readTime: "5 min read",
+    coverImage:
+      "/Images/Blogs/acoustic-panels-for-gyms-and-studios/hero-acoustic-screens-and-ceiling-activity-space.webp",
+    coverImageAlt:
+      "Activity space with red laser-cut acoustic screens, colourful furniture and suspended acoustic ceiling elements",
+    ogImage:
+      "/Images/Blogs/acoustic-panels-for-gyms-and-studios/og-acoustic-panels-for-gyms-and-studios.jpg",
+    relatedProduct: {
+      name: "Acoustic PET Panels",
+      path: "/acoustic-pet-panels",
+    },
+    faqs: [
+      {
+        question: "Do acoustic panels work in a dance studio?",
+        answer:
+          "Yes. Ceiling panels and panels on the wall facing the mirrors cut echo, so music sounds cleaner and instructors are heard more easily.",
+      },
+      {
+        question: "Are acoustic panels safe near gym equipment?",
+        answer:
+          "Mount them above head height or behind guards in areas with weights, ropes and balls, so they cannot be struck.",
+      },
+      {
+        question: "Can acoustic panels carry our gym branding?",
+        answer:
+          "Yes. GAIA printed acoustic panels can carry custom graphics, and plain panels come in a wide range of colours.",
+      },
+    ],
+  },
+  {
+    id: 65,
+    slug: "acoustic-panel-finishes",
+    title: "Acoustic Panel Finishes: Plain, V-Groove, Fluted or Printed?",
+    seoTitle: "Acoustic Panel Finishes: V-Groove, Fluted, Printed | GAIA",
+    metaDescription:
+      "Plain, V-groove, fluted and printed PET acoustic panels compared: how each looks, where it works best and how finish affects absorption.",
+    excerpt:
+      "The four main acoustic panel finishes, where each one works, and what matters more than finish for sound absorption.",
+    category: "Acoustic Panels",
+    cluster: "acoustic-panels",
+    tags: ["Acoustic Panels", "PET Panels", "Design"],
+    author: "GAIA by Sanson Floorings",
+    location: "New Delhi",
+    publishedDate: "2026-11-26",
+    readTime: "5 min read",
+    coverImage:
+      "/Images/Blogs/acoustic-panel-finishes/hero-geometric-acoustic-panels-home-office.webp",
+    coverImageAlt:
+      "Home office with a geometric acoustic wall of navy, orange, beige and grey panels above a desk",
+    ogImage:
+      "/Images/Blogs/acoustic-panel-finishes/og-acoustic-panel-finishes.jpg",
+    relatedProduct: {
+      name: "Acoustic PET Panels",
+      path: "/acoustic-pet-panels",
+    },
+    faqs: [
+      {
+        question: "Can acoustic panels be printed with my own design?",
+        answer:
+          "Yes. GAIA printed acoustic panels can carry custom patterns and artwork.",
+      },
+      {
+        question: "Are fluted panels better for acoustics than flat panels?",
+        answer:
+          "The wave profile helps spread reflected sound, but absorption depends mainly on thickness and mounting.",
+      },
+      {
+        question: "Can different finishes be combined in one room?",
+        answer:
+          "Yes. A common approach is plain panels on the ceiling and a grooved, fluted or printed feature wall.",
+      },
+    ],
+  },
+  {
+    id: 64,
+    slug: "is-artificial-grass-safe-for-pets-and-children",
+    title: "Is Artificial Grass Safe for Pets and Children?",
+    seoTitle: "Is Artificial Grass Safe for Pets and Children? | GAIA",
+    metaDescription:
+      "Artificial grass can be safe for children and pets with shade, good drainage, regular rinsing and impact protection under play equipment.",
+    excerpt:
+      "The real safety questions about artificial grass for families, from heat and hygiene to falls and infill, and what to do about each.",
+    category: "Artificial Grass",
+    cluster: "outdoor-living",
+    tags: ["Artificial Grass", "Pets", "Children"],
+    author: "GAIA by Sanson Floorings",
+    location: "New Delhi",
+    publishedDate: "2026-11-26",
+    readTime: "5 min read",
+    coverImage:
+      "/Images/Blogs/is-artificial-grass-safe-for-pets-and-children/hero-garden-lounge-on-artificial-grass.webp",
+    coverImageAlt:
+      "Garden lounge with grey sofas and a timber table on an artificial lawn beside a house",
+    ogImage:
+      "/Images/Blogs/is-artificial-grass-safe-for-pets-and-children/og-is-artificial-grass-safe-for-pets-and-children.jpg",
+    relatedProduct: {
+      name: "Landscape Grass",
+      path: "/artificial-grass/landscape-grass",
+    },
+    faqs: [
+      {
+        question: "Can dogs pee on artificial grass?",
+        answer:
+          "Yes, if the base drains freely and the area is rinsed regularly with water. Pick up solid waste promptly.",
+      },
+      {
+        question: "Is artificial grass good for a toddler's play area?",
+        answer:
+          "It is soft and clean for everyday play. Shade it in summer and add proper impact protection under any play equipment.",
+      },
+      {
+        question: "Does artificial grass have a smell with pets?",
+        answer:
+          "It can if urine is not rinsed away or the base does not drain. Regular rinsing and good drainage prevent it.",
+      },
+      {
+        question: "Can pets damage artificial grass?",
+        answer:
+          "Dogs that dig or chew can pull at edges and seams. Fix edges firmly, keep seams well glued and discourage digging in one spot.",
+      },
+      {
+        question: "Is artificial grass slippery when wet?",
+        answer:
+          "Grass gives better grip than wet tiles or stone, but rinse off spills and keep it free of algae and debris, especially in shaded corners that stay damp.",
+      },
+    ],
+  },
+  {
+    id: 63,
+    slug: "box-cricket-turf",
+    title: "Box Cricket Turf: Arena Size, Turf Choice and Base",
+    seoTitle: "Box Cricket Turf: Size, Turf and Base | GAIA",
+    metaDescription:
+      "How to plan a box cricket arena: size, turf choice for tennis and rubber balls, the base, netting and maintenance, with GAIA sports turf options.",
+    excerpt:
+      "What a box cricket arena needs, from the plot and base to the turf, netting and upkeep.",
+    category: "Artificial Grass",
+    cluster: "play-and-sport",
+    tags: ["Artificial Grass", "Box Cricket", "Sports Turf"],
+    author: "GAIA by Sanson Floorings",
+    location: "New Delhi",
+    publishedDate: "2026-11-26",
+    readTime: "5 min read",
+    coverImage:
+      "/Images/Blogs/box-cricket-turf/hero-open-air-turf-ground.webp",
+    coverImageAlt:
+      "Open-air artificial turf ground with white lines, floodlights and trees beyond",
+    ogImage:
+      "/Images/Blogs/box-cricket-turf/og-box-cricket-turf.jpg",
+    relatedProduct: {
+      name: "Sports Grass",
+      path: "/artificial-grass/sports-grass",
+    },
+    faqs: [
+      {
+        question: "Can box cricket be played on football turf?",
+        answer:
+          "Yes. Many arenas use football turf so the same box hosts cricket and 5-a-side. A shorter pile, such as 30 mm, gives a firmer bounce.",
+      },
+      {
+        question: "Can a box cricket arena be built on a rooftop?",
+        answer:
+          "Yes, if a structural engineer confirms the slab can carry the load and the waterproofing and drainage are protected.",
+      },
+      {
+        question: "How high should box cricket nets be?",
+        answer:
+          "It depends on the site and format. Playo's guide suggests about 10 to 12 ft indoors and 20 to 25 ft outdoors; many outdoor arenas also net overhead.",
+      },
+      {
+        question: "Can a box cricket arena be used for other sports?",
+        answer:
+          "Yes. With football turf, the same box can host 5-a-side football and casual games, which helps fill bookings outside peak cricket hours.",
+      },
+    ],
+  },
+  {
+    id: 62,
+    slug: "how-long-does-artificial-grass-last",
+    title: "How Long Does Artificial Grass Last in India?",
+    seoTitle: "How Long Does Artificial Grass Last in India? | GAIA",
+    metaDescription:
+      "How long artificial grass lasts depends on sun, use, base and care. What shortens its life in India and the habits that keep it green for longer.",
+    excerpt:
+      "What wears artificial grass out in Indian conditions, and how to choose and care for a lawn that lasts.",
+    category: "Artificial Grass",
+    cluster: "outdoor-living",
+    tags: ["Artificial Grass", "Maintenance", "Durability"],
+    author: "GAIA by Sanson Floorings",
+    location: "New Delhi",
+    publishedDate: "2026-11-26",
+    readTime: "5 min read",
+    coverImage:
+      "/Images/Blogs/how-long-does-artificial-grass-last/hero-outdoor-sofa-on-artificial-lawn.webp",
+    coverImageAlt:
+      "White outdoor sofa and timber coffee table on an artificial lawn beside planting",
+    ogImage:
+      "/Images/Blogs/how-long-does-artificial-grass-last/og-how-long-does-artificial-grass-last.jpg",
+    relatedProduct: {
+      name: "Landscape Grass",
+      path: "/artificial-grass/landscape-grass",
+    },
+    faqs: [
+      {
+        question: "Does artificial grass last longer on a terrace or in a garden?",
+        answer:
+          "It depends more on sun, use and drainage than on location. Terraces need a sound slab that falls to working drains; gardens need a compacted, free-draining base.",
+      },
+      {
+        question: "Can faded artificial grass be restored?",
+        answer:
+          "Not really. Cleaning and brushing improve its look, but UV fading cannot be reversed. UV-resistant yarn and shade prevent it.",
+      },
+      {
+        question: "Does brushing artificial grass damage it?",
+        answer:
+          "No. Brushing with a stiff brush, not a wire one, lifts the fibres and helps the lawn last longer.",
+      },
+      {
+        question: "Does heavy rain shorten the life of artificial grass?",
+        answer:
+          "Not if it drains. Water that sits on a poor base causes ripples and wear, so a free-draining base and clear outlets protect the lawn through the monsoon.",
+      },
+      {
+        question: "Can damaged artificial grass be patched?",
+        answer:
+          "Small areas can be cut out and replaced with a piece of the same product, laid with the pile in the same direction and joined with seaming tape and adhesive.",
+      },
+    ],
+  },
+  {
+    id: 61,
+    slug: "does-artificial-grass-drain",
+    title: "Does Artificial Grass Drain? Monsoon-Proofing Your Lawn",
+    seoTitle: "Does Artificial Grass Drain? Monsoon Guide | GAIA",
+    metaDescription:
+      "Artificial grass drains through its backing, but only as well as the base beneath it. How to plan drainage on soil, terraces and balconies.",
+    excerpt:
+      "How artificial grass handles heavy rain, why water pools, and how to keep a lawn dry through the monsoon.",
+    category: "Artificial Grass",
+    cluster: "outdoor-living",
+    tags: ["Artificial Grass", "Drainage", "Monsoon"],
+    author: "GAIA by Sanson Floorings",
+    location: "New Delhi",
+    publishedDate: "2026-11-26",
+    readTime: "5 min read",
+    coverImage:
+      "/Images/Blogs/does-artificial-grass-drain/hero-deck-and-artificial-lawn.webp",
+    coverImageAlt:
+      "Timber deck beside a strip of artificial lawn between garden planting and a covered seating area",
+    ogImage:
+      "/Images/Blogs/does-artificial-grass-drain/og-does-artificial-grass-drain.jpg",
+    relatedProduct: {
+      name: "Landscape Grass",
+      path: "/artificial-grass/landscape-grass",
+    },
+    faqs: [
+      {
+        question: "Can artificial grass flood?",
+        answer:
+          "The grass lets water through, but if the base or drains cannot carry it away, water will sit on top. A well-built base and clear outlets prevent it.",
+      },
+      {
+        question: "Do I need drainage holes in artificial grass?",
+        answer:
+          "The grass should have a perforated or permeable backing. Check this before buying, and make sure the base can drain.",
+      },
+      {
+        question: "Does artificial grass on a balcony cause leaks?",
+        answer:
+          "Not if the waterproofing is sound, the slab falls to the drain, outlets stay clear and nothing is fixed through the waterproofing.",
+      },
+      {
+        question: "Does artificial grass need a slope to drain?",
+        answer:
+          "On a slab, yes: the surface should fall gently to the outlets. On soil, the stone base lets water soak through, but a slight fall away from buildings still helps in heavy rain.",
+      },
+      {
+        question: "Will artificial grass drain on clay soil?",
+        answer:
+          "Clay drains slowly, so build a deeper stone base and consider a perforated drain pipe along the low edge to carry water away.",
+      },
+    ],
+  },
+  {
+    id: 60,
+    slug: "shock-pad-for-artificial-grass",
+    title: "Shock Pads Under Artificial Grass: When Do You Need One?",
+    seoTitle: "Shock Pad for Artificial Grass: When to Use | GAIA",
+    metaDescription:
+      "What a shock pad does under artificial grass, when sports pitches, play areas and terraces need one, and when a lawn can do without.",
+    excerpt:
+      "How a shock pad cushions falls and footfall, and where it is worth adding under artificial grass.",
+    category: "Artificial Grass",
+    cluster: "play-and-sport",
+    tags: ["Artificial Grass", "Sports Turf", "Safety"],
+    author: "GAIA by Sanson Floorings",
+    location: "New Delhi",
+    publishedDate: "2026-11-26",
+    readTime: "5 min read",
+    coverImage:
+      "/Images/Blogs/shock-pad-for-artificial-grass/hero-centre-circle-on-football-turf.webp",
+    coverImageAlt:
+      "White centre circle and halfway line on green football turf",
+    ogImage:
+      "/Images/Blogs/shock-pad-for-artificial-grass/og-shock-pad-for-artificial-grass.jpg",
+    relatedProduct: {
+      name: "Sports Grass",
+      path: "/artificial-grass/sports-grass",
+    },
+    faqs: [
+      {
+        question: "Is a shock pad the same as an underlay?",
+        answer:
+          "Broadly, yes. Both terms describe a resilient layer beneath the grass; sports systems often call it a shock pad or e-layer.",
+      },
+      {
+        question: "Does a shock pad affect drainage?",
+        answer:
+          "Only if it is not permeable. Use a perforated or free-draining pad so water passes through to the base.",
+      },
+      {
+        question: "Do I still need infill with a shock pad?",
+        answer:
+          "Sports turf usually still needs infill to support the fibres, but a pad can reduce how much performance infill is used.",
+      },
+      {
+        question: "How thick is a shock pad?",
+        answer:
+          "It depends on the use and the system: thinner pads add comfort on terraces, thicker pads are used under sports pitches and play equipment, where they are specified to meet a tested fall height or performance level.",
+      },
+      {
+        question: "Can a shock pad be added to existing grass?",
+        answer:
+          "Only by lifting the grass and relaying it over the pad, so it is best decided at the design stage.",
+      },
+    ],
+  },
+  {
+    id: 59,
+    slug: "artificial-turf-infill",
+    title: "Artificial Turf Infill Explained: Sand, Rubber and Alternatives",
+    seoTitle: "Artificial Turf Infill Explained | GAIA",
+    metaDescription:
+      "What artificial turf infill does, the main types from sand and crumb rubber to EPDM, TPE, cork and coconut, and how to choose and maintain it.",
+    excerpt:
+      "The granules between turf blades: what they do, the main options, and how infill affects play, heat and upkeep.",
+    category: "Artificial Grass",
+    cluster: "play-and-sport",
+    tags: ["Artificial Grass", "Sports Turf", "Infill"],
+    author: "GAIA by Sanson Floorings",
+    location: "New Delhi",
+    publishedDate: "2026-11-26",
+    readTime: "5 min read",
+    coverImage:
+      "/Images/Blogs/artificial-turf-infill/hero-striped-football-turf-pitch.webp",
+    coverImageAlt:
+      "Striped green football turf pitch with a stand and trees in the distance",
+    ogImage:
+      "/Images/Blogs/artificial-turf-infill/og-artificial-turf-infill.jpg",
+    relatedProduct: {
+      name: "Sports Grass",
+      path: "/artificial-grass/sports-grass",
+    },
+    faqs: [
+      {
+        question: "How much infill does football turf need?",
+        answer:
+          "It depends on the pile height and the system. Longer piles, such as 50 mm, take more infill than 30 mm turf.",
+      },
+      {
+        question: "Can artificial turf be laid without infill?",
+        answer:
+          "Short court turf and many home lawns can. Longer sports turf usually needs infill to support the fibres.",
+      },
+      {
+        question: "Which infill stays coolest?",
+        answer:
+          "Lighter-coloured and organic infills absorb less heat than dark rubber granules, but any surface in direct sun warms up. Shade helps most.",
+      },
+      {
+        question: "Does infill get washed away in heavy rain?",
+        answer:
+          "Some can migrate in heavy rain, especially at edges and near drains. Good edging, clear drains and regular brushing keep it in place, with top-ups where it thins.",
+      },
+      {
+        question: "Can infill be changed later?",
+        answer:
+          "Yes, though it is a substantial job. Old infill is extracted and new infill brushed in, which is easier on a pitch built with good edges and a sound base.",
+      },
+    ],
+  },
+  {
+    id: 58,
+    slug: "artificial-grass-for-cafe-terrace",
+    title: "Artificial Grass for Café and Restaurant Terraces",
+    seoTitle: "Artificial Grass for Café and Restaurant Terraces | GAIA",
+    metaDescription:
+      "How to use artificial grass on a café or restaurant terrace: pile height for furniture, shade, drainage, zoning and a daily cleaning routine.",
+    excerpt:
+      "What to plan before laying artificial grass on a busy café or restaurant terrace.",
+    category: "Artificial Grass",
+    cluster: "hospitality-spaces",
+    tags: ["Artificial Grass", "Restaurants", "Terraces"],
+    author: "GAIA by Sanson Floorings",
+    location: "New Delhi",
+    publishedDate: "2026-11-26",
+    readTime: "5 min read",
+    coverImage:
+      "/Images/Blogs/artificial-grass-for-cafe-terrace/hero-cafe-tables-on-artificial-grass.webp",
+    coverImageAlt:
+      "Café tables and chairs on artificial grass in sunshine beside a glazed building",
+    ogImage:
+      "/Images/Blogs/artificial-grass-for-cafe-terrace/og-artificial-grass-for-cafe-terrace.jpg",
+    relatedProduct: {
+      name: "Landscape Grass",
+      path: "/artificial-grass/landscape-grass",
+    },
+    faqs: [
+      {
+        question: "Can restaurant chairs be used on artificial grass?",
+        answer:
+          "Yes. A short pile of about 20 to 35 mm keeps chairs and tables level and stops them leaving tracks.",
+      },
+      {
+        question: "Does artificial grass smell on a restaurant terrace?",
+        answer:
+          "Not if spills are rinsed away and the slab drains. Daily rinsing in hot weather keeps it fresh.",
+      },
+      {
+        question: "Is artificial grass a fire risk on a terrace?",
+        answer:
+          "Dropped cigarettes and embers can melt the fibres. Keep ashtrays on tables and grills and heaters well away from the grass.",
+      },
+      {
+        question: "How long does it take to lay grass on a café terrace?",
+        answer:
+          "Once the slab and drainage are sound, an average terrace can usually be laid in a day or two, so it can be scheduled between services or on a closed day.",
+      },
+      {
+        question: "Can artificial grass be used indoors in a café?",
+        answer:
+          "Yes, in dry areas such as feature corners and kids' zones. Keep it away from kitchens, bars and wet zones, where a washable hard floor is better.",
+      },
+    ],
+  },
+  {
     id: 57,
     slug: "pet-acoustic-panels-india",
     title: "PET Acoustic Panels in India: What to Check Before You Buy",

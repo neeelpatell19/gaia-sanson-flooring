@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 580" width="640" height="580" font-family="Arial, Helvetica, sans-serif" role="img" aria-labelledby="t d">
+<title id="t">Choosing a panel finish</title>
+<desc id="d">How to choose an acoustic panel finish.</desc>
+<rect width="640" height="580" fill="#fbf8f2"/>
+<text x="320" y="40" text-anchor="middle" font-size="26" font-weight="700" fill="#2f394a">Choosing a panel finish</text>
+<rect x="24" y="66" width="592" height="88" rx="12" fill="#fff" stroke="#d9c9a3" stroke-width="2"/>
+<circle cx="72" cy="110.0" r="25" fill="#a38703"/><text x="72" y="119.0" text-anchor="middle" font-size="24" font-weight="700" fill="#fff">1</text>
+<text x="114" y="104.0" font-size="23" font-weight="700" fill="#2f394a">Plain</text>
+<text x="114" y="134.0" font-size="20" fill="#4a5568">Large areas, ceilings, calm rooms</text>
+<rect x="24" y="166" width="592" height="88" rx="12" fill="#fff" stroke="#d9c9a3" stroke-width="2"/>
+<circle cx="72" cy="210.0" r="25" fill="#a38703"/><text x="72" y="219.0" text-anchor="middle" font-size="24" font-weight="700" fill="#fff">2</text>
+<text x="114" y="204.0" font-size="23" font-weight="700" fill="#2f394a">V-groove</text>
+<text x="114" y="234.0" font-size="20" fill="#4a5568">Geometric patterns, feature walls</text>
+<rect x="24" y="266" width="592" height="88" rx="12" fill="#fff" stroke="#d9c9a3" stroke-width="2"/>
+<circle cx="72" cy="310.0" r="25" fill="#a38703"/><text x="72" y="319.0" text-anchor="middle" font-size="24" font-weight="700" fill="#fff">3</text>
+<text x="114" y="304.0" font-size="23" font-weight="700" fill="#2f394a">Fluted</text>
+<text x="114" y="334.0" font-size="20" fill="#4a5568">Waves for movement and depth</text>
+<rect x="24" y="366" width="592" height="88" rx="12" fill="#fff" stroke="#d9c9a3" stroke-width="2"/>
+<circle cx="72" cy="410.0" r="25" fill="#a38703"/><text x="72" y="419.0" text-anchor="middle" font-size="24" font-weight="700" fill="#fff">4</text>
+<text x="114" y="404.0" font-size="23" font-weight="700" fill="#2f394a">Printed</text>
+<text x="114" y="434.0" font-size="20" fill="#4a5568">Artwork, murals and branding</text>
+<rect x="24" y="466" width="592" height="88" rx="12" fill="#fff" stroke="#d9c9a3" stroke-width="2"/>
+<circle cx="72" cy="510.0" r="25" fill="#a38703"/><text x="72" y="519.0" text-anchor="middle" font-size="24" font-weight="700" fill="#fff">5</text>
+<text x="114" y="504.0" font-size="23" font-weight="700" fill="#2f394a">Mix finishes</text>
+<text x="114" y="534.0" font-size="20" fill="#4a5568">Plain ceilings, patterned features</text>
+</svg>

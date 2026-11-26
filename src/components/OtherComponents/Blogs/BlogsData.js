@@ -548,9 +548,9 @@ const BlogsData = [
     publishedDate: "2026-11-26",
     readTime: "5 min read",
     coverImage:
-      "/Images/Blogs/acoustic-panels-for-gyms-and-studios/hero-acoustic-screens-and-ceiling-activity-space.webp",
+      "/Images/Blogs/acoustic-panels-for-gyms-and-studios/hero-suspended-acoustic-canopy-lounge.webp",
     coverImageAlt:
-      "Activity space with red laser-cut acoustic screens, colourful furniture and suspended acoustic ceiling elements",
+      "Suspended acoustic canopy with pendant lights over a seating area with red and grey armchairs",
     ogImage:
       "/Images/Blogs/acoustic-panels-for-gyms-and-studios/og-acoustic-panels-for-gyms-and-studios.jpg",
     relatedProduct: {
@@ -592,9 +592,9 @@ const BlogsData = [
     publishedDate: "2026-11-26",
     readTime: "5 min read",
     coverImage:
-      "/Images/Blogs/acoustic-panel-finishes/hero-geometric-acoustic-panels-home-office.webp",
+      "/Images/Blogs/acoustic-panel-finishes/hero-grooved-acoustic-wall-printed-panel.webp",
     coverImageAlt:
-      "Home office with a geometric acoustic wall of navy, orange, beige and grey panels above a desk",
+      "Meeting room wall of beige vertical grooved acoustic panels with a printed acoustic panel showing a traditional line drawing",
     ogImage:
       "/Images/Blogs/acoustic-panel-finishes/og-acoustic-panel-finishes.jpg",
     relatedProduct: {
@@ -636,9 +636,9 @@ const BlogsData = [
     publishedDate: "2026-11-26",
     readTime: "5 min read",
     coverImage:
-      "/Images/Blogs/is-artificial-grass-safe-for-pets-and-children/hero-garden-lounge-on-artificial-grass.webp",
+      "/Images/Blogs/is-artificial-grass-safe-for-pets-and-children/hero-coloured-turf-play-zone.webp",
     coverImageAlt:
-      "Garden lounge with grey sofas and a timber table on an artificial lawn beside a house",
+      "Play zone of blue, yellow, red and green turf blocks separated by white lines",
     ogImage:
       "/Images/Blogs/is-artificial-grass-safe-for-pets-and-children/og-is-artificial-grass-safe-for-pets-and-children.jpg",
     relatedProduct: {
@@ -793,9 +793,9 @@ const BlogsData = [
     publishedDate: "2026-11-26",
     readTime: "5 min read",
     coverImage:
-      "/Images/Blogs/does-artificial-grass-drain/hero-deck-and-artificial-lawn.webp",
+      "/Images/Blogs/does-artificial-grass-drain/hero-rolled-turf-showing-backing.webp",
     coverImageAlt:
-      "Timber deck beside a strip of artificial lawn between garden planting and a covered seating area",
+      "Rolled edge of green artificial turf showing its black backing",
     ogImage:
       "/Images/Blogs/does-artificial-grass-drain/og-does-artificial-grass-drain.jpg",
     relatedProduct: {
@@ -912,9 +912,9 @@ const BlogsData = [
     },
     faqs: [
       {
-        question: "How much infill does football turf need?",
+        question: "Does more infill make turf softer?",
         answer:
-          "It depends on the pile height and the system. Longer piles, such as 50 mm, take more infill than 30 mm turf.",
+          "Up to a point. The right depth of performance infill adds cushioning, but too much makes the surface loose and slows the ball. Follow the depth specified for the system.",
       },
       {
         question: "Can artificial turf be laid without infill?",
@@ -955,9 +955,9 @@ const BlogsData = [
     publishedDate: "2026-11-26",
     readTime: "5 min read",
     coverImage:
-      "/Images/Blogs/artificial-grass-for-cafe-terrace/hero-cafe-tables-on-artificial-grass.webp",
+      "/Images/Blogs/artificial-grass-for-cafe-terrace/hero-beanbag-lounge-on-artificial-grass.webp",
     coverImageAlt:
-      "Café tables and chairs on artificial grass in sunshine beside a glazed building",
+      "Black beanbags around a low white table on an artificial lawn",
     ogImage:
       "/Images/Blogs/artificial-grass-for-cafe-terrace/og-artificial-grass-for-cafe-terrace.jpg",
     relatedProduct: {
@@ -1020,9 +1020,9 @@ const BlogsData = [
     },
     faqs: [
       {
-        question: "Are PET acoustic panels better than foam?",
+        question: "Should I choose PET panels or acoustic foam?",
         answer:
-          "For most interiors, yes. PET panels are denser, hold their shape, can be printed or carved, and GAIA's are GreenPro certified. Foam suits small studios on a tight budget. The full comparison is in our article on PET panels and acoustic foam.",
+          "For most interiors, PET. The panels are denser, hold their shape, can be printed or carved, and GAIA's are GreenPro certified. Foam suits small studios on a tight budget. The full comparison is in our article on PET panels and acoustic foam.",
       },
       {
         question: "What size are PET acoustic panels?",
@@ -3030,9 +3030,9 @@ const BlogsData = [
     },
     faqs: [
       {
-        question: "Does artificial grass need watering?",
+        question: "Is a balcony lawn hard to keep clean?",
         answer:
-          "No. An occasional rinse removes dust.",
+          "No. It never needs watering or mowing; an occasional rinse removes dust.",
       },
       {
         question: "Can I put plant pots on artificial grass?",

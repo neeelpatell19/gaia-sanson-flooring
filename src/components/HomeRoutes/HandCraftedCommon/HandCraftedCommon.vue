@@ -44,7 +44,7 @@ export default {
               </p>
             </div>
             <div class="LogoContainerEdit">
-              <div class="LogoContainerEditRow logo-row-top">
+              <div class="LogoContainerEditRow logo-row-single">
                 <div>
                   <img
                     src="/Images/site/startup-india-logo.webp"
@@ -64,8 +64,6 @@ export default {
                     class="greenpro-logo-inline-img"
                   />
                 </div>
-              </div>
-              <div class="LogoContainerEditRow logo-row-top">
                 <div>
                   <img
                     src="/Images/CRI%20Greenlabel.png"
@@ -80,6 +78,12 @@ export default {
                 </div>
                 <div>
                   <img src="/Images/ASTM_logo.png" alt="ASTM Logo" />
+                </div>
+                <div>
+                  <img
+                    src="/Images/epd-logo.png"
+                    alt="International EPD System logo"
+                  />
                 </div>
               </div>
             </div>
